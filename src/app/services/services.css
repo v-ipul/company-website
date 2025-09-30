@@ -34,7 +34,7 @@ body{
 
 .fr-kicker{
   font-weight:700;
-  font-size:22px;
+  font-size:32px;
   margin-bottom:.5rem;
 }
 
@@ -42,12 +42,12 @@ body{
 .fr-photo{
   border-radius:var(--fr-radius);
   overflow:hidden;
-  aspect-ratio: 16 / 9;
-  
+  aspect-ratio: 16/9;
 }
 .fr-photo img{
-  width:80%; height:80%;
+  width:100%; height:80%;
   object-fit:cover; display:block;
+  border-radius: 30px;
 }
 
 /* Cards */
@@ -168,4 +168,11 @@ body{
 
        
 
-      
+     
+      @media (max-width: 768px) {
+  .container-xxl {
+    padding-left:30px;
+    padding-right:30px;
+  }
+
+}

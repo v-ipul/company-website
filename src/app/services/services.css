@@ -1,0 +1,171 @@
+/* Page font + tokens */
+:root{
+  --fr-text:#0f1220;
+  --fr-muted:#5c6370;
+  --fr-accent:#1a73e8;          /* blue accent for Future-Ready */
+  --fr-card:#d4d4d4;             /* soft card background */
+  --fr-border:#e7e9ee;
+  --fr-radius:16px;
+}
+
+html,body{height:100%}
+body{
+  font-family:'Manrope',system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial,sans-serif;
+  color:var(--fr-text);
+  background:#fff;
+}
+
+/* Typography */
+.fr-title{
+  font-weight:400;
+  font-size:clamp(28px,3.2vw + 12px,48px);
+  line-height:1.12;
+  margin:0 0 .35rem 0;
+}
+.fr-title .fw-700{font-weight:700}
+.fr-title .fr-accent{color:var(--fr-accent);}
+
+.fr-lead{
+  font-size:18px;
+  line-height:28px; /* slightly looser for long copy */
+  color:var(--fr-muted);
+ 
+}
+
+.fr-kicker{
+  font-weight:700;
+  font-size:22px;
+  margin-bottom:.5rem;
+}
+
+/* Feature image */
+.fr-photo{
+  border-radius:var(--fr-radius);
+  overflow:hidden;
+  aspect-ratio: 16 / 9;
+  
+}
+.fr-photo img{
+  width:80%; height:80%;
+  object-fit:cover; display:block;
+}
+
+/* Cards */
+.info-card{
+  background:#F3F3F3 !important;
+  border:1px solid var(--fr-border);
+  border-radius:25px;
+  padding:24px 22px;
+}
+
+.icon-circle{
+  width:44px; height:44px;
+  border-radius:50%;
+  display:grid; place-items:center;
+  border:1px solid var(--fr-border);
+  background:#fff; color:var(--fr-accent);
+  flex:0 0 44px;
+  font-size:20px;
+}
+
+/* Bulleted list style */
+.fr-list{padding-left:1.1rem}
+.fr-list li{
+  margin-bottom:.4rem;
+  line-height:1.5;
+}
+
+/* Small responsive refinements */
+@media (max-width: 991.98px){
+  .fr-lead{font-size:16px; line-height:26px}
+}
+@media (max-width: 575.98px){
+  .info-card{padding:18px}
+  .icon-circle{width:40px;height:40px;font-size:18px}
+}
+.cfx {
+  background-color: #f26c24 !important;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  color:#ffffff !important;
+}
+
+.form-line {
+  width: 90%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  padding: 14px 0;
+  font-size: 1rem;
+  background: transparent;
+}
+
+.form-line:focus {
+  border-bottom: 2px solid #f26c24; /* orange highlight */
+  outline: none;
+}
+
+.form-line::placeholder {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;         /* Semi Bold */
+  font-style: normal;       /* not italic */
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;   /* 2% */
+  color: #575757;              /* dark grey for visibility */
+}
+ .banner-wrapper {
+            position: relative;
+        }
+
+        /* Orange Band */
+        .orange-band {
+       position: absolute;
+    right: 17%;
+    top: -127px;
+    width: 249px;
+    height: 200%;
+    background: #F3773F;
+    mix-blend-mode: color;
+    transform: rotate(333deg);
+    z-index: 2;/* Adjust the angle to match the slant you want */
+}
+   .banner {
+            position: relative;
+            height: 300px;
+           background: url('/services/service-banner.png') no-repeat center center; /* Use local image path here */
+            background-size: cover;
+          color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .banner .content {
+          padding: 10px;
+          padding-bottom: 20px;
+            text-align: left;
+            z-index: 2;
+        }
+
+        .banner .content h1 {
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        .banner .content p {
+            font-size: 18px;
+            margin-top: 10px;
+            max-width: 600px;
+          
+        }
+
+    
+
+       
+
+      

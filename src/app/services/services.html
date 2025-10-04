@@ -14,7 +14,628 @@
 
 </head>
 <body>
-  
+  <section class="hero-section ">
+  <header [class.hover-active]="isHovering">
+    <div class="header-container">
+      <!-- Logos -->
+     
+       <img src="logo-black.png" class="logo logo-black menu-item" routerLink="/" routerLinkActive="active" alt="Logo Black" />
+
+      <div class="header-section">
+        <nav>
+          <!-- Ways We Serve Dropdown -->
+          <div class="dropdown" (mouseenter)="onWaysDropdownHover(true)" (mouseleave)="onWaysDropdownHover(false)">
+            <a href="#" (mouseenter)="onHover(true)" (mouseleave)="onHover(false)">Ways We Serve</a>
+
+            <div class="mega-dropdown" [class.show]="isWaysDropdownOpen">
+              <div class="mega-content">
+                <div class="mega-left">
+                  <h3>Ways We Serve</h3>
+                  <p>Delivering authentic, <br> impactful solutions, <br>carefully crafted around your
+                    DNA
+                  </p>
+                  <a href="#" class="see-all">See all →</a>
+                </div>
+
+                <div class="mega-right">
+                  <div class="menu-item" routerLink="/services" routerLinkActive="active">
+                    <img src="icon/view-grid.png" class="icon" alt="">
+                    <div>
+                       <h4>Services</h4>
+                      <div class="sub-manu">
+                        <h2>Consulting</h2>
+                        <h2>Implementation</h2>
+                        <h2>Integration</h2>
+                        <h2>Managed Services</h2>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="menu-item" routerLink="/industries" routerLinkActive="active">
+                    <img src="icon/Industries_we_serve.png" class="icon" alt="">
+                    <div>
+                      <h4>Industries We Serve</h4>
+                      <div class="sub-manu">
+                        <h2>Manufacturing</h2>
+                        <h2>Banking & Finance</h2>
+                        <h2>Healthcare</h2>
+                        <h2>Insurance</h2>
+                        <h2>High Tech</h2>
+                        <h2>Industrial</h2>
+                        <h2>Life Sciences</h2>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="menu-item">
+                    <img src="icon/diamond_9346758 1.png" class="icon" alt="">
+                    <div>
+                      <h4>Jewels</h4>
+                      <div class="sub-manu">
+                        <h2>Loan Origination System</h2>
+                        <h2>Sample Management Solution</h2>
+                        <h2>Clinic Management Solution</h2>
+                        <h2>Dealership Management Solution</h2>
+                        <h2>Check In/ Check Out component Accelerator</h2>
+                        <h2>Visit Plan Component Accelerator</h2>
+                        <h2>Expense Management Accelerator</h2>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI Link -->
+          <!-- AI Dropdown -->
+          <div class="dropdown" (mouseenter)="onDropdownHover(true)" (mouseleave)="onDropdownHover(false)">
+            <a href="#" (mouseenter)="onHover(true)" (mouseleave)="onHover(false)">AI</a>
+
+            <!-- Mega Dropdown -->
+            <div class="mega-dropdown" [class.show]="isDropdownOpen">
+              <div class="mega-content">
+
+                <!-- Left Section -->
+                <div class="mega-left">
+                  <h3>Artificial Intelligence</h3>
+                  <p>
+                    Atman harnesses AI to unlock potential, inspire progress, and
+                    reimagine
+                    tomorrow.
+                  </p>
+                  <a href="#" class="see-all">See all →</a>
+                </div>
+
+                <!-- Right Section -->
+                <div class="mega-right">
+                  <!-- Column 1 -->
+                  <div class="menu-item">
+                    <img src="icon/view-grid.png" class="icon" alt="">
+                    <div>
+                      <h4>Analytics</h4>
+                      <p>Turning data into foresight, <br> powering progress</p>
+                    </div>
+                  </div>
+
+                  <!-- Column 2 -->
+                  <div class="menu-item">
+                    <img src="icon/Industries_we_serve.png" class="icon" alt="">
+                    <div>
+                      <h4>Agentic Suite</h4>
+                      <div class="sub-manu">
+                        <h2>Churn Predictor</h2>
+                        <h2>Forecaster Agent</h2>
+                        <h2>Segmentation Agent</h2>
+                        <h2>Feedback Analyzer</h2>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <!-- Column 3 -->
+                  <div class="menu-item">
+                    <img src="icon/diamond_9346758 1.png" class="icon" alt="">
+                    <div>
+                      <h4>Atman Fusion</h4>
+                      <p>Seamless integration, <br> real-time insights, <br> smarter automation
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Being Atman Dropdown -->
+          <div class="dropdown" (mouseenter)="onAtmanDropdownHover(true)" (mouseleave)="onAtmanDropdownHover(false)">
+            <a href="#" (mouseenter)="onHover(true)" (mouseleave)="onHover(false)">Being Atman</a>
+
+            <div class="mega-dropdown" [class.show]="isAtmanDropdownOpen">
+              <div class="mega-content">
+                <div class="mega-left">
+                  <h3>Being Atman</h3>
+                  <p>Our spirit in action - <br>origin, values, leaders, <br>and collaborations that
+                    define us authentically</p>
+                  <a href="#" class="see-all">See all →</a>
+                </div>
+
+                <div class="mega-right">
+                  <div class="menu-item" routerLink="/being-atman" routerLinkActive="active">
+                    <img src="IconB1.png" class="icon" alt="">
+                    <div>
+                      <h4>Our Becoming</h4>
+                      <p>Our story, our spirit, our truth</p>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    <img src="IconB2.png" class="icon" alt="">
+                    <div>
+                      <h4>North Star</h4>
+                      <p>Purpose that lights our chosen path</p>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    <img src="IconB4.png" class="icon" alt="">
+                    <div>
+                      <h4>Values/ Beliefs</h4>
+                      <p>Beliefs shaping culture, conduct, and purpose</p>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    <img src="IconB5.png" class="icon" alt="">
+                    <div>
+                      <h4>Progressive Minds</h4>
+                      <p>Minds that inspire, guide, and empower</p>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    <img src="IconB6.png" class="icon" alt="">
+                    <div>
+                      <h4>Partners in purpose</h4>
+                      <p>Working together for shared meaningful outcomes</p>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    <img src="IconB7.png" class="icon" alt="">
+                    <div>
+                      <h4>Walk With Us</h4>
+                      <p>Join our path, shape the future</p>
+                    </div>
+                  </div>
+                  <div class="menu-item">
+                    <img src="Icon8.png" class="icon" alt="">
+                    <div>
+                      <h4>Our Rhythm</h4>
+                      <p>Living our essence through everyday actions</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="dropdown" (mouseenter)="onWisdomDropdownHover(true)" (mouseleave)="onWisdomDropdownHover(false)">
+            <a href="#" (mouseenter)="onHover(true)" (mouseleave)="onHover(false)">Wisdom</a>
+
+            <div class="mega-dropdown" [class.show]="isWisdomDropdownOpen">
+              <div class="mega-content">
+                <div class="mega-left">
+                  <h3>Wisdom</h3>
+                  <p>Unlock strategic insights <br>and innovative thinking <br>that fuel your
+                    transformation.</p>
+                  <a href="#" class="see-all">See all →</a>
+                </div>
+
+                <div class="mega-right">
+                  <div class="menu-item">
+                    <img src="icon/view-grid.png" class="icon" alt="">
+                    <div>
+                      <h4>Thought Leadership</h4>
+                      <div class="sub-manu">
+                        <h2>Research Papers</h2>
+                        <h2>Whitepapers</h2>
+                        <h2>Industry Trends</h2>
+                        <h2>Innovation Guides</h2>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="menu-item">
+                    <img src="icon/Industries_we_serve.png" class="icon" alt="">
+                    <div>
+                      <h4>Knowledge Hub</h4>
+                      <div class="sub-manu">
+                        <h2>Case Studies</h2>
+                        <h2>Success Stories</h2>
+                        <h2>Best Practices</h2>
+                        <h2>Playbooks</h2>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="menu-item">
+                    <img src="icon/diamond_9346758 1.png" class="icon" alt="">
+                    <div>
+                      <h4>Strategic Insights</h4>
+                      <div class="sub-manu">
+                        <h2>Business Frameworks</h2>
+                        <h2>Leadership Lessons</h2>
+                        <h2>Transformation Roadmaps</h2>
+                        <h2>Future Forecasts</h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="dropdown" (mouseenter)="onAcDropdownHover(true)" (mouseleave)="onAcDropdownHover(false)">
+            <a href="#" (mouseenter)="onHover(true)" (mouseleave)="onHover(false)">AC Foundation</a>
+
+            <div class="mega-dropdown" [class.show]="isAcDropdownOpen">
+              <div class="mega-content">
+                <div class="mega-left">
+                  <h3>AC Foundation</h3>
+                  <p>Empowering communities through <br>innovation, education, and <br>sustainable
+                    growth initiatives.</p>
+                  <a href="#" class="see-all">See all →</a>
+                </div>
+
+                <div class="mega-right">
+                  <div class="menu-item">
+                    <img src="icon/view-grid.png" class="icon" alt="">
+                    <div>
+                      <h4>Our Mission</h4>
+                      <div class="sub-manu">
+                        <h2>Community Development</h2>
+                        <h2>Educational Programs</h2>
+                        <h2>Social Innovation</h2>
+                        <h2>Sustainability Goals</h2>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="menu-item">
+                    <img src="icon/Industries_we_serve.png" class="icon" alt="">
+                    <div>
+                      <h4>Key Projects</h4>
+                      <div class="sub-manu">
+                        <h2>Women Empowerment</h2>
+                        <h2>Healthcare Initiatives</h2>
+                        <h2>Environmental Actions</h2>
+                        <h2>Youth Leadership</h2>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="menu-item">
+                    <img src="icon/diamond_9346758 1.png" class="icon" alt="">
+                    <div>
+                      <h4>Impact & Stories</h4>
+                      <div class="sub-manu">
+                        <h2>Impact Reports</h2>
+                        <h2>Success Stories</h2>
+                        <h2>Partner Collaborations</h2>
+                        <h2>Volunteer Programs</h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </nav>
+        <div class="dropdown" (mouseenter)="onContactDropdownHover(true)" (mouseleave)="onContactDropdownHover(false)">
+          <a href="#" class="contact-us" (mouseenter)="onHover(true)" (mouseleave)="onHover(false)">Contact
+            Us</a>
+
+          <div class="mega-dropdown" [class.show]="isContactDropdownOpen">
+            <div class="mega-content">
+              <!-- Left Section -->
+              <div class="mega-left">
+                <h3>Contact Us</h3>
+                <p>We’d love to connect! <br> Reach out for collaborations, <br> inquiries, or support.
+                </p>
+                <a href="#" class="see-all">Get in touch →</a>
+              </div>
+
+              <!-- Right Section -->
+              <div class="mega-right">
+                <div class="menu-item">
+                  <img src="icon/view-grid.png" class="icon" alt="">
+                  <div>
+                    <h4>Email Us</h4>
+                    <div class="sub-manu">
+                      <h2>info&#64;yourcompany.com</h2>
+                      <h2>support&#64;yourcompany.com</h2>
+
+                    </div>
+                  </div>
+                </div>
+
+                <div class="menu-item">
+                  <img src="icon/Industries_we_serve.png" class="icon" alt="">
+                  <div>
+                    <h4>Call Us</h4>
+                    <div class="sub-manu">
+                      <h2>+91 98765 43210</h2>
+                      <h2>+91 91234 56789</h2>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="menu-item">
+                  <img src="icon/diamond_9346758 1.png" class="icon" alt="">
+                  <div>
+                    <h4>Visit Us</h4>
+                    <div class="sub-manu">
+                      <h2>Head Office: Pune, India</h2>
+                      <h2>Branch: Bengaluru, India</h2>
+                      <h2>Branch: New York, USA</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Toggle -->
+      <div class="mobile-toggle" (click)="toggleMobileMenu()">☰</div>
+
+
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" [class.open]="mobileMenuOpen">
+
+        <!-- Ways We Serve -->
+        <div class="mobile-dropdown">
+          <div class="mobile-dropdown-header" (click)="toggleMega(0)">
+            Ways We Serve <span [class.rotate]="activeMegaIndex === 0">▸</span>
+          </div>
+          <div class="mobile-submenu" [class.show]="activeMegaIndex === 0">
+            <div class="menu-item">
+              <img src="icon/view-grid.png" class="icon" alt="">
+              <h4>Analytics</h4>
+              <div class="sub-manu">
+                <h5>Churn Predictor</h5>
+                <h5>Forecaster Agent</h5>
+                <h5>Segmentation Agent</h5>
+                <h5>Feedback Analyzer</h5>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="icon/Industries_we_serve.png" class="icon" alt="">
+              <h4>Industries We Serve</h4>
+              <div class="sub-manu">
+                <h5>Manufacturing</h5>
+                <h5>Banking & Finance</h5>
+                <h5>Healthcare</h5>
+                <h5>Insurance</h5>
+                <h5>High Tech</h5>
+                <h5>Industrial</h5>
+                <h5>Life Sciences</h5>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="icon/diamond_9346758 1.png" class="icon" alt="">
+              <h4>Jewels</h4>
+              <div class="sub-manu">
+                <h5>Loan Origination System</h5>
+                <h5>Sample Management Solution</h5>
+                <h5>Clinic Management Solution</h5>
+                <h5>Dealership Management Solution</h5>
+                <h5>Check In/Check Out Accelerator</h5>
+                <h5>Visit Plan Accelerator</h5>
+                <h5>Expense Management Accelerator</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI -->
+        <div class="mobile-dropdown">
+          <div class="mobile-dropdown-header" (click)="toggleMega(1)">
+            AI <span [class.rotate]="activeMegaIndex === 1">▸</span>
+          </div>
+          <div class="mobile-submenu" [class.show]="activeMegaIndex === 1">
+            <div class="menu-item">
+              <img src="icon/view-grid.png" class="icon" alt="">
+              <h4>Analytics</h4>
+              <p>Turning data into foresight</p>
+            </div>
+            <div class="menu-item">
+              <img src="icon/Industries_we_serve.png" class="icon" alt="">
+              <h4>Agentic Suite</h4>
+              <div class="sub-manu">
+                <h5>Churn Predictor</h5>
+                <h5>Forecaster Agent</h5>
+                <h5>Segmentation Agent</h5>
+                <h5>Feedback Analyzer</h5>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="icon/diamond_9346758 1.png" class="icon" alt="">
+              <h4>Atman Fusion</h4>
+              <p>Seamless integration, real-time insights, smarter automation</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Being Atman -->
+        <div class="mobile-dropdown">
+          <div class="mobile-dropdown-header" (click)="toggleMega(2)">
+            Being Atman <span [class.rotate]="activeMegaIndex === 2">▸</span>
+          </div>
+          <div class="mobile-submenu" [class.show]="activeMegaIndex === 2">
+            <div class="menu-item">
+              <img src="IconB1.png" class="icon" alt="">
+              <h4 routerLink="/being-atman" routerLinkActive="active">Our Becoming</h4>
+              <p>Our story, our spirit, our truth</p>
+            </div>
+            <div class="menu-item">
+              <img src="IconB2.png" class="icon" alt="">
+              <h4>North Star</h4>
+              <p>Purpose that lights our chosen path</p>
+            </div>
+            <div class="menu-item">
+              <img src="IconB4.png" class="icon" alt="">
+              <h4>Values / Beliefs</h4>
+              <p>Beliefs shaping culture, conduct, and purpose</p>
+            </div>
+            <div class="menu-item">
+              <img src="IconB5.png" class="icon" alt="">
+              <h4>Progressive Minds</h4>
+              <p>Minds that inspire, guide, and empower</p>
+            </div>
+            <div class="menu-item">
+              <img src="IconB6.png" class="icon" alt="">
+              <h4>Partners in Purpose</h4>
+              <p>Working together for shared meaningful outcomes</p>
+            </div>
+            <div class="menu-item">
+              <img src="IconB7.png" class="icon" alt="">
+              <h4>Walk With Us</h4>
+              <p>Join our path, shape the future</p>
+            </div>
+            <div class="menu-item">
+              <img src="Icon8.png" class="icon" alt="">
+              <h4>Our Rhythm</h4>
+              <p>Living our essence through everyday actions</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wisdom -->
+        <div class="mobile-dropdown">
+          <div class="mobile-dropdown-header" (click)="toggleMega(3)">
+            Wisdom <span [class.rotate]="activeMegaIndex === 3">▸</span>
+          </div>
+          <div class="mobile-submenu" [class.show]="activeMegaIndex === 3">
+            <div class="menu-item">
+              <img src="icon/view-grid.png" class="icon" alt="">
+              <h4>Thought Leadership</h4>
+              <div class="sub-manu">
+                <h5>Research Papers</h5>
+                <h5>Whitepapers</h5>
+                <h5>Industry Trends</h5>
+                <h5>Innovation Guides</h5>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="icon/Industries_we_serve.png" class="icon" alt="">
+              <h4>Knowledge Hub</h4>
+              <div class="sub-manu">
+                <h5>Case Studies</h5>
+                <h5>Success Stories</h5>
+                <h5>Best Practices</h5>
+                <h5>Playbooks</h5>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="icon/diamond_9346758 1.png" class="icon" alt="">
+              <h4>Strategic Insights</h4>
+              <div class="sub-manu">
+                <h5>Business Frameworks</h5>
+                <h5>Leadership Lessons</h5>
+                <h5>Transformation Roadmaps</h5>
+                <h5>Future Forecasts</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AC Foundation -->
+        <div class="mobile-dropdown">
+          <div class="mobile-dropdown-header" (click)="toggleMega(4)">
+            AC Foundation <span [class.rotate]="activeMegaIndex === 4">▸</span>
+          </div>
+          <div class="mobile-submenu" [class.show]="activeMegaIndex === 4">
+            <div class="menu-item">
+              <img src="icon/view-grid.png" class="icon" alt="">
+              <h4>Our Mission</h4>
+              <div class="sub-manu">
+                <h5>Community Development</h5>
+                <h5>Educational Programs</h5>
+                <h5>Social Innovation</h5>
+                <h5>Sustainability Goals</h5>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="icon/Industries_we_serve.png" class="icon" alt="">
+              <h4>Key Projects</h4>
+              <div class="sub-manu">
+                <h5>Women Empowerment</h5>
+                <h5>Healthcare Initiatives</h5>
+                <h5>Environmental Actions</h5>
+                <h5>Youth Leadership</h5>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="icon/diamond_9346758 1.png" class="icon" alt="">
+              <h4>Impact & Stories</h4>
+              <div class="sub-manu">
+                <h5>Impact Reports</h5>
+                <h5>Success Stories</h5>
+                <h5>Partner Collaborations</h5>
+                <h5>Volunteer Programs</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Us -->
+        <div class="mobile-dropdown">
+          <div class="mobile-dropdown-header" (click)="toggleMega(5)">
+            Contact Us <span [class.rotate]="activeMegaIndex === 5">▸</span>
+          </div>
+          <div class="mobile-submenu" [class.show]="activeMegaIndex === 5">
+            <div class="menu-item">
+              <img src="icon/view-grid.png" class="icon" alt="">
+              <h4>Email Us</h4>
+              <div class="sub-manu">
+                <h5>infoyourcompany.com</h5>
+                <h5>supportyourcompany.com</h5>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="icon/Industries_we_serve.png" class="icon" alt="">
+              <h4>Call Us</h4>
+              <div class="sub-manu">
+                <h5>+91 98765 43210</h5>
+                <h5>+91 91234 56789</h5>
+              </div>
+            </div>
+            <div class="menu-item">
+              <img src="icon/diamond_9346758 1.png" class="icon" alt="">
+              <h4>Visit Us</h4>
+              <div class="sub-manu">
+                <h5>Head Office: Pune, India</h5>
+                <h5>Branch: Bengaluru, India</h5>
+                <h5>Branch: New York, USA</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+
+
+
+
+
+</section>
   <div class="banner-wrapper">
    <div class="banner">
     <!-- Orange Band -->
@@ -386,7 +1007,18 @@
   </div>
 </div>
 
-
+ <footer class="footer">
+    <div class="footer-container">
+      <a href="#"><img src="light-logo.png" alt="Logo" class="footer-logo"></a>
+      <p>©2025-26 Atman Cloud Consultants Pvt. Ltd.</p>
+      <ul class="social-links">
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+      </ul>
+    </div>
+  </footer>
 
   <!-- Bootstrap JS + Page JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

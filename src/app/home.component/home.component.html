@@ -24,20 +24,20 @@
                 </div>
 
                 <div class="mega-right">
-                  <div class="menu-item" routerLink="/services" routerLinkActive="active">
+                  <div class="menu-item">
                     <img src="icon/view-grid.png" class="icon" alt="">
                     <div>
-                      <h4>Services</h4>
+                      <h4>Analytics</h4>
                       <div class="sub-manu">
-                        <h2>Consulting</h2>
-                        <h2>Implementation</h2>
-                        <h2>Integration</h2>
-                        <h2>Managed Services</h2>
+                        <h2>hurn Predictor</h2>
+                        <h2>Forecaster Agent</h2>
+                        <h2>Segmentation Agent</h2>
+                        <h2>Feedback Analyzer</h2>
                       </div>
                     </div>
                   </div>
 
-                  <div class="menu-item" routerLink="/industries" routerLinkActive="active">
+                  <div class="menu-item">
                     <img src="icon/Industries_we_serve.png" class="icon" alt="">
                     <div>
                       <h4>Industries We Serve</h4>
@@ -390,12 +390,12 @@
           <div class="mobile-submenu" [class.show]="activeMegaIndex === 0">
             <div class="menu-item">
               <img src="icon/view-grid.png" class="icon" alt="">
-              <h4>Analytics</h4>
+              <h4>Services</h4>
               <div class="sub-manu">
-                <h5>Churn Predictor</h5>
-                <h5>Forecaster Agent</h5>
-                <h5>Segmentation Agent</h5>
-                <h5>Feedback Analyzer</h5>
+                <h5>Consulting</h5>
+                <h5>Implementation</h5>
+                <h5>Integration</h5>
+                <h5>Managed Services</h5>
               </div>
             </div>
             <div class="menu-item">
@@ -615,9 +615,6 @@
       </div>
     </div>
   </header>
-
-
-
   <!-- Slide Text -->
   <div class="slide-text">
     <h4>{{ slides[current].title }}</h4>
@@ -709,7 +706,7 @@
 
     <img src="Button-Next.png" alt="Next" class="nav-btn-right" (click)="nextCard()" />
   </div>
-
+</section>
 
   <section class="industry-wrapper">
     <div class="industry-container">
@@ -823,7 +820,7 @@
 
 
 
-  <section class="container-9">
+  <section style="background-color: #fff;" class="container-9">
     <div class="text-area">
       <h1>Your Next <span>Career Move</span></h1>
       <p>
@@ -838,8 +835,9 @@
       <img src="button.png" alt="Apply Now" class="cta-button" />
     </div>
   </section>
+  
 
-  <section class="container-10">
+  <section style="background: #fff;" class="container-10">
     <h2>
       <span>Engineering Sales Excellence</span> <br>
       Strategic Transformation for a Global Manufacturing Leader
@@ -872,7 +870,7 @@
   </section>
 
   <!-- ================= AI EDGE SECTION ================= -->
-  <section class="ai-edge-section">
+  <section style="background-color: #fff;" class="ai-edge-section">
     <h2 class="ai-edge-title">Your Edge with <span>AI</span></h2>
     <p class="ai-edge-subtitle">AI isn’t about replacing people. It’s about giving you sharper tools, deeper insights,
       and faster paths to impact. With AgentForce, our AI and analytics platform, we help you unlock intelligence that
@@ -888,16 +886,15 @@
     <img src="button.png" class="ai-edge-cta">
   </section>
 
-  <section class="last-section" [ngStyle]="{'background-image': 'url(Group.png)'}">
+  <section class="last-section" [ngStyle]="{'background-image': 'url(OBJECTS.png)'}">
     <h1>Let’s talk about <br>
       <span>your business </span> needs!
     </h1>
     <img src="Frame 5099.png" class="button-img" alt="">
-  </section>
+</section>
 
 
-
-  <footer class="footer">
+  <footer  class="footer">
     <div class="footer-container">
       <a href="#"><img src="light-logo.png" alt="Logo" class="footer-logo"></a>
       <p>©2025-26 Atman Cloud Consultants Pvt. Ltd.</p>
@@ -909,3 +906,4 @@
       </ul>
     </div>
   </footer>
+  

@@ -2,7 +2,8 @@
   <header [class.hover-active]="isHovering">
     <div class="header-container">
       <!-- Logos -->
-    <img src="logo-black.png" class="logo logo-black menu-item" routerLink="/" routerLinkActive="active" alt="Logo Black" />
+      <img src="logo-white.png" class="logo logo-white" alt="Logo White" />
+      <img src="logo-black.png" class="logo logo-black" alt="Logo Black" />
 
       <div class="header-section">
         <nav>
@@ -21,15 +22,15 @@
                 </div>
 
                 <div class="mega-right">
-                  <div class="menu-item" routerLink="/services" routerLinkActive="active">
+                  <div class="menu-item">
                     <img src="icon/view-grid.png" class="icon" alt="">
                     <div>
-                      <h4>Services</h4>
+                      <h4>Analytics</h4>
                       <div class="sub-manu">
-                        <h2>Consulting</h2>
-                        <h2>Implementation</h2>
-                        <h2>Integration</h2>
-                        <h2>Managed Services</h2>
+                        <h2>hurn Predictor</h2>
+                        <h2>Forecaster Agent</h2>
+                        <h2>Segmentation Agent</h2>
+                        <h2>Feedback Analyzer</h2>
                       </div>
                     </div>
                   </div>
@@ -697,7 +698,6 @@
       <img src="02.jpg" alt="North Star" class="img-container">
     </div>
   </div>
-
 </section>
 
 <div class="beliefs-section">
@@ -772,49 +772,49 @@
       </div>
 
       <div class="partner-card">
-        <img src="Mulesoft.png" alt="Mulesoft" class="main-logo">
+        <img src="Mulesoft.png" alt="Microsoft" class="main-logo">
         <div class="text">
-          <h3>Mulesoft</h3>
+          <h3>Microsoft</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
       </div>
       <div class="partner-card">
         <img src="partners/tableav.png" alt="tablev" class="main-logo">
         <div class="text">
-          <h3>Tableau</h3>
+          <h3>AWS</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
       </div>
       <div class="partner-card">
-        <img src="Informatica.png" alt="Snowflake" class="main-logo">
+        <img src="informatica-logo-png_seeklogo-350459.png" alt="Snowflake" class="main-logo">
         <div class="text">
           <h3>Informatica</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
       </div>
       <div class="partner-card">
-        <img src="UZt2Io9pS01826DnKuWc.webp" alt="Microsft Azure Ai" class="main-logo">
+        <img src="UZt2Io9pS01826DnKuWc.webp" alt="Tableau" class="main-logo">
         <div class="text">
-          <h3>Azure Ai</h3>
+          <h3>Tableau</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
       </div>
       <div class="partner-card">
-        <img src="partners/snowflake.png" alt="snowflake" class="main-logo">
+        <img src="partners/snowflake.png" alt="Google Cloud" class="main-logo">
         <div class="text">
-          <h3>snowflake</h3>
+          <h3>Google Cloud</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
       </div>
       <div class="partner-card">
-        <img src="Databricks.png" alt="Databricks" class="main-logo">
+        <img src="Databricks.png" alt="Snowflake" class="main-logo">
         <div class="text">
-          <h3>Databricks</h3>
+          <h3>Snowflake</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
       </div>
       <div class="partner-card">
-        <img src="Skyvia.png" alt="Skyvia" class="main-logo">
+        <img src="skyvia-Logo.webp" alt="Snowflake" class="main-logo">
         <div class="text">
           <h3>Skyvia</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -870,7 +870,7 @@
         </div>
       </div>
 
-
+      
       <div class="tab-panels-show">
         <div class="tab-panel" *ngFor="let panel of panels" [class.active]="activeTab === panel.id">
           <div class="panel-image">
@@ -907,7 +907,7 @@
         </div>
       </div>
 
-
+      
 
       <div class="tab-card" [class.active]="activeTab === 'diversity_inclusion'"
         (mouseenter)="selectTab('diversity_inclusion')">

@@ -4,8 +4,8 @@
   <header [class.hover-active]="isHovering">
     <div class="header-container">
       <!-- Logos -->
-      <img src="logo-white.png" class="logo logo-white" alt="Logo White" />
-      <img src="logo-black.png" class="logo logo-black" alt="Logo Black" />
+      <img src="logo-white.png" class="logo logo-white" alt="Logo White" routerLink="/" routerLinkActive="active" />
+      <img src="logo-black.png" class="logo logo-black" alt="Logo Black" routerLink="/" routerLinkActive="active" />
 
       <div class="header-section">
         <nav>
@@ -23,21 +23,21 @@
                   <a href="#" class="see-all">See all →</a>
                 </div>
 
-                <div class="mega-right">
-                  <div class="menu-item">
+                 <div class="mega-right">
+                  <div class="menu-item" routerLink="/services" routerLinkActive="active">
                     <img src="icon/view-grid.png" class="icon" alt="">
                     <div>
-                      <h4>Analytics</h4>
+                       <h4>Services</h4>
                       <div class="sub-manu">
-                        <h2>hurn Predictor</h2>
-                        <h2>Forecaster Agent</h2>
-                        <h2>Segmentation Agent</h2>
-                        <h2>Feedback Analyzer</h2>
+                        <h2>Consulting</h2>
+                        <h2>Implementation</h2>
+                        <h2>Integration</h2>
+                        <h2>Managed Services</h2>
                       </div>
                     </div>
                   </div>
 
-                  <div class="menu-item">
+                  <div class="menu-item" routerLink="/industries" routerLinkActive="active">
                     <img src="icon/Industries_we_serve.png" class="icon" alt="">
                     <div>
                       <h4>Industries We Serve</h4>

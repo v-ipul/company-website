@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ServicesComponent } from './services.component';
+import { CookieConsentComponent } from './cookie-consent';
 
-describe('Services', () => {
-  let component: ServicesComponent;
-  let fixture: ComponentFixture<ServicesComponent>;
+describe('CookieConsent', () => {
+  let component: CookieConsentComponent;
+  let fixture: ComponentFixture<CookieConsentComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ServicesComponent]
+      imports: [CookieConsentComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ServicesComponent);
+    fixture = TestBed.createComponent(CookieConsentComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

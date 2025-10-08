@@ -5,6 +5,7 @@ import { ServicesComponent } from './services/services.component';
 import { OurBecomingComponent } from './our-becoming/our-becoming';
 import { PrivacyPolicy } from './pages/privacy-policy/privacy-policy';
 import { CookieConsentComponent } from './shared/cookie-consent/cookie-consent';
+import { Ai } from './ai/ai';
 
 export const routes: Routes = [
    { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -14,7 +15,8 @@ export const routes: Routes = [
    { path:'being-atman' , component:OurBecomingComponent},  
    // app-routing.module.ts
 { path: 'privacy', component: PrivacyPolicy },
-{ path: 'cookie', component: CookieConsentComponent }
+{ path: 'cookie', component: CookieConsentComponent },
+{ path: 'ai', component: Ai }
 
   
 ];

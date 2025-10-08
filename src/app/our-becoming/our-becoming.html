@@ -96,7 +96,7 @@
                 <!-- Right Section -->
                 <div class="mega-right">
                   <!-- Column 1 -->
-                  <div class="menu-item">
+                  <div class="menu-item" routerLink="/ai" routerLinkActive="active">
                     <img src="icon/view-grid.png" class="icon" alt="">
                     <div>
                       <h4>Analytics</h4>
@@ -105,7 +105,7 @@
                   </div>
 
                   <!-- Column 2 -->
-                  <div class="menu-item">
+                  <div class="menu-item" routerLink="/ai" routerLinkActive="active">
                     <img src="icon/Industries_we_serve.png" class="icon" alt="">
                     <div>
                       <h4>Agentic Suite</h4>
@@ -120,7 +120,7 @@
                   </div>
 
                   <!-- Column 3 -->
-                  <div class="menu-item">
+                  <div class="menu-item" routerLink="/ai" routerLinkActive="active">
                     <img src="icon/diamond_9346758 1.png" class="icon" alt="">
                     <div>
                       <h4>Atman Fusion</h4>
@@ -424,17 +424,17 @@
         </div>
 
         <!-- AI -->
-        <div class="mobile-dropdown">
+        <div class="mobile-dropdown" >
           <div class="mobile-dropdown-header" (click)="toggleMega(1)">
             AI <span [class.rotate]="activeMegaIndex === 1">▸</span>
           </div>
           <div class="mobile-submenu" [class.show]="activeMegaIndex === 1">
-            <div class="menu-item">
+            <div class="menu-item" routerLink="/ai" routerLinkActive="active">
               <img src="icon/view-grid.png" class="icon" alt="">
               <h4>Analytics</h4>
               <p>Turning data into foresight</p>
             </div>
-            <div class="menu-item">
+            <div class="menu-item" routerLink="/ai" routerLinkActive="active">
               <img src="icon/Industries_we_serve.png" class="icon" alt="">
               <h4>Agentic Suite</h4>
               <div class="sub-manu">
@@ -444,7 +444,7 @@
                 <h2>Feedback Analyzer</h2>
               </div>
             </div>
-            <div class="menu-item">
+            <div class="menu-item" routerLink="/ai" routerLinkActive="active">
               <img src="icon/diamond_9346758 1.png" class="icon" alt="">
               <h4>Atman Fusion</h4>
               <p>Seamless integration, real-time insights, smarter automation</p>

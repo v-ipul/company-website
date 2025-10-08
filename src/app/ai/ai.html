@@ -1,11 +1,25 @@
-<!-- ================= HERO SECTION ================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy</title>
+<base href="/services">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
 
-<section class="hero-section ">
+  <!-- Bootstrap 5 + Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+   <section class="hero-section ">
   <header [class.hover-active]="isHovering">
     <div class="header-container">
       <!-- Logos -->
-      <img src="logo-white.png" class="logo logo-white" alt="Logo White" routerLink="/" routerLinkActive="active" />
-      <img src="logo-black.png" class="logo logo-black" alt="Logo Black" routerLink="/" routerLinkActive="active" />
+     
+       <img src="logo-black.png" class="logo logo-black menu-item" routerLink="/" routerLinkActive="active" alt="Logo Black" />
 
       <div class="header-section">
         <nav>
@@ -23,7 +37,7 @@
                   <a href="#" class="see-all">See all →</a>
                 </div>
 
-                 <div class="mega-right">
+                <div class="mega-right">
                   <div class="menu-item" routerLink="/services" routerLinkActive="active">
                     <img src="icon/view-grid.png" class="icon" alt="">
                     <div>
@@ -369,9 +383,6 @@
                   </div>
                 </div>
               </div>
-              <div class="mega-right">
-                <iframe src="https://www.google.com/maps/d/embed?mid=1AL7tA3N0nyRm5VrIFub33QxR7_oNwOY&ehbc=2E312F" width="640" height="480"></iframe>
-              </div>
             </div>
           </div>
         </div>
@@ -393,12 +404,12 @@
           <div class="mobile-submenu" [class.show]="activeMegaIndex === 0">
             <div class="menu-item">
               <img src="icon/view-grid.png" class="icon" alt="">
-              <h4>Services</h4>
+              <h4>Analytics</h4>
               <div class="sub-manu">
-                <h5>Consulting</h5>
-                <h5>Implementation</h5>
-                <h5>Integration</h5>
-                <h5>Managed Services</h5>
+                <h5>Churn Predictor</h5>
+                <h5>Forecaster Agent</h5>
+                <h5>Segmentation Agent</h5>
+                <h5>Feedback Analyzer</h5>
               </div>
             </div>
             <div class="menu-item">
@@ -618,286 +629,630 @@
       </div>
     </div>
   </header>
-  <!-- Slide Text -->
-  <div class="slide-text">
-    <h4>{{ slides[current].title }}</h4>
-    <h1>{{ slides[current].subtitle }}</h1>
-    <p>{{ slides[current].description }}</p>
-      <a href="#" class="first-btn">
-          Read More
-          <span class="arrow">→</span>
-        </a>
-  </div>
-
-  <!-- Bottom Nav -->
-  <div class="bottom-nav">
-    <div class="nav-item" *ngFor="let slide of slides; let i = index" (click)="goToSlide(i)"
-      [class.active]="current === i">
-      <span class="nav-number">{{ (i + 1) | number:'2.0' }}.</span>
-      <span class="nav-title">{{ slide.title }}</span>
-    </div>
-  </div>
 </section>
+  <div class="banner-wrapper">
+   <div class="banner">
+    <!-- Orange Band -->
+        <div class="orange-band"></div>
+        <div class="background-animation"></div>
+        <div class="handshake"></div>
+        <div class="container">
+        <div class="content">
+            <h1>Atman Intelligence</h1>
+            <p style="font-size: 16px;">Atman applies advanced AI to unlock potential, accelerate innovation, and redefine futures .</p>
+        </div>
+        </div>
+    </div>
+    </div>
 
-<!-- ================= VISION SECTION ================= -->
-<section class="vision-section">
-  <div class="vision-content">
+  <section id="future-ready" class="py-5">
+      <div class="container px-5">
+       
+      <!-- Title Row -->
+      <div class="row align-items-start mb-4">
+        <div class="col-lg-6">
+          <h1 class="section-title">Analyze. Automate. Accelerate.</h1>
+            <p class="section-subtitle">
+            AI-powered insights and agents, delivered seamlessly by Atman Consultants.
+          </p>
+        </div>
+      </div>
 
-    <h1>It starts with <strong>you</strong></h1>
-    <p>
-      You’ve worked hard to build your business the way you believe in.
-      Your culture, your values, your way of serving customers—it’s what sets you apart.
-      But when it comes to technology, too often you’re asked to adapt, adjust, or give in.
-      We think it should be the other way around. Technology should adapt to you.
-      That’s why at Atman, we begin by listening to your story, then build solutions that reflect it.
-    </p>
-    <img class="vision-image" src="vision-Image.png" alt="Vision">
+      <!-- Content Row -->
+       <div class="row g-2">
+
+    <!-- LEFT: large quote over image -->
+    <div class="col-12 col-lg-6">
+     <div class="image-card" style="background:rgb(255, 255, 255); height: 90%;" >
+            <img src="/ai/ai-background.jpg" alt="AI" style=" border-radius:25px;">
+            <div class="image-overlay " style="top: 50px;">
+              <span style="margin-bottom : 300px ; font-size: 18px;"> Unlock business agility with Atman’s Agentic Suite—AI-powered tools for forecasting, segmentation, and feedback analysis that drive smarter decisions, reduce churn, and personalize customer experiences at scale.           
+              </span>
+        </div>
+       </div>
+    </div>
+
+    <!-- RIGHT: two stacked cards -->
+    <div class="col-12 col-lg-3">
+      <div class="d-grid gap-4">
+        <!-- Small quote -->
+        <div class="card h-100 h-lg-wide">
+          <div class="card-body d-flex align-items-top" style="height: 370px !important;">
+            <p class="mb-0">Accelerate outcomes with AI agents built for enterprise performance </p>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+    <div class="col-12 col-lg-3">
+           <!-- KPI with abstract header -->
+        <div class="card  h-lg-mid"  style="height: 90%;">
+          <div class="paint-a" style="height: 150px; border-top-left-radius: var(--radius); border-top-right-radius: var(--radius);"></div>
+          <div class="card-body">
+            <div class="kpi">AgentForce by Atman</div>
+            <div class="text-muted">Autonomous. Insightful. Scalable.</div>
+          </div>
+        </div>
+      
+    </div>
+
+    <!-- BOTTOM LEFT: abstract image block -->
+    <div class="col-12 col-lg-3">
+      <div class="card  h-lg-mid" style="height: 300px;">
+        <div class="paint-a" style="height: 150px; border-top-left-radius: var(--radius); border-top-right-radius: var(--radius);"></div>
+       <div class="card-body">
+            <div class="kpi">9000+</div>
+            <div class="text-muted">businesses trust<br>Chatbase</div>
+          </div>
+    </div>
+    </div>
+
+    <!-- BOTTOM MIDDLE: short pull-quote -->
+    <div class="col-12 col-lg-3">
+      <div class="card  h-lg-mid" style="height: 300px;">
+        <div class="card-body ">
+         <div class="kpi">Real-Time Insights</div>
+            <div class="text-muted">Actionable intelligence from structured and unstructured data sources.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTTOM RIGHT: wide testimonial -->
+    <div class="col-12 col-lg-6">
+      <div class="card  h-lg-mid" style="height: 300px;">
+        <div class="card-body">
+          <p class="mb-0">
+            From predictive insights to autonomous agents, Atman empowers enterprises to act faster, optimize performance, and stay ahead of market shifts—seamlessly integrating intelligence into every layer of your operations. 
+          </p>
+        </div>
+      </div>
+    </div>
+
   </div>
-  <div class="container">
-
-    <h1 class="" title-container>Why <strong> Atman</strong></h1>
-    <p class="subtitle">
-      Define ambitious service benchmarks that challenge your team to strive for excellence.
-      These benchmarks should be both aspirational and achievable, inspiring everyone to aim higher
-      and constantly improve define ambitious service benchmarks.
-    </p>
-
-    <div class="card-container">
-      <div class="card">
-        <img src="Image Container.png" alt="">
-        <p>We start by listening. We co-design solutions that fit your DNA</p>
-      </div>
-      <div class="card">
-        <img src="Card Image2.png" alt="">
-        <p>We deliver with care, making change seamless. And when it’s live, we stay with you—supporting, refining, and
-          helping you grow.</p>
-      </div>
-      <div class="card">
-        <img src="Card Image3.png" alt="">
-        <p>You need a partner who can see beyond tools and buzzwords, to the heart of what makes you unique.</p>
-      </div>
-      <div class="card">
-        <img src="Card Image4.png" alt="">
-        <p>Atman is built on authenticity, impact, and trust. We don’t sell roadmaps. We co-create them—with you, around
-          you, for you. Because transformation isn’t a one-time project. It’s a shared journey.</p>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="services-section">
-
-  <h2 class="section-title" style="margin-block-start: 0px;">
-    What You <span>Can Do</span> With Us
-  </h2>
-  <p class="section-subtitle">
-    With Atman, you’ll have a partner across the full spectrum. Whatever your need, we’ll shape it to reflect you.
-  </p>
-
-  <div class="slider-container">
-    <img src="Button - Previous.png" alt="Previous" class="nav-btn-left" (click)="prevCard()" />
-
-    <div class="service-cards">
-      <div class="service-card" *ngFor="let item of cards; let i = index" [ngStyle]="getCardStyle(i)"
-        [class.active]="i === currentIndex">
-        <img [src]="item.image" alt="{{ item.title }}" />
-        <div class="overlay">
-          <h3 class="overlay-title">{{ item.title }}</h3>
-          <p class="overlay-subtitle">{{ item.subtitle }}</p>
-        </div>
-      </div>
-    </div>
-
-    <img src="Button-Next.png" alt="Next" class="nav-btn-right" (click)="nextCard()" />
-  </div>
-</section>
-
-  <section class="industry-wrapper">
-    <div class="industry-container">
-      <!-- Left Content -->
-      <div class="industry-left">
-        <h1>
-          We <span class="industry-highlight-wrapper">understand
-            <img src="svg-1388542044_292.png" class="industry-highlight">
-          </span><br>
-          your world
-        </h1>
-
-        <p>
-          From manufacturing floors to financial institutions, from <br> hospitals to
-          high-tech labs, we’ve partnered with <br> businesses across industries to
-          help them transform <br> authentically. Whether it’s securing sensitive data
-          in <br> banking, enabling efficiency in industrial operations, or <br> driving
-          innovation in healthcare and life sciences—our role <br> is always the same:
-          to help organizations bring their <br> authentic selves into the digital
-          age.
-        </p>
-        <a href="#" class="custom-btn">
-          Discover AI at Atman
-          <span class="arrow">→</span>
-        </a>
-      </div>
-
-      <!-- Right Content -->
-      <div class="industry-right">
-        <div class="industry-card">
-          <img src="IconA1.png" alt="" />
-          <div class="industry-card-text">
-            <h3>Manufacturers building smarter supply chains.</h3>
-            <p>
-              We power AI-driven supply chains for efficiency, visibility, and
-              faster deliveries.
-            </p>
-          </div>
-        </div>
-
-        <div class="industry-card">
-          <img src="IconA2.png" alt="" />
-          <div class="industry-card-text">
-            <h3>Banks and insurers creating trust in a digital age</h3>
-            <p>
-              We help banks and insurers build digital trust through secure and
-              customer-first solutions.
-            </p>
-          </div>
-        </div>
-
-        <div class="industry-card">
-          <img src="IconA3.png" alt="" />
-          <div class="industry-card-text">
-            <h3>Hospitals caring with empathy and precision</h3>
-            <p>
-              We help hospitals deliver empathetic, precise care with technology
-              that builds trust and improves outcomes.
-            </p>
-          </div>
-        </div>
-
-        <div class="industry-card">
-          <img src="IconA4.png" alt="" />
-          <div class="industry-card-text">
-            <h3>High-tech innovators staying ahead of tomorrow</h3>
-            <p>
-              We help high-tech innovators stay ahead with future-ready solutions
-              that drive speed, agility, and growth.
-            </p>
-          </div>
-        </div>
-
-        <div class="industry-card">
-          <img src="IconA5.png" alt="" />
-          <div class="industry-card-text">
-            <h3>Life sciences pushing boundaries of possibility</h3>
-            <p>
-              We help life sciences push the boundaries with innovative solutions
-              that accelerate research, improve care, and transform lives.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="container-7">
-    <h1>Stay Ahead of <span>the Curve</span></h1>
-    <p>You’re not just looking for answers today—you’re thinking about tomorrow. Through insights and ideas, we share
-      perspectives on what’s next in digital transformation, AI, and authentic growth.</p>
-    <img class="banner-img" src="banner-Container.png" alt="">
-    <img id="img-button" src="Link - Web CTA Btn Color.png" alt="">
-  </section>
-
-  <section class="container-8">
-    <div class="part-left">
-      <h2>Trust You Can <br>
-        <span>Count On</span>
-      </h2>
-      <p>Your data, your processes, your future—it all deserves the highest level of protection. At Atman, security is
-        not just a promise but a standard. With ISO/IEC 27001:2022 certification, advanced safeguards, and proven
-        client partnerships, we ensure confidentiality, integrity, and resilience at every step. You can trust us to
-        protect what matters most, so you can focus on driving innovation and growth.</p>
-      <img src="image 348.png" alt="">
-    </div>
-    <div class="part-right">
-      <img src="Frame 1618873031.png" alt="">
-    </div>
-  </section>
-
-
-
-  <section style="background-color: #fff;" class="container-9">
-    <div class="text-area">
-      <h1>Your Next <span>Career Move</span></h1>
-      <p>
-        If you’re looking for more than a job—if you want to make an impact and help businesses stay <br>
-        true to themselves—Atman might be your next home. We’re building a culture where curiosity, <br>
-        authenticity, and growth thrive.
-      </p>
-    </div>
-
-    <div class="image-area">
-      <img src="banner-page1.png" alt="Career Banner" class="main-banner" />
-      <img src="button.png" alt="Apply Now" class="cta-button" />
-    </div>
-  </section>
   
-
-  <section style="background: #fff;" class="container-10">
-    <h2>
-      <span>Engineering Sales Excellence</span> <br>
-      Strategic Transformation for a Global Manufacturing Leader
-    </h2>
-
-    <div class="below-section">
-      <!-- Left Side -->
-      <div class="left-side-B1">
-        <p>
-          A top-tier parking systems manufacturer reimagined its sales operations to align with global growth ambitions.
-          By streamlining enquiry management, automating key workflows, and enabling real-time visibility across
-          markets,
-          the organization unlocked faster decision-making and sharper forecasting. The result: accelerated
-          enquiry-to-order
-          cycles, improved sales productivity, and a scalable foundation for future expansion. This is how
-          forward-thinking
-          manufacturers turn operational complexity into competitive advantage.
+    </div>
+      
+  </section>
+<section class="security-section">
+  <div class="container">
+    <div class="row align-items-start g-5">
+      <!-- Left Text Column -->
+      <div class="col-lg-4">
+        <h2 class="security-title">
+          Empower Decisions with <span class="security-highlight">Atman Analytics</span>
+        </h2>
+        <p class="security-description mt-3">
+          In a data-saturated world, Atman Analytics transforms real-time structured and unstructured data into actionable insights—no manual analysis, just intelligent decisions. 
         </p>
-         <a href="#" class="second-btn">
-          Read More
-          <span class="arrow">→</span>
-        </a>
       </div>
 
-      <!-- Right Side (Image Button) -->
-      <div class="right-side">
-        <img src="Image.png" alt="Button Image">
+      <!-- Right Features Column -->
+      <div class="col-lg-8">
+        <div class="feature-box">
+          <!-- Feature 1 -->
+          <div class="feature-item" >
+            <div>
+              <div class="feature-title">Intelligent Insights & Automation</div><br>
+              <div class="feature-text">
+                <span style="font-weight: 600;">• AI-Generated Insights in Real-Time</span><br>
+                Instant intelligence from live data streams—no delays, just decisions powered by real-time AI analytics.<br>
+                <span style="font-weight: 600;">• Predictive & Prescriptive Intelligence </span><br>
+                Anticipate trends and prescribe actions with analytics that go beyond hindsight into foresight.<br>
+                <span style="font-weight: 600; padding-top:10px;">• KPI Monitoring & Alert Automation</span><br>
+                Track key metrics and receive automated alerts when thresholds are crossed, or anomalies appear. 
+              </div>
+            </div>
+            <img src="/ai/icon1.png" alt="Data Icon" class="feature-icon">
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="feature-item">
+            <div>
+              <div class="feature-title">Seamless Data Experience</div><br>
+              <div class="feature-text">
+                <span style="font-weight: 600;">• Cross-Platform Data Unification</span><br>
+                Integrate structured and unstructured data across systems into one cohesive, intelligent view. <br>
+                <span style="font-weight: 600;">• AI-Generated Dashboards & Reports  </span><br>
+                Automated visualizations and summaries tailored to your needs, updated in real-time.<br>
+                <span style="font-weight: 600; padding-top:10px;">• Smart Segmentation & Audience Intelligence </span><br>
+                Identify high-value segments and understand audience behavior with precision targeting.
+              </div>
+            </div>
+            <img src="/ai/icon2.png" alt="Lock Icon" class="feature-icon">
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="feature-item">
+            <div>
+              <div class="feature-title">Secure & Conversational Access</div><br>
+              <div class="feature-text">
+                <span style="font-weight: 600;">• Conversational Analytics with Natural Language Queries</span><br>
+                Ask questions in plain language and get instant, meaningful answers—no technical skills required. <br>
+                <span style="font-weight: 600;">• Role-Based Insights with Trust Layer Security</span><br>
+                Deliver personalized insights with trust-layer security based on user roles and access levels. <br>
+              </div>
+            </div>
+            <img src="/ai/icon3.png" alt="Integration Icon" class="feature-icon">
+          </div>
+        </div>
       </div>
+    </div>
+  </div>
+</section>
+ <section class="working-process-section">
+    <div class="container">
+      <!-- Header Section -->
+    
+      
+      <!-- Cards for Process Steps -->
+      <div class="row text-center text-md-start">
+         <div class="col-lg-4 col-md-6  align-content-center" > 
+          <div class="working-process-main">
+           <h2 class="working-process-header">
+       Our Analytics Process – How We Deliver Insights 
+      </h2>
+      <p class="working-process-subheader">
+        Turning raw data into decisions—Atman Analytics simplifies complexity with intelligent automation, real-time insights, and secure, role-based access. 
+      </p>
+     <a href="#" class="working-process-btn">Get Started</a>
+     </div>
+    </div>
+        <!-- Step 1 -->
+        <div class="col-lg-4 col-md-6 ">
+          <div class="working-process-card">
+            <span class="working-icon">01</span>
+             <div class="feature-title">Create Your Analytics Account</div>
+            <p>
+              Start with a secure, role-based setup tailored to your team’s decision-making needs. 
+            </p>
+          </div>
+          <div class="working-process-card">
+            <span class="working-icon">03</span>
+             <div class="feature-title">Configure Your KPIs & Alerts</div>
+            <p style="margin-bottom:40px;">
+              Set key metrics and automated alerts to stay ahead of changes and anomalies. 
+            </p>
+          </div>
+        </div>
+        
+        <!-- Step 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="working-process-card">
+            <span class="working-icon">02</span>
+             <div class="feature-title">Connect Your Data Sources </div>
+            <p>
+              Unify structured and unstructured data across platforms for a complete, intelligent view.
+            </p>
+          </div>
+           <div class="working-process-card">
+            <span class="working-icon">04</span>
+             <div class="feature-title">Generate Insights & Reports </div>
+            <p>
+              Use AI to create dashboards, run natural language queries, and unlock predictive intelligence. 
+            </p>
+          </div>
+        </div>
+
+
+      </div>
+
+      <!-- Button -->
+     
     </div>
   </section>
 
-  <!-- ================= AI EDGE SECTION ================= -->
-  <section style="background-color: #fff;" class="ai-edge-section">
-    <h2 class="ai-edge-title">Your Edge with <span>AI</span></h2>
-    <p class="ai-edge-subtitle">AI isn’t about replacing people. It’s about giving you sharper tools, deeper insights,
-      and faster paths to impact. With AgentForce, our AI and analytics platform, we help you unlock intelligence that
-      feels personal and practical.</p>
-    <div class="ai-edge-pills">
-      <button>Churn Predictor</button>
-      <button>Forecaster Agent</button>
-      <button>Segmentation Agent</button>
-      <button>Feedback Analyzer</button>
-      <button>Atman Fusion</button>
-    </div>
-    <img src="adbc0ca5a7cdd0b65bf33618eb1dc5ee8540e0e5.jpg" alt="AI Banner" class="ai-edge-banner" />
-    <img src="button.png" class="ai-edge-cta">
-  </section>
 
-  <section class="last-section" [ngStyle]="{'background-image': 'url(OBJECTS.png)'}">
-    <h1 style="    padding-right: 1000px;">Let’s talk about <br>
-      <span>your business </span> needs!
-    </h1>
-    <img src="Frame 5099.png" class="button-img" alt="">
+<!--Agentic Suites-->
+<section class="security-section">
+  <div class="container">
+    <div class="row align-items-start g-5">
+      <!-- Left Text Column -->
+      <div class="col-lg-4">
+        <h2 class="security-title">
+         <span class="security-highlight"> Agentic Suite: </span> Architect Your Future Atman Analytics
+        </h2>
+        <p class="security-description mt-3">
+          Step into tomorrow with Atman Agentic Suite—AI-native tools that decode signals, predict outcomes, and evolve your business in real time. Experience autonomous intelligence, adaptive systems, and future-ready decisions. 
+        </p>
+      </div>
+
+      <!-- Right Features Column -->
+      <div class="col-lg-8">
+        <div class="feature-box">
+          <!-- Feature 1 -->
+          <div class="feature-item1" >
+            <div>
+              <div class="feature-title1" >Feedback Analyzer </div>
+              <div class="feature-text1">
+               Decode customer sentiment using NLP to uncover pain points and drive precision-based service improvements. 
+              </div>
+            </div>
+            <img src="/ai/feedback.png" alt="Data Icon" class="feature-icon">
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="feature-item1">
+            <div>
+              <div class="feature-title1" >Churn Predictor </div>
+              <div class="feature-text1">
+                Predict and prevent customer churn with AI models that boost retention and lifetime value strategies. 
+              </div>
+            </div>
+            <img src="/ai/churn.png" alt="Lock Icon" class="feature-icon">
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="feature-item1" >
+            <div>
+              <div class="feature-title1" >Forecaster Agent </div>
+              <div class="feature-text1">
+                Forecast demand and revenue trends using predictive analytics for smarter inventory and growth planning. 
+              </div>
+            </div>
+            <img src="/ai/forcaster.png" alt="Integration Icon" class="feature-icon">
+          </div>
+ <!-- Feature 4 -->
+           <div class="feature-item1">
+            <div>
+              <div class="feature-title1" >Segmentation Agent </div>
+              <div class="feature-text1">
+                Auto-segment customers and products dynamically to personalize marketing and uncover hidden growth opportunities. 
+              </div>
+            </div>
+            <img src="/ai/segmentation.png" alt="Integration Icon" class="feature-icon">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 
-  <footer  class="footer">
+
+<!--Churn Predictor-->
+<section class="working-process-section">
+    <div class="container">
+      <!-- Header Section -->
+    
+      
+      <!-- Cards for Process Steps -->
+      <div class="row text-center text-md-start">
+         <div class="col-lg-4 col-md-6  align-content-center" > 
+          <div class="working-process-main">
+           <h2 class="working-process-header">
+      Churn Predictor - Spot churn early, act faster. 
+      </h2>
+      <p class="working-process-subheader">
+        Help your team reduce customer loss using AI-powered insights that highlight risks and improve retention strategies. 
+      </p>
+     <a href="#" class="working-process-btn">Get Started</a>
+     </div>
+    </div>
+        <!-- Step 1 -->
+        <div class="col-lg-4 col-md-6 ">
+          <div class="working-process-card">
+            <span class="working-icon">01</span>
+             <div class="feature-title"> Identify churn risk </div>
+            <p>
+              Quickly detect customers likely to leave using predictive models based on behavior and engagement 
+            </p>
+          </div>
+          <div class="working-process-card">
+            <span class="working-icon">03</span>
+             <div class="feature-title">Customer retention strategy </div>
+            <p >
+              Use real-time dashboards and tailored plans to stay ahead of churn and boost satisfaction.  
+            </p>
+          </div>
+        </div>
+        
+        <!-- Step 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="working-process-card">
+            <span class="working-icon">02</span>
+             <div class="feature-title">Retain key customers </div>
+            <p style="margin-bottom:40px;">
+              Focus on high-value customers with AI-guided actions that improve loyalty and lifetime value. 
+            </p>
+          </div>
+           <div class="working-process-card">
+            <span class="working-icon">04</span>
+             <div class="feature-title">Early warning system</div>
+            <p>
+              Get alerts before customers disengage, so your team can act proactively and prevent loss.
+            </p>
+          </div>
+        </div>
+
+
+      </div>
+
+      <!-- Button -->
+     
+    </div>
+  </section>
+
+<!--Feedback Analyzer-->
+<section class="working-process-section">
+    <div class="container">
+      <!-- Header Section -->
+    
+      
+      <!-- Cards for Process Steps -->
+      <div class="row text-center text-md-start">
+         
+        <!-- Step 1 -->
+        <div class="col-lg-4 col-md-6 ">
+          <div class="working-process-card">
+            <span class="working-icon">01</span>
+             <div class="feature-title">Sentiment detection across languages</div>
+            <p>
+              Analyze feedback in multiple languages to uncover emotions, intent, and satisfaction levels. 
+            </p>
+          </div>
+          <div class="working-process-card">
+            <span class="working-icon">03</span>
+             <div class="feature-title">Pain point identification</div>
+            <p style="margin-bottom:50px;">
+              Spot recurring issues in feedback to prioritize fixes and reduce friction. 
+            </p>
+          </div>
+        </div>
+        
+        <!-- Step 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="working-process-card">
+            <span class="working-icon">02</span>
+             <div class="feature-title">Real-time feedback insights </div>
+            <p style="margin-bottom:75px;">
+              Track customer sentiment trends instantly to respond quickly and improve experiences.  
+            </p>
+          </div>
+           <div class="working-process-card">
+            <span class="working-icon">04</span>
+             <div class="feature-title">Insight-to-action recommendations</div>
+            <p>
+              Convert raw feedback into clear, actionable suggestions for teams across your organization. 
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6  align-content-center" > 
+          <div class="working-process-main">
+           <h2 class="working-process-header">
+      Feedback Analyzer- Turn customer feedback into clarity. 
+      </h2>
+      <p class="working-process-subheader">
+        Use AI to understand sentiment, detect issues, and guide improvements across products, services, and support. 
+      </p>
+     <a href="#" class="working-process-btn">Get Started</a>
+     </div>
+    </div>
+
+
+      </div>
+
+      <!-- Button -->
+     
+    </div>
+  </section>
+
+
+<!--Forecaster Agent-->
+<section class="working-process-section">
+    <div class="container">
+      <!-- Header Section -->
+    
+      
+      <!-- Cards for Process Steps -->
+      <div class="row text-center text-md-start">
+         <div class="col-lg-4 col-md-6  align-content-center" > 
+          <div class="working-process-main">
+           <h2 class="working-process-header">
+      Forecaster Agent- Plan ahead with predictive clarity.
+      </h2>
+      <p class="working-process-subheader">
+       Use AI-powered forecasting to anticipate demand, optimize inventory, and guide strategic decisions with confidence. 
+      </p>
+     <a href="#" class="working-process-btn">Get Started</a>
+     </div>
+    </div>
+        <!-- Step 1 -->
+        <div class="col-lg-4 col-md-6 ">
+          <div class="working-process-card">
+            <span class="working-icon">01</span>
+             <div class="feature-title">Sales trend analysis</div>
+            <p>
+              Identify seasonal and emerging patterns to align marketing and supply chain efforts.
+            </p>
+          </div>
+          <div class="working-process-card">
+            <span class="working-icon">03</span>
+             <div class="feature-title"> Inventory planning support </div>
+            <p >
+              Balance stock levels with demand forecasts to reduce waste and improve availability.  
+            </p>
+          </div>
+        </div>
+        
+        <!-- Step 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="working-process-card">
+            <span class="working-icon">02</span>
+             <div class="feature-title">Revenue forecasting models </div>
+            <p>
+              Project future earnings using historical data and predictive algorithms.  
+            </p>
+          </div>
+           <div class="working-process-card">
+            <span class="working-icon">04</span>
+             <div class="feature-title">Custom forecast filters </div>
+            <p>
+              Drill down by region, product, or time to refine planning and resource allocation.
+            </p>
+          </div>
+        </div>
+
+
+      </div>
+
+      <!-- Button -->
+     
+    </div>
+  </section>
+
+<!-- Segmentation Agent-->
+<section class="working-process-section">
+    <div class="container">
+      <!-- Header Section -->
+    
+      
+      <!-- Cards for Process Steps -->
+      <div class="row text-center text-md-start">
+        
+        <!-- Step 1 -->
+        <div class="col-lg-4 col-md-6 align-content-center">
+          <div class="working-process-card">
+            <span class="working-icon">01</span>
+             <div class="feature-title">Behavior-based segmentation  </div>
+            <p>
+              Classify users by actions and lifecycle stage for more relevant messaging.
+            </p>
+          </div>
+          <div class="working-process-card">
+            <span class="working-icon">03</span>
+             <div class="feature-title"> Auto-updating segments </div>
+            <p >
+              Keep segments fresh as customer behavior evolves over time. 
+            </p>
+          </div>
+        </div>
+        
+        <!-- Step 2 -->
+        <div class="col-lg-4 col-md-6 align-content-center">
+          <div class="working-process-card">
+            <span class="working-icon">02</span>
+             <div class="feature-title">Product affinity mapping </div>
+            <p>
+              Discover which products resonate with which segments to refine offerings. 
+            </p>
+          </div>
+           <div class="working-process-card">
+            <span class="working-icon">04</span>
+             <div class="feature-title">Cross-channel personalization </div>
+            <p>
+              Deliver consistent, tailored experiences across email, web, and CRM platforms.
+            </p>
+          </div>
+        </div>
+
+ <div class="col-lg-4 col-md-6  align-content-center" > 
+          <div class="working-process-main">
+           <h2 class="working-process-header">
+      Segmentation Agent- Target smarter with dynamic segmentation. 
+      </h2>
+      <p class="working-process-subheader">
+       Automatically group customers and products using behavior and preferences to personalize engagement and uncover growth. 
+      </p>
+     <a href="#" class="working-process-btn">Get Started</a>
+     </div>
+    </div>
+      </div>
+
+      <!-- Button -->
+     
+    </div>
+  </section>
+
+<!--Atman Fusion-->
+<section class="working-process-section">
+    <div class="container">
+      <!-- Header Section -->
+    
+      
+      <!-- Cards for Process Steps -->
+      <div class="row text-center text-md-start">
+         <div class="col-lg-4 col-md-6  align-content-center" > 
+          <div class="working-process-main">
+           <h2 class="working-process-header">
+      Atman Fusion: Where Data Meets Intelligent Action
+      </h2>
+      <p class="working-process-subheader">
+       Think of Atman Fusion as the central nervous system of the Atman Agentic Suite. It’s the layer that quietly connects all your data—from CRMs, ERPs, customer touchpoints, and operational systems—and makes it usable in real time. 
+     <a href="#" class="working-process-btn">Get Started</a>
+     </div>
+    </div>
+        <!-- Step 1 -->
+        <div class="col-lg-4 col-md-6 ">
+          <div class="working-process-card">
+            <span class="working-icon">01</span>
+             <div class="feature-title">Data Ingestion</div>
+            <p style="padding-bottom: 50px;"> 
+Fusion pulls in structured and unstructured data from across your ecosystem—no silos, no lag. 
+            </p>
+          </div>
+          <div class="working-process-card">
+            <span class="working-icon">03</span>
+             <div class="feature-title">Real-Time Activation </div>
+            <p >
+              Agents use this orchestrated data to make decisions, send alerts, personalize experiences, or automate tasks—instantly.  
+            </p>
+          </div>
+        </div>
+        
+        <!-- Step 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="working-process-card">
+            <span class="working-icon">02</span>
+             <div class="feature-title">Contextualization</div>
+            <p>
+              It cleans, aligns, and enriches the data so your AI agents understand the full picture—whether it’s a customer journey, a supply chain event, or a marketing trigger.
+            </p>
+          </div>
+           <div class="working-process-card">
+            <span class="working-icon">04</span>
+             <div class="feature-title">Feedback Loop</div>
+            <p>
+              Every action feeds back into Fusion, improving future decisions and continuously refining your business intelligence.
+            </p>
+          </div>
+        </div>
+
+
+      </div>
+      <br>
+ <div class="working-process-card">
+            <p> 
+By aligning seamlessly with the Agentic Suite’s mission—to deliver authentic, autonomous digital intelligence—Atman Fusion ensures your agents aren’t just reactive, they’re proactive.  
+            </p>
+            <p>
+              No more waiting on reports. No more disconnected systems. Just real-time intelligence that moves your business forward. 
+            </p>
+          </div>
+      <!-- Button -->
+     
+    </div>
+  </section>
+    <footer  class="footer">
     <div class="footer-container">
       <a href="#"><img src="light-logo.png" alt="Logo" class="footer-logo"></a>
       <p>©2025-26 Atman Cloud Consultants Pvt. Ltd.</p>
@@ -909,4 +1264,7 @@
       </ul>
     </div>
   </footer>
-  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

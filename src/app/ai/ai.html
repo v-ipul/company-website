@@ -1204,8 +1204,10 @@
       </h2>
       <p class="working-process-subheader">
        Think of Atman Fusion as the central nervous system of the Atman Agentic Suite. It’s the layer that quietly connects all your data—from CRMs, ERPs, customer touchpoints, and operational systems—and makes it usable in real time. 
+    </p>
      <a href="#" class="working-process-btn">Get Started</a>
      </div>
+     
     </div>
         <!-- Step 1 -->
         <div class="col-lg-4 col-md-6 ">
@@ -1258,6 +1260,55 @@ By aligning seamlessly with the Agentic Suite’s mission—to deliver authentic
      
     </div>
   </section>
+
+
+<div class="container py-5">
+  <div class="text-center mb-4">
+    <small class="text-uppercase text-muted">Connect</small>
+    <h2 class="fw-bold">Do you have any <span class="text-dark">questions</span> for us?</h2>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+      <div class="card shadow-sm p-4" style="border: white;">
+        <h5 class="fw-bold mb-2">Contact Form</h5>
+        <p class="text-muted">Get in touch and let us know how we can help</p>
+<!--(ngSubmit)="onSubmit()" [formGroup]="contactForm"-->
+        <form  novalidate>
+          <div class="row g-3">
+            <div class="col-md-6" style="padding: 16px 0;">
+              <input type="text" class="form-control form-line" formControlName="name" placeholder="Name Surname" required>
+            </div>
+            <div class="col-md-6" style="padding: 16px 0;">
+              <input type="email" class="form-control form-line" formControlName="email" placeholder="E-Mail Address" required>
+            </div>
+            <div class="col-md-6" style="padding: 16px 0;">
+              <input type="text" class="form-control form-line" formControlName="phone" placeholder="Phone Number">
+            </div>
+            <div class="col-md-6" style="padding: 16px 0;">
+              <input type="text" class="form-control form-line" formControlName="company" placeholder="Your Company">
+            </div>
+            <div class="col-12" style="padding: 16px 0;">
+              <textarea class="form-control" formControlName="message" rows="4" placeholder="Your Message" required></textarea>
+            </div>
+          </div>
+
+          <div class="text-start mt-4">
+            <!--[disabled]="loading"-->
+            <button type="submit" class="btn cfx px-4" >
+            <!-- {{ loading ? 'Sending...' : 'Submit ›' }}--> 
+              Submit
+            </button>
+          </div>
+        </form>
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
     <footer  class="footer">
     <div class="footer-container">
       <a href="#"><img src="light-logo.png" alt="Logo" class="footer-logo"></a>

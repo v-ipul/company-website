@@ -6,6 +6,7 @@ import { OurBecomingComponent } from './our-becoming/our-becoming';
 import { PrivacyPolicy } from './pages/privacy-policy/privacy-policy';
 import { CookieConsentComponent } from './shared/cookie-consent/cookie-consent';
 import { Ai } from './ai/ai';
+import { News } from './news/news';
 
 export const routes: Routes = [
    { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -16,7 +17,8 @@ export const routes: Routes = [
    // app-routing.module.ts
 { path: 'privacy', component: PrivacyPolicy },
 { path: 'cookie', component: CookieConsentComponent },
-{ path: 'ai', component: Ai }
+{ path: 'ai', component: Ai },
+{ path: 'news', component: News }
 
   
 ];

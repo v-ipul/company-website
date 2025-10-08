@@ -1348,10 +1348,12 @@ nav:hover ~ header {
 
     /* Soft abstract headers (no external images) */
     .paint-a{
-      background: linear-gradient(135deg,#fde1d6, #ffd0e3 40%, #ffd27a);
+         background: url('/ai/orange.png') no-repeat center center;
+  background-size: cover;
     }
     .paint-b{
-      background: linear-gradient(135deg,#c3f1ff, #e3f3ff 50%, #d8eaff);
+        background: url('/ai/blue.png') no-repeat center center;
+  background-size: cover;
     }
 
     /* Typo utilities */

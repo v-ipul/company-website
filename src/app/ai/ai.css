@@ -447,7 +447,7 @@ nav a {
     .banner {
       position: relative;
       height: 300px;
-      background: url('/industries/industries-banner.png') no-repeat center center;
+      background: url('/ai/ai-banner.png') no-repeat center center;
       background-size: cover;
       color: white;
       display: flex;

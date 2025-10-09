@@ -134,7 +134,7 @@ body{
    .banner {
             position: relative;
             height: 300px;
-           background: url('/services/service-banner.png') no-repeat center center; /* Use local image path here */
+           background: url('/ai/news-banner.png') no-repeat center center; /* Use local image path here */
             background-size: cover;
           color: white;
             display: flex;

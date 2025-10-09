@@ -105,7 +105,7 @@
                     Atman harnesses AI to unlock potential, inspire progress, and reimagine
                     tomorrow.
                   </p>
-                  <a href="#" class="see-all">See all →</a>
+                  <a routerLink="/ai" routerLinkActive="active" class="see-all">See all →</a>
                 </div>
 
                 <!-- Right Section -->
@@ -329,6 +329,9 @@
               </div>
             </div>
           </div>
+           <div class="dropdown" >
+            <a href="/news">News</a>
+            </div>
 
         </nav>
         <div class="dropdown" (mouseenter)="onContactDropdownHover(true)" (mouseleave)="onContactDropdownHover(false)">
@@ -352,8 +355,7 @@
                   <div>
                     <h4>Email Us</h4>
                     <div class="sub-manu">
-                      <h2>info&#64;yourcompany.com</h2>
-                      <h2>support&#64;yourcompany.com</h2>
+                      <h2>sales@atmanconsultants.com</h2>
 
                     </div>
                   </div>
@@ -364,8 +366,8 @@
                   <div>
                     <h4>Call Us</h4>
                     <div class="sub-manu">
-                      <h2>+91 98765 43210</h2>
-                      <h2>+91 91234 56789</h2>
+                      <h2>IN +91 985 041 7098</h2>
+                      <h2>US +1 650 304 0503</h2>
                     </div>
                   </div>
                 </div>
@@ -590,27 +592,26 @@
             </div>
           </div>
         </div>
-
+        
         <!-- Contact Us -->
         <div class="mobile-dropdown">
-          <div class="mobile-dropdown-header" (click)="toggleMega(5)">
-            Contact Us <span [class.rotate]="activeMegaIndex === 5">▸</span>
+          <div class="mobile-dropdown-header" (click)="toggleMega(6)">
+            Contact Us <span [class.rotate]="activeMegaIndex === 6">▸</span>
           </div>
-          <div class="mobile-submenu" [class.show]="activeMegaIndex === 5">
+          <div class="mobile-submenu" [class.show]="activeMegaIndex === 6">
             <div class="menu-item">
               <img src="icon/view-grid.png" class="icon" alt="">
               <h4>Email Us</h4>
               <div class="sub-manu">
-                <h5>infoyourcompany.com</h5>
-                <h5>supportyourcompany.com</h5>
+                 <h2>sales@atmanconsultants.com</h2>
               </div>
             </div>
             <div class="menu-item">
               <img src="icon/Industries_we_serve.png" class="icon" alt="">
               <h4>Call Us</h4>
               <div class="sub-manu">
-                <h5>+91 98765 43210</h5>
-                <h5>+91 91234 56789</h5>
+                  <h2>IN +91 985 041 7098</h2>
+                  <h2>US +1 650 304 0503</h2>
               </div>
             </div>
             <div class="menu-item">
@@ -644,7 +645,7 @@
     </div>
     </div>
 
-  <section id="future-ready" class="py-5">
+  <section id="future-ready" style="padding: 50px 20px;">
       <div class="container px-5">
        
       <!-- Title Row -->
@@ -813,7 +814,7 @@
       <p class="working-process-subheader">
         Turning raw data into decisions—Atman Analytics simplifies complexity with intelligent automation, real-time insights, and secure, role-based access. 
       </p>
-     <a href="#" class="working-process-btn">Get Started</a>
+     <a  class="working-process-btn">Get Started</a>
      </div>
     </div>
         <!-- Step 1 -->
@@ -825,7 +826,7 @@
               Start with a secure, role-based setup tailored to your team’s decision-making needs. 
             </p>
           </div>
-          <div class="working-process-card">
+          <div class="working-process-card1">
             <span class="working-icon">03</span>
              <div class="feature-title">Configure Your KPIs & Alerts</div>
             <p style="margin-bottom:40px;">
@@ -843,7 +844,7 @@
               Unify structured and unstructured data across platforms for a complete, intelligent view.
             </p>
           </div>
-           <div class="working-process-card">
+           <div class="working-process-card1">
             <span class="working-icon">04</span>
              <div class="feature-title">Generate Insights & Reports </div>
             <p>
@@ -944,7 +945,7 @@
       <p class="working-process-subheader">
         Help your team reduce customer loss using AI-powered insights that highlight risks and improve retention strategies. 
       </p>
-     <a href="#" class="working-process-btn">Get Started</a>
+     <a class="working-process-btn">Get Started</a>
      </div>
     </div>
         <!-- Step 1 -->
@@ -956,7 +957,7 @@
               Quickly detect customers likely to leave using predictive models based on behavior and engagement 
             </p>
           </div>
-          <div class="working-process-card">
+          <div class="working-process-card1">
             <span class="working-icon">03</span>
              <div class="feature-title">Customer retention strategy </div>
             <p >
@@ -974,7 +975,7 @@
               Focus on high-value customers with AI-guided actions that improve loyalty and lifetime value. 
             </p>
           </div>
-           <div class="working-process-card">
+           <div class="working-process-card1">
             <span class="working-icon">04</span>
              <div class="feature-title">Early warning system</div>
             <p>
@@ -1009,7 +1010,7 @@
               Analyze feedback in multiple languages to uncover emotions, intent, and satisfaction levels. 
             </p>
           </div>
-          <div class="working-process-card">
+          <div class="working-process-card1">
             <span class="working-icon">03</span>
              <div class="feature-title">Pain point identification</div>
             <p style="margin-bottom:50px;">
@@ -1027,7 +1028,7 @@
               Track customer sentiment trends instantly to respond quickly and improve experiences.  
             </p>
           </div>
-           <div class="working-process-card">
+           <div class="working-process-card1">
             <span class="working-icon">04</span>
              <div class="feature-title">Insight-to-action recommendations</div>
             <p>
@@ -1043,7 +1044,7 @@
       <p class="working-process-subheader">
         Use AI to understand sentiment, detect issues, and guide improvements across products, services, and support. 
       </p>
-     <a href="#" class="working-process-btn">Get Started</a>
+     <a class="working-process-btn">Get Started</a>
      </div>
     </div>
 
@@ -1072,7 +1073,7 @@
       <p class="working-process-subheader">
        Use AI-powered forecasting to anticipate demand, optimize inventory, and guide strategic decisions with confidence. 
       </p>
-     <a href="#" class="working-process-btn">Get Started</a>
+     <a class="working-process-btn">Get Started</a>
      </div>
     </div>
         <!-- Step 1 -->
@@ -1084,7 +1085,7 @@
               Identify seasonal and emerging patterns to align marketing and supply chain efforts.
             </p>
           </div>
-          <div class="working-process-card">
+          <div class="working-process-card1">
             <span class="working-icon">03</span>
              <div class="feature-title"> Inventory planning support </div>
             <p >
@@ -1102,7 +1103,7 @@
               Project future earnings using historical data and predictive algorithms.  
             </p>
           </div>
-           <div class="working-process-card">
+           <div class="working-process-card1">
             <span class="working-icon">04</span>
              <div class="feature-title">Custom forecast filters </div>
             <p>
@@ -1141,7 +1142,7 @@
               Classify users by actions and lifecycle stage for more relevant messaging.
             </p>
           </div>
-          <div class="working-process-card">
+          <div class="working-process-card1">
             <span class="working-icon">03</span>
              <div class="feature-title"> Auto-updating segments </div>
             <p >
@@ -1159,7 +1160,7 @@
               Discover which products resonate with which segments to refine offerings. 
             </p>
           </div>
-           <div class="working-process-card">
+           <div class="working-process-card1">
             <span class="working-icon">04</span>
              <div class="feature-title">Cross-channel personalization </div>
             <p>
@@ -1176,7 +1177,7 @@
       <p class="working-process-subheader">
        Automatically group customers and products using behavior and preferences to personalize engagement and uncover growth. 
       </p>
-     <a href="#" class="working-process-btn">Get Started</a>
+     <a class="working-process-btn">Get Started</a>
      </div>
     </div>
       </div>
@@ -1205,7 +1206,7 @@
       <p class="working-process-subheader">
        Think of Atman Fusion as the central nervous system of the Atman Agentic Suite. It’s the layer that quietly connects all your data—from CRMs, ERPs, customer touchpoints, and operational systems—and makes it usable in real time. 
     </p>
-     <a href="#" class="working-process-btn">Get Started</a>
+     <a class="working-process-btn">Get Started</a>
      </div>
      
     </div>
@@ -1218,7 +1219,7 @@
 Fusion pulls in structured and unstructured data from across your ecosystem—no silos, no lag. 
             </p>
           </div>
-          <div class="working-process-card">
+          <div class="working-process-card1">
             <span class="working-icon">03</span>
              <div class="feature-title">Real-Time Activation </div>
             <p >
@@ -1236,7 +1237,7 @@ Fusion pulls in structured and unstructured data from across your ecosystem—no
               It cleans, aligns, and enriches the data so your AI agents understand the full picture—whether it’s a customer journey, a supply chain event, or a marketing trigger.
             </p>
           </div>
-           <div class="working-process-card">
+           <div class="working-process-card1">
             <span class="working-icon">04</span>
              <div class="feature-title">Feedback Loop</div>
             <p>

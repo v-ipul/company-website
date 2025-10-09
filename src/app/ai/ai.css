@@ -1382,7 +1382,7 @@ nav:hover ~ header {
     }
 .security-section {
   background-color: #f9f9f9;
-  padding: 60px 20px;
+  padding: 50px 20px;
 }
 
 .security-title {
@@ -1416,7 +1416,7 @@ nav:hover ~ header {
   position: relative;
   overflow: hidden;
   height: 90px;  /* Initially height should only fit the title */
-  transition: height 0.8s ease-out; /* Smooth transition for height */
+  transition: height 1s ease-out; /* Smooth transition for height */
 }
 
 .feature-item:last-child {
@@ -1442,7 +1442,7 @@ nav:hover ~ header {
   transform: translateY(20px); /* Slide it out of the box */
   max-height: 0;
   overflow: hidden; /* Hide the content initially */
-  transition: transform 0.8s ease-out, opacity 0.8s ease-out, max-height 0.8s ease-out;
+  transition: transform 2s ease-out, opacity 0.4s ease-out, max-height 2s ease-out;
 }
 
 .feature-item:hover {
@@ -1506,9 +1506,27 @@ nav:hover ~ header {
       color: #333;
     }
 
+  .working-process-card1 {
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 15px;
+      padding: 30px;
+      text-align: left;
+      margin-top: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+ .working-process-card1 h5 {
+      font-size: 1.75rem;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .working-process-card1 p {
+      font-size: 1rem;
+      color: #333;
+    }
     .working-process-btn {
-      padding: 10px 25px;
-      font-size: 1.1rem;
+      padding: 15px 30px;
+      font-size: 0.8rem;
       border-radius: 25px;
       background-color: #ffffff;
       color: rgb(38, 38, 38);
@@ -1517,10 +1535,7 @@ nav:hover ~ header {
       font-weight: 600;
     }
 
-    .working-process-btn:hover {
-      background-color: #0056b3;
-      text-decoration: none;
-    }
+  
 
     /* Responsive Styles */
     @media (max-width: 768px) {

@@ -11,7 +11,8 @@ interface ServiceCard {
 
 @Component({
   selector: 'app-news',
-  imports: [],
+   standalone: true,
+  imports: [CommonModule, RouterLink],
   templateUrl: './news.html',
   styleUrl: './news.css'
 })

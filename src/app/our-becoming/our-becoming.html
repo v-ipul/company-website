@@ -1,9 +1,9 @@
 <section class="hero-section">
-  <header [class.hover-active]="isHovering">
+    <header [class.hover-active]="isHovering">
     <div class="header-container">
       <!-- Logos -->
-      <img src="logo-white.png" class="logo logo-white" alt="Logo White" routerLink="/" routerLinkActive="active" />
-      <img src="logo-black.png" class="logo logo-black" alt="Logo Black"  routerLink="/" routerLinkActive="active"/>
+     
+       <img src="logo-black.png" class="logo logo-black menu-item" routerLink="/" routerLinkActive="active" alt="Logo Black" />
 
       <div class="header-section">
         <nav>
@@ -21,7 +21,7 @@
                   <a href="#" class="see-all">See all →</a>
                 </div>
 
-                 <div class="mega-right">
+                <div class="mega-right">
                   <div class="menu-item" routerLink="/services" routerLinkActive="active">
                     <img src="icon/view-grid.png" class="icon" alt="">
                     <div>
@@ -86,11 +86,10 @@
                 <div class="mega-left">
                   <h3>Artificial Intelligence</h3>
                   <p>
-                    Atman harnesses AI to unlock potential, inspire progress, and
-                    reimagine
+                    Atman harnesses AI to unlock potential, inspire progress, and reimagine
                     tomorrow.
                   </p>
-                  <a href="#" class="see-all">See all →</a>
+                  <a routerLink="/ai" routerLinkActive="active" class="see-all">See all →</a>
                 </div>
 
                 <!-- Right Section -->
@@ -314,6 +313,9 @@
               </div>
             </div>
           </div>
+           <div class="dropdown" >
+            <a href="/news">News</a>
+            </div>
 
         </nav>
         <div class="dropdown" (mouseenter)="onContactDropdownHover(true)" (mouseleave)="onContactDropdownHover(false)">
@@ -337,8 +339,7 @@
                   <div>
                     <h4>Email Us</h4>
                     <div class="sub-manu">
-                      <h2>info&#64;yourcompany.com</h2>
-                      <h2>support&#64;yourcompany.com</h2>
+                      <h2>sales@atmanconsultants.com</h2>
 
                     </div>
                   </div>
@@ -349,8 +350,8 @@
                   <div>
                     <h4>Call Us</h4>
                     <div class="sub-manu">
-                      <h2>+91 98765 43210</h2>
-                      <h2>+91 91234 56789</h2>
+                      <h2>IN +91 985 041 7098</h2>
+                      <h2>US +1 650 304 0503</h2>
                     </div>
                   </div>
                 </div>
@@ -375,6 +376,8 @@
       <!-- Mobile Toggle -->
       <div class="mobile-toggle" (click)="toggleMobileMenu()">☰</div>
 
+
+
       <!-- Mobile Menu -->
       <div class="mobile-menu" [class.open]="mobileMenuOpen">
 
@@ -388,63 +391,63 @@
               <img src="icon/view-grid.png" class="icon" alt="">
               <h4>Analytics</h4>
               <div class="sub-manu">
-                <h2>Churn Predictor</h2>
-                <h2>Forecaster Agent</h2>
-                <h2>Segmentation Agent</h2>
-                <h2>Feedback Analyzer</h2>
+                <h5>Churn Predictor</h5>
+                <h5>Forecaster Agent</h5>
+                <h5>Segmentation Agent</h5>
+                <h5>Feedback Analyzer</h5>
               </div>
             </div>
             <div class="menu-item">
               <img src="icon/Industries_we_serve.png" class="icon" alt="">
               <h4>Industries We Serve</h4>
               <div class="sub-manu">
-                <h2>Manufacturing</h2>
-                <h2>Banking & Finance</h2>
-                <h2>Healthcare</h2>
-                <h2>Insurance</h2>
-                <h2>High Tech</h2>
-                <h2>Industrial</h2>
-                <h2>Life Sciences</h2>
+                <h5>Manufacturing</h5>
+                <h5>Banking & Finance</h5>
+                <h5>Healthcare</h5>
+                <h5>Insurance</h5>
+                <h5>High Tech</h5>
+                <h5>Industrial</h5>
+                <h5>Life Sciences</h5>
               </div>
             </div>
             <div class="menu-item">
               <img src="icon/diamond_9346758 1.png" class="icon" alt="">
               <h4>Jewels</h4>
               <div class="sub-manu">
-                <h2>Loan Origination System</h2>
-                <h2>Sample Management Solution</h2>
-                <h2>Clinic Management Solution</h2>
-                <h2>Dealership Management Solution</h2>
-                <h2>Check In/Check Out Accelerator</h2>
-                <h2>Visit Plan Accelerator</h2>
-                <h2>Expense Management Accelerator</h2>
+                <h5>Loan Origination System</h5>
+                <h5>Sample Management Solution</h5>
+                <h5>Clinic Management Solution</h5>
+                <h5>Dealership Management Solution</h5>
+                <h5>Check In/Check Out Accelerator</h5>
+                <h5>Visit Plan Accelerator</h5>
+                <h5>Expense Management Accelerator</h5>
               </div>
             </div>
           </div>
         </div>
 
         <!-- AI -->
-        <div class="mobile-dropdown" >
+        <div class="mobile-dropdown">
           <div class="mobile-dropdown-header" (click)="toggleMega(1)">
             AI <span [class.rotate]="activeMegaIndex === 1">▸</span>
           </div>
           <div class="mobile-submenu" [class.show]="activeMegaIndex === 1">
-            <div class="menu-item" routerLink="/ai" routerLinkActive="active">
+            <div class="menu-item">
               <img src="icon/view-grid.png" class="icon" alt="">
               <h4>Analytics</h4>
               <p>Turning data into foresight</p>
             </div>
-            <div class="menu-item" routerLink="/ai" routerLinkActive="active">
+            <div class="menu-item">
               <img src="icon/Industries_we_serve.png" class="icon" alt="">
               <h4>Agentic Suite</h4>
               <div class="sub-manu">
-                <h2>Churn Predictor</h2>
-                <h2>Forecaster Agent</h2>
-                <h2>Segmentation Agent</h2>
-                <h2>Feedback Analyzer</h2>
+                <h5>Churn Predictor</h5>
+                <h5>Forecaster Agent</h5>
+                <h5>Segmentation Agent</h5>
+                <h5>Feedback Analyzer</h5>
               </div>
             </div>
-            <div class="menu-item" routerLink="/ai" routerLinkActive="active">
+            <div class="menu-item">
               <img src="icon/diamond_9346758 1.png" class="icon" alt="">
               <h4>Atman Fusion</h4>
               <p>Seamless integration, real-time insights, smarter automation</p>
@@ -506,30 +509,30 @@
               <img src="icon/view-grid.png" class="icon" alt="">
               <h4>Thought Leadership</h4>
               <div class="sub-manu">
-                <h2>Research Papers</h2>
-                <h2>Whitepapers</h2>
-                <h2>Industry Trends</h2>
-                <h2>Innovation Guides</h2>
+                <h5>Research Papers</h5>
+                <h5>Whitepapers</h5>
+                <h5>Industry Trends</h5>
+                <h5>Innovation Guides</h5>
               </div>
             </div>
             <div class="menu-item">
               <img src="icon/Industries_we_serve.png" class="icon" alt="">
               <h4>Knowledge Hub</h4>
               <div class="sub-manu">
-                <h2>Case Studies</h2>
-                <h2>Success Stories</h2>
-                <h2>Best Practices</h2>
-                <h2>Playbooks</h2>
+                <h5>Case Studies</h5>
+                <h5>Success Stories</h5>
+                <h5>Best Practices</h5>
+                <h5>Playbooks</h5>
               </div>
             </div>
             <div class="menu-item">
               <img src="icon/diamond_9346758 1.png" class="icon" alt="">
               <h4>Strategic Insights</h4>
               <div class="sub-manu">
-                <h2>Business Frameworks</h2>
-                <h2>Leadership Lessons</h2>
-                <h2>Transformation Roadmaps</h2>
-                <h2>Future Forecasts</h2>
+                <h5>Business Frameworks</h5>
+                <h5>Leadership Lessons</h5>
+                <h5>Transformation Roadmaps</h5>
+                <h5>Future Forecasts</h5>
               </div>
             </div>
           </div>
@@ -545,64 +548,63 @@
               <img src="icon/view-grid.png" class="icon" alt="">
               <h4>Our Mission</h4>
               <div class="sub-manu">
-                <h2>Community Development</h2>
-                <h2>Educational Programs</h2>
-                <h2>Social Innovation</h2>
-                <h2>Sustainability Goals</h2>
+                <h5>Community Development</h5>
+                <h5>Educational Programs</h5>
+                <h5>Social Innovation</h5>
+                <h5>Sustainability Goals</h5>
               </div>
             </div>
             <div class="menu-item">
               <img src="icon/Industries_we_serve.png" class="icon" alt="">
               <h4>Key Projects</h4>
               <div class="sub-manu">
-                <h2>Women Empowerment</h2>
-                <h2>Healthcare Initiatives</h2>
-                <h2>Environmental Actions</h2>
-                <h2>Youth Leadership</h2>
+                <h5>Women Empowerment</h5>
+                <h5>Healthcare Initiatives</h5>
+                <h5>Environmental Actions</h5>
+                <h5>Youth Leadership</h5>
               </div>
             </div>
             <div class="menu-item">
               <img src="icon/diamond_9346758 1.png" class="icon" alt="">
               <h4>Impact & Stories</h4>
               <div class="sub-manu">
-                <h2>Impact Reports</h2>
-                <h2>Success Stories</h2>
-                <h2>Partner Collaborations</h2>
-                <h2>Volunteer Programs</h2>
+                <h5>Impact Reports</h5>
+                <h5>Success Stories</h5>
+                <h5>Partner Collaborations</h5>
+                <h5>Volunteer Programs</h5>
               </div>
             </div>
           </div>
         </div>
-
+        
         <!-- Contact Us -->
         <div class="mobile-dropdown">
-          <div class="mobile-dropdown-header" (click)="toggleMega(5)">
-            Contact Us <span [class.rotate]="activeMegaIndex === 5">▸</span>
+          <div class="mobile-dropdown-header" (click)="toggleMega(6)">
+            Contact Us <span [class.rotate]="activeMegaIndex === 6">▸</span>
           </div>
-          <div class="mobile-submenu" [class.show]="activeMegaIndex === 5">
+          <div class="mobile-submenu" [class.show]="activeMegaIndex === 6">
             <div class="menu-item">
               <img src="icon/view-grid.png" class="icon" alt="">
               <h4>Email Us</h4>
               <div class="sub-manu">
-                <h5>infoyourcompany.com</h5>
-                <h5>supportyourcompany.com</h5>
+                 <h2>sales@atmanconsultants.com</h2>
               </div>
             </div>
             <div class="menu-item">
               <img src="icon/Industries_we_serve.png" class="icon" alt="">
               <h4>Call Us</h4>
               <div class="sub-manu">
-                <h2>+91 98765 43210</h2>
-                <h2>+91 91234 56789</h2>
+                  <h2>IN +91 985 041 7098</h2>
+                  <h2>US +1 650 304 0503</h2>
               </div>
             </div>
             <div class="menu-item">
               <img src="icon/diamond_9346758 1.png" class="icon" alt="">
               <h4>Visit Us</h4>
               <div class="sub-manu">
-                <h2>Head Office: Pune, India</h2>
-                <h2>Branch: Bengaluru, India</h2>
-                <h2>Branch: New York, USA</h2>
+                <h5>Head Office: Pune, India</h5>
+                <h5>Branch: Bengaluru, India</h5>
+                <h5>Branch: New York, USA</h5>
               </div>
             </div>
           </div>
@@ -698,11 +700,13 @@
       <img src="02.jpg" alt="North Star" class="img-container">
     </div>
   </div>
+
 </section>
 
 <div class="beliefs-section">
-  <div style="" class="beliefs-container">
-    <h1>
+  <div class="beliefs-container">
+    <div style="padding: 10px 60px;">
+    <h1 >
       <strong>Values / Beliefs</strong> Beliefs shaping culture, conduct, and purpose
     </h1>
 
@@ -711,7 +715,7 @@
       how we think, act, and build for our clients every day. Together, these
       values form ATMAN—the compass that grounds us and propels us forward.
     </p>
-
+</div>
     <div class="beliefs-accordion">
       <div class="beliefs-column" *ngFor="let item of values; let i = index" [class.active]="activeIndex === i"
         (mouseenter)="setActive(i)">
@@ -745,7 +749,7 @@
 
 <!-- Partners Section -->
 <section class="partners-section">
-  <div class="container-custom">
+  <div class="container-custom mx-auto">
     <div class="partners-header">
       <div class="lef-tside-text-area">
         <h2 class="title">Partners in Purpose</h2>
@@ -772,49 +776,49 @@
       </div>
 
       <div class="partner-card">
-        <img src="Mulesoft.png" alt="Microsoft" class="main-logo">
+        <img src="Mulesoft.png" alt="Mulesoft" class="main-logo">
         <div class="text">
-          <h3>Microsoft</h3>
+          <h3>Mulesoft</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
       </div>
       <div class="partner-card">
         <img src="partners/tableav.png" alt="tablev" class="main-logo">
         <div class="text">
-          <h3>AWS</h3>
+          <h3>Tableau</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
       </div>
       <div class="partner-card">
-        <img src="informatica-logo-png_seeklogo-350459.png" alt="Snowflake" class="main-logo">
+        <img src="Informatica.jpg" alt="Informatica" class="main-logo">
         <div class="text">
           <h3>Informatica</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
       </div>
       <div class="partner-card">
-        <img src="UZt2Io9pS01826DnKuWc.webp" alt="Tableau" class="main-logo">
+        <img src="microsoft-azure.webp" alt="Tableau" class="main-logo">
         <div class="text">
-          <h3>Tableau</h3>
+          <h3>microsoft-Azure</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
       </div>
       <div class="partner-card">
-        <img src="partners/snowflake.png" alt="Google Cloud" class="main-logo">
+        <img src="partners/snowflake.png" alt="snowflake" class="main-logo">
         <div class="text">
-          <h3>Google Cloud</h3>
+          <h3>snowflake</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
       </div>
       <div class="partner-card">
-        <img src="Databricks.png" alt="Snowflake" class="main-logo">
+        <img src="Databricks.png" alt="Databricks" class="main-logo">
         <div class="text">
-          <h3>Snowflake</h3>
+          <h3>Databricks</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
       </div>
       <div class="partner-card">
-        <img src="skyvia-Logo.webp" alt="Snowflake" class="main-logo">
+        <img src="skyvia.jpg" alt="Skyvia" class="main-logo">
         <div class="text">
           <h3>Skyvia</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -870,7 +874,7 @@
         </div>
       </div>
 
-      
+
       <div class="tab-panels-show">
         <div class="tab-panel" *ngFor="let panel of panels" [class.active]="activeTab === panel.id">
           <div class="panel-image">
@@ -907,7 +911,7 @@
         </div>
       </div>
 
-      
+
 
       <div class="tab-card" [class.active]="activeTab === 'diversity_inclusion'"
         (mouseenter)="selectTab('diversity_inclusion')">

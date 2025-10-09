@@ -7,6 +7,8 @@ import { PrivacyPolicy } from './pages/privacy-policy/privacy-policy';
 import { CookieConsentComponent } from './shared/cookie-consent/cookie-consent';
 import { Ai } from './ai/ai';
 import { News } from './news/news';
+import { Comingsoon } from './comingsoon/comingsoon';
+
 
 export const routes: Routes = [
    { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -18,7 +20,7 @@ export const routes: Routes = [
 { path: 'privacy', component: PrivacyPolicy },
 { path: 'cookie', component: CookieConsentComponent },
 { path: 'ai', component: Ai },
-{ path: 'news', component: News }
-
+{ path: 'news', component: News },
+{ path: 'comingsoon', component: Comingsoon }
   
 ];

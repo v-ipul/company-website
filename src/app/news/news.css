@@ -1099,7 +1099,7 @@ nav a {
 @media (min-width: 377px) and (max-width: 480px) {
   .logo {
     max-width: 150px;
-    top: 20px;
+    top: 0px;
   }
 }
 

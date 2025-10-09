@@ -15,7 +15,7 @@
 </head>
 <body>
    <section class="hero-section ">
-  <header [class.hover-active]="isHovering">
+     <header [class.hover-active]="isHovering">
     <div class="header-container">
       <!-- Logos -->
      
@@ -102,11 +102,10 @@
                 <div class="mega-left">
                   <h3>Artificial Intelligence</h3>
                   <p>
-                    Atman harnesses AI to unlock potential, inspire progress, and
-                    reimagine
+                    Atman harnesses AI to unlock potential, inspire progress, and reimagine
                     tomorrow.
                   </p>
-                  <a href="#" class="see-all">See all →</a>
+                  <a routerLink="/ai" routerLinkActive="active" class="see-all">See all →</a>
                 </div>
 
                 <!-- Right Section -->
@@ -330,6 +329,9 @@
               </div>
             </div>
           </div>
+           <div class="dropdown" >
+            <a href="/news">News</a>
+            </div>
 
         </nav>
         <div class="dropdown" (mouseenter)="onContactDropdownHover(true)" (mouseleave)="onContactDropdownHover(false)">
@@ -353,8 +355,7 @@
                   <div>
                     <h4>Email Us</h4>
                     <div class="sub-manu">
-                      <h2>info&#64;yourcompany.com</h2>
-                      <h2>support&#64;yourcompany.com</h2>
+                      <h2>sales@atmanconsultants.com</h2>
 
                     </div>
                   </div>
@@ -365,8 +366,8 @@
                   <div>
                     <h4>Call Us</h4>
                     <div class="sub-manu">
-                      <h2>+91 98765 43210</h2>
-                      <h2>+91 91234 56789</h2>
+                      <h2>IN +91 985 041 7098</h2>
+                      <h2>US +1 650 304 0503</h2>
                     </div>
                   </div>
                 </div>
@@ -591,27 +592,26 @@
             </div>
           </div>
         </div>
-
+        
         <!-- Contact Us -->
         <div class="mobile-dropdown">
-          <div class="mobile-dropdown-header" (click)="toggleMega(5)">
-            Contact Us <span [class.rotate]="activeMegaIndex === 5">▸</span>
+          <div class="mobile-dropdown-header" (click)="toggleMega(6)">
+            Contact Us <span [class.rotate]="activeMegaIndex === 6">▸</span>
           </div>
-          <div class="mobile-submenu" [class.show]="activeMegaIndex === 5">
+          <div class="mobile-submenu" [class.show]="activeMegaIndex === 6">
             <div class="menu-item">
               <img src="icon/view-grid.png" class="icon" alt="">
               <h4>Email Us</h4>
               <div class="sub-manu">
-                <h5>infoyourcompany.com</h5>
-                <h5>supportyourcompany.com</h5>
+                 <h2>sales@atmanconsultants.com</h2>
               </div>
             </div>
             <div class="menu-item">
               <img src="icon/Industries_we_serve.png" class="icon" alt="">
               <h4>Call Us</h4>
               <div class="sub-manu">
-                <h5>+91 98765 43210</h5>
-                <h5>+91 91234 56789</h5>
+                  <h2>IN +91 985 041 7098</h2>
+                  <h2>US +1 650 304 0503</h2>
               </div>
             </div>
             <div class="menu-item">
@@ -629,11 +629,6 @@
       </div>
     </div>
   </header>
-
-
-
-
-
 
 </section>
   <div class="banner-wrapper">

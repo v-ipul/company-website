@@ -12,7 +12,8 @@ interface ServiceCard {
 
 @Component({
   selector: 'app-ai',
-  imports: [],
+   standalone: true,
+  imports: [CommonModule, RouterLink],
   templateUrl: './ai.html',
   styleUrl: './ai.css'
 })

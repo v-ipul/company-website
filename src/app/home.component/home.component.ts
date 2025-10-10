@@ -24,7 +24,8 @@ interface ServiceCard {
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
- 
+
+
 
   slides: Slide[] = [
     {
@@ -80,7 +81,7 @@ isDropdownOpen = false;
   navHovered = false;
 
 
-  
+
 
 
 
@@ -95,11 +96,11 @@ isDropdownOpen = false;
 @HostBinding('style.display') display = 'block';
 
 @HostBinding('style.transition') transition = 'background-image 0.8s ease-in-out, opacity 0.8s ease-in-out';
- 
+
 
 
   ngOnInit(): void {
-    setInterval(() => this.nextSlide(), 5000);
+    setInterval(() => this.nextSlide(), 10000);
   }
 
 
@@ -169,7 +170,7 @@ onAtmanDropdownHover(state: boolean) {
     this.isDropdownOpen = state;
   }
 
-  
+
 
 
 activeMegaIndex: number | null = null;
@@ -180,7 +181,7 @@ toggleMega(index: number) {
   this.activeMegaIndex = this.activeMegaIndex === index ? null : index;
 }
 
-  
+
   get prevIndex() {
     return (this.currentIndex - 1 + this.cards.length) % this.cards.length;
   }

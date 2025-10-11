@@ -329,8 +329,8 @@
               </div>
             </div>
           </div>
-     <div class="dropdown" >
-            <a href="/news">News</a>
+      <div class="dropdown" >
+            <a routerLink="/news" routerLinkActive="active">News</a>
             </div>
         </nav>
         <div class="dropdown" (mouseenter)="onContactDropdownHover(true)" (mouseleave)="onContactDropdownHover(false)">
@@ -354,8 +354,9 @@
                   <div>
                     <h4>Email Us</h4>
                     <div class="sub-manu">
-                      <h2>info&#64;yourcompany.com</h2>
-                      <h2>support&#64;yourcompany.com</h2>
+                        <h2><a href="mailto:info@atmanconsultants.com">info@atmanconsultants.com</a></h2>
+<h2><a href="mailto:sales@atmanconsultants.com">sales@atmanconsultants.com</a></h2>
+
 
                     </div>
                   </div>
@@ -366,8 +367,8 @@
                   <div>
                     <h4>Call Us</h4>
                     <div class="sub-manu">
-                      <h2>+91 98765 43210</h2>
-                      <h2>+91 91234 56789</h2>
+                       <h2>+91 985041 7098</h2>
+                     <h2>+91 98238 37098</h2>
                     </div>
                   </div>
                 </div>
@@ -603,16 +604,17 @@
               <img src="icon/view-grid.png" class="icon" alt="">
               <h4>Email Us</h4>
               <div class="sub-manu">
-                <h5>infoyourcompany.com</h5>
-                <h5>supportyourcompany.com</h5>
+               <h5><a href="mailto:info@atmanconsultants.com">info@atmanconsultants.com</a></h5>
+<h5><a href="mailto:sales@atmanconsultants.com">sales@atmanconsultants.com</a></h5>
+
               </div>
             </div>
             <div class="menu-item">
               <img src="icon/Industries_we_serve.png" class="icon" alt="">
               <h4>Call Us</h4>
               <div class="sub-manu">
-                <h5>+91 98765 43210</h5>
-                <h5>+91 91234 56789</h5>
+                 <h5>+91 985041 7098</h5>
+                     <h5>+91 98238 37098</h5>
               </div>
             </div>
             <div class="menu-item">
@@ -643,44 +645,92 @@
       <div class="card shadow-sm p-4" style="border: white;">
         <h5 class="fw-bold mb-2">Contact Form</h5>
         <p class="text-muted">Get in touch and let us know how we can help</p>
-        <form >
-          <div class="row g-3">
-            <div class="col-md-6" style="padding: 16px 0;">
-              <input type="text" class="form-control form-line" name="name" [(ngModel)]="formData.name" placeholder="Name Surname" required>
-            </div>
-            <div class="col-md-6" style="padding: 16px 0;">
-              <input type="email" class="form-control form-line" name="email" [(ngModel)]="formData.email" placeholder="E-Mail Address" required>
-            </div>
-            <div class="col-md-6" style="padding: 16px 0;">
-              <input type="text" class="form-control form-line" name="phone" [(ngModel)]="formData.phone" placeholder="Phone Number">
-            </div>
-            <div class="col-md-6" style="padding: 16px 0;">
-              <input type="text" class="form-control form-line" name="company" [(ngModel)]="formData.company" placeholder="Your Company">
-            </div>
-            <div class="col-12" style="padding: 16px 0;">
-              <textarea class="form-control" name="message" [(ngModel)]="formData.message" rows="4" placeholder="Your Message" required></textarea>
-            </div>
-          </div>
+        <form #contactForm="ngForm" (ngSubmit)="send(contactForm)" novalidate>
 
-          <div class="text-start mt-4">
-            <button type="submit" class="btn cfx px-4">
-              Submit
-            </button>
-          </div>
-        </form>
+  <div class="row g-3">
+
+    <div class="col-md-6" style="padding: 16px 0;">
+      <input type="text" class="form-control form-line"
+             name="name" [(ngModel)]="form.name"
+             placeholder="First Name Last Name"
+             required minlength="3" #name="ngModel">
+      @if (name.invalid && name.touched) {
+  <div class="text-danger small">
+    Name is required (min 3 characters)
+  </div>
+}
+    </div>
+
+    <div class="col-md-6" style="padding: 16px 0;">
+      <input type="email" class="form-control form-line"
+             name="email" [(ngModel)]="form.email"
+             placeholder="E-Mail Address"
+             required email #email="ngModel">
+      @if (email.invalid && email.touched) {
+  <div class="text-danger small">
+    Enter a valid email address
+  </div>
+}
+    </div>
+
+    <div class="col-md-6" style="padding: 16px 0;">
+      <input type="text" class="form-control form-line"
+             name="phone" [(ngModel)]="form.phone"
+             placeholder="Phone Number"
+             required pattern="^[0-9]{10}$" #phone="ngModel">
+     @if (phone.invalid && phone.touched) {
+  <div class="text-danger small">
+    Enter a valid 10-digit phone number
+  </div>
+}
+    </div>
+
+    <div class="col-md-6" style="padding: 16px 0;">
+      <input type="text" class="form-control form-line"
+             name="company" [(ngModel)]="form.company"
+             placeholder="Your Company"
+             required minlength="2" #company="ngModel">
+              @if (company.invalid && company.touched) {
+  <div class="text-danger small">
+    Company Name is required (min 3 characters)
+  </div>
+}
+
+    </div>
+
+    <div class="col-12" style="padding: 16px 0;">
+      <textarea class="form-control"
+                name="message" [(ngModel)]="form.message"
+                rows="4" placeholder="Your Message"
+                required minlength="5" #message="ngModel"></textarea>
+      @if (message.invalid && message.touched) {
+  <div class="text-danger small">
+    Message must be at least 10 characters
+  </div>
+}
+    </div>
+
+  </div>
+
+  <div class="text-start mt-4">
+    <button type="submit" class="btn cfx px-4" [disabled]="contactForm.invalid">
+      Submit
+    </button>
+  </div>
+</form>
+
       </div>
     </div>
   </div>
 </div>
-<footer class="footer">
+
+  <footer class="footer">
     <div class="footer-container">
       <a href="#"><img src="light-logo.png" alt="Logo" class="footer-logo"></a>
       <p>©2025-26 Atman Cloud Consultants Pvt. Ltd.</p>
       <ul class="social-links">
-        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="https://www.instagram.com/iamatmanconsultant/reels/"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.linkedin.com/company/atman-consultants/"><i class="fab fa-linkedin-in"></i></a></li>
       </ul>
     </div>
   </footer>

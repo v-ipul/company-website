@@ -330,6 +330,7 @@ nav a {
       line-height: 46px;
       font-weight: 400;
       margin-bottom: 10px;
+      
     }
 
     .section-title span {
@@ -1552,7 +1553,7 @@ nav:hover ~ header {
       }
     }
     .working-icon{
-    font-family: Manrope;
+     font-family: 'Manrope', sans-serif;
 font-weight: 700;
 font-style: Bold;
 font-size: 50px;
@@ -1662,4 +1663,34 @@ color: #898989;
     font-size: 14px;
     margin-top: 10px;
   }
+}
+.last-section {
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px;
+  text-align: center;
+  color: #fff;
+  background-color: white;
+  width: 100%; 
+}
+
+.last-section h1 {
+  font-size: 32px;
+  line-height: 1.2;
+  color: rgba(0, 0, 0, 1);
+  text-align: start;
+}
+
+.last-section h1 span {
+  color: rgba(0, 0, 0, 1);
+  font-weight: 700;
+}
+
+.last-section .button-img {
+  width: auto;
+  cursor: pointer;
+  height: 40px;
+  text-align: end;
 }

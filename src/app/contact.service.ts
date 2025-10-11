@@ -6,14 +6,12 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ContactService {
-  // Update this URL to the API endpoint where the form data will be submitted
-  private apiUrl = 'https://your-backend-api-url.com/contact';  // Replace with actual endpoint
+  private url = 'https://mailthis.to/YOUR_ALIAS'; // Replace YOUR_ALIAS
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
-  // Method to send the form data to the backend API
-  submitContactForm(formData: any): Observable<any> {
+  PostMessage(input: any): Observable<any> {
     const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
-    return this.http.post(this.apiUrl, formData, { headers });
+    return this.http.post(this.url, JSON.stringify(input), { headers });
   }
 }

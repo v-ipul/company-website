@@ -12,4 +12,6 @@ import { CookieConsentComponent } from './shared/cookie-consent/cookie-consent';
 })
 export class App {
   protected readonly title = signal('company-website');
+
+
 }

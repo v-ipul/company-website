@@ -1,15 +1,21 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { FormsModule } from '@angular/forms';  // <-- Import FormsModule
-
+import { FormsModule, NgForm } from '@angular/forms'; // <-- Import FormsModule
+import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
 
 interface ServiceCard {
   image: string;
   title: string;
   subtitle: string;
 }
-
+interface ContactForm { 
+  name:string;
+  email:string;
+  phone:string;
+  company:string;
+  message:string;
+}
 
 @Component({
   selector: 'app-my-contact-form',
@@ -19,14 +25,34 @@ interface ServiceCard {
   styleUrls: ['./my-contact-form.css']
 })
 export class MyContactForm {
-   formData = {
-    name: '',
-    email: '',
-    phone: '',
-    company: '',
-    message: ''
-  };
+  form: ContactForm ={
+      name:'',
+  email:'',
+  phone:'',
+  company:'',
+  message:'',
+  }
+ send(formRef: NgForm) {
+    if (formRef.invalid) {
+      Object.values(formRef.controls).forEach(control => {
+        control.markAsTouched();
+      });
+      console.log('Form is invalid');
+      return;
+    }
 
+    emailjs.send(
+      'service_l0qsgn6',
+      'template_2ot195e',
+      { ...this.form },
+      { publicKey: 'XVrQY2nVgcF3SR_lf' }
+    ).then(() => {
+      console.log('Email sent successfully');
+      formRef.resetForm();
+    }).catch(error => {
+      console.error('Email sending failed', error);
+    });
+  }
  
     cards: ServiceCard[] = [
     { image: 'card1.png', title: 'Implementation & Integration', subtitle: 'Making change smooth' },
@@ -157,4 +183,7 @@ getCardStyle(index: number) {
 
   return style;
 }
+
+
+
 }

@@ -322,7 +322,7 @@
             </div>
           </div>
      <div class="dropdown" >
-            <a href="/news">News</a>
+            <a routerLink="/news" routerLinkActive="active">News</a>
             </div>
         </nav>
         <div class="dropdown" (mouseenter)="onContactDropdownHover(true)" (mouseleave)="onContactDropdownHover(false)">
@@ -346,9 +346,8 @@
                   <div>
                     <h4>Email Us</h4>
                     <div class="sub-manu">
-                      <h2>info&#64;yourcompany.com</h2>
-                      <h2>support&#64;yourcompany.com</h2>
-
+                    <h2><a href="mailto:info@atmanconsultants.com">info@atmanconsultants.com</a></h2>
+<h2><a href="mailto:sales@atmanconsultants.com">sales@atmanconsultants.com</a></h2>
                     </div>
                   </div>
                 </div>
@@ -358,8 +357,8 @@
                   <div>
                     <h4>Call Us</h4>
                     <div class="sub-manu">
-                      <h2>+91 98765 43210</h2>
-                      <h2>+91 91234 56789</h2>
+                        <h2>+91 985041 7098</h2>
+                     <h2>+91 98238 37098</h2>
                     </div>
                   </div>
                 </div>
@@ -595,16 +594,17 @@
               <img src="icon/view-grid.png" class="icon" alt="">
               <h4>Email Us</h4>
               <div class="sub-manu">
-                <h5>infoyourcompany.com</h5>
-                <h5>supportyourcompany.com</h5>
+               <h2><a href="mailto:info@atmanconsultants.com">info@atmanconsultants.com</a></h2>
+<h2><a href="mailto:sales@atmanconsultants.com">sales@atmanconsultants.com</a></h2>
+
               </div>
             </div>
             <div class="menu-item">
               <img src="icon/Industries_we_serve.png" class="icon" alt="">
               <h4>Call Us</h4>
               <div class="sub-manu">
-                <h5>+91 98765 43210</h5>
-                <h5>+91 91234 56789</h5>
+                 <h5>+91 985041 7098</h5>
+                     <h5>+91 98238 37098</h5>
               </div>
             </div>
             <div class="menu-item">
@@ -910,7 +910,7 @@
         <div class="col-md-8"> <h1>Let’s talk about <br>
       <span>your business </span> needs!
     </h1></div>
-        <div class="col-md-4"><img src="Frame 5099.png" class="button-img" alt=""></div>
+        <div class="col-md-4"><img src="Frame 5099.png" routerLink="/contact-us" routerLinkActive="active" class="button-img" alt=""></div>
       </div>
    
     
@@ -924,10 +924,8 @@
       <a href="#"><img src="light-logo.png" alt="Logo" class="footer-logo"></a>
       <p>©2025-26 Atman Cloud Consultants Pvt. Ltd.</p>
       <ul class="social-links">
-        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="https://www.instagram.com/iamatmanconsultant/reels/"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://www.linkedin.com/company/atman-consultants/"><i class="fab fa-linkedin-in"></i></a></li>
       </ul>
     </div>
   </footer>

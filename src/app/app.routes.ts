@@ -4,6 +4,7 @@ import { IndustriesComponent } from './industries/industries.component';
 import { ServicesComponent } from './services/services.component';
 import { OurBecomingComponent } from './our-becoming/our-becoming';
 import { PrivacyPolicy } from './pages/privacy-policy/privacy-policy';
+import { Termsandcondition } from './pages/termsandcondition/termsandcondition';
 import { CookieConsentComponent } from './shared/cookie-consent/cookie-consent';
 import { Ai } from './ai/ai';
 import { News } from './news/news';
@@ -17,6 +18,7 @@ export const routes: Routes = [
    { path: 'services', component: ServicesComponent },
    { path: 'being-atman', component: OurBecomingComponent },  
    { path: 'privacy', component: PrivacyPolicy },
+    { path: 'termsandcondition', component: Termsandcondition },
    { path: 'cookie', component: CookieConsentComponent },
    { path: 'ai', component: Ai },
    { path: 'news', component: News },

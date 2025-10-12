@@ -11,14 +11,14 @@ interface ServiceCard {
 
 
 @Component({
-  selector: 'app-privacy-policy',
- imports: [CommonModule, RouterLink],
-  templateUrl: './privacy-policy.html',
-  styleUrl: './privacy-policy.css'
+  selector: 'app-termsandcondition',
+   imports: [CommonModule, RouterLink],
+  templateUrl: './termsandcondition.html',
+  styleUrl: './termsandcondition.css'
 })
-export class PrivacyPolicy {
+export class Termsandcondition {
 
-  cards: ServiceCard[] = [
+ cards: ServiceCard[] = [
     { image: 'card1.png', title: 'Implementation & Integration', subtitle: 'Making change smooth' },
     { image: 'card2.png', title: 'Consulting', subtitle: 'Clarity before the leap.' },
     { image: 'card3.png', title: 'Managed Services', subtitle: 'Keeping you ahead' },
@@ -147,6 +147,8 @@ getCardStyle(index: number) {
 
   return style;
 }
+
+
 
 
 }

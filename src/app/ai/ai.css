@@ -10,7 +10,10 @@
   font-family: 'Manrope', sans-serif;
 }
 
-
+.image-overlayy{
+margin-bottom : 300px ; 
+font-size: 18px;
+}
 
 .hero-bg-scroll {
   position: fixed;
@@ -370,7 +373,10 @@ nav a {
       font-size: 22px;
       font-weight: 700;
     }
-
+.forcasteragent{
+  height: 520px;
+   width: 80%;
+}
     /* Image cards */
     .image-card {
       position: relative;
@@ -385,7 +391,19 @@ nav a {
       object-fit: cover;
       display: block;
     }
+   .image-card1 {
+      position: relative;
+      border-radius: 14px;
+      overflow: hidden;
+      height: 300px;
+    }
 
+    .image-card1 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
     .image-overlay {
        z-index: 2;
       position: absolute;
@@ -509,7 +527,7 @@ nav a {
 
     @media (max-width: 768px) {
       .section-title {
-        font-size: 28px;
+        font-size: 1.5rem;
         line-height: 36px;
       }
 
@@ -1475,7 +1493,7 @@ nav:hover ~ header {
 
 
     .working-process-header {
-      font-size: 2.5rem;
+      font-size: 2rem;
       font-weight: 700;
       margin-bottom: 20px;
      
@@ -1492,12 +1510,12 @@ nav:hover ~ header {
       border-radius: 15px;
       padding: 30px;
       text-align: left;
-      margin-bottom: 30px;
+      height: 250px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
     .working-process-card h5 {
-      font-size: 1.75rem;
+      font-size: 1.5rem;
       font-weight: 600;
       margin-bottom: 15px;
     }
@@ -1507,12 +1525,16 @@ nav:hover ~ header {
       color: #333;
     }
 
+    .working-process-card-bottom{
+      margin-top: 20px;
+    }
   .working-process-card1 {
       background-color: rgba(255, 255, 255, 0.8);
       border-radius: 15px;
       padding: 30px;
       text-align: left;
-      margin-top: 30px;
+      height: 250px;
+      padding-bottom: 50px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
  .working-process-card1 h5 {
@@ -1541,7 +1563,7 @@ nav:hover ~ header {
     /* Responsive Styles */
     @media (max-width: 768px) {
       .working-process-header {
-        font-size: 2rem;
+        font-size: 1.5rem;
       }
 
       .working-process-subheader {
@@ -1693,4 +1715,85 @@ color: #898989;
   cursor: pointer;
   height: 40px;
   text-align: end;
+}
+@media screen and (max-width: 767px) {
+  /* Your mobile-specific CSS styles here */
+  body {
+    font-size: 14px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  button, a {
+    padding: 15px 20px;
+    font-size: 14px;
+  }
+  .feature-title {
+    font-weight: 500;
+    font-size: 16px;
+}
+.feature-icon {
+    width: 40px;
+    margin-left: auto;
+}
+.working-process-main {
+  padding: 40px;
+}
+.security-title
+ {
+    font-size: 1.5rem;
+ }
+ .future-ready{
+   padding-left: 20px !important;
+   padding-right: 20px !important;
+ } 
+ .image-overlay{
+  font-size: 14px !important;
+ }
+ .image-overlayy{
+font-size: 14px !important;
+ }
+ .forcasteragent{
+  height: 250px;
+   width: 100%;
+}
+.last-section{
+  padding: 30px;
+}
+.last-section h1
+ {
+  font-size: 18px;
+  }
+.last-section .button-img
+ {
+    width: 80px;
+    cursor: pointer;
+    height: 20px;
+     font-size: 12px;
+    text-align: end;
+}
+}
+@media (max-width: 768px) {
+  /* Set .row to flex-direction: column for stacking */
+  .working-process-row {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+#card-01 { order: 1; margin-top: 20px; }
+  #card-02 { order: 2; margin-top: 20px; }
+  #card-03 { order: 3; }
+  #card-04 { order: 4; }
+
+
+  #card-1 { order: 1; }
+  #card-2 { order: 2; }
+  #card-3 { order: 3; }
+  #card-4 { order: 4; }
+  #card-5 { order: 5; }
+ 
+  .segmenAgent{
+    margin-top: 20px;
+  }
+
 }

@@ -35,7 +35,7 @@
                       <h4>Services</h4>
                       <div class="sub-manu">
                         <h2>Consulting</h2>
-                        <h2>Implementation</h2>
+                        <h2 routerLinkActive="active" fragment="Implementation">Implementation</h2>
                         <h2>Integration</h2>
                         <h2>Managed Services</h2>
                       </div>
@@ -398,8 +398,8 @@
               <img src="icon/view-grid.png" class="icon" alt="">
               <h4>Services</h4>
               <div class="sub-manu">
-                <h5>Consulting</h5>
-                <h5>Implementation</h5>
+                <h5 routerLink="/services" routerLinkActive="active">Consulting</h5>
+                <h5 routerLink="/services" routerLinkActive="active" fragment="Implementation">Implementation</h5>
                 <h5>Integration</h5>
                 <h5>Managed Services</h5>
               </div>
@@ -930,7 +930,7 @@
       
     </div>
     <div class="footer-container text-end mt-3" style="justify-content: end;">
-        <p routerLink="/termsandcondition" routerLinkActive="active">Terms and Conditions</p>
-         <p routerLink="/privacy" routerLinkActive="active">Privacy Policy</p>
+        <a routerLink="/termsandcondition" routerLinkActive="active">Terms and Conditions</a>
+         <a routerLink="/privacy" routerLinkActive="active">Privacy Policy</a>
       </div>
   </footer>

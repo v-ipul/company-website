@@ -1,4 +1,4 @@
-import { Routes } from '@angular/router';
+import { provideRouter, Routes, withInMemoryScrolling } from '@angular/router';
 import { HomeComponent } from './home.component/home.component';
 import { IndustriesComponent } from './industries/industries.component';
 import { ServicesComponent } from './services/services.component';
@@ -10,6 +10,9 @@ import { Ai } from './ai/ai';
 import { News } from './news/news';
 import { Comingsoon } from './comingsoon/comingsoon';
 import { MyContactForm } from './my-contact-form/my-contact-form';
+
+
+
 
 export const routes: Routes = [
    { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -25,3 +28,11 @@ export const routes: Routes = [
    { path: 'comingsoon', component: Comingsoon },
    { path: 'contact-us', component: MyContactForm }  // Updated path for Contact Us page
 ];
+
+provideRouter(
+  routes,
+  withInMemoryScrolling({
+    anchorScrolling: 'enabled',  // Enable scrolling to fragments
+    scrollPositionRestoration: 'enabled', // Enable restoring scroll position
+  })
+);

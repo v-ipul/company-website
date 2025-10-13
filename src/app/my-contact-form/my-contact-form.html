@@ -638,6 +638,10 @@
   <div class="text-center mb-4">
     <small class="text-uppercase text-muted">Connect</small>
     <h2 class="fw-bold">Do you have any <span class="text-dark">questions</span> for us?</h2>
+    <!-- Alert message -->
+<div [@if]="showAlert" class="alert alert-success" role="alert">
+  Thank you for your inquiry. We will get back to you soon!
+</div>
   </div>
 
   <div class="row justify-content-center">
@@ -724,6 +728,8 @@
   </div>
 </div>
 
+
+
  <footer class="footer">
     <div class="footer-container">
       <a href="#"><img src="light-logo.png" alt="Logo" class="footer-logo"></a>
@@ -735,8 +741,8 @@
       
     </div>
     <div class="footer-container text-end mt-3" style="justify-content: end;">
-        <p routerLink="/termsandcondition" routerLinkActive="active">Terms and Conditions</p>
-         <p routerLink="/privacy" routerLinkActive="active">Privacy Policy</p>
+        <a routerLink="/termsandcondition" routerLinkActive="active">Terms and Conditions</a>
+         <a routerLink="/privacy" routerLinkActive="active">Privacy Policy</a>
       </div>
   </footer>
 </body>

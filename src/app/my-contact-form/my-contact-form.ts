@@ -32,6 +32,8 @@ export class MyContactForm {
   company:'',
   message:'',
   }
+
+  showAlert: boolean = false;
  send(formRef: NgForm) {
     if (formRef.invalid) {
       Object.values(formRef.controls).forEach(control => {
@@ -42,13 +44,17 @@ export class MyContactForm {
     }
 
     emailjs.send(
-      'service_l0qsgn6',
-      'template_2ot195e',
+      'service_aow4nmr',
+      'template_11jd1pm',
       { ...this.form },
-      { publicKey: 'XVrQY2nVgcF3SR_lf' }
+      { publicKey: 'RCjfmvxT3a_BIlt3b' }
     ).then(() => {
       console.log('Email sent successfully');
       formRef.resetForm();
+       this.showAlert = true;
+      setTimeout(() => {
+        this.showAlert = false;  // Hide the alert after 5 seconds
+      }, 5000);
     }).catch(error => {
       console.error('Email sending failed', error);
     });

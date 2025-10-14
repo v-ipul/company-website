@@ -2,13 +2,11 @@
   position: relative;
   height: 100vh;
   overflow: hidden;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
-
-
 .hero-bg-scroll {
-  position: fixed;
+  position: relative;
   /* ✅ fixed for parallax */
   top: 0;
   left: 0;
@@ -16,12 +14,12 @@
   height: 100%;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: scroll;
   z-index: 0;
 }
 
 .hero-slide {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -42,13 +40,10 @@
   z-index: 50;
 }
 
-
-
 .hero-section.fade-in {
   opacity: 1;
   pointer-events: auto;
 }
-
 
 .hero-section.fade-out {
   opacity: 0;
@@ -69,10 +64,9 @@
   transform: scale(1);
 }
 
-
 :host {
   display: block;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   overflow-x: hidden;
   box-sizing: border-box;
   position: relative;
@@ -98,10 +92,6 @@ header {
 /* When hover-active class is added to header */
 /* Header hover-active styles */
 
-
-
-
-
 /* Smooth transitions */
 header,
 header .logo header nav a,
@@ -109,11 +99,7 @@ header .contact-us,
 header .logo-white,
 header .logo-black {
   transition: all 0.3s ease;
-
 }
-
-
-
 
 .header-container {
   display: flex;
@@ -145,10 +131,7 @@ header .logo-black {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-
-
 }
-
 
 nav {
   flex-grow: 1;
@@ -165,9 +148,7 @@ nav a {
   color: #ffffff;
   transition: color 0.3s ease;
   top: 0px;
-
 }
-
 
 .contact-us {
   position: relative;
@@ -183,23 +164,14 @@ nav a {
   transition: color 0.3s ease, background-color 0.3s ease;
   right: 100px;
   text-decoration: none;
-
 }
-
-
-
-
-
-
 
 /* Responsive Header */
 @media (max-width: 768px) {
-
   nav,
   .contact-us {
     display: none;
   }
-
 
   .mobile-toggle {
     display: block;
@@ -212,10 +184,8 @@ nav a {
     left: 40px;
   }
 }
-.mobile-toggle{
-
-  }
-
+.mobile-toggle {
+}
 
 @media (max-width: 576px) {
   .logo {
@@ -224,16 +194,10 @@ nav a {
     left: 10px;
   }
 
-
-
-
   .header-section {
     width: auto;
     gap: 40px;
   }
-
-
-
 
   nav {
     width: auto;
@@ -319,20 +283,16 @@ nav a {
   }
 }
 
-.overlay-title{
+.overlay-title {
   font-size: 14px;
   font-weight: 100;
   text-align: start;
 }
-.overlay-subtitle{
+.overlay-subtitle {
   font-size: 10px;
   text-align: start;
-box-shadow: inset 0 5px 20px rgba(0, 0, 0, 0.1);
-
-
-
+  box-shadow: inset 0 5px 20px rgba(0, 0, 0, 0.1);
 }
-
 
 /* Text overlay on slides */
 .slide-text {
@@ -350,8 +310,6 @@ box-shadow: inset 0 5px 20px rgba(0, 0, 0, 0.1);
   font-size: 12px;
   margin-bottom: 15px;
   font-weight: 100;
-
-
 }
 
 .slide-text h1 {
@@ -369,7 +327,7 @@ box-shadow: inset 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 .slide-text button {
-padding: 8px 10px;
+  padding: 8px 10px;
   font-size: 10px;
   color: #fff;
   border: none;
@@ -378,10 +336,7 @@ padding: 8px 10px;
   cursor: pointer;
   transition: 0.3s;
   border-radius: 4px;
-
 }
-
-
 
 /* Responsive text positions */
 @media (max-width: 1024px) {
@@ -465,9 +420,7 @@ padding: 8px 10px;
   padding: 0;
   width: 100%;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
-
 }
-
 
 .nav-item {
   top: 30%;
@@ -478,13 +431,10 @@ padding: 8px 10px;
   text-align: center;
   cursor: pointer;
   color: rgba(255, 255, 255, 0.7);
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   position: relative;
   transition: color 0.3s ease, border-top 0.3s ease;
-
-
 }
-
 
 .nav-item .nav-number {
   font-size: 16px;
@@ -493,11 +443,9 @@ padding: 8px 10px;
   padding-right: 12px;
 }
 
-
 .nav-item .nav-title {
   font-size: 12px;
   font-weight: 500;
-
 }
 
 /* Smooth top border animation */
@@ -518,8 +466,6 @@ padding: 8px 10px;
   top: -20px;
 }
 
-
-
 /* Responsive - Scrollable nav */
 @media (max-width: 768px) {
   .bottom-nav {
@@ -527,7 +473,6 @@ padding: 8px 10px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-
   }
 
   .nav-item {
@@ -559,14 +504,12 @@ padding: 8px 10px;
   transform: scale(1);
 }
 
-
 /* Mobile bottom nav */
 @media (max-width: 768px) {
   .bottom-nav {
     display: none;
   }
 }
-
 
 .mobile-footer-nav {
   display: flex;
@@ -576,8 +519,6 @@ padding: 8px 10px;
 .right-side {
   rotate: 90;
 }
-
-
 
 /* Vision Section */
 .vision-section {
@@ -592,8 +533,7 @@ padding: 8px 10px;
   font-size: 32px;
   margin-bottom: 15px;
   font-weight: 400;
-  color: #1D3444;
-
+  color: #1d3444;
 }
 
 .vision-section p {
@@ -603,7 +543,6 @@ padding: 8px 10px;
   margin: 30px auto 30px;
   font-weight: 200px;
   colour: rgba(44, 44, 44, 1);
-
 }
 
 .vision-section button {
@@ -620,12 +559,10 @@ padding: 8px 10px;
   font-weight: 500;
   letter-spacing: 0%;
   vertical-align: middle;
-
-
 }
 
 .vision-image {
-  width: 1050px;
+  width: 100%;
   height: auto;
   max-width: 100%;
   margin-top: 20px;
@@ -641,7 +578,6 @@ padding: 8px 10px;
 }
 
 .container {
-
   max-width: 1050px;
   margin: 0 auto;
   text-align: center;
@@ -716,11 +652,8 @@ padding: 8px 10px;
   text-align: center;
 
   background: #f7f9fc;
-  font-family: 'Manrope', sans-serif;
-
+  font-family: "Manrope", sans-serif;
 }
-
-
 
 .section-title {
   padding-top: 40px;
@@ -737,7 +670,7 @@ padding: 8px 10px;
 .section-subtitle {
   font-size: 12px;
   max-width: 820px;
-  margin: 0 auto ;
+  margin: 0 auto;
   color: #555;
   line-height: 1.5;
 }
@@ -759,13 +692,13 @@ padding: 8px 10px;
   position: relative;
   width: 100%;
   height: 400px;
-
 }
 
 .service-card {
   position: absolute;
-  width: 300px;
-  height: 200px;
+  width: 25%; /* use relative width instead of fixed px */
+  max-width: 300px; /* optional: prevent it from being too wide on large screens */
+  aspect-ratio: 3/2; /* keeps height proportional */
   border-radius: 24px;
   overflow: hidden;
   transition: all 0.6s ease;
@@ -775,12 +708,11 @@ padding: 8px 10px;
   cursor: pointer;
   background: #000;
   z-index: 1;
-
 }
 
 .service-card.active {
-  width: 400px;
-  height: 300px;
+  width: 100%; /* relative width for active card */
+  aspect-ratio: 5/4; /* adjust proportion if you want */
   opacity: 1;
   transform: scale(1);
   filter: none;
@@ -805,7 +737,11 @@ padding: 8px 10px;
   left: 0;
   width: 100%;
   padding-left: 10px;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent 70%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
   color: #fff;
 }
 
@@ -857,18 +793,18 @@ padding: 8px 10px;
   /* Show nav buttons on mobile */
   .nav-btn-left,
   .nav-btn-right {
-    display: block;        /* override previous hide */
-    width: 40px;           /* smaller size for mobile */
+    display: block; /* override previous hide */
+    width: 40px; /* smaller size for mobile */
     height: 40px;
-    top: 45%;              /* adjust vertical alignment */
+    top: 45%; /* adjust vertical alignment */
   }
 
   .nav-btn-left {
-    left: 10px;            /* closer to edge on mobile */
+    left: 10px; /* closer to edge on mobile */
   }
 
   .nav-btn-right {
-    right: 10px;           /* closer to edge on mobile */
+    right: 10px; /* closer to edge on mobile */
   }
 }
 
@@ -876,7 +812,7 @@ padding: 8px 10px;
   padding: 120px 20px;
   /* Top and bottom padding */
   background: #ffffff;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   color: #000;
   /* Text visible on white background */
   display: flex;
@@ -886,11 +822,9 @@ padding: 8px 10px;
 }
 
 .industry-container {
-
   justify-content: center;
   width: 90%;
-  max-width: 1300px;
-
+  max-width: 100%;
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   gap: 60px;
@@ -900,11 +834,10 @@ padding: 8px 10px;
 /* Left Section */
 .industry-left {
   align-items: center;
-  margin-top: 120px;
-  /* Left side stays while scrolling right cards */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
-
-
 
 .industry-left h1 {
   font-size: 32px;
@@ -937,18 +870,11 @@ padding: 8px 10px;
   text-align: start;
 }
 
-
-
-
-
-
-
 /* Right Cards Wrapper for scroll */
 .industry-right-wrapper {
   position: relative;
   max-height: 600px;
   overflow-y: auto;
-
 }
 
 .industry-right {
@@ -971,7 +897,7 @@ padding: 8px 10px;
   width: auto;
 }
 
-.industry-btn{
+.industry-btn {
   width: 200px;
   height: auto;
   margin-right: 100px;
@@ -1053,16 +979,13 @@ padding: 8px 10px;
   .industry-left h1 {
     font-size: 32px;
     line-height: 1.2;
-
   }
 
-  .industry-wrapper{
-
+  .industry-wrapper {
   }
-  .industry-left{
+  .industry-left {
     margin-top: -10px;
     margin-left: 50px;
-
   }
 
   .industry-left p {
@@ -1100,30 +1023,29 @@ padding: 8px 10px;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 30px 20px;
+  padding: 30px 0px;
   background-color: #f8f9fa;
   /* subtle background */
   gap: 30px;
 }
 
 .container-7 h1 {
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 32px;
   font-weight: 400;
   color: rgba(1, 1, 65, 1);
   margin: 0;
 }
 
-.container-7 span{
-   font-family: 'Manrope', sans-serif;
+.container-7 span {
+  font-family: "Manrope", sans-serif;
   font-size: 32px;
   font-weight: 700;
   color: rgba(1, 1, 65, 1);
   margin: 0;
-
 }
 .container-7 p {
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 12px;
   line-height: 1.8;
   color: #333;
@@ -1131,8 +1053,8 @@ padding: 8px 10px;
 }
 
 .banner-img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 
@@ -1147,20 +1069,21 @@ padding: 8px 10px;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-
+  max-width: 1200px;
+  margin: 0 auto; /* center container */
+  width: 100%;
   background-color: #ffffff;
   padding: 30px;
-
 }
 
 .container-8 .part-left {
   flex: 1 1 500px;
-  max-width: 600px;
+  max-width: 50%;
   float: left;
 }
 
 .container-8 .part-left h2 {
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 32px;
   font-weight: 400;
   color: rgba(1, 1, 65, 1);
@@ -1168,28 +1091,21 @@ padding: 8px 10px;
   line-height: 54px;
   letter-spacing: -1.92px;
   text-align: start;
-
 }
 
 .container-8 .part-left span {
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 32px;
   font-weight: 700;
   color: rgba(1, 1, 65, 1);
   margin-bottom: 20px;
   line-height: 54px;
   letter-spacing: -1.92px;
-  text-align: start;
-
+  text-align: center;
 }
 
-
-
-
-
-
 .container-8 .part-left p {
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 12px;
   line-height: 1.8;
   color: #555;
@@ -1200,7 +1116,6 @@ padding: 8px 10px;
 }
 
 .container-8 .part-left img {
-
   max-width: 80%;
   height: auto;
   margin-top: 20px;
@@ -1214,10 +1129,9 @@ padding: 8px 10px;
 }
 
 .container-8 .part-right img {
-  max-width: 85%;
+  max-width: 90%;
   height: auto;
   object-fit: contain;
-
 }
 
 /* === Responsive === */
@@ -1232,14 +1146,10 @@ padding: 8px 10px;
     max-width: 100%;
   }
 
-  .container-8 .part-right img{
+  .container-8 .part-right img {
     width: 600px;
     margin-bottom: 20px;
-
-
   }
-
-
 }
 
 @media (max-width: 600px) {
@@ -1267,9 +1177,9 @@ padding: 8px 10px;
 
 .mega-dropdown {
   position: fixed; /* fixed to viewport */
-  top: 60px;       /* just below header */
+  top: 60px; /* just below header */
   left: 0;
-  width: 100vw;    /* full viewport width */
+  width: 100vw; /* full viewport width */
   height: auto;
   max-height: 90vh; /* optional, for scrolling */
   background: #fff;
@@ -1280,7 +1190,6 @@ padding: 8px 10px;
   z-index: 9999;
   padding: 40px 60px;
   overflow-y: auto; /* scroll if content too large */
-
 }
 
 /* Show dropdown */
@@ -1318,7 +1227,6 @@ padding: 8px 10px;
   font-size: 12px;
   line-height: 1.4;
   color: #555;
-
 }
 
 .mega-left .see-all {
@@ -1341,17 +1249,23 @@ padding: 8px 10px;
 .menu-item {
   display: flex;
   align-items: flex-start;
-  gap: 10px;
-  padding: 12px;
-  border-radius: 8px;
-  transition: 0.3s;
 
+  padding: 8px 0;
+  border-radius: 6px;
 }
 
-.menu-item:hover {
+.menu-txt{
+   transition: 0.3s;
+}
+
+.menu-txt:hover {
+  
   background: #f5f5f5;
-}
 
+}
+.menu-item h2 a:hover{
+  color: #007bff !important;
+}
 .menu-item img {
   width: 30px;
   height: 30px;
@@ -1365,17 +1279,16 @@ padding: 8px 10px;
   color: #111;
   cursor: pointer;
 }
-.menu-item h2{
+.menu-item h2 {
   font-size: 12px;
   font-weight: 400;
   color: #111;
   padding-top: 8px;
   cursor: pointer;
 }
-.menu-item h2:hover{
+.menu-item h2:hover {
   color: #007bff;
 }
-
 
 .menu-item p {
   font-size: 12px;
@@ -1386,8 +1299,7 @@ padding: 8px 10px;
   font-size: 0.2px;
   color: #000;
   cursor: pointer;
-
-  }
+}
 
 /* === Responsive === */
 @media (max-width: 1200px) {
@@ -1410,7 +1322,8 @@ padding: 8px 10px;
     padding: 20px;
     top: 60px;
   }
-  .mega-left, .mega-right {
+  .mega-left,
+  .mega-right {
     flex: 1 1 100%;
     width: 100%;
     text-align: center;
@@ -1424,16 +1337,12 @@ padding: 8px 10px;
   }
 }
 
-
-
 /* Header */
-
-
 
 /* === Section Container === */
 .container-9 {
   width: 100%;
-  max-width: 1800px; /* From Figma width */
+  max-width: 1200px; /* From Figma width */
   margin: 0 auto;
   background-color: white !important;
   padding: 70px 20px;
@@ -1445,10 +1354,13 @@ padding: 8px 10px;
   font-family: "Manrope", sans-serif;
 }
 
+.gap5 {
+  gap: 19rem !important;
+}
 
-.text-area{
+.text-area {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 /* === Text Area === */
@@ -1458,6 +1370,7 @@ padding: 8px 10px;
   margin-bottom: 20px;
   line-height: 1.2;
   color: #111;
+  align-items: center;
 }
 
 .container-9 .text-area span {
@@ -1466,6 +1379,7 @@ padding: 8px 10px;
   margin-bottom: 20px;
   line-height: 1.2;
   color: #111;
+  align-items: center;
 }
 
 .container-9 .text-area p {
@@ -1484,8 +1398,7 @@ padding: 8px 10px;
 }
 
 .container-9 .image-area .main-banner {
-
-  width: 1100px;
+  width: 100%;
   height: 400px;
   object-fit: cover;
 }
@@ -1512,6 +1425,10 @@ padding: 8px 10px;
     text-align: center;
   }
 
+  .gap5 {
+    gap: 0rem !important;
+  }
+
   .container-9 .text-area {
     max-width: 100%;
   }
@@ -1522,17 +1439,17 @@ padding: 8px 10px;
 }
 /* Container */
 .container-10 {
- 
-  padding:80px;
-    font-family: 'Manrope', sans-serif;
-background-color: white !important;
+  width: 100%;
+  max-width: 1200px;
+  padding: 80px;
+  font-family: "Manrope", sans-serif;
+  background-color: white !important;
 }
 
 /* Button */
 .container-10 button {
   height: 40px;
   width: 130px;
-
   margin-bottom: 20px;
   font-size: 14px;
   font-weight: 500;
@@ -1541,13 +1458,12 @@ background-color: white !important;
   cursor: pointer;
   background-color: #ffffff;
   transition: 0.3s;
- margin-left: -850px;
+  margin-left: 0px;
 }
-
 
 /* Heading */
 .container-10 h2 {
-  margin: 20px 0;
+  margin: 0;
   font-size: 32px;
   color: #222;
   text-align: start;
@@ -1563,13 +1479,13 @@ background-color: white !important;
 /* Below Section Layout */
 .below-section {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   gap: 30px;
   flex-wrap: wrap; /* ✅ responsive on small screens */
 }
 
-.slide-text img{
+.slide-text img {
   width: auto;
   height: 40px;
   cursor: pointer;
@@ -1577,7 +1493,7 @@ background-color: white !important;
 /* Left Side */
 .left-side-B1 {
   flex: 1;
-  min-width: 300px;
+  min-width: 50%;
 }
 
 .left-side-B1 p {
@@ -1590,7 +1506,7 @@ background-color: white !important;
 
 .left-side-B1 img {
   width: 100%;
-  max-width: 130px;
+  max-width: 50%;
   cursor: pointer;
   display: block;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -1609,11 +1525,10 @@ background-color: white !important;
 }
 
 .right-side img {
-height: auto;
+  height: auto;
   width: 450px;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-
 }
 
 .right-side img:hover {
@@ -1628,7 +1543,7 @@ height: auto;
     align-items: flex-start;
   }
 
-  .container-10{
+  .container-10 {
     left: 0;
     margin: 0px;
   }
@@ -1636,7 +1551,6 @@ height: auto;
   .right-side {
     margin-top: 20px;
     text-align: left;
-
   }
   .right-side img {
     width: 100%;
@@ -1651,7 +1565,7 @@ height: auto;
   background: #ffffff;
   text-align: center;
   color: #111;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 .ai-edge-title {
@@ -1670,15 +1584,15 @@ height: auto;
 .ai-edge-subtitle {
   font-size: 12px;
   color: #555;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto 28px;
   line-height: 1.7;
 }
 
 .ai-edge-pills {
-  border-radius: 5px ;
-padding: 4px;
-  border:  1px solid rgba(233, 236, 246, 1);
+  border-radius: 5px;
+  padding: 4px;
+  border: 1px solid rgba(233, 236, 246, 1);
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
@@ -1695,7 +1609,8 @@ padding: 4px;
   color: #111;
   font-weight: 700;
   cursor: pointer;
-  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease, transform 0.2s ease;
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease,
+    transform 0.2s ease;
 }
 
 .ai-edge-pills button:hover {
@@ -1707,10 +1622,9 @@ padding: 4px;
 
 .ai-edge-banner {
   display: block;
-
-  width: 1100px;
-  height: 300px;
-
+  width: 100%;
+  max-width: 1150px;
+  aspect-ratio: 3 / 0.75;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
@@ -1718,13 +1632,22 @@ padding: 4px;
 }
 
 .ai-edge-cta {
-  padding: 10px 22px;
-  border: 0;
-  border-radius: 999px;
-  width: 250px;
-  height: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px; /* space between text & circle */
+  background-color: #0056d2; /* blue */
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  border: none;
+  border-radius: 50px; /* pill shape */
+  padding: 7px 14px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
-
 
 /* Responsive - AI Edge */
 @media (max-width: 1024px) {
@@ -1784,7 +1707,6 @@ padding: 4px;
   }
 }
 .last-section {
-
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1792,7 +1714,7 @@ padding: 4px;
   text-align: center;
   color: #fff;
   background-color: white;
-  width: 100%; 
+  width: 100%;
 }
 
 .last-section h1 {
@@ -1812,6 +1734,10 @@ padding: 4px;
   cursor: pointer;
   height: 40px;
   text-align: end;
+}
+
+.gap5 {
+  gap: 0px;
 }
 
 /* 📱 Responsive - Tablets */
@@ -1873,7 +1799,7 @@ padding: 4px;
 }
 
 .footer-container {
-  width:90%;
+  width: 90%;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -1881,7 +1807,7 @@ padding: 4px;
   flex-wrap: wrap;
   gap: 20px;
 }
-.tc{
+.tc {
   font-size: 16px !important;
 }
 .footer-logo {
@@ -1902,8 +1828,8 @@ padding: 4px;
   padding: 0;
   margin: 0;
 }
-.atmanname{
-  padding-left:200px !important;
+.atmanname {
+  padding-left: 200px !important;
 }
 .social-links a {
   color: #ddd;
@@ -1912,7 +1838,7 @@ padding: 4px;
 }
 
 .social-links a:hover {
-  color: #1F4E79;
+  color: #1f4e79;
 }
 
 /* ========== Responsive Footer ========== */
@@ -1922,9 +1848,9 @@ padding: 4px;
     text-align: center;
     align-items: center;
   }
-.atmanname{
-  padding-left:10px !important;
-}
+  .atmanname {
+    padding-left: 10px !important;
+  }
   .footer-logo {
     width: 100px;
     margin-bottom: 10px;
@@ -1949,7 +1875,6 @@ header.hover-active,
 nav:hover ~ header {
   background-color: #fff;
 }
-
 
 /* ✅ Change text color on hover */
 nav a:hover,
@@ -1994,7 +1919,6 @@ header.hover-active .logo-black {
 
 /* Mobile Menu */
 .mobile-menu {
-
   position: fixed;
   top: 0;
   right: -100%; /* hidden by default */
@@ -2007,7 +1931,7 @@ header.hover-active .logo-black {
   z-index: 1000;
   padding: 25px 20px;
   box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   transition: right 0.35s ease;
 }
 
@@ -2029,10 +1953,7 @@ header.hover-active .logo-black {
   text-decoration: none;
   border-bottom: 1px solid #eee;
   transition: color 0.2s ease;
-
 }
-
-
 
 .mobile-menu > a:hover {
   color: #00adee;
@@ -2081,22 +2002,17 @@ header.hover-active .logo-black {
   transition: max-height 0.3s ease, padding 0.3s ease;
   align-items: start;
   justify-content: center;
-
-
 }
 
 .mobile-submenu.show {
   max-height: 500px; /* enough for submenu items */
-
 }
 
 .mobile-submenu a {
-
   font-size: 14px;
   font-weight: 400;
   color: #333;
   text-decoration: none;
-
 }
 
 /* Optional menu items with icons */
@@ -2104,15 +2020,12 @@ header.hover-active .logo-black {
   display: flex;
   align-items: flex-start;
 
-  padding: 8px 0;
+  padding: 2px 0;
   border-radius: 6px;
   transition: background 0.2s ease;
-
 }
 
-.menu-item:hover {
-  background-color: #f5f8fa;
-}
+
 
 .menu-item .icon {
   width: 22px;
@@ -2127,7 +2040,6 @@ header.hover-active .logo-black {
   margin: 0 0 4px 0;
   font-weight: 600;
   text-align: start;
-
 }
 
 .menu-item p,
@@ -2137,8 +2049,6 @@ header.hover-active .logo-black {
   color: #555;
   text-align: start;
 }
-
-
 
 /* Scrollbar styling */
 .mobile-menu::-webkit-scrollbar {
@@ -2190,7 +2100,6 @@ header.hover-active .logo-black {
   color: #000000; /* Black when menu is open */
 }
 
-
 .custom-btn {
   display: inline-flex;
   align-items: center;
@@ -2198,7 +2107,7 @@ header.hover-active .logo-black {
   gap: 12px; /* space between text & circle */
   background-color: #0056d2; /* blue */
   color: #fff;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 12px;
   font-weight: 500;
   border: none;
@@ -2207,9 +2116,7 @@ header.hover-active .logo-black {
   cursor: pointer;
   text-decoration: none;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  margin-left: -150px;
 }
-
 
 .first-btn {
   display: inline-flex;
@@ -2218,7 +2125,7 @@ header.hover-active .logo-black {
   gap: 12px; /* space between text & circle */
   background-color: #0056d2; /* blue */
   color: #fff;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 12px;
   font-weight: 500;
   border: none;
@@ -2227,7 +2134,7 @@ header.hover-active .logo-black {
   cursor: pointer;
   text-decoration: none;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  padding-left:10px;
+  padding-left: 10px;
 }
 
 .second-btn {
@@ -2237,7 +2144,7 @@ header.hover-active .logo-black {
   gap: 12px; /* space between text & circle */
   background-color: #0056d2; /* blue */
   color: #fff;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 12px;
   font-weight: 500;
   border: none;
@@ -2250,7 +2157,6 @@ header.hover-active .logo-black {
   padding-left: 10px;
 }
 
-
 /* Hover effect */
 .custom-btn:hover {
   background-color: #0b5ed7;
@@ -2262,7 +2168,6 @@ header.hover-active .logo-black {
   transform: translateY(-2px);
 }
 
-
 /* White circle for arrow */
 .custom-btn .arrow {
   display: flex;
@@ -2273,10 +2178,10 @@ header.hover-active .logo-black {
   border-radius: 80%;
   background: #fff;
   color: #0d6efd;
-  font-size: 16px;       /* smaller arrow */
-  line-height: 1;        /* fix vertical alignment */
+  font-size: 16px; /* smaller arrow */
+  line-height: 1; /* fix vertical alignment */
   font-weight: 4000;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 .first-btn .arrow {
@@ -2288,10 +2193,10 @@ header.hover-active .logo-black {
   border-radius: 80%;
   background: #fff;
   color: #0d6efd;
-  font-size: 16px;       /* smaller arrow */
-  line-height: 1;        /* fix vertical alignment */
+  font-size: 16px; /* smaller arrow */
+  line-height: 1; /* fix vertical alignment */
   font-weight: 4000;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 .second-btn .arrow {
@@ -2303,10 +2208,10 @@ header.hover-active .logo-black {
   border-radius: 80%;
   background: #fff;
   color: #0d6efd;
-  font-size: 16px;       /* smaller arrow */
-  line-height: 1;        /* fix vertical alignment */
+  font-size: 16px; /* smaller arrow */
+  line-height: 1; /* fix vertical alignment */
   font-weight: 4000;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 .cta-button {
@@ -2316,7 +2221,7 @@ header.hover-active .logo-black {
   gap: 9px; /* space between text & circle */
   background-color: #0056d2; /* blue */
   color: #fff;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 12px;
   font-weight: 500;
   border: none;
@@ -2340,8 +2245,8 @@ header.hover-active .logo-black {
   border-radius: 80%;
   background: #fff;
   color: #0d6efd;
-  font-size: 16px;       /* smaller arrow */
-  line-height: 1;        /* fix vertical alignment */
+  font-size: 16px; /* smaller arrow */
+  line-height: 1; /* fix vertical alignment */
   font-weight: 4000;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 }

@@ -370,7 +370,7 @@ header.hover-active .contact-us {
 }
 
 .partners-section .main-logo {
-  width: 200px;
+  width: 150px;
   height: auto;
   transition: all 0.3s ease;
   margin: 0 auto;
@@ -391,25 +391,29 @@ header.hover-active .contact-us {
   margin-left: 30px;
 }
 
+/*
 .partners-grid .partner-card:hover .main-logo {
   width: 70px;
   transform: translate(-74px, -60px);
 }
+*/
 
 /* .partner-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 } */
 
+/*
 .partner-card:hover .text {
   opacity: 1;
   transform: translate(-50%, -50%) translateY(0);
 }
+*/
 
 .partner-card .text h3 {
   font-size: 32px;
   font-weight: 700;
-  color: #007BFF;
+  color: #000;
   text-align: start;
 }
 
@@ -1025,12 +1029,13 @@ header.hover-active .contact-us {
 }
 
 .partners-section h2.title {
-    font-size: 32px;
+    font-size: 48px;
     font-weight: 500;
 }
 
 .partners-section p.description {
     font-size: 12px;
+    margin-top: 20px;
 }
 
 .partners-section .card {
@@ -1516,14 +1521,13 @@ header.hover-active .contact-us {
 }
 
 .panel-image img {
-  width: 100%;
-  height: auto;
+  width: 100% !important;
+  height: 300px !important;
   border-radius: 10px;
 }
 
 .panel-text {
   flex: 1 1 50%;
-
 }
 
 .panel-text h2 {
@@ -1669,7 +1673,7 @@ header.hover-active .contact-us {
 
 
 .panel-image {
-  flex: 1 1 50%;
+  flex: 1 1 40%;
 }
 
 .panel-image img {
@@ -1688,7 +1692,7 @@ header.hover-active .contact-us {
 }
 
 .panel-text p {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.6;
   color: #333;
 }
@@ -1886,7 +1890,7 @@ header.hover-active .contact-us {
 }
 
 .mobile-dropdown-header:hover {
-  background-color: #f7f7f7;
+  background-color: rgba(255, 246, 246, 1);
 }
 
 /* Arrow icon */
@@ -1986,10 +1990,15 @@ header.hover-active .contact-us {
 
 /* === Logo === */
 .footer-logo img {
-  max-height: 30px;
+  max-height: 10px;
   width: auto;
   display: block;
 }
+
+.footer-logo {
+ width: 120px;
+}
+ 
 
 /* === Text === */
 .footer-text {
@@ -2007,7 +2016,7 @@ header.hover-active .contact-us {
 }
 
 .tc{
-  font-size: 16px !important;
+  font-size: 14px !important;
 }
 
 .atmanname{
@@ -2047,10 +2056,12 @@ header.hover-active .contact-us {
 
 /* === Responsive Design === */
 @media (max-width: 768px) {
+
+
   .footer-container {
     flex-direction: column;
     text-align: center;
-    gap: 15px;
+    gap: 10px;
   }
 
   .footer-logo img {
@@ -2161,12 +2172,14 @@ header.hover-active .contact-us {
 }
 
 .partners-section h2.title {
-    font-size: 49px;
-    font-weight: 500;
+    font-size: 48px;
+    line-height: 3px;
+    font-weight: 300;
 }
 
 .partners-section p.description {
     font-size: 29px;
+    
 }
 
 .partners-section .card {
@@ -2331,6 +2344,7 @@ header.hover-active .contact-us {
 
   }
 
+
   /* Image first */
   .image-block-1 {
     order: 1;
@@ -2358,6 +2372,10 @@ header.hover-active .contact-us {
     width: 100%;
   }
 
+  .partners-section h2.title
+   {
+    font-size: 30px;
+   }
 
 }
 
@@ -2416,7 +2434,7 @@ header.hover-active .contact-us {
   justify-content: center;
   cursor: pointer;
   transition: flex 0.5s ease;
-  border-right: 1px solid gray;
+  border-right: 1px solid rgb(199, 199, 199);
   align-items: start;
 
 }
@@ -2651,16 +2669,39 @@ header.hover-active .contact-us {
     font-size: 13px;
   }
   .beliefs-image img {
-
     max-width: 300px;
   }
-   .beliefs-column.active {
+   .beliefs-column.active 
+  {
     border: 0px;
     margin-left: 0;
   }
-   .beliefs-column {
+
+   .beliefs-column 
+   {
     border: 0px;
     margin-left: 0;
   }
+
+  .panel-image img
+  {
+    width: auto;
+    height: auto;
+  }
+  
 }
 
+.menu-item h2 a:hover{
+  color: #007bff !important;
+}
+.menu-txt{
+   transition: 0.3s;
+  padding: 2px;
+
+}
+
+.menu-txt:hover {
+  
+color: #00adee !important;
+
+}

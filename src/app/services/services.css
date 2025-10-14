@@ -18,23 +18,32 @@ body{
 /* Typography */
 .fr-title{
   font-weight:400;
-  font-size:clamp(28px,3.2vw + 12px,48px);
+  font-size:2.135vw;
   line-height:1.12;
   margin:0 0 .35rem 0;
+  width:60%;
 }
+
+.p{
+  font-size: 0.938vw !important;
+}
+.h6{
+  font-size: 1.146vw !important;
+}
+
 .fr-title .fw-700{font-weight:700}
 .fr-title .fr-accent{color:var(--fr-accent);}
 
 .fr-lead{
-  font-size:18px;
+  font-size:0.938vw;
   line-height:28px; /* slightly looser for long copy */
   color:var(--fr-muted);
- 
+ padding-top: 20px;
 }
 
 .fr-kicker{
   font-weight:700;
-  font-size:32px;
+  font-size:1.667vw;
   margin-bottom:.5rem;
 }
 
@@ -183,9 +192,22 @@ body{
   color: #ddd;
   padding: 20px 15px;
 }
+.menu-item h2 a:hover{
+  color: #007bff !important;
+}
+.menu-txt{
+   transition: 0.3s;
+  padding: 10px;
 
+}
+
+.menu-txt:hover {
+  
+color: #00adee !important;
+
+}
 .footer-container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -197,7 +219,9 @@ html {
   scroll-behavior: smooth;
 }
 .tc{
-  font-size: 16px !important;
+  font-size: 12px !important;
+  margin: 0 !important;
+      align-content: center !important;
 }
 
 .atmanname{
@@ -415,7 +439,7 @@ nav:hover ~ header {
   display: flex;
   align-items: flex-start;
 
-  padding: 8px 0;
+  padding: 2px 0;
   border-radius: 6px;
   transition: background 0.2s ease;
 

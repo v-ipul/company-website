@@ -33,6 +33,17 @@ isDropdownOpen = false;
 
 isContactDropdownOpen: boolean = false;
 
+scrollToFragment(fragment: string) {
+  // small timeout to ensure DOM has updated / section present
+  setTimeout(() => {
+    const el = document.getElementById(fragment);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, 100);  // 100ms delay (you may need to adjust)
+}
+
+
 onContactDropdownHover(state: boolean) {
   this.isContactDropdownOpen = state;
 }

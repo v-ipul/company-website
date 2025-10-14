@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostBinding, OnInit,AfterViewInit } from '@angular/core';
-import { RouterLink, Router, NavigationEnd, ActivatedRoute } from '@angular/router';
+import { RouterLink, Router,  ActivatedRoute } from '@angular/router';
 
 
 interface ServiceCard {
@@ -35,6 +35,16 @@ isDropdownOpen = false;
   navHovered = false;
 
 isContactDropdownOpen: boolean = false;
+
+scrollToFragment(fragment: string) {
+  // small timeout to ensure DOM has updated / section present
+  setTimeout(() => {
+    const el = document.getElementById(fragment);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, 100);  // 100ms delay (you may need to adjust)
+}
 
 onContactDropdownHover(state: boolean) {
   this.isContactDropdownOpen = state;

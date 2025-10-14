@@ -81,7 +81,7 @@ font-size: 18px;
 :host {
   display: block;
   font-family: 'Manrope', sans-serif;
-  overflow-x: hidden;
+  
   box-sizing: border-box;
   position: relative;
   color: #fff;
@@ -329,7 +329,7 @@ nav a {
 }
     /* Title */
     .section-title {
-      font-size: 48px;
+      font-size: 2.474vw;
       line-height: 46px;
       font-weight: 400;
       margin-bottom: 10px;
@@ -346,7 +346,7 @@ nav a {
 
 
     .section-subtitle {
-      font-size: 14px;
+      font-size: 0.932vw;
       line-height: 20px;
       margin-bottom: 40px;
       color: #444;
@@ -411,7 +411,7 @@ nav a {
       left: 20px;
       right: 20px;
       color: #fff;
-      font-size: 14px;
+      font-size: 0.995vw;
       line-height: 22px;
       text-shadow: 0 2px 6px rgba(0,0,0,0.6);
     }
@@ -691,7 +691,11 @@ nav a {
   margin: 0;
   text-decoration: none;
 }
-
+.nav-item a{
+  font-size: 16px;
+  font-weight: 500;
+  color:  white !important;
+}
 .social-links {
   list-style: none;
   display: flex;
@@ -905,14 +909,21 @@ nav:hover ~ header {
   display: flex;
   align-items: flex-start;
 
-  padding: 8px 0;
+  padding: 2px 0;
   border-radius: 6px;
-  transition: background 0.2s ease;
-
 }
 
-.menu-item:hover {
-  background-color: #f5f8fa;
+.menu-txt{
+   transition: 0.3s;
+}
+
+.menu-txt:hover {
+  
+  background: #f5f5f5;
+
+}
+.menu-item h2 a:hover{
+  color: #007bff !important;
 }
 
 .menu-item .icon {
@@ -1396,8 +1407,15 @@ nav:hover ~ header {
 
     /* Typo utilities */
     .kpi{
-      font-size: 26px;
+      font-size: 1.688vw;
       font-weight: 800;
+      line-height: 40px;
+      letter-spacing: .5px;
+    }
+     .kpi1{
+      font-size: 2.288vw;
+      font-weight: 800;
+      line-height: 40px;
       letter-spacing: .5px;
     }
     .quote{
@@ -1418,7 +1436,7 @@ nav:hover ~ header {
 }
 
 .security-title {
-  font-size: 2rem;
+  font-size: 2.135vw;
   font-weight: 600;
 }
 
@@ -1429,7 +1447,7 @@ nav:hover ~ header {
 
 .security-description {
   color: #555;
-  font-size: 1rem;
+  font-size: 1.031vw;
   max-width: 500px;
 }
 
@@ -1462,7 +1480,12 @@ nav:hover ~ header {
 
 .feature-title {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 1.26vw;
+  color: #1f1f1f;
+}
+.feature-titlee {
+  font-weight: 600;
+  font-size: 1.563vw;
   color: #1f1f1f;
 }
 
@@ -1502,18 +1525,68 @@ nav:hover ~ header {
   align-content: center;
    
 }
+.working-process-main1{
+   background: url('/ai/churnbg.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  padding:  20px;
+  color: white;
+  text-align: left;
+  align-content: center;
+   
+}
+.working-process-main2{
+   background: url('/ai/segmenAgent.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  padding:  20px;
+  color: white;
+  text-align: left;
+  align-content: center;
+   
+}
+.working-process-main3{
+   background: url('/ai/forcaster.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  padding:  20px;
+  color: white;
+  text-align: left;
+  align-content: center;
+   
+}
+.working-process-main4{
+   background: url('/ai/segmentation.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  padding:  20px;
+  color: white;
+  text-align: left;
+  align-content: center;
+   
+}
+.working-process-main5{
+   background: url('/ai/fusion.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  padding:  20px;
+  color: white;
+  text-align: left;
+  align-content: center;
+   
+}
 /* Add a black overlay */
 
 
     .working-process-header {
-      font-size: 2rem;
+      font-size: 2.404vw;
       font-weight: 700;
       margin-bottom: 20px;
      
     }
 
     .working-process-subheader {
-      font-size: 1.1rem;
+      font-size: 1.042vw;
       font-weight: 400;
       margin-bottom: 40px;
     }
@@ -1762,10 +1835,10 @@ color: #898989;
    padding-right: 20px !important;
  } 
  .image-overlay{
-  font-size: 14px !important;
+  font-size: 0.995vw !important;
  }
  .image-overlayy{
-font-size: 14px !important;
+font-size: 0.995vw !important;
  }
  .forcasteragent{
   height: 250px;

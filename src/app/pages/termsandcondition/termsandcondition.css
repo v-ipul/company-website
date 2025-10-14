@@ -196,12 +196,27 @@ body{
   flex-wrap: wrap;
   gap: 20px;
 }
+.menu-item h2 a:hover{
+  color: #007bff !important;
+}
+.menu-txt{
+   transition: 0.3s;
+  padding: 10px;
 
+}
+
+.menu-txt:hover {
+  
+color: #00adee !important;
+
+}
 .footer-logo {
   width: 120px;
 }
 .tc{
-  font-size: 16px !important;
+  font-size: 12px !important;
+  margin: 0 !important;
+      align-content: center !important;
 }
 
 .atmanname{
@@ -415,7 +430,7 @@ nav:hover ~ header {
   display: flex;
   align-items: flex-start;
 
-  padding: 8px 0;
+  padding: 2px 0;
   border-radius: 6px;
   transition: background 0.2s ease;
 

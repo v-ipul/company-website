@@ -141,10 +141,10 @@ export class OurBecomingComponent implements OnInit, AfterViewInit {
   // Panels (Walk With Us / Tabs)
   activeTab: string = 'collaborative_culture';
   panels: Panel[] = [
-    { id: 'collaborative_culture', title: 'Collaborative Culture', desc: 'At Atman, we believe every journey is unique—and together, we’re building a path where ambition meets opportunity. If you’re passionate about making an impact, eager to learn, and ready to help shape the future of technology and services, you’ll find your place here.', img: 'meeting.png' },
-    { id: 'growth_learning', title: 'Growth Learning', desc: 'At Atman, we believe every journey is unique...', img: '01.jpg' },
-    { id: 'purposeful_work', title: 'Purposeful Work', desc: 'At Atman, we believe every journey is unique...', img: 'acountibility.jpg' },
-    { id: 'diversity_inclusion', title: 'Diversity & Inclusion', desc: 'At Atman, we believe every journey is unique...', img: 'Image.png' }
+    { id: 'collaborative_culture', title: 'Collaborative Culture', desc: 'At Atman, we believe every journey is unique—and together, we’re building a path where ambition meets opportunity. If you’re passionate about making an impact, eager to learn, and ready to help shape the future of technology and services, you’ll find your place here.', img: 'office.jpg' },
+    { id: 'growth_learning', title: 'Growth Learning', desc: 'At Atman, we believe every journey is unique—and together, we’re building a path where ambition meets opportunity. If you’re passionate about making an impact, eager to learn, and ready to help shape the future of technology and services, you’ll find your place here.', img: 'growth2.jpg' },
+    { id: 'purposeful_work', title: 'Purposeful Work', desc: 'At Atman, we believe every journey is unique—and together, we’re building a path where ambition meets opportunity. If you’re passionate about making an impact, eager to learn, and ready to help shape the future of technology and services, you’ll find your place here.', img: 'purposefull work.jpg' },
+    { id: 'diversity_inclusion', title: 'Diversity & Inclusion', desc: 'At Atman, we believe every journey is unique—and together, we’re building a path where ambition meets opportunity. If you’re passionate about making an impact, eager to learn, and ready to help shape the future of technology and services, you’ll find your place here.', img: 'Diversity.jpg' }
   ];
 
 

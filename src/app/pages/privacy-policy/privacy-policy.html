@@ -25,9 +25,9 @@
   <header [class.hover-active]="isHovering">
     <div class="header-container">
       <!-- Logos -->
-     
+       <div routerLink="/" routerLinkActive="active">
       <img src="logo-black.png" class="logo logo-black" routerLink="/" routerLinkActive="active" alt="Logo Black" />
-
+</div>
       <div class="header-section">
         <nav>
           <!-- Ways We Serve Dropdown -->
@@ -49,11 +49,11 @@
                     <img src="icon/view-grid.png" class="icon" alt="">
                     <div>
                       <h4>Services</h4>
-                      <div class="sub-manu">
-                        <h2 routerLinkActive="active"><a routerLink="/services" fragment="Consulting">Consulting</a></h2>
-                        <h2 routerLinkActive="active"><a routerLink="/services" fragment="Implementation">Implementation</a></h2>
-                        <h2 routerLinkActive="active"><a routerLink="/services" fragment="Integration">Integration</a></h2>
-                        <h2 routerLinkActive="active"><a routerLink="/services" fragment="ManagedServices">Managed Services</a></h2>
+                      <div class="sub-menu">
+                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/services" fragment="Consulting">Consulting</a></h2>
+                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/services" fragment="Implementation">Implementation</a></h2>
+                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/services" fragment="Integration">Integration</a></h2>
+                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/services" fragment="ManagedServices">Managed Services</a></h2>
                       </div>
                     </div>
                   </div>
@@ -62,14 +62,14 @@
                     <img src="icon/Industries_we_serve.png" class="icon" alt="">
                     <div>
                       <h4>Industries We Serve</h4>
-                      <div class="sub-manu">
-                        <h2 routerLinkActive="active"><a routerLink="/industries" fragment="Manufacturing">Manufacturing</a></h2>
-                        <h2 routerLinkActive="active"><a routerLink="/industries" fragment="BankingFinance">Banking & Finance</a></h2>
-                        <h2 routerLinkActive="active"><a routerLink="/industries" fragment="Healthcare">Healthcare</a></h2>
-                        <h2 routerLinkActive="active"><a routerLink="/industries" fragment="Insurance">Insurance</a></h2>
-                        <h2 routerLinkActive="active"><a routerLink="/industries" fragment="HighTech">High Tech</a></h2>
-                        <h2 routerLinkActive="active"><a routerLink="/industries" fragment="Industrial">Industrial</a></h2>
-                        <h2 routerLinkActive="active"><a routerLink="/industries" fragment="LifeSciences">Life Sciences</a></h2>
+                      <div class="sub-menu">
+                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/industries" fragment="Manufacturing">Manufacturing</a></h2>
+                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/industries" fragment="BankingFinance">Banking & Finance</a></h2>
+                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/industries" fragment="Healthcare">Healthcare</a></h2>
+                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/industries" fragment="Insurance">Insurance</a></h2>
+                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/industries" fragment="HighTech">High Tech</a></h2>
+                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/industries" fragment="Industrial">Industrial</a></h2>
+                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/industries" fragment="LifeSciences">Life Sciences</a></h2>
                       </div>
                     </div>
                   </div>
@@ -78,7 +78,7 @@
                     <img src="icon/diamond_9346758 1.png" class="icon" alt="">
                     <div>
                       <h4>Jewels</h4>
-                      <div class="sub-manu">
+                      <div class="sub-menu">
                         <h2>Loan Origination System</h2>
                         <h2>Sample Management Solution</h2>
                         <h2>Clinic Management Solution</h2>
@@ -113,13 +113,13 @@
                     reimagine
                     tomorrow.
                   </p>
-                  <a href="#" class="see-all"> </a>
+                  <a routerLink="/ai" routerLinkActive="active" class="see-all"> </a>
                 </div>
 
                 <!-- Right Section -->
                 <div class="mega-right">
                   <!-- Column 1 -->
-                 <a routerLink="/ai" fragment="Analytics"><div class="menu-item" >
+                 <a routerLink="/ai" fragment="Analytics"><div class="menu-item menu-txt" >
                     <img src="icon/view-grid.png" class="icon" alt="">
                     <div  routerLinkActive="active">
                       <h4>Analytics</h4>
@@ -130,22 +130,22 @@
                   </div> </a>
 
                   <!-- Column 2 -->
-                  <div class="menu-item" routerLink="/ai" routerLinkActive="active">
+                  <div class="menu-item " routerLink="/ai" routerLinkActive="active">
                     <img src="icon/Industries_we_serve.png" class="icon" alt="">
                     <div>
                       <h4>Agentic Suite</h4>
-                      <div class="sub-manu">
-                        <h2 routerLinkActive="active"><a routerLink="/ai" fragment="ChurnPredictor">Churn Predictor</a></h2>
-                        <h2 routerLinkActive="active"><a routerLink="/ai" fragment="ForecasterAgent">Forecaster Agent</a></h2>
-                        <h2 routerLinkActive="active"><a routerLink="/ai" fragment="SegmentationAgent">Segmentation Agent</a></h2>
-                        <h2 routerLinkActive="active"><a routerLink="/ai" fragment="FeedbackAnalyzer">Feedback Analyzer</a></h2>
+                      <div class="sub-menu">
+                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/ai" fragment="ChurnPredictor">Churn Predictor</a></h2>
+                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/ai" fragment="ForecasterAgent">Forecaster Agent</a></h2>
+                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/ai" fragment="SegmentationAgent">Segmentation Agent</a></h2>
+                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/ai" fragment="FeedbackAnalyzer">Feedback Analyzer</a></h2>
                       </div>
 
                     </div>
                   </div>
 
                   <!-- Column 3 -->
-                  <div class="menu-item">
+                  <div class="menu-item menu-txt">
                     <img src="icon/diamond_9346758 1.png" class="icon" alt="">
                     <div routerLinkActive="active"><a routerLink="/ai" fragment="AtmanFusion">
                       <h4>Atman Fusion</h4>
@@ -176,49 +176,49 @@
                 </div>
 
                 <div class="mega-right">
-                  <div class="menu-item" routerLink="/beingatman" routerLinkActive="active">
+                  <div class="menu-item menu-txt" routerLink="/beingatman" routerLinkActive="active">
                     <img src="IconB1.png" class="icon" alt="">
                     <div>
                       <h4>Our <strong>Becoming</strong></h4>
                       <p>Our story, our spirit, our truth</p>
                     </div>
                   </div>
-                  <div class="menu-item" routerLink="/comingsoon" routerLinkActive="active">
+                  <div class="menu-item menu-txt" routerLink="/comingsoon" routerLinkActive="active">
                     <img src="IconB2.png" class="icon" alt="">
                     <div>
                       <h4>Progressive Minds</h4>
                       <p>Mind that inspire, guide and empower </p>
                     </div>
                   </div>
-                  <div class="menu-item" routerLink="/comingsoon" routerLinkActive="active">
+                  <div class="menu-item menu-txt" routerLink="/comingsoon" routerLinkActive="active">
                     <img src="IconB4.png" class="icon" alt="">
                     <div>
                       <h4>Our Rythem</h4>
                       <p>Living our essence through everyday actions</p>
                     </div>
                   </div>
-                <a routerLink="/beingatman" fragment="northstar"><div class="menu-item"  routerLinkActive="active">
+                <a routerLink="/beingatman" fragment="northstar"><div class="menu-item menu-txt"  routerLinkActive="active">
                     <img src="IconB5.png" class="icon" alt="">
                     <div>
                       <h4>North Star</h4>
                       <p>Purpose that lights our chosen path</p>
                     </div>
                   </div></a>
-                 <a routerLink="/beingatman" fragment="partners"> <div class="menu-item" routerLinkActive="active">
+                 <a routerLink="/beingatman" fragment="partners"> <div class="menu-item menu-txt" routerLinkActive="active">
                     <img src="IconB6.png" class="icon" alt="">
                     <div>
                       <h4>Partners in purpose</h4>
                       <p>Working together for shared meaningful outcomes</p>
                     </div>
                   </div></a>
-                  <a routerLink="/beingatman" fragment="beliefs"><div class="menu-item" routerLinkActive="active">
+                  <a routerLink="/beingatman" fragment="beliefs"><div class="menu-item menu-txt" routerLinkActive="active">
                     <img src="IconB7.png" class="icon" alt="">
                     <div>
                       <h4>Values\Beliefs</h4>
                       <p>Beliefs shaping culture, conduct and purpose</p>
                     </div>
                   </div></a>
-                <a routerLink="/beingatman" fragment="walk"><div class="menu-item" routerLinkActive="active">
+                <a routerLink="/beingatman" fragment="walk"><div class="menu-item menu-txt" routerLinkActive="active">
                     <img src="Icon8.png" class="icon" alt="">
                     <div>
                       <h4>Walk with us</h4>
@@ -230,7 +230,7 @@
             </div>
           </div>
 
-          <div class="dropdown" (mouseenter)="onWisdomDropdownHover(true)" (mouseleave)="onWisdomDropdownHover(false)">
+        <!--<div class="dropdown" (mouseenter)="onWisdomDropdownHover(true)" (mouseleave)="onWisdomDropdownHover(false)">
             <a href="#" (mouseenter)="onHover(true)" (mouseleave)="onHover(false)">Wisdom</a>
 
             <div class="mega-dropdown" [class.show]="isWisdomDropdownOpen">
@@ -284,9 +284,9 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
 
-          <div class="dropdown" (mouseenter)="onAcDropdownHover(true)" (mouseleave)="onAcDropdownHover(false)">
+        <!--  <div class="dropdown" (mouseenter)="onAcDropdownHover(true)" (mouseleave)="onAcDropdownHover(false)">
             <a href="#" (mouseenter)="onHover(true)" (mouseleave)="onHover(false)">AC Foundation</a>
 
             <div class="mega-dropdown" [class.show]="isAcDropdownOpen">
@@ -340,7 +340,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
      <div class="dropdown" >
             <a routerLink="/news" routerLinkActive="active">News</a>
             </div>
@@ -356,7 +356,7 @@
                 <h3>Contact Us</h3>
                 <p>We’d love to connect! <br> Reach out for collaborations, <br> inquiries, or support.
                 </p>
-                <a href="#" class="see-all">Get in touch →</a>
+                <a routerLink="/contactus" routerLinkActive="active" class="see-all">Get in touch →</a>
               </div>
 
               <!-- Right Section -->
@@ -365,7 +365,7 @@
                   <img src="icon/view-grid.png" class="icon" alt="">
                   <div>
                     <h4>Email Us</h4>
-                    <div class="sub-manu">
+                    <div class="sub-menu">
                     <h2><a href="mailto:info@atmanconsultants.com">info@atmanconsultants.com</a></h2>
 <h2><a href="mailto:sales@atmanconsultants.com">sales@atmanconsultants.com</a></h2>
                     </div>
@@ -376,7 +376,7 @@
                   <img src="icon/Industries_we_serve.png" class="icon" alt="">
                   <div>
                     <h4>Call Us</h4>
-                    <div class="sub-manu">
+                    <div class="sub-menu">
                         <h2>+91 985041 7098</h2>
                      <h2>+91 98238 37098</h2>
                     </div>
@@ -387,7 +387,7 @@
                   <img src="icon/diamond_9346758 1.png" class="icon" alt="">
                   <div>
                     <h4>Visit Us</h4>
-                    <div class="sub-manu">
+                    <div class="sub-menu">
                       <h2>Head Office: Pune, India</h2>
                       <h2>Branch: Bengaluru, India</h2>
                       <h2>Branch: New York, USA</h2>
@@ -417,7 +417,7 @@
             <div class="menu-item" routerLink="/services" routerLinkActive="active">
               <img src="icon/view-grid.png" class="icon" alt="">
               <h4>Services</h4>
-              <div class="sub-manu">
+              <div class="sub-menu">
                         <h5 routerLinkActive="active"><a routerLink="/services" fragment="Consulting">Consulting</a></h5>
                         <h5 routerLinkActive="active"><a routerLink="/services" fragment="Implementation">Implementation</a></h5>
                         <h5 routerLinkActive="active"><a routerLink="/services" fragment="Integration">Integration</a></h5>
@@ -427,7 +427,7 @@
             <div class="menu-item" routerLink="/industries" routerLinkActive="active">
               <img src="icon/Industries_we_serve.png" class="icon" alt="">
               <h4>Industries We Serve</h4>
-              <div class="sub-manu">
+              <div class="sub-menu">
                <h2 routerLinkActive="active"><a routerLink="/industries" fragment="Manufacturing">Manufacturing</a></h2>
                         <h5 routerLinkActive="active"><a routerLink="/industries" fragment="BankingFinance">Banking & Finance</a></h5>
                         <h5 routerLinkActive="active"><a routerLink="/industries" fragment="Healthcare">Healthcare</a></h5>
@@ -440,7 +440,7 @@
             <div class="menu-item" routerLink="/comingsoon" routerLinkActive="active">
               <img src="icon/diamond_9346758 1.png" class="icon" alt="">
               <h4>Jewels</h4>
-              <div class="sub-manu">
+              <div class="sub-menu">
                 <h5>Loan Origination System</h5>
                 <h5>Sample Management Solution</h5>
                 <h5>Clinic Management Solution</h5>
@@ -467,7 +467,7 @@
             <div class="menu-item" routerLink="/ai" routerLinkActive="active">
               <img src="icon/Industries_we_serve.png" class="icon" alt="">
               <h4>Agentic Suite</h4>
-              <div class="sub-manu">
+              <div class="sub-menu">
                 <h5 routerLinkActive="active"><a routerLink="/ai" fragment="ChurnPredictor">Churn Predictor</a></h5>
                         <h5 routerLinkActive="active"><a routerLink="/ai" fragment="ForecasterAgent">Forecaster Agent</a></h5>
                         <h5 routerLinkActive="active"><a routerLink="/ai" fragment="SegmentationAgent">Segmentation Agent</a></h5>
@@ -531,7 +531,7 @@
         </div>
         
         <!-- Wisdom -->
-        <div class="mobile-dropdown">
+      <!-- <div class="mobile-dropdown">
           <div class="mobile-dropdown-header" (click)="toggleMega(3)">
             Wisdom <span [class.rotate]="activeMegaIndex === 3">▸</span>
           </div>
@@ -567,10 +567,10 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <!-- AC Foundation -->
-        <div class="mobile-dropdown">
+       <!-- <div class="mobile-dropdown">
           <div class="mobile-dropdown-header" (click)="toggleMega(4)">
             AC Foundation <span [class.rotate]="activeMegaIndex === 4">▸</span>
           </div>
@@ -606,7 +606,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
         <!--News-->
         <div class="mobile-dropdown">
           <div class="mobile-dropdown-header" (click)="toggleMega(2)">
@@ -621,7 +621,7 @@
             <div class="menu-item">
               <img src="icon/view-grid.png" class="icon" alt="">
               <h4>Email Us</h4>
-              <div class="sub-manu">
+              <div class="sub-menu">
                <h2><a href="mailto:info@atmanconsultants.com">info@atmanconsultants.com</a></h2>
 <h2><a href="mailto:sales@atmanconsultants.com">sales@atmanconsultants.com</a></h2>
 
@@ -630,7 +630,7 @@
             <div class="menu-item">
               <img src="icon/Industries_we_serve.png" class="icon" alt="">
               <h4>Call Us</h4>
-              <div class="sub-manu">
+              <div class="sub-menu">
                  <h5>+91 985041 7098</h5>
                      <h5>+91 98238 37098</h5>
               </div>
@@ -638,7 +638,7 @@
             <div class="menu-item">
               <img src="icon/diamond_9346758 1.png" class="icon" alt="">
               <h4>Visit Us</h4>
-              <div class="sub-manu">
+              <div class="sub-menu">
                 <h5>Head Office: Pune, India</h5>
                 <h5>Branch: Bengaluru, India</h5>
                 <h5>Branch: New York, USA</h5>

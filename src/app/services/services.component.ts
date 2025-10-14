@@ -1,7 +1,7 @@
 
 import { CommonModule } from '@angular/common';
-import { Component, HostBinding, OnInit } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Component, HostBinding, OnInit, AfterViewInit } from '@angular/core';
+import { RouterLink, Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 
 
 interface ServiceCard {

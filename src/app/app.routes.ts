@@ -1,4 +1,4 @@
-import { provideRouter, Routes, withInMemoryScrolling } from '@angular/router';
+import { provideRouter, Routes, withInMemoryScrolling  } from '@angular/router';
 import { HomeComponent } from './home.component/home.component';
 import { IndustriesComponent } from './industries/industries.component';
 import { ServicesComponent } from './services/services.component';
@@ -19,20 +19,20 @@ export const routes: Routes = [
    { path: 'home', component: HomeComponent },
    { path: 'industries', component: IndustriesComponent },  
    { path: 'services', component: ServicesComponent },
-   { path: 'being-atman', component: OurBecomingComponent },  
+   { path: 'beingatman', component: OurBecomingComponent },  
    { path: 'privacy', component: PrivacyPolicy },
     { path: 'termsandcondition', component: Termsandcondition },
    { path: 'cookie', component: CookieConsentComponent },
    { path: 'ai', component: Ai },
    { path: 'news', component: News },
    { path: 'comingsoon', component: Comingsoon },
-   { path: 'contact-us', component: MyContactForm }  // Updated path for Contact Us page
+   { path: 'contactus', component: MyContactForm }  // Updated path for Contact Us page
 ];
 
-provideRouter(
+export const router = provideRouter(
   routes,
   withInMemoryScrolling({
-    anchorScrolling: 'enabled',  // Enable scrolling to fragments
-    scrollPositionRestoration: 'enabled', // Enable restoring scroll position
+    anchorScrolling: 'enabled',
+    scrollPositionRestoration: 'enabled'
   })
 );

@@ -1884,7 +1884,19 @@ padding: 4px;
   flex-wrap: wrap;
   gap: 20px;
 }
+.tc{
+  font-size: 16px !important;
+}
 
+.atmanname{
+  padding-left:200px !important;
+}
+@media (max-width: 768px) {
+
+.atmanname{
+  padding-left:10px !important;
+}
+}
 .footer-logo {
   width: 120px;
 }
@@ -1893,6 +1905,7 @@ padding: 4px;
   font-size: 12px;
   color: rgb(230, 229, 229);
   margin: 0;
+  text-decoration: none;
 }
 
 .social-links {

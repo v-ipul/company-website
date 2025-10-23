@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { FormsModule, NgForm } from '@angular/forms'; // <-- Import FormsModule
 import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
+import { Header } from '../header/header';
 
 interface ServiceCard {
   image: string;
@@ -20,7 +21,7 @@ interface ContactForm {
 @Component({
   selector: 'app-my-contact-form',
   standalone: true,  // Since this is a standalone component
-  imports: [CommonModule, RouterLink, FormsModule],  // <-- Add FormsModule here
+  imports: [CommonModule, RouterLink, FormsModule, Header],  // <-- Add FormsModule here
   templateUrl: './my-contact-form.html',
   styleUrls: ['./my-contact-form.css']
 })

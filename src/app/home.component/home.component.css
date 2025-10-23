@@ -1283,7 +1283,8 @@ nav a {
   font-size: 12px;
   font-weight: 400;
   color: #111;
-  padding-top: 8px;
+  margin-top: 3px;
+  padding: 5px;
   cursor: pointer;
 }
 .menu-item h2:hover {

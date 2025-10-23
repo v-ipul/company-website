@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostBinding, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { Header } from '../header/header';
 
 interface Slide {
   image: string;
@@ -19,7 +20,7 @@ interface ServiceCard {
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterLink],
+  imports: [CommonModule, RouterLink, Header],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })

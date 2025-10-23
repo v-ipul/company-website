@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component, HostBinding, OnInit } from '@angular/core';
-import { RouterLink } from '@angular/router';
-
+import { Component, HostBinding, OnInit,AfterViewInit, ViewEncapsulation, HostListener } from '@angular/core';
+import { RouterLink, Router,  ActivatedRoute } from '@angular/router';
+import { Header } from '../header/header';
 interface ServiceCard {
   image: string;
   title: string;
@@ -12,9 +12,9 @@ interface ServiceCard {
 @Component({
   selector: 'app-news',
    standalone: true,
-  imports: [CommonModule, RouterLink],
+  imports: [CommonModule, RouterLink, Header],
   templateUrl: './news.html',
-  styleUrl: './news.css'
+  styleUrls: ['./news.css']
 })
 export class News {
 
@@ -29,9 +29,28 @@ export class News {
   mobileMenuOpen = false;
   isHovering = false;
 isDropdownOpen = false;
+isWaysDropdownOpen = false;
   mobileSubmenuOpen = false;
   isCollapsed = true;
   navHovered = false;
+
+ @HostListener('window:scroll', [])
+  onWindowScroll(): void {
+    // When you scroll past 100px vertically, header stays white
+    this.isHovering = window.scrollY > 100;
+  }
+
+
+onHover(state: boolean): void {
+  this.isHovering = state || this.isWaysDropdownOpen;
+}
+
+onWaysDropdownHover(state: boolean): void {
+  this.isWaysDropdownOpen = state;
+  this.isHovering = state || this.isHovering;
+}
+
+
 
 isContactDropdownOpen: boolean = false;
 
@@ -63,13 +82,10 @@ onAcDropdownHover(state: boolean) {
   isMenuOpen = false;
 
 
-  isWaysDropdownOpen = false;
+
 isAtmanDropdownOpen = false;
 
-// Ways We Serve dropdown hover
-onWaysDropdownHover(state: boolean) {
-  this.isWaysDropdownOpen = state;
-}
+
 
 // Being Atman dropdown hover
 onAtmanDropdownHover(state: boolean) {
@@ -82,9 +98,7 @@ onAtmanDropdownHover(state: boolean) {
     this.mobileMenuOpen = !this.mobileMenuOpen;
   }
 
-  onHover(state: boolean): void {
-    this.isHovering = state;
-  }
+
 
   onDropdownHover(state: boolean): void {
     this.isDropdownOpen = state;

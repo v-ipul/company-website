@@ -76,12 +76,21 @@ font-size: 18px;
   opacity: 1;
   transform: scale(1);
 }
+header.hover-active {
+  background-color: #fff !important ;
+  transition: background-color 0.3s ease !important;
+}
+
+header.hover-active nav a,
+header.hover-active .contact-us {
+  color: #000 !important ;
+}
 
 
 :host {
   display: block;
   font-family: 'Manrope', sans-serif;
-  
+  background-color: #ffffff00 !important;
   box-sizing: border-box;
   position: relative;
   color: #fff;
@@ -90,18 +99,49 @@ font-size: 18px;
 }
 
 /* Header */
+/* === Base header === */
 header {
-  position: relative;
+  position: fixed;          /* stays on top when scrolling */
   top: 0;
   left: 0;
   width: 100%;
   height: 60px;
-  background-color: rgba(255, 255, 255, 0);
-  z-index: 1000;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: transparent;  /* starts transparent */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1000;
 }
+
+/* === When hovered === */
+header.hover-active {
+  background-color: #ffffff;       /* white background */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* === Change text & logo colors when hovered === */
+header.hover-active nav a {
+  color: #000000 !important;
+}
+
+header.hover-active .logo-black {
+  display: block !important;
+}
+
+header.hover-active .logo-white {
+  display: none !important;
+}
+
+/* === Default (before hover) === */
+header .logo-white {
+  display: block !important;
+}
+
+header .logo-black {
+  display: none;
+}
+
 
 /* When hover-active class is added to header */
 /* Header hover-active styles */
@@ -143,9 +183,7 @@ header .logo-black {
   position: relative;
 }
 
-.logo-black {
-  display: none;
-}
+
 
 .header-section {
   position: relative;
@@ -170,7 +208,7 @@ nav a {
   font-weight: 100;
   font-size: 12px;
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
   transition: color 0.3s ease;
   top: 0px;
 
@@ -448,7 +486,10 @@ nav a {
 
     /* Banner styles */
     .banner-wrapper {
-      position: relative;
+     position: relative;
+  width: 100%;
+
+  overflow: hidden;
     }
 
     .orange-band {
@@ -465,7 +506,7 @@ nav a {
 
     .banner {
       position: relative;
-      height: 300px;
+      height: 360px;
       background: url('/ai/ai-banner.png') no-repeat center center;
       background-size: cover;
       color: white;
@@ -1214,7 +1255,7 @@ nav:hover ~ header {
   transform: translateY(-10px); /* smooth drop down */
   transition: all 0.3s ease;
   z-index: 9999;
-  padding: 40px 60px;
+  padding: 20px 60px;
   overflow-y: auto; /* scroll if content too large */
 
 }
@@ -1305,7 +1346,7 @@ nav:hover ~ header {
   font-size: 12px;
   font-weight: 400;
   color: #111;
-  padding-top: 8px;
+  padding-top: 3px;
   cursor: pointer;
 }
 .menu-item h2:hover{

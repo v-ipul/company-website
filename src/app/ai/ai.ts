@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { Component, HostBinding, OnInit,AfterViewInit } from '@angular/core';
+import { Component, HostBinding, OnInit,AfterViewInit, ViewEncapsulation, HostListener } from '@angular/core';
 import { RouterLink, Router,  ActivatedRoute } from '@angular/router';
+import { Header } from '../header/header';
+
 
 
 interface ServiceCard {
@@ -12,10 +14,10 @@ interface ServiceCard {
 
 @Component({
   selector: 'app-ai',
-   standalone: true,
-  imports: [CommonModule, RouterLink],
+  
+  imports: [CommonModule, RouterLink, Header],
   templateUrl: './ai.html',
-  styleUrl: './ai.css'
+  styleUrls: ['./ai.css']
 })
 export class Ai {
 
@@ -30,9 +32,27 @@ export class Ai {
   mobileMenuOpen = false;
   isHovering = false;
 isDropdownOpen = false;
+isWaysDropdownOpen = false;
   mobileSubmenuOpen = false;
   isCollapsed = true;
   navHovered = false;
+
+ @HostListener('window:scroll', [])
+  onWindowScroll(): void {
+    // When you scroll past 100px vertically, header stays white
+    this.isHovering = window.scrollY > 100;
+  }
+
+
+
+onHover(state: boolean): void {
+  this.isHovering = state || this.isWaysDropdownOpen;
+}
+
+onWaysDropdownHover(state: boolean): void {
+  this.isWaysDropdownOpen = state;
+  this.isHovering = state || this.isHovering;
+}
 
 isContactDropdownOpen: boolean = false;
 
@@ -74,13 +94,10 @@ onAcDropdownHover(state: boolean) {
   isMenuOpen = false;
 
 
-  isWaysDropdownOpen = false;
+
 isAtmanDropdownOpen = false;
 
-// Ways We Serve dropdown hover
-onWaysDropdownHover(state: boolean) {
-  this.isWaysDropdownOpen = state;
-}
+
 
 // Being Atman dropdown hover
 onAtmanDropdownHover(state: boolean) {
@@ -93,9 +110,7 @@ onAtmanDropdownHover(state: boolean) {
     this.mobileMenuOpen = !this.mobileMenuOpen;
   }
 
-  onHover(state: boolean): void {
-    this.isHovering = state;
-  }
+
 
   onDropdownHover(state: boolean): void {
     this.isDropdownOpen = state;

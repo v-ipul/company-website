@@ -1,21 +1,26 @@
- <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+ <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Bootstrap 5 + Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-<section class="hero-section">
-      <header [class.hover-active]="isHovering">
-    <div class="header-container">
+
+<section class="hero-section ">
+
+<header (mouseenter)="onHover(true)" 
+  (mouseleave)="onHover(false)" 
+  [class.hover-active]="isHovering">
       <!-- Logos -->
        <div routerLink="/" routerLinkActive="active">
-        <img src="logo-white.png" class="logo logo-white" routerLink="/" routerLinkActive="active" alt="Logo White" />
+<img src="logo-white.png" class="logo logo-white" routerLink="/" routerLinkActive="active" alt="Logo White" />
             <img src="logo-black.png" class="logo logo-black" routerLink="/" routerLinkActive="active" alt="Logo Black" />
 </div>
-      <div class="header-section">
+      <div class="header-section" >
         <nav>
           <!-- Ways We Serve Dropdown -->
           <div class="dropdown" (mouseenter)="onWaysDropdownHover(true)" (mouseleave)="onWaysDropdownHover(false)">
-            <a href="#" (mouseenter)="onHover(true)" (mouseleave)="onHover(false)">Ways We Serve</a>
+            <a href="#" >Ways We Serve</a>
 
             <div class="mega-dropdown" [class.show]="isWaysDropdownOpen">
               <div class="mega-content">
@@ -47,10 +52,10 @@
                       <h4>Industries We Serve</h4>
                       <div class="sub-menu">
                         <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/industries" fragment="Manufacturing">Manufacturing</a></h2>
-                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/industries" fragment="BankingFinance">Banking & Finance</a></h2>
-                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/industries" fragment="Healthcare">Healthcare</a></h2>
-                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/industries" fragment="Insurance">Insurance</a></h2>
-                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/industries" fragment="HighTech">High Tech</a></h2>
+                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/banking" fragment="BankingFinance">Banking & Finance</a></h2>
+                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/healthcare" fragment="Healthcare">Healthcare</a></h2>
+                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/insurance" fragment="Insurance">Insurance</a></h2>
+                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/hitech" fragment="HighTech">High Tech</a></h2>
                         <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/industries" fragment="Industrial">Industrial</a></h2>
                         <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/industries" fragment="LifeSciences">Life Sciences</a></h2>
                       </div>
@@ -82,14 +87,14 @@
           <!-- AI Link -->
           <!-- AI Dropdown -->
           <div class="dropdown" (mouseenter)="onDropdownHover(true)" (mouseleave)="onDropdownHover(false)">
-            <a href="#" (mouseenter)="onHover(true)" (mouseleave)="onHover(false)">AI</a>
+            <a href="#" >AI</a>
 
             <!-- Mega Dropdown -->
             <div class="mega-dropdown" [class.show]="isDropdownOpen">
               <div class="mega-content">
 
                 <!-- Left Section -->
-                <div class="mega-left">
+                <div class="mega-left ">
                   <h3>Artificial Intelligence</h3>
                   <p>
                     Atman harnesses AI to unlock potential, inspire progress, and
@@ -102,18 +107,22 @@
                 <!-- Right Section -->
                 <div class="mega-right">
                   <!-- Column 1 -->
-                 <a routerLink="/ai" fragment="Analytics"><div class="menu-item menu-txt" >
+                   <div class="menu-item " routerLinkActive="active">
+                
                     <img src="icon/view-grid.png" class="icon" alt="">
-                    <div  routerLinkActive="active">
+                   <a routerLink="/ai" fragment="Analytics">
+                    
+                    <div class="menu-txt" >
                       <h4>Analytics</h4>
                       <p>Turning data into foresight, <br> powering progress</p>
                      
+                   
                     </div>
-                    
-                  </div> </a>
+                    </a>
+                  </div> 
 
                   <!-- Column 2 -->
-                  <div class="menu-item " routerLink="/ai" routerLinkActive="active">
+                  <div class="menu-item"  routerLinkActive="active">
                     <img src="icon/Industries_we_serve.png" class="icon" alt="">
                     <div>
                       <h4>Agentic Suite</h4>
@@ -128,15 +137,15 @@
                   </div>
 
                   <!-- Column 3 -->
-                  <div class="menu-item menu-txt">
+                  <div class="menu-item " routerLinkActive="active">
                     <img src="icon/diamond_9346758 1.png" class="icon" alt="">
-                    <div routerLinkActive="active"><a routerLink="/ai" fragment="AtmanFusion">
+                   <a routerLink="/ai" fragment="AtmanFusion"><div class="menu-txt"  >
                       <h4>Atman Fusion</h4>
                       <p>Seamless integration, <br> real-time insights, <br> smarter automation
                       </p>
-                       </a>
+                      
                     </div>
-                   
+                    </a>
                   </div>
                 </div>
 
@@ -147,7 +156,7 @@
 
           <!-- Being Atman Dropdown -->
           <div class="dropdown" (mouseenter)="onAtmanDropdownHover(true)" (mouseleave)="onAtmanDropdownHover(false)">
-            <a href="#" (mouseenter)="onHover(true)" (mouseleave)="onHover(false)">Being Atman</a>
+            <a href="#" >Being Atman</a>
 
             <div class="mega-dropdown" [class.show]="isAtmanDropdownOpen">
               <div class="mega-content">
@@ -159,55 +168,68 @@
                 </div>
 
                 <div class="mega-right">
-                  <div class="menu-item menu-txt" routerLink="/beingatman" routerLinkActive="active">
+                  <div class="menu-item " routerLink="/beingatman" routerLinkActive="active">
                     <img src="IconB1.png" class="icon" alt="">
-                    <div>
+                    <div class="menu-txt">
                       <h4>Our <strong>Becoming</strong></h4>
                       <p>Our story, our spirit, our truth</p>
                     </div>
                   </div>
-                  <div class="menu-item menu-txt" routerLink="/comingsoon" routerLinkActive="active">
+                  <div class="menu-item "  routerLink="/beingatman"  routerLinkActive="active">
                     <img src="IconB2.png" class="icon" alt="">
-                    <div>
+                
+                    <div class="menu-txt">
                       <h4>Progressive Minds</h4>
                       <p>Mind that inspire, guide and empower </p>
                     </div>
                   </div>
-                  <div class="menu-item menu-txt" routerLink="/comingsoon" routerLinkActive="active">
+                  <div class="menu-item "   routerLink="/comingsoon" routerLinkActive="active">
                     <img src="IconB4.png" class="icon" alt="">
-                    <div>
+                    <div class="menu-txt">
                       <h4>Our Rythem</h4>
                       <p>Living our essence through everyday actions</p>
                     </div>
                   </div>
-                <a routerLink="/beingatman" fragment="northstar"><div class="menu-item menu-txt"  routerLinkActive="active">
+                
+               <div class="menu-item "  routerLinkActive="active">
                     <img src="IconB5.png" class="icon" alt="">
-                    <div>
+                     <a routerLink="/beingatman" fragment="northstar">
+                    <div class="menu-txt">
+                        
                       <h4>North Star</h4>
                       <p>Purpose that lights our chosen path</p>
+                  
                     </div>
-                  </div></a>
-                 <a routerLink="/beingatman" fragment="partners"> <div class="menu-item menu-txt" routerLinkActive="active">
+                    </a>
+                  </div>
+                  <div class="menu-item "   routerLinkActive="active">
+                
                     <img src="IconB6.png" class="icon" alt="">
-                    <div>
+                     <a routerLink="/beingatman" fragment="partners"> 
+                    <div class="menu-txt">
                       <h4>Partners in purpose</h4>
                       <p>Working together for shared meaningful outcomes</p>
                     </div>
-                  </div></a>
-                  <a routerLink="/beingatman" fragment="beliefs"><div class="menu-item menu-txt" routerLinkActive="active">
+                  </a></div>
+                  <div class="menu-item "   routerLinkActive="active">
+             
+                    
                     <img src="IconB7.png" class="icon" alt="">
-                    <div>
+                     <a routerLink="/beingatman" fragment="beliefs"> 
+                    <div class="menu-txt">
                       <h4>Values\Beliefs</h4>
                       <p>Beliefs shaping culture, conduct and purpose</p>
                     </div>
-                  </div></a>
-                <a routerLink="/beingatman" fragment="walk"><div class="menu-item menu-txt" routerLinkActive="active">
+               </a></div>
+                  <div class="menu-item "  routerLinkActive="active">
+               
                     <img src="Icon8.png" class="icon" alt="">
-                    <div>
+                     <a routerLink="/beingatman" fragment="walk">
+                    <div class="menu-txt">
                       <h4>Walk with us</h4>
                       <p>Join our path, Shape the future</p>
                     </div>
-                  </div></a>
+                  </a></div>
                 </div>
               </div>
             </div>
@@ -329,7 +351,7 @@
             </div>
         </nav>
         <div class="dropdown" (mouseenter)="onContactDropdownHover(true)" (mouseleave)="onContactDropdownHover(false)">
-          <a href="#" class="contact-us" (mouseenter)="onHover(true)" (mouseleave)="onHover(false)">Contact
+          <a href="#" class="contact-us" >Contact
             Us</a>
 
           <div class="mega-dropdown" [class.show]="isContactDropdownOpen">
@@ -633,386 +655,7 @@
 
       </div>
     </div>
-    </div>
-  </header>
-
-
-  <!-- Fullscreen Video Background -->
-
-
-
-  <div class="video-container">
-    <!-- Video -->
-    <video #heroVideo class="hero-video" autoplay muted loop playsinline preload="auto">
-      <source src="0_Meeting_Business_1920x1080.mp4" type="video/mp4" />
-    </video>
-
-
-    <!-- Overlays -->
-    <div class="hero-video-overlay"></div>
-    <div class="hero-video-overlay-orange"></div>
-
-    <!-- Text -->
-    <div class="slide-text">
-      <h1>Our Becoming</h1>
-      <p>
-        Our purpose is to assist customers in maximizing the benefits of Digital <br>
-        Transformation on the ServiceNow Platform.
-      </p>
-    </div>
-  </div>
-</section>
-
-
-<!-- Our Becoming Section -->
-<div class="Becoming-section">
-  <h2>Our <span>Becoming</span></h2>
-  <p>
-    <b>Our story, our spirit, our truth</b> <br>
-    We began as a small team, serving a handful of Indian clients who trusted us with their most important
-    challenges.
-    Every engagement was an opportunity to prove that technology, when designed with care, can bring out the
-    best in an organization. <br>
-    From those early steps, our journey took us across borders. Today, we partner with global enterprises while
-    still holding close the values that shaped us in the beginning.
-    Our headcount has grown, our reach has expanded—but growth, for us, has never been about numbers. It has
-    always been about purpose. <br>
-    Each chapter of our story is defined by depth over speed, impact over scale, and authenticity over
-    convention. What began as a small team with a big belief has become a global consulting practice driven by
-    one truth: transformation should make you more of who you are, not less.
-  </p>
-  <img src="vision-Image.png" alt="Vision Image">
-</div>
-
-<!-- North Star Section -->
-<section class="north-star" id="northstar">
-  <div class="container-custom">
-    <h1><span>North Star</span> - Delivering your authentic digital self</h1>
-  </div>
-  <div class="grid-2">
-    <div class="text-block">
-      <p>
-        In today’s world, digital transformation often feels like a race—adopting platforms that don’t fit,
-        processes
-        that feel forced, and solutions that speak a language that isn’t yours. <br>
-        At Atman, we believe transformation should feel different. It should feel like coming home.<br>
-        you serve your
-        customers. Not a copy-paste solution, but a digital reflection of your identity
-      </p>
-      <p>
-        Your technology should reflect who you truly are—how you work, how you create value, how you serve
-        your
-        customers. Not a copy-paste solution, but a digital reflection of your identity. <br>
-      </p>
-      <p>For us, this means building solutions where:</p>
-      <ul>
-        <li>Technology reflects how you actually work, not how someone else thinks you should.</li>
-        <li>Digital tools amplify your unique strengths.</li>
-        <li>Systems evolve with your journey, rather than locking you into someone else’s roadmap.</li>
-      </ul>
-      <p>This is not about chasing trends or ticking boxes. It’s about clarity, alignment, and growth on your
-        terms.
-        That belief is our North Star—the guiding truth behind every conversation, every strategy, every
-        solution we
-        build.</p>
-    </div>
-    <div class="image-block-1">
-      <img src="02.jpg" alt="North Star" class="img-container">
-    </div>
-  </div>
-
-</section>
-
-<div class="beliefs-section" id="beliefs">
-  <div class="beliefs-container">
-    <div style="padding: 10px 60px;">
-    <h1 >
-      <strong>Values / Beliefs - </strong> Beliefs shaping culture, conduct, and purpose
-    </h1>
-
-    <p style="text-align:  center; text-align: start; font-size: 12px;">
-      Our values are more than words—they are the spirit of Atman. They guide
-      how we think, act, and build for our clients every day. Together, these
-      values form ATMAN—the compass that grounds us and propels us forward.
-    </p>
-</div>
-    <div class="beliefs-accordion">
-      <div class="beliefs-column" *ngFor="let item of values; let i = index" [class.active]="activeIndex === i"
-        (mouseenter)="setActive(i)">
-        <!-- Collapsed view -->
-        <div class="beliefs-collapsed" *ngIf="activeIndex !== i">
-          <b>{{ item.letter }}</b>
-          <p>{{ item.title }}</p>
-        </div>
-
-        <!-- Expanded view -->
-        <div class="beliefs-expanded" *ngIf="activeIndex === i">
-          <div class="beliefs-text">
-            <img src="Clip path group.png" alt="" class="beliefs-icon" />
-            <h6>{{ item.title }}</h6>
-            <p>{{ item.description }}</p>
-          </div>
-
-          <div class="beliefs-image">
-            <img [src]="item.image" [alt]="item.title" />
-            <div class="beliefs-image-label">
-              <div class="beliefs-letter">{{ item.letter }}</div>
-              <h3>{{ item.title }}</h3>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Partners Section -->
-<section class="partners-section" id="partners">
-  <div class="container-custom mx-auto">
-    <div class="partners-header">
-      <div class="lef-tside-text-area">
-        <h2 class="title"><b>Partners in Purpose</b></h2>
-        <p class="description">Working together for shared meaningful outcomes</p>
-      </div>
-      <div class="right-side-text-area">
-        <p>
-          We team up with proven technology partners to deliver enterprise-grade solutions that are
-          secure,
-          scalable, and
-          built for long-term success. Our collaborations are rooted in transparency, shared values, and a
-          commitment to
-          solving real business challenges—together.
-        </p>
-      </div>
-    </div>
-    <div class="partners-grid">
-      <div class="partner-card">
-        <img style ="" src="partners/salcesforce.png" alt="Salesforce" class="main-logo">
-        <div class="text">
-          <h3>Salesforce</h3>
-        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>-->
-        </div>
-      </div>
-
-      <div class="partner-card">
-        <img src="Mulesoft.png" alt="Mulesoft" class="main-logo">
-        <div class="text">
-          <h3>Mulesoft</h3>
-        <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>-->
-        </div>
-      </div>
-      <div class="partner-card">
-        <img src="partners/tableav.png" alt="tablev" class="main-logo">
-        <div class="text">
-          <h3>Tableau</h3>
-        <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>-->
-        </div>
-      </div>
-      <div class="partner-card">
-        <img src="Informatica.jpg" alt="Informatica" class="main-logo">
-        <div class="text">
-          <h3>Informatica</h3>
-        <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>-->
-        </div>
-      </div>
-      <div class="partner-card">
-        <img src="microsoft-azure.webp" alt="Tableau" class="main-logo">
-        <div class="text">
-          <h3>Microsoft-Azure</h3>
-        <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>-->
-        </div>
-      </div>
-      <div class="partner-card">
-        <img src="partners/snowflake.png" alt="snowflake" class="main-logo">
-        <div class="text">
-          <h3>snowflake</h3>
-        <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>-->
-        </div>
-      </div>
-      <div class="partner-card">
-        <img src="Databricks.png" alt="Databricks" class="main-logo">
-        <div class="text">
-          <h3>Databricks</h3>
-        <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>-->
-        </div>
-      </div>
-      <div class="partner-card">
-        <img src="skyvia.jpg" alt="Skyvia" class="main-logo" style="width: 200px;">
-        <div class="text">
-          <h3>Skyvia</h3>
-        <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>-->
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<div class="walk-with-us-section" id="walk">
-  <div class="container">
-    <h1 class="section-title">Walk With Us</h1>
-    <p class="section-subtitle">Join our path, shape the future</p>
-
-    <div class="tabs-row">
-      <div class="tab-card" [class.active]="activeTab === 'collaborative_culture'"
-        (mouseenter)="selectTab('collaborative_culture')">
-        <div class="tab-number">01</div>
-        <div class="tab-content">
-          <h3>Collaborative Culture</h3>
-          <p>
-            Work alongside passionate minds who support, challenge, and inspire each other every day.
-          </p>
-        </div>
-      </div>
-
-
-      <div class="tab-panels-show">
-        <div class="tab-panel" *ngFor="let panel of panels" [class.active]="activeTab === panel.id">
-          <div class="panel-image">
-            <img src="office.jpg" alt="panel" />
-          </div>
-          <div class="panel-text">
-            <h2>Collaborative Culture</h2>
-            <p>At Atman, we believe every journey is unique—and together, we’re building a path where ambition meets
-              opportunity. If you’re passionate about making an impact, eager to learn, and ready to help shape the
-              future of technology and services, you’ll find your place here.</p>
-          </div>
-        </div>
-      </div>
-
-
-
-      <div class="tab-card" [class.active]="activeTab === 'growth_learning'"
-        (mouseenter)="selectTab('growth_learning')">
-        <div class="tab-number">02</div>
-        <div class="tab-content">
-          <h3>Growth & Learning</h3>
-          <p>
-            We invest in your development with mentorship, upskilling, and real-world challenges that help you grow.
-          </p>
-        </div>
-      </div>
-
-
-      <div class="tab-panels-show">
-        <div class="tab-panel" *ngFor="let panel of panels" [class.active]="activeTab === panel.id">
-          <div class="panel-image">
-            <img src="growth2.jpg"  alt="panel" />
-          </div>
-          <div class="panel-text">
-            <h2>Growth Learning</h2>
-            <p>At Atman, we believe every journey is unique—and together, we’re building a path where ambition meets
-              opportunity. If you’re passionate about making an impact, eager to learn, and ready to help shape the
-              future of technology and services, you’ll find your place here..</p>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="tab-card" [class.active]="activeTab === 'purposeful_work'"
-        (mouseenter)="selectTab('purposeful_work')">
-        <div class="tab-number">03</div>
-        <div class="tab-content">
-          <h3>Purposeful Work</h3>
-          <p>
-            Your ideas and actions directly influence our clients, our company, and the communities we serve.
-          </p>
-        </div>
-      </div>
-
-          <div class="tab-panels-show">
-        <div class="tab-panel" *ngFor="let panel of panels" [class.active]="activeTab === panel.id">
-          <div class="panel-image">
-            <img src="purposefull work.jpg" alt="panel" />
-          </div>
-          <div class="panel-text">
-            <h2>Purposeful Work</h2>
-            <p>At Atman, we believe every journey is unique—and together, we’re building a path where ambition meets
-              opportunity. If you’re passionate about making an impact, eager to learn, and ready to help shape the
-              future of technology and services, you’ll find your place here..</p>
-          </div>
-        </div>
-      </div>
-
-
-
-      <div class="tab-card" [class.active]="activeTab === 'diversity_inclusion'"
-        (mouseenter)="selectTab('diversity_inclusion')">
-        <div class="tab-number">04</div>
-        <div class="tab-content">
-          <h3>Diversity & Inclusion</h3>
-          <p>
-            We celebrate every voice and value every perspective—because innovation thrives on diversity.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="tab-panels">
-      <div class="tab-panel" *ngFor="let panel of panels" [class.active]="activeTab === panel.id">
-        <div class="panel-image">
-          <img [src]="panel.img" [alt]="panel.title" />
-        </div>
-        <div class="panel-text">
-          <h2>{{ panel.title }}</h2>
-          <p>{{ panel.desc }}</p>
-        </div>
-      </div>
-    </div>
-
-          <div class="tab-panels-show">
-        <div class="tab-panel" *ngFor="let panel of panels" [class.active]="activeTab === panel.id">
-          <div class="panel-image">
-            <img src="Diversity.jpg" alt="panel" />
-          </div>
-          <div class="panel-text">
-            <h2>Diversity & Inclusion</h2>
-            <p>At Atman, we believe every journey is unique—and together, we’re building a path where ambition meets
-              opportunity. If you’re passionate about making an impact, eager to learn, and ready to help shape the
-              future of technology and services, you’ll find your place here..</p>
-          </div>
-        </div>
-      </div>
-
-
-  </div>
-</div>
-
-
-<section class="our-rhythm" id="rhytm">
-  <div class="rhythm-container">
-    <h1 class="rhythm-title">Our Rhythm</h1>
-    <p class="rhythm-subtitle">Living our essence through everyday actions</p>
-
-    <div class="rhythm-slider">
-      <div class="rhythm-slider-track">
-        <div class="rhythm-card" *ngFor="let card of duplicatedCards">
-          <img [src]="card.img" alt="">
-          <h3>{{ card.title }}</h3>
-          <p>{{ card.text }}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
- <footer class="footer">
-    <div class="footer-container">
-      <a href="#"><img src="light-logo.png" alt="Logo" class="footer-logo"></a>
-      <p style="margin-bottom: 0rem !important; " class="atmanname">©2025-26 Atman Cloud Consultants Pvt. Ltd.</p>
-      
-      <ul class="social-links">
-        <a class="tc" routerLink="/termsandcondition" routerLinkActive="active">Terms and Conditions</a>|
-         <a class="tc" routerLink="/privacy" routerLinkActive="active">Privacy Policy</a>
-        <li><a href="https://www.instagram.com/iamatmanconsultant/reels/"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="https://www.linkedin.com/company/atman-consultants/"><i class="fab fa-linkedin-in"></i></a></li>
-      </ul>
-      
-    </div>
   
-  </footer>
+  </header>
+</section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

@@ -1,25 +1,22 @@
-
 import { CommonModule } from '@angular/common';
-import { Component, HostBinding, OnInit, AfterViewInit } from '@angular/core';
-import { RouterLink, Router, NavigationEnd, ActivatedRoute } from '@angular/router';
+import { Component, HostBinding, OnInit } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { Header } from '../header/header';
-
 
 interface ServiceCard {
   image: string;
   title: string;
   subtitle: string;
 }
-
-
 @Component({
-  selector: 'app-services',
-    imports: [CommonModule, RouterLink, Header],
-  templateUrl: './services.html',
-  styleUrl: './services.css'
+  selector: 'app-banking',
+  imports:  [CommonModule, RouterLink, Header],
+  templateUrl: './banking.html',
+  styleUrl: './banking.css'
 })
-export class ServicesComponent {
- cards: ServiceCard[] = [
+export class Banking {
+
+  cards: ServiceCard[] = [
     { image: 'card1.png', title: 'Implementation & Integration', subtitle: 'Making change smooth' },
     { image: 'card2.png', title: 'Consulting', subtitle: 'Clarity before the leap.' },
     { image: 'card3.png', title: 'Managed Services', subtitle: 'Keeping you ahead' },
@@ -159,5 +156,6 @@ getCardStyle(index: number) {
 
   return style;
 }
+
 
 }

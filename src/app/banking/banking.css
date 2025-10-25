@@ -167,7 +167,7 @@ nav {
 
 nav a {
   font-weight: 100;
-  font-size: 12px;
+  font-size: 12px !important;
   text-decoration: none;
   color: #000000;
   transition: color 0.3s ease;
@@ -344,7 +344,7 @@ nav a {
 
 
     .section-subtitle {
-      font-size: 1.042vw;
+      font-size: 1.042vw !important;
       line-height: 20px;
       margin-bottom: 40px;
       color: #444;
@@ -1173,7 +1173,7 @@ color: #00adee !important;
   }
 
   .footer p {
-    font-size: 14px;
+    font-size: 14px !important;
     margin-top: 10px;
   }
 }
@@ -1221,13 +1221,13 @@ color: #00adee !important;
 }
 
 .mega-left h3 {
-  font-size: 22px;
+  font-size: 22px !important;
   margin-bottom: 10px;
   color: #222;
 }
 
 .mega-left p {
-  font-size: 12px;
+  font-size: 12px !important;
   line-height: 1.4;
   color: #555;
 
@@ -1271,14 +1271,14 @@ color: #00adee !important;
 }
 
 .menu-item h4 {
-  font-size: 12px;
+  font-size: 12px !important;
   font-weight: 600;
   margin-bottom: 4px;
   color: #111;
   cursor: pointer;
 }
 .menu-item h2{
-  font-size: 12px;
+  font-size: 12px !important;
   font-weight: 400;
   color: #111;
   padding-top: 8px;
@@ -1290,12 +1290,12 @@ color: #00adee !important;
 
 
 .menu-item p {
-  font-size: 12px;
+  font-size: 12px !important;
   color: #727374;
   line-height: 1.4;
 }
 .sub-manu {
-  font-size: 0.2px;
+  font-size: 0.2px !important;
   color: #000;
   cursor: pointer;
 
@@ -1362,5 +1362,5 @@ color: #00adee !important;
       font-weight: 600 !important;
 }
 .card-grid p {
-  font-size: 14px;
+  font-size: 14px !important ;
 }

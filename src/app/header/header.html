@@ -12,15 +12,15 @@
   (mouseleave)="onHover(false)" 
   [class.hover-active]="isHovering">
       <!-- Logos -->
-       <div routerLink="/" routerLinkActive="active">
+      
 <img src="logo-white.png" class="logo logo-white" routerLink="/" routerLinkActive="active" alt="Logo White" />
             <img src="logo-black.png" class="logo logo-black" routerLink="/" routerLinkActive="active" alt="Logo Black" />
-</div>
+
       <div class="header-section" >
         <nav>
           <!-- Ways We Serve Dropdown -->
           <div class="dropdown" (mouseenter)="onWaysDropdownHover(true)" (mouseleave)="onWaysDropdownHover(false)">
-            <a href="#" >Ways We Serve</a>
+            <a  >Ways We Serve</a>
 
             <div class="mega-dropdown" [class.show]="isWaysDropdownOpen">
               <div class="mega-content">
@@ -29,7 +29,7 @@
                   <p>Delivering authentic, <br> impactful solutions, <br>carefully crafted around your
                     DNA
                   </p>
-                  <a href="#" class="see-all"> </a>
+                  <a class="see-all"> </a>
                 </div>
 
                 <div class="mega-right">
@@ -51,13 +51,13 @@
                     <div>
                       <h4>Industries We Serve</h4>
                       <div class="sub-menu">
-                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/industries" fragment="Manufacturing">Manufacturing</a></h2>
-                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/banking" fragment="BankingFinance">Banking & Finance</a></h2>
-                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/healthcare" fragment="Healthcare">Healthcare</a></h2>
-                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/insurance" fragment="Insurance">Insurance</a></h2>
-                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/hitech" fragment="HighTech">High Tech</a></h2>
-                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/industries" fragment="Industrial">Industrial</a></h2>
-                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/industries" fragment="LifeSciences">Life Sciences</a></h2>
+                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/industries" >Manufacturing</a></h2>
+                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/banking" >Banking & Finance</a></h2>
+                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/healthcare" >Healthcare</a></h2>
+                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/insurance" >Insurance</a></h2>
+                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/hitech" >High Tech</a></h2>
+                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/industries" >Industrial</a></h2>
+                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/industries">Life Sciences</a></h2>
                       </div>
                     </div>
                   </div>
@@ -87,7 +87,7 @@
           <!-- AI Link -->
           <!-- AI Dropdown -->
           <div class="dropdown" (mouseenter)="onDropdownHover(true)" (mouseleave)="onDropdownHover(false)">
-            <a href="#" >AI</a>
+            <a routerLink="/ai" routerLinkActive="active" >AI</a>
 
             <!-- Mega Dropdown -->
             <div class="mega-dropdown" [class.show]="isDropdownOpen">
@@ -351,7 +351,7 @@
             </div>
         </nav>
         <div class="dropdown" (mouseenter)="onContactDropdownHover(true)" (mouseleave)="onContactDropdownHover(false)">
-          <a href="#" class="contact-us" >Contact
+          <a  class="contact-us" >Contact
             Us</a>
 
           <div class="mega-dropdown" [class.show]="isContactDropdownOpen">

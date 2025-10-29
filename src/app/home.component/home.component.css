@@ -284,14 +284,14 @@ nav a {
 }
 
 .overlay-title {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 100;
   text-align: start;
 }
 .overlay-subtitle {
-  font-size: 10px;
+  font-size: 12px;
   text-align: start;
-  box-shadow: inset 0 5px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 5px 40px rgba(0, 0, 0, 0.1);
 }
 
 /* Text overlay on slides */
@@ -691,13 +691,13 @@ nav a {
   justify-content: center;
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 300px;
 }
 
 .service-card {
   position: absolute;
   width: 25%; /* use relative width instead of fixed px */
-  max-width: 300px; /* optional: prevent it from being too wide on large screens */
+  max-width: 320px; /* optional: prevent it from being too wide on large screens */
   aspect-ratio: 3/2; /* keeps height proportional */
   border-radius: 24px;
   overflow: hidden;
@@ -747,8 +747,8 @@ nav a {
 
 .nav-btn-left,
 .nav-btn-right {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -763,11 +763,11 @@ nav a {
 }
 
 .nav-btn-left {
-  left: 20px;
+  left: 300px;
 }
 
 .nav-btn-right {
-  right: 20px;
+  right: 300px;
 }
 
 /* Responsive */
@@ -2175,6 +2175,7 @@ header.hover-active .logo-black {
   align-items: center;
   justify-content: center;
   width: 28px;
+   
   height: 28px;
   border-radius: 80%;
   background: #fff;
@@ -2191,6 +2192,7 @@ header.hover-active .logo-black {
   justify-content: center;
   width: 28px;
   height: 28px;
+     padding-bottom: 2px;
   border-radius: 80%;
   background: #fff;
   color: #0d6efd;

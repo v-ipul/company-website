@@ -12,10 +12,12 @@
   (mouseleave)="onHover(false)" 
   [class.hover-active]="isHovering">
       <!-- Logos -->
-      
-<img src="logo-white.png" class="logo logo-white" routerLink="/" routerLinkActive="active" alt="Logo White" />
-            <img src="logo-black.png" class="logo logo-black" routerLink="/" routerLinkActive="active" alt="Logo Black" />
-
+<a routerLink="/" routerLinkActive="active">
+<div class="container" style="padding-right: 100px;z-index:5;">
+<img src="logo-white.png" class="logo logo-white"  alt="Logo White" />
+            <img src="logo-black.png" class="logo logo-black"  alt="Logo Black" />
+</div>   
+</a>
       <div class="header-section" >
         <nav>
           <!-- Ways We Serve Dropdown -->

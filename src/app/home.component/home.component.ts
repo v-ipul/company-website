@@ -219,9 +219,9 @@ getCardStyle(index: number) {
   if (pos === 0) {
     style = { left: '50%', transform: 'translateX(-50%) scale(1)', zIndex: 5, opacity: 1 };
   } else if (pos === 1 || pos === - (total - 1)) {
-    style = { left: '75%', transform: 'translateX(-50%) scale(0.8)', zIndex: 3, opacity: 0.7 };
+    style = { left: '80%', transform: 'translateX(-50%) scale(0.8)', zIndex: 3, opacity: 0.7 };
   } else if (pos === total - 1 || pos === -1) {
-    style = { left: '25%', transform: 'translateX(-50%) scale(0.8)', zIndex: 3, opacity: 0.7 };
+    style = { left: '20%', transform: 'translateX(-50%) scale(0.8)', zIndex: 3, opacity: 0.7 };
   } else {
     style = { left: '100%', transform: 'translateX(-50%) scale(0.6)', zIndex: 0, opacity: 0 };
   }

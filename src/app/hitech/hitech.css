@@ -452,7 +452,7 @@ nav a {
 
     .banner {
       position: relative;
-      height: 300px;
+      height: 350px;
       background: url('/industries/Hightech (2).jpg') no-repeat center center;
       background-size: cover;
       color: white;
@@ -1360,4 +1360,34 @@ color: #00adee !important;
 .card-grid h5 {
   font-size: 16px;
       font-weight: 600 !important;
+}
+.last-section {
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px;
+  text-align: center;
+  color: #fff;
+  background-color: white;
+  width: 100%; 
+}
+
+.last-section h1 {
+  font-size: 32px;
+  line-height: 1.2;
+  color: rgba(0, 0, 0, 1);
+  text-align: start;
+}
+
+.last-section h1 span {
+  color: rgba(0, 0, 0, 1);
+  font-weight: 700;
+}
+
+.last-section .button-img {
+  width: auto;
+  cursor: pointer;
+  height: 40px;
+  text-align: end;
 }

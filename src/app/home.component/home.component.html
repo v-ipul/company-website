@@ -641,15 +641,16 @@
 
 
  <!-- Slide Text -->
-  <div class="slide-text">
-    <h4>{{ slides[current].title }}</h4>
-    <h1>{{ slides[current].subtitle }}</h1>
-    <p>{{ slides[current].description }}</p>
-    <a href="#" class="first-btn">
-      Read More
-      <span class="arrow">→</span>
-    </a>
-  </div>
+ <div class="slide-text">
+  <h4>{{ slides[current].title }}</h4>
+  <h1>{{ slides[current].subtitle }}</h1>
+  <p>{{ slides[current].description }}</p>
+  <a [href]="slides[current].link || '#'" class="first-btn">
+    {{ slides[current].buttonText }}
+    <span class="arrow">→</span>
+  </a>
+</div>
+
 
   <!-- Bottom Nav -->
   <div class="bottom-nav">
@@ -715,9 +716,10 @@
   </p>
 
   <div class="slider-container">
-    <img src="Button - Previous.png" alt="Previous" class="nav-btn-left" (click)="prevCard()" />
+   
 
     <div class="service-cards">
+       <img src="Button - Previous.png" alt="Previous" class="nav-btn-left" (click)="prevCard()" />
       <div class="service-card" *ngFor="let item of cards; let i = index" [ngStyle]="getCardStyle(i)"
         [class.active]="i === currentIndex">
         <img [src]="item.image" alt="{{ item.title }}" />
@@ -726,30 +728,37 @@
           <p class="overlay-subtitle">{{ item.subtitle }}</p>
         </div>
       </div>
+      <img src="Button-Next.png" alt="Next" class="nav-btn-right" (click)="nextCard()" />
     </div>
 
-    <img src="Button-Next.png" alt="Next" class="nav-btn-right" (click)="nextCard()" />
+    
   </div>
+   <a routerLinkActive="active"  routerLink="/services"  class="custom-btn">
+          Explore Our Services
+          <span class="arrow">→</span>
+        </a>
 </section>
 
   <section class="industry-wrapper">
-    <div class="industry-container">
+    <div class="container">
       <!-- Left Content -->
-      <div class="industry-left">
-        <h1>
-          We understand
-            <img src="svg-1388542044_292.png" class="industry-highlight">
-          <br>
+       <div class="row">
+        <div class="col-md-6">
+           <div class="industry-left">
+       <h2 class="section-title">
+          We <span>understand</span>
+            
+        
           your world
-        </h1>
+        </h2>
 
         <p>
-          From manufacturing floors to financial institutions, from <br> hospitals to
-          high-tech labs, we’ve partnered with <br> businesses across industries to
-          help them transform <br> authentically. Whether it’s securing sensitive data
-          in <br> banking, enabling efficiency in industrial operations, or <br> driving
-          innovation in healthcare and life sciences—our role <br> is always the same:
-          to help organizations bring their <br> authentic selves into the digital
+          From manufacturing floors to financial institutions, from hospitals to
+          high-tech labs, we’ve partnered with businesses across industries to
+          help them transform authentically. Whether it’s securing sensitive data
+          in banking, enabling efficiency in industrial operations, or driving
+          innovation in healthcare and life sciences—our role is always the same:
+          to help organizations bring their authentic selves into the digital
           age.
         </p>
         <a href="#" class="custom-btn">
@@ -757,9 +766,9 @@
           <span class="arrow">→</span>
         </a>
       </div>
-
-      <!-- Right Content -->
-      <div class="industry-right">
+        </div>
+        <div class="col-md-6">
+          <div class="industry-right">
         <div class="industry-card">
           <img src="IconA1.png" alt="" />
           <div class="industry-card-text">
@@ -815,6 +824,12 @@
           </div>
         </div>
       </div>
+        </div>
+       </div>
+     
+
+      <!-- Right Content -->
+      
     </div>
   </section>
 
@@ -858,8 +873,8 @@
 
     <div class="image-area">
       <img src="banner-page1.png" alt="Career Banner" class="main-banner" />
-      <a href="#" class="cta-button">
-        We understand your World
+      <a routerLink="/contactus" routerLinkActive="active" class="cta-button">
+        Join the Atman Team 
         <span class="arrow">→</span>
       </a>
     </div>
@@ -906,11 +921,11 @@
       and faster paths to impact. With AgentForce, our AI and analytic platform, we help you unlock intelligence that
       feels personal and practical.</p>
     <div class="ai-edge-pills">
-      <button>Churn Predictor</button>
-      <button>Forecaster Agent</button>
-      <button>Segmentation Agent</button>
-      <button>Feedback Analyzer</button>
-      <button>Atman Fusion</button>
+      <button routerLinkActive="active"><a routerLink="/ai" fragment="ChurnPredictor" >Churn Predictor</a></button>
+      <button routerLinkActive="active"><a routerLink="/ai" fragment="ForecasterAgent">Forecaster Agent</a></button>
+      <button routerLinkActive="active"><a routerLink="/ai" fragment="SegmentationAgent">Segmentation Agent</a></button>
+      <button routerLinkActive="active"><a routerLink="/ai" fragment="FeedbackAnalyzer">Feedback Analyzer</a></button>
+      <button routerLinkActive="active"><a routerLink="/ai" fragment="AtmanFusion">Atman Fusion</a></button>
     </div>
 
     <img src="adbc0ca5a7cdd0b65bf33618eb1dc5ee8540e0e5.jpg" alt="AI Banner" class="ai-edge-banner" />

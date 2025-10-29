@@ -9,6 +9,7 @@ interface Slide {
   subtitle: string;
   description: string;
   buttonText: string;
+  link?: string;        
 }
 
 interface ServiceCard {
@@ -29,42 +30,47 @@ export class HomeComponent implements OnInit {
 
 
   slides: Slide[] = [
-    {
-      image: 'img1.png',
-      title: 'Ways We Serve',
-      subtitle: 'Delivering authentic, impactful solutions that truly reflect you.',
-      description: 'From consulting to integration, implementation to managed services, Atman partners with industries to create transformative, client-centric outcomes.',
-      buttonText: 'Read More'
-    },
-    {
-      image: 'img2.png',
-      title: 'Atman Intelligence',
-      subtitle: 'Harnessing AI to unlock potential and reimagine tomorrow.',
-      description: 'With powerful analytics, agentic tools, and seamless data orchestration, Atman AI enables faster insights, smarter automation, and resilient growth.',
-      buttonText: 'Read More'
-    },
-    {
-      image: 'img3.png',
-      title: 'Being Atman',
-      subtitle: 'Our spirit in action, shaping authentic futures.',
-      description: 'Rooted in values, guided by purpose, and driven by collaborations — Atman embodies authenticity, empowering progress with integrity and vision.',
-      buttonText: 'Learn More'
-    },
-    {
-      image: 'img4.png',
-      title: 'Wisdom',
-      subtitle: 'Collective wisdom shaping direction, dialogue, and transformation.',
-      description: 'Through research, case studies, and thought leadership, Atman shares perspectives that spark ideas, inspire conversations, and drive purposeful action.',
-      buttonText: 'Read More'
-    },
-    {
-      image: 'img5.png',
-      title: 'AC Foundation',
-      subtitle: 'Creating meaningful change through education, farming, and wellbeing.',
-      description: 'Atman Foundation empowers communities by nurturing skills, strengthening livelihoods, and promoting holistic wellbeing — building brighter, inclusive futures for all.',
-      buttonText: 'Read More'
-    }
-  ];
+  {
+    image: 'img1.png',
+    title: 'Ways We Serve',
+    subtitle: 'Delivering authentic, impactful solutions that truly reflect you.',
+    description: 'From consulting to integration, implementation to managed services, Atman partners with industries to create transformative, client-centric outcomes.',
+    buttonText: 'Read More',
+    link: 'https://www.atmanconsultants.com/services'
+  },
+  {
+    image: 'img2.png',
+    title: 'Atman Intelligence',
+    subtitle: 'Harnessing AI to unlock potential and reimagine tomorrow.',
+    description: 'With powerful analytics, agentic tools, and seamless data orchestration, Atman AI enables faster insights, smarter automation, and resilient growth.',
+    buttonText: 'Read More',
+    link: 'hhttps://www.atmanconsultants.com/ai'
+  },
+  {
+    image: 'img3.png',
+    title: 'Being Atman',
+    subtitle: 'Our spirit in action, shaping authentic futures.',
+    description: 'Rooted in values, guided by purpose, and driven by collaborations — Atman embodies authenticity, empowering progress with integrity and vision.',
+    buttonText: 'Learn More',
+    link: 'https://www.atmanconsultants.com/beingatman'
+  },
+  {
+    image: 'img4.png',
+    title: 'Wisdom',
+    subtitle: 'Collective wisdom shaping direction, dialogue, and transformation.',
+    description: 'Through research, case studies, and thought leadership, Atman shares perspectives that spark ideas, inspire conversations, and drive purposeful action.',
+    buttonText: 'Read More',
+    link: 'https://example.com/wisdom'
+  },
+  {
+    image: 'img5.png',
+    title: 'AC Foundation',
+    subtitle: 'Creating meaningful change through education, farming, and wellbeing.',
+    description: 'Atman Foundation empowers communities by nurturing skills, strengthening livelihoods, and promoting holistic wellbeing — building brighter, inclusive futures for all.',
+    buttonText: 'Read More',
+    link: 'https://example.com/ac-foundation'
+  }
+];
 
   cards: ServiceCard[] = [
     { image: 'card1.png', title: 'Implementation & Integration', subtitle: 'Making change smooth' },

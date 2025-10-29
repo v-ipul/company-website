@@ -540,9 +540,9 @@ nav a {
   font-size: 12px;
   line-height: 25px;
   max-width: 1050px;
-  margin: 30px auto 30px;
+  margin: 20px auto 10px;
   font-weight: 200px;
-  colour: rgba(44, 44, 44, 1);
+  color: rgba(44, 44, 44, 1);
 }
 
 .vision-section button {
@@ -566,7 +566,7 @@ nav a {
   height: auto;
   max-width: 100%;
   margin-top: 20px;
-  margin-bottom: 40px;
+  
 }
 
 .hero-section.fade-in {
@@ -578,7 +578,7 @@ nav a {
 }
 
 .container {
-  max-width: 1050px;
+  padding: 50px 0px;
   margin: 0 auto;
   text-align: center;
   background: #fff;
@@ -605,7 +605,7 @@ nav a {
   margin-bottom: 15px;
   font-weight: 400;
   color: #222;
-  margin-top: 30px;
+  
 }
 
 .subtitle {
@@ -650,13 +650,14 @@ nav a {
 
 .services-section {
   text-align: center;
-
+ padding-top: 50px;
+ padding-bottom: 50px;
   background: #f7f9fc;
   font-family: "Manrope", sans-serif;
 }
 
 .section-title {
-  padding-top: 40px;
+  
   font-size: 32px;
   font-weight: 400;
   margin-bottom: 12px;
@@ -763,11 +764,11 @@ nav a {
 }
 
 .nav-btn-left {
-  left: 300px;
+  left: 33%;
 }
 
 .nav-btn-right {
-  right: 300px;
+  right: 33%;
 }
 
 /* Responsive */
@@ -809,7 +810,8 @@ nav a {
 }
 
 .industry-wrapper {
-  padding: 120px 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   /* Top and bottom padding */
   background: #ffffff;
   font-family: "Manrope", sans-serif;
@@ -817,14 +819,12 @@ nav a {
   /* Text visible on white background */
   display: flex;
   justify-content: center;
-  padding-left: 100px;
-  padding-right: 100px;
+  
 }
 
 .industry-container {
   justify-content: center;
-  width: 90%;
-  max-width: 100%;
+  
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   gap: 60px;
@@ -835,6 +835,8 @@ nav a {
 .industry-left {
   align-items: center;
   display: flex;
+  padding-left: 20px;
+  padding-right: 60px;
   flex-direction: column;
   align-items: flex-start;
 }
@@ -878,6 +880,8 @@ nav a {
 }
 
 .industry-right {
+  padding-left: 40px;
+  padding-right: 40px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -1023,7 +1027,7 @@ nav a {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 30px 0px;
+  padding: 50px 0px;
   background-color: #f8f9fa;
   /* subtle background */
   gap: 30px;
@@ -1073,7 +1077,7 @@ nav a {
   margin: 0 auto; /* center container */
   width: 100%;
   background-color: #ffffff;
-  padding: 30px;
+  padding: 50px 30px;
 }
 
 .container-8 .part-left {
@@ -1346,7 +1350,7 @@ nav a {
   max-width: 1200px; /* From Figma width */
   margin: 0 auto;
   background-color: white !important;
-  padding: 70px 20px;
+  padding: 50px 20px;
   align-items: center;
   justify-content: space-between;
   gap: 40px;
@@ -1441,8 +1445,8 @@ nav a {
 /* Container */
 .container-10 {
   width: 100%;
-  max-width: 1200px;
-  padding: 80px;
+  max-width: 1400px;
+  padding: 50px 80px;
   font-family: "Manrope", sans-serif;
   background-color: white !important;
 }
@@ -1562,7 +1566,7 @@ nav a {
 
 /* ================= AI EDGE SECTION ================= */
 .ai-edge-section {
-  padding: 80px 20px;
+  padding: 50px 20px;
   background: #ffffff;
   text-align: center;
   color: #111;
@@ -1585,7 +1589,7 @@ nav a {
 .ai-edge-subtitle {
   font-size: 12px;
   color: #555;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto 28px;
   line-height: 1.7;
 }
@@ -1613,7 +1617,10 @@ nav a {
   transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease,
     transform 0.2s ease;
 }
-
+.ai-edge-pills button a{
+ text-decoration: none !important;
+  color: #111 !important;
+}
 .ai-edge-pills button:hover {
   background: rgba(0, 174, 239, 0.25);
   color: #000000;
@@ -2175,7 +2182,7 @@ header.hover-active .logo-black {
   align-items: center;
   justify-content: center;
   width: 28px;
-   
+   padding-bottom: 2px;
   height: 28px;
   border-radius: 80%;
   background: #fff;

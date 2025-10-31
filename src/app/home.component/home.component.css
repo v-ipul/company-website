@@ -539,8 +539,8 @@ nav a {
 .vision-section p {
   font-size: 12px;
   line-height: 25px;
-  max-width: 1050px;
-  margin: 20px auto 10px;
+  
+  margin: 20px auto 30px;
   font-weight: 200px;
   color: rgba(44, 44, 44, 1);
 }
@@ -610,7 +610,7 @@ nav a {
 
 .subtitle {
   font-size: 12px;
-  max-width: 800px;
+ 
   margin: 0 auto 50px;
   color: rgba(44, 44, 44, 1);
   line-height: 1.6;
@@ -619,7 +619,7 @@ nav a {
 .card-container {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 60px;
   flex-wrap: wrap;
 }
 
@@ -1120,7 +1120,7 @@ nav a {
 }
 
 .container-8 .part-left img {
-  max-width: 80%;
+  max-width: 30%;
   height: auto;
   margin-top: 20px;
   float: left;
@@ -1448,7 +1448,7 @@ nav a {
   max-width: 1400px;
   padding: 50px 80px;
   font-family: "Manrope", sans-serif;
-  background-color: white !important;
+  background-color: #F9F9FB !important;
 }
 
 /* Button */

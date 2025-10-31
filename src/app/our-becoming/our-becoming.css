@@ -391,24 +391,24 @@ header.hover-active .contact-us {
   margin-left: 30px;
 }
 
-/*
+
 .partners-grid .partner-card:hover .main-logo {
   width: 70px;
   transform: translate(-74px, -60px);
 }
 */
 
-/* .partner-card:hover {
+.partner-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
-} */
+} 
 
-/*
+
 .partner-card:hover .text {
   opacity: 1;
   transform: translate(-50%, -50%) translateY(0);
 }
-*/
+
 
 .partner-card .text h3 {
   font-size: 32px;
@@ -1226,7 +1226,7 @@ header.hover-active .contact-us {
 
 
 
-/*
+
 .atman-container {
     display: flex;
     width: 100%;
@@ -1429,9 +1429,9 @@ header.hover-active .contact-us {
     z-index: 990;
     border-radius: 50%;
     box-shadow: 15px -10px 0 white;
-} */
+} 
 
-/* .column:hover .normal-content,
+.column:hover .normal-content,
 .column.active .normal-content {
     opacity: 0;
     transform: translateY(-20px);
@@ -1441,8 +1441,7 @@ header.hover-active .contact-us {
 .column.active .expanded-content {
     opacity: 1;
     transform: translateY(0);
-} */
-
+}
 
 .walk-with-us-section {
   background-color: #fcfcfd;
@@ -1630,10 +1629,6 @@ header.hover-active .contact-us {
 
 }
 
-
-
-
-
 .tab-card.active,
 .tab-card:hover {
   background-color: #e8f4ff;
@@ -1688,12 +1683,13 @@ header.hover-active .contact-us {
 
 .panel-text h2 {
   font-size: 32px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .panel-text p {
   font-size: 14px;
   line-height: 1.6;
+  margin-bottom: 180px;
   color: #333;
 }
 
@@ -1710,7 +1706,10 @@ header.hover-active .contact-us {
     flex-direction: column;
     align-items: center;
   }
-
+  .panel-text p
+  {
+    margin-bottom: 0px;
+  }
 }
 
 
@@ -1719,7 +1718,7 @@ header.hover-active .contact-us {
   display: flex;
   align-items: flex-start;
   gap: 10px;
-
+  
   border-radius: 8px;
   transition: 0.3s;
 

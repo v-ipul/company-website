@@ -12,7 +12,7 @@
 
 .image-overlayy{
 margin-bottom : 300px ; 
-font-size: 18px;
+font-size: 0.938vw;
 }
 
 .hero-bg-scroll {
@@ -378,7 +378,7 @@ nav a {
       font-weight: 700;
     }
  .image-overlay h3{
-  font-size: 18px;
+  font-size: 0.938vw;
   font-weight: 500;
  }
 
@@ -531,7 +531,7 @@ nav a {
     }
 
     .banner .content p {
-      font-size: 18px;
+      font-size: 0.938vw;
       margin-top: 10px;
       max-width: 600px;
     }

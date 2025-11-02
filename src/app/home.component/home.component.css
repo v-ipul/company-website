@@ -895,7 +895,7 @@ nav a {
   border-radius: 16px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 100px;
+  height: auto;
   /* slightly smaller for scroll */
   width: auto;
 }
@@ -915,7 +915,7 @@ nav a {
 }
 
 .industry-card-text h3 {
-  font-size: 14px;
+  font-size: 1.094vw;
   text-align: start;
   font-weight: 600;
   line-height: 1.4;
@@ -929,6 +929,7 @@ nav a {
   line-height: 1.5;
   font-weight: 400;
   text-align: start;
+  margin-bottom: 0px !important;
 }
 
 /* Responsive Breakpoints */

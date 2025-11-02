@@ -98,7 +98,7 @@ export class OurBecomingComponent implements OnInit, AfterViewInit {
       description:
         'We take ownership of our actions, decisions, and outcomes with integrity.',
       image:
-        'bannerS3.jpeg',
+        'bannerS5.jpg',
     },
     {
       letter: 'N',

@@ -111,7 +111,7 @@ header {
   align-items: center;
   background-color: transparent;  /* starts transparent */
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  z-index: 1000;
+  z-index: 1050;
 }
 
 /* === When hovered === */
@@ -206,14 +206,16 @@ nav {
 
 nav a {
   font-weight: 100;
-  font-size: 12px;
+  font-size: 0.938vw;
   text-decoration: none;
   color: #ffffff;
   transition: color 0.3s ease;
   top: 0px;
 
 }
-
+.sub-menu h2 a{
+  font-size: 0.833vw !important;
+}
 
 .contact-us {
   position: relative;
@@ -223,7 +225,7 @@ nav a {
   justify-content: center;
   align-items: center;
   font-weight: 100;
-  font-size: 12px;
+  font-size: 0.938vw;
   color: #ffffff !important;
   cursor: pointer;
   transition: color 0.3s ease, background-color 0.3s ease;
@@ -956,18 +958,14 @@ nav:hover ~ header {
    transition: 0.3s;
 }
 
-.menu-txt:hover {
-  
-  background: #f5f5f5;
 
-}
 .menu-item h2 a:hover{
   color: #007bff !important;
 }
 
 .menu-item .icon {
-  width: 22px;
-  height: 22px;
+  width: 30px;
+  height: 30px;
   margin-right: 12px;
   flex-shrink: 0;
   margin-top: 5px;
@@ -1271,7 +1269,7 @@ nav:hover ~ header {
   gap: 30px;
   flex-wrap: wrap; /* wrap on smaller screens */
   justify-content: center;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -1323,9 +1321,7 @@ nav:hover ~ header {
 
 }
 
-.menu-item:hover {
-  background: #f5f5f5;
-}
+
 
 .menu-item img {
   width: 30px;
@@ -1334,14 +1330,14 @@ nav:hover ~ header {
 }
 
 .menu-item h4 {
-  font-size: 12px;
+  font-size: 1.042vw;
   font-weight: 600;
   margin-bottom: 4px;
   color: #111;
   cursor: pointer;
 }
 .menu-item h2{
-  font-size: 12px;
+  font-size: 0.833vw;
   font-weight: 400;
   color: #111;
    padding: 5px;

@@ -12,7 +12,7 @@
 
 .image-overlayy{
 margin-bottom : 300px ; 
-font-size: 18px;
+font-size: 0.938vw;
 }
 
 .hero-bg-scroll {
@@ -206,7 +206,7 @@ nav {
 
 nav a {
   font-weight: 100;
-  font-size: 12px;
+  font-size: 0.625vw;
   text-decoration: none;
   color: #ffffff;
   transition: color 0.3s ease;
@@ -378,7 +378,7 @@ nav a {
       font-weight: 700;
     }
  .image-overlay h3{
-  font-size: 18px;
+  font-size: 0.938vw;
   font-weight: 500;
  }
 
@@ -506,7 +506,7 @@ nav a {
 
     .banner {
       position: relative;
-      height: 360px;
+      height: 400px;
       background: url('/ai/ai-banner.png') no-repeat center center;
       background-size: cover;
       color: white;
@@ -526,12 +526,12 @@ nav a {
     }
 
     .banner .content h1 {
-      font-size: 40px;
-      font-weight: 700;
+      font-size: 2.604vw;
+      font-weight: 500;
     }
 
     .banner .content p {
-      font-size: 18px;
+      font-size: 0.938vw;
       margin-top: 10px;
       max-width: 600px;
     }
@@ -1343,7 +1343,7 @@ nav:hover ~ header {
   cursor: pointer;
 }
 .menu-item h2{
-  font-size: 12px;
+  font-size: 0.625vw;
   font-weight: 400;
   color: #111;
   padding-top: 3px;
@@ -1355,7 +1355,7 @@ nav:hover ~ header {
 
 
 .menu-item p {
-  font-size: 12px;
+  font-size: 0.625vw;
   color: #727374;
   line-height: 1.4;
 }
@@ -1532,7 +1532,7 @@ nav:hover ~ header {
 
 .feature-text {
   color: #3e3e3e;
-  font-size: 16px;
+  font-size: 0.938vw;
   margin: 5px 0 0 0;
   opacity: 0;
   transform: translateY(20px); /* Slide it out of the box */
@@ -1671,7 +1671,7 @@ nav:hover ~ header {
     }
 
     .working-process-card1 p {
-      font-size: 1rem;
+      font-size: 0.938vw;
       color: #333;
     }
     .working-process-btn {
@@ -1766,7 +1766,7 @@ color: #898989;
 }
 
 .footer p {
-  font-size: 12px;
+  font-size: 0.625vw;
   color: rgb(230, 229, 229);
   margin: 0;
 }
@@ -1890,14 +1890,14 @@ font-size: 0.995vw !important;
 }
 .last-section h1
  {
-  font-size: 18px;
+  font-size: 0.938vw;
   }
 .last-section .button-img
  {
     width: 80px;
     cursor: pointer;
     height: 20px;
-     font-size: 12px;
+     font-size: 0.625vw;
     text-align: end;
 }
 }

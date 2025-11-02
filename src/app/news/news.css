@@ -133,7 +133,7 @@ body{
 }
    .banner {
             position: relative;
-            height: 300px;
+            height: 400px;
            background: url('/ai/news-banner.png') no-repeat center center; /* Use local image path here */
             background-size: cover;
           color: white;

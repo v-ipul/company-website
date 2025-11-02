@@ -31,7 +31,7 @@ export class HomeComponent implements OnInit {
 
   slides: Slide[] = [
   {
-    image: 'img1.png',
+    image: 'img1.jpg',
     title: 'Ways We Serve',
     subtitle: 'Delivering authentic, impactful solutions that truly reflect you.',
     description: 'From consulting to integration, implementation to managed services, Atman partners with industries to create transformative, client-centric outcomes.',
@@ -63,7 +63,7 @@ export class HomeComponent implements OnInit {
     link: 'https://example.com/wisdom'
   },
   {
-    image: 'img5.png',
+    image: 'img5.jpg',
     title: 'AC Foundation',
     subtitle: 'Creating meaningful change through education, farming, and wellbeing.',
     description: 'Atman Foundation empowers communities by nurturing skills, strengthening livelihoods, and promoting holistic wellbeing — building brighter, inclusive futures for all.',
@@ -73,8 +73,8 @@ export class HomeComponent implements OnInit {
 ];
 
   cards: ServiceCard[] = [
-    { image: 'card1.png', title: 'Implementation & Integration', subtitle: 'Making change smooth' },
-    { image: 'card2.png', title: 'Consulting', subtitle: 'Clarity before the leap.' },
+    { image: 'card1.jpg', title: 'Implementation & Integration', subtitle: 'Making change smooth' },
+    { image: 'card2.jpg', title: 'Consulting', subtitle: 'Clarity before the leap.' },
     { image: 'card3.png', title: 'Managed Services', subtitle: 'Keeping you ahead' },
   ];
 
@@ -82,7 +82,7 @@ export class HomeComponent implements OnInit {
   currentIndex = 0;
   mobileMenuOpen = false;
   isHovering = false;
-isDropdownOpen = false;
+  isDropdownOpen = false;
   mobileSubmenuOpen = false;
   isCollapsed = true;
   navHovered = false;
@@ -94,7 +94,7 @@ isDropdownOpen = false;
 
 
 
-@HostBinding('style.backgroundImage') backgroundImage = `url('img1.png')`;
+@HostBinding('style.backgroundImage') backgroundImage = `url('img1.jpg')`;
 @HostBinding('style.backgroundSize') backgroundSize = 'cover';
 @HostBinding('style.backgroundPosition') backgroundPosition = 'center';
 @HostBinding('style.backgroundRepeat') backgroundRepeat = 'no-repeat';

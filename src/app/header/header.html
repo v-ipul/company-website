@@ -36,7 +36,7 @@
 
                 <div class="mega-right">
                   <div class="menu-item" routerLink="/services" routerLinkActive="active">
-                    <img src="icon/view-grid.png" class="icon" alt="">
+                    <img src="icon/services.svg" class="icon" alt="">
                     <div>
                       <h4>Services</h4>
                       <div class="sub-menu">
@@ -111,7 +111,7 @@
                   <!-- Column 1 -->
                    <div class="menu-item " routerLinkActive="active">
                 
-                    <img src="icon/view-grid.png" class="icon" alt="">
+                    <img src="icon/analytics.svg" class="icon" alt="">
                    <a routerLink="/ai" fragment="Analytics">
                     
                     <div class="menu-txt" >
@@ -125,7 +125,7 @@
 
                   <!-- Column 2 -->
                   <div class="menu-item"  routerLinkActive="active">
-                    <img src="icon/Industries_we_serve.png" class="icon" alt="">
+                    <img src="icon/Agentic_Suite.svg" class="icon" alt="">
                     <div>
                       <h4>Agentic Suite</h4>
                       <div class="sub-menu">
@@ -140,7 +140,7 @@
 
                   <!-- Column 3 -->
                   <div class="menu-item " routerLinkActive="active">
-                    <img src="icon/diamond_9346758 1.png" class="icon" alt="">
+                    <img src="icon/Atman_Fusion.svg" class="icon" alt="">
                    <a routerLink="/ai" fragment="AtmanFusion"><div class="menu-txt"  >
                       <h4>Atman Fusion</h4>
                       <p>Seamless integration, <br> real-time insights, <br> smarter automation
@@ -369,7 +369,7 @@
               <!-- Right Section -->
               <div class="mega-right">
                 <div class="menu-item">
-                  <img src="icon/view-grid.png" class="icon" alt="">
+                  <img src="icon/email.png" class="icon" alt="">
                   <div>
                     <h4>Email Us</h4>
                     <div class="sub-menu">
@@ -380,7 +380,7 @@
                 </div>
 
                 <div class="menu-item">
-                  <img src="icon/Industries_we_serve.png" class="icon" alt="">
+                  <img src="icon/telephones.png" class="icon" alt="">
                   <div>
                     <h4>Call Us</h4>
                     <div class="sub-menu">
@@ -391,7 +391,7 @@
                 </div>
 
                 <div class="menu-item">
-                  <img src="icon/diamond_9346758 1.png" class="icon" alt="">
+                  <img src="icon/visit.png" class="icon" alt="">
                   <div>
                     <h4>Visit Us</h4>
                     <div class="sub-menu">
@@ -408,8 +408,8 @@
       </div>
 
       <!-- Mobile Toggle -->
-      <div class="mobile-toggle" (click)="toggleMobileMenu()">☰</div>
-
+     <div class="mobile-toggle" (click)="toggleMobileMenu()" [ngStyle]="{ color: mobileMenuOpen ? 'black' : 'white' }">☰
+      </div>
 
 
       <!-- Mobile Menu -->
@@ -617,9 +617,9 @@
         <!--News-->
         <div class="mobile-dropdown">
           <div class="mobile-dropdown-header" (click)="toggleMega(2)">
-            <a routerLink="/news" routerLinkActive="active">News</a> <span [class.rotate]="activeMegaIndex === 2">▸</span>
-          </div>
-        <!-- Contact Us -->
+                       <a style="text-decoration: none !important; color : black !important;" routerLink="/news" routerLinkActive="active">News</a> <span [class.rotate]="activeMegaIndex === 2">▸</span>
+        </div>
+                       <!-- Contact Us -->
         <div class="mobile-dropdown">
           <div class="mobile-dropdown-header" (click)="toggleMega(5)">
             Contact Us <span [class.rotate]="activeMegaIndex === 5">▸</span>

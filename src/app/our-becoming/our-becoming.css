@@ -1,3 +1,5 @@
+
+
 /* === Hero Section === */
 .hero-section {
   position: relative;
@@ -78,7 +80,8 @@ nav {
 }
 
 nav a {
-  font-weight: 400;
+  font-weight: 0.938vw;
+  font-weight: 600;
   font-size: 12px;
   text-decoration: none;
   color: #ffffff;
@@ -150,6 +153,7 @@ header.hover-active .contact-us {
   z-index:4;
   pointer-events: none;
 }
+
 .menu-item .icon {
   width: 22px;
   height: 22px;
@@ -169,13 +173,13 @@ header.hover-active .contact-us {
 }
 
 .slide-text h1 {
-  font-size: 32px;
+  font-size: 2.604vw;
   font-weight: 500;
   margin-bottom: 20px;
 }
 
 .slide-text p {
-  font-size: 12px;
+  font-size: 1.042vw;
   line-height: 167%;
   font-weight: 400;
   color: rgb(255, 255, 255);
@@ -189,13 +193,12 @@ header.hover-active .contact-us {
   font-family: 'Manrope', sans-serif;
   color: #333;
   line-height: 1.8;
-
 }
 
 .Becoming-section h2 {
   font-size: 2.5vw;
   color: #111;
-  font-weight: 400;
+  font-weight: 400px;
 }
 
 .Becoming-section h2 span {
@@ -204,7 +207,8 @@ header.hover-active .contact-us {
 }
 
 .Becoming-section p {
-  font-size: 12px;
+  font-size: 0.938vw;
+  font-weight: 400;
   margin-bottom: 30px;
   color: #555;
 }
@@ -232,17 +236,15 @@ header.hover-active .contact-us {
   background: #fff;
   font-family: 'Manrope', sans-serif;
   color: #333;
-
 }
 
 .container-custom {
   max-width: 1100px;
-
 }
 
 .north-star h1 {
-  font-size: 32px;
-  font-weight: 500;
+  font-size: 2.5vw;
+  font-weight: 700;
   margin-bottom: 2.5rem;
   line-height: 1.2;
 }
@@ -262,12 +264,12 @@ header.hover-active .contact-us {
 
 
 .text-block p {
-  font-size: 12px;
+  font-size: 0.938vw;
   line-height: 20px;
   margin-bottom: 0.3rem;
   color: #4d4d4d;
   text-align: start;
-
+  font-weight: 400;
 }
 
 .text-block ul {
@@ -295,8 +297,6 @@ header.hover-active .contact-us {
   object-fit: cover;
   transform: scaleX(-1);
   height: 300px;
-
-
 }
 
 
@@ -348,6 +348,7 @@ header.hover-active .contact-us {
 
 }
 
+
 /* Mobile Landscape */
 @media (max-width: 767px) {
   .header-container {
@@ -367,6 +368,10 @@ header.hover-active .contact-us {
   .slide-text p {
     font-size: 12px;
   }
+
+  .Becoming-section {
+  font-size: 6.25vw;
+}
 
  
 }
@@ -397,15 +402,19 @@ header.hover-active .contact-us {
     font-size: 12px;
   }
 
-
-
-
+  .Becoming-section {
+  font-size: 6.25vw;
+}
 
 }
 @media (max-width: 768px) {
   .header-section{
     display: none;
   }
+  
+  .Becoming-section {
+  font-size: 13.043vw;
+}
 }
 
 
@@ -428,7 +437,7 @@ header.hover-active .contact-us {
   transform: translateY(-10px); /* smooth drop down */
   transition: all 0.3s ease;
   z-index: 9999;
-  padding: 40px 60px;
+  padding: 20px 40px;
   overflow-y: auto; /* scroll if content too large */
 
 }
@@ -744,13 +753,14 @@ header.hover-active .contact-us {
 }
 
 .rhythm-title {
-  font-size: 32px;
+  font-size: 2.5vw;
   margin-bottom: 10px;
   font-weight: 400;
 }
 
 .rhythm-subtitle {
-  font-size: 20px;
+  font-size: 1.25vw;
+  font-weight: 400;
   color: #555;
   margin-bottom: 50px;
 }
@@ -1356,13 +1366,15 @@ header.hover-active .contact-us {
 
 .section-title {
   text-align: center;
-  font-size: 50px;
+  font-weight: 400;
+  font-size: 2.5vw;
   margin-bottom: 10px;
 }
 
 .section-subtitle {
   text-align: center;
-  font-size: 18px;
+  font-size: 1.042vw;
+  font-weight: 600;
   margin-bottom: 40px;
   color: #555;
 }
@@ -1392,23 +1404,24 @@ header.hover-active .contact-us {
 .tab-card:hover {
   background-color: #e8f4ff;
 }
-
+  
 .tab-number {
-  font-size: 50px;
-  font-weight: 700;
+  font-size: 2.604vw;
+  font-weight: 500;
   color: rgba(146, 146, 146, 1);
   margin-right: 20px;
 }
 
 .tab-content h3 {
-  font-size: 16px;
+  font-size: 1.094vw;
   margin-bottom: 5px;
   color: rgba(52, 63, 82, 1);
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .tab-content p {
-  font-size: 12px;
+  font-size: 0.625vw;
+  font-weight: 400;
   color: #555;
 }
 
@@ -1441,14 +1454,16 @@ header.hover-active .contact-us {
 }
 
 .panel-text h2 {
-  font-size: 32px;
+  font-size: 1.667vw;
+  font-weight: 600;
   margin-bottom: 10px;
 }
 
 .panel-text p {
-  font-size: 14px;
+  font-size: 0.938vw;
+  font-weight: 400;
   line-height: 1.6;
-  margin-bottom: 180px;
+  margin-bottom: 200px;
   color: #333;
 }
 
@@ -1553,7 +1568,7 @@ header.hover-active .contact-us {
   .mega-right {
     grid-template-columns: 1fr;
   }
-    .tab-card{
+  .tab-card{
   flex: none;
   }
 
@@ -1875,25 +1890,8 @@ header.hover-active .contact-us {
   scroll-behavior: smooth;
   display: flex;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .footer {
     background-color: black !important;
-
     padding: 10px;
 }
 
@@ -1903,14 +1901,14 @@ header.hover-active .contact-us {
 
 .footer p {
     color: #929292;
-    font-size: 12px;
-    font-weight: 700;
+    font-size: 0.833vw;
+    font-weight: 500;
 }
 
 .social-links {
     display: flex;
     align-items: center;
-    gap: 27px;
+    gap: 10px;
     padding-left: 0px;
     margin-bottom: 0px;
 }
@@ -1969,6 +1967,77 @@ header.hover-active .contact-us {
 
 /* 📱 Tablets & Large Phones (max-width: 768px) */
 @media (max-width: 768px) {
+
+  .section-title
+  {
+    font-size: 6.257vw;
+  }
+  .section-subtitle
+  {
+    font-size: 2.3vw;
+  }
+  .tab-content h3
+  {
+   font-size: 5.257vw;
+  }
+  .tab-content p
+  {
+    font-size: 2.3vw;
+  }
+  .tab-number
+  {
+    font-size: 6.557vw;
+  }
+  .panel-text h2
+  {
+    font-size: 4.557vw;
+  }
+  .panel-text p
+  {
+    font-size: 2.3vw;
+  }
+  .rhythm-title
+  {
+    font-size: 6.257vw;
+  }
+  .rhythm-subtitle
+  {
+    font-size: 2.3vw;
+  }
+  .footer p
+  {
+    font-size: 2.3vw;
+  } 
+  .Becoming-section h2
+  {
+    font-size: 5.257vw;
+  }
+  .Becoming-section b 
+  {
+    font-size: 2.1vw;
+  }
+  .Becoming-section p
+  {
+    font-size: 1.8vw;
+  }
+  .belief-style strong
+  {
+    font-size: 5.257vw;
+  }
+  .belief-style p
+  {
+    font-size: 1.8vw;
+  }
+  .text-block ul li
+  {
+    font-size: 2.1vw;
+  }
+  .belif-section-p
+  {
+    font-size: 2.1vw;
+  }
+
+
   .north-star {
     padding: 50px 15px;
   }
@@ -2048,7 +2117,8 @@ header.hover-active .contact-us {
   }
 
   .text-block p {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    font-size: 2.1vw;
     width: 400px;
     padding-left: 10px;
     width: 100%;
@@ -2167,7 +2237,7 @@ header.hover-active .contact-us {
   padding: 20px;
   width: 100%;
   transition: all 0.6s ease;
-  width: 600px;
+  width: 800px;
 
 }
 
@@ -2183,15 +2253,15 @@ header.hover-active .contact-us {
   margin-bottom: 10px;
 }
 .beliefs-text h6 {
-  font-size: 18px;
+  font-size: 1.354vw;
   font-weight: bold;
   margin-bottom: 10px;
   color: #222;
 }
 .beliefs-text p {
-  font-size: 14px;
+  font-size: 1.354vw;
   color: #444;
-  line-height: 1.5;
+  line-height: 1.1;
 
 }
 
@@ -2325,12 +2395,20 @@ header.hover-active .contact-us {
     font-size: 14px;
     padding: 0 10px;
   }
+   .beliefs-collapsed {
+      display: inline-flex;
+  }
+ .beliefs-column {
+min-height: 50px;
+ }
+
   .beliefs-collapsed b {
     font-size: 20px;
   }
   .beliefs-collapsed p {
     font-size: 19px;
-    margin-top: 100px;
+    margin-top: 2px;
+    writing-mode:horizontal-tb;
 
   }
   .beliefs-expanded {
@@ -2390,6 +2468,11 @@ color: #00adee !important;
   color: #333;
   padding: 80px 20px;
 }
+
+.partners-section p.description
+{
+  font-size: 2.5vw;
+}
  
 .partners-header {
   display: flex;
@@ -2421,7 +2504,7 @@ color: #00adee !important;
 }
  
 .partners-header p {
-  font-size: 12px;
+  font-size: 0.938vw;
   color: #4d4d4d;
   line-height: 1.6;
 }
@@ -2499,7 +2582,7 @@ color: #00adee !important;
  
  
 .partner-card .text h3 {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 700;
   color: #000;
   text-align: start;
@@ -2510,6 +2593,8 @@ color: #00adee !important;
   color: #555;
   text-align: start;
 }
+
+
  
 @media (max-width: 992px) {
  
@@ -2551,8 +2636,10 @@ color: #00adee !important;
   .partners-grid .partner-card:hover .main-logo
   {
   width: 70px;
-  transform: translate(-120px, -40px);
+  transform: translate(-140px, -40px);
   }
+
+  
  
   .slide-text {
     left: 20px;
@@ -2568,7 +2655,7 @@ color: #00adee !important;
   }
  
   .slide-text p {
-    font-size: 12 px;
+    font-size: 2.3vw;
   }
  
  
@@ -2579,7 +2666,7 @@ color: #00adee !important;
   }
  
   .partner-card {
-    max-width: 100%;
+    max-width: 100%; 
     height: 150px;
     padding: 20px;
   }
@@ -2587,6 +2674,7 @@ color: #00adee !important;
   .partners-header {
  
     text-align: center;
+    gap: 1rem;
   }
  
   .partners-header h2 {
@@ -2679,17 +2767,18 @@ partners-section {
 }
  
 .partners-section h2.title {
-    font-size: 48px;
+    font-size: 2.8vw;
     line-height: 3px;
-    font-weight: 300;
+    font-weight: 500;
 }
  
 .partners-section p.description {
-    font-size: 29px;
+    font-size:4.1vw;;
 }
  
 .partners-section .card {
     width: 100%;
+    font-size: 5.257vw;
     height: 200px;
     background: #fff;
     border-radius: 12px;

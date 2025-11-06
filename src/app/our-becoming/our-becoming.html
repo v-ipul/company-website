@@ -1,3 +1,5 @@
+
+
  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
 
   <!-- Bootstrap 5 + Icons -->
@@ -160,49 +162,49 @@
 
                 <div class="mega-right">
                   <div class="menu-item menu-txt" routerLink="/beingatman" routerLinkActive="active">
-                    <img src="IconB1.png" class="icon" alt="">
+                    <img src="Home&Becoming/IconB1.png" class="icon" alt="">
                     <div>
                       <h4>Our <strong>Becoming</strong></h4>
                       <p>Our story, our spirit, our truth</p>
                     </div>
                   </div>
                   <div class="menu-item menu-txt" routerLink="/comingsoon" routerLinkActive="active">
-                    <img src="IconB2.png" class="icon" alt="">
+                    <img src="Home&Becoming/IconB2.png" class="icon" alt="">
                     <div>
                       <h4>Progressive Minds</h4>
                       <p>Mind that inspire, guide and empower </p>
                     </div>
                   </div>
                   <div class="menu-item menu-txt" routerLink="/comingsoon" routerLinkActive="active">
-                    <img src="IconB4.png" class="icon" alt="">
+                    <img src="Home&Becoming/IconB4.png" class="icon" alt="">
                     <div>
                       <h4>Our Rythem</h4>
                       <p>Living our essence through everyday actions</p>
                     </div>
                   </div>
                 <a routerLink="/beingatman" fragment="northstar"><div class="menu-item menu-txt"  routerLinkActive="active">
-                    <img src="IconB5.png" class="icon" alt="">
+                    <img src="Home&Becoming/IconB5.png" class="icon" alt="">
                     <div>
                       <h4>North Star</h4>
                       <p>Purpose that lights our chosen path</p>
                     </div>
                   </div></a>
                  <a routerLink="/beingatman" fragment="partners"> <div class="menu-item menu-txt" routerLinkActive="active">
-                    <img src="IconB6.png" class="icon" alt="">
+                    <img src="Home&Becoming/IconB6.png" class="icon" alt="">
                     <div>
                       <h4>Partners in purpose</h4>
                       <p>Working together for shared meaningful outcomes</p>
                     </div>
                   </div></a>
                   <a routerLink="/beingatman" fragment="beliefs"><div class="menu-item menu-txt" routerLinkActive="active">
-                    <img src="IconB7.png" class="icon" alt="">
+                    <img src="Home&Becoming/IconB7.png" class="icon" alt="">
                     <div>
                       <h4>Values\Beliefs</h4>
                       <p>Beliefs shaping culture, conduct and purpose</p>
                     </div>
                   </div></a>
                 <a routerLink="/beingatman" fragment="walk"><div class="menu-item menu-txt" routerLinkActive="active">
-                    <img src="Icon8.png" class="icon" alt="">
+                    <img src="Home&Becoming/Icon8.png" class="icon" alt="">
                     <div>
                       <h4>Walk with us</h4>
                       <p>Join our path, Shape the future</p>
@@ -384,7 +386,8 @@
       </div>
 
       <!-- Mobile Toggle -->
-      <div class="mobile-toggle" (click)="toggleMobileMenu()">☰</div>
+      <div class="mobile-toggle" (click)="toggleMobileMenu()" [ngStyle]="{ color: mobileMenuOpen ? 'black' : 'white' }">☰
+      </div>
 
 
 
@@ -473,12 +476,12 @@
           </div>
           <div class="mobile-submenu" [class.show]="activeMegaIndex === 2">
             <div class="menu-item" routerLink="/beingatman" routerLinkActive="active">
-              <img src="IconB1.png" class="icon" alt="">
+              <img src="Home&Becoming/IconB1.png" class="icon" alt="">
               <h4 routerLink="/beingatman" routerLinkActive="active">Our Becoming</h4>
               <p>Our story, our spirit, our truth</p>
             </div> 
              <a routerLink="/beingatman" fragment="northstar">  <div class="menu-item" routerLinkActive="active">
-              <img src="IconB2.png" class="icon" alt="">
+              <img src="Home&Becoming/IconB2.png" class="icon" alt="">
               <h4>North Star</h4>
               <p>Purpose that lights our chosen path</p>
             </div></a>
@@ -724,13 +727,13 @@
 </section>
 
 <div class="beliefs-section" id="beliefs">
-  <div class="beliefs-container">
-    <div style="padding: 10px 60px;">
-    <h1 >
+    <div class="beliefs-container">
+    <div class="belief-style" style="padding: 10px 10px;">
+    <h1 style="font-size: 2.5vw;">
       <strong>Values / Beliefs - </strong> Beliefs shaping culture, conduct, and purpose
     </h1>
 
-    <p style="text-align:  center; text-align: start; font-size: 12px;">
+    <p class="belif-section-p">
       Our values are more than words—they are the spirit of Atman. They guide
       how we think, act, and build for our clients every day. Together, these
       values form ATMAN—the compass that grounds us and propels us forward.
@@ -772,8 +775,8 @@
 <div class="container-custom mx-auto">
 <div class="partners-header">
 <div class="lef-tside-text-area">
-<h2 class="title"><b>Partners in Purpose</b></h2>
-<p class="description">Working together for shared meaningful outcomes</p>
+<h2 class="title" >Partners in Purpose</h2>
+<p class="description">Working together for shared <br>meaningful outcomes</p>
 </div>
 <div class="right-side-text-area">
 <p>
@@ -788,23 +791,23 @@
 </div>
 <div class="partners-grid">
 <div class="partner-card">
-<img style ="" src="partners/salcesforce.png" alt="Salesforce" class="main-logo">
+<img style = "" src="partners/salcesforce.png" alt="Salesforce" class="main-logo">
 <div class="text">
 <h3>Salesforce</h3>
 <p>
-         Atman partners with Salesforce to deliver advanced CRM solutions, enabling clients to achieveghag 
-         personalized engagement, streamlined sales, and data-driven growth strategies.
+  Atman partners with Salesforce to deliver advanced CRM solutions, enabling clients to achieveghag 
+  personalized engagement, streamlined sales, and data-driven growth strategies.
 </p>
 </div>
 </div>
  
-      <div class="partner-card">
+<div class="partner-card">
 <img src="Home&Becoming/Mulesoft.png" alt="Mulesoft" class="main-logo">
 <div class="text">
 <h3>Mulesoft</h3>
 <p>Through MuleSoft, Atman offers seamless API integration, helping clients connect
-           systems and accelerate digital transformation for unified, 
-          efficient experiences..</p>
+   systems and accelerate digital transformation for unified, 
+   efficient experiences.</p>
 </div>
 </div>
 <div class="partner-card">
@@ -812,7 +815,7 @@
 <div class="text">
 <h3>Tableau</h3>
 <p>Through Tableau, Atman empowers clients with advanced data visualization and analytics,
-          turning complex datasets into actionable insights for smarter, faster business decisions..</p>
+  turning complex datasets into actionable insights for smarter, faster business decisions.</p>
 </div>
 </div>
 <div class="partner-card">
@@ -820,7 +823,7 @@
 <div class="text">
 <h3>Informatica</h3>
 <p>Atman leverages Informatica for secure data management and governance, ensuring clients maintain compliance, integrity, 
-           and actionable insights for strategic success..</p>
+   and actionable insights for strategic success.</p>
 </div>
 </div>
 <div class="partner-card">
@@ -828,7 +831,7 @@
 <div class="text">
 <h3>Microsoft-Azure</h3>
 <p>Atman partners with Microsoft Azure to deliver secure, scalable cloud solutions, enabling clients to innovate faster, 
-           optimize costs, and ensure enterprise-grade reliability..</p>
+    optimize costs, and ensure enterprise-grade reliability.</p>
 </div>
 </div>
 <div class="partner-card">
@@ -836,7 +839,7 @@
 <div class="text">
 <h3>Snowflake</h3>
 <p>With Snowflake, Atman provides scalable cloud data warehousing, enabling clients to unlock real-time analytics and actionable insights 
-          for competitive advantage.</p>
+   for competitive advantage.</p>
 </div>
 </div>
 <div class="partner-card">
@@ -844,7 +847,7 @@
 <div class="text">
 <h3>Databricks</h3>
 <p>Atman partners with Databricks to accelerate AI and big data innovation, 
-           offering clients advanced analytics and machine learning capabilities.</p>
+   offering clients advanced analytics and machine learning capabilities.</p>
 </div>
 </div>
 <div class="partner-card">
@@ -852,11 +855,10 @@
 <div class="text">
 <h3>Skyvia</h3>
 <p>Through Skyvia, Atman simplifies data integration and migration for clients, ensuring smooth connectivity 
-           and automated workflows across cloud platforms.</p>
+   and automated workflows across cloud platforms.</p>
 </div>
 </div>
- 
-    </div>
+</div>
 </div>
 </section>
 

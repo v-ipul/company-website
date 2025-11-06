@@ -9,7 +9,7 @@
   <header [class.hover-active]="isHovering">
     <div class="header-container">
       <!-- Logos -->
-       
+
       <img src="light-logo.png" class="logo logo-white" routerLink="/" routerLinkActive="active" alt="Logo White" />
       <img src="dark-logo.png" class="logo logo-black" routerLink="/" routerLinkActive="active" alt="Logo Black" />
 
@@ -31,7 +31,7 @@
 
                 <div class="mega-right">
                   <div class="menu-item" routerLink="/services" routerLinkActive="active">
-                    <img src="icon/view-grid.png" class="icon" alt="">
+                    <img src="icon/services.svg" class="icon" alt="">
                     <div>
                       <h4>Services</h4>
                       <div class="sub-menu">
@@ -105,18 +105,18 @@
                 <div class="mega-right">
                   <!-- Column 1 -->
                  <a routerLink="/ai" fragment="Analytics"><div class="menu-item menu-txt" >
-                    <img src="icon/view-grid.png" class="icon" alt="">
+                    <img src="icon/analytics.svg" class="icon" alt="">
                     <div  routerLinkActive="active">
                       <h4>Analytics</h4>
                       <p>Turning data into foresight, <br> powering progress</p>
-                     
+
                     </div>
-                    
+
                   </div> </a>
 
                   <!-- Column 2 -->
                   <div class="menu-item " routerLink="/ai" routerLinkActive="active">
-                    <img src="icon/Industries_we_serve.png" class="icon" alt="">
+                    <img src="icon/Agentic_Suite.svg" class="icon" alt="">
                     <div>
                       <h4>Agentic Suite</h4>
                       <div class="sub-menu">
@@ -131,14 +131,14 @@
 
                   <!-- Column 3 -->
                   <div class="menu-item menu-txt">
-                    <img src="icon/diamond_9346758 1.png" class="icon" alt="">
+                    <img src="icon/Atman_Fusion.svg" class="icon" alt="">
                     <div routerLinkActive="active"><a routerLink="/ai" fragment="AtmanFusion">
                       <h4>Atman Fusion</h4>
                       <p>Seamless integration, <br> real-time insights, <br> smarter automation
                       </p>
                        </a>
                     </div>
-                   
+
                   </div>
                 </div>
 
@@ -157,7 +157,7 @@
                   <h3>Being Atman</h3>
                   <p>Our spirit in action - <br>origin, values, leaders, <br>and collaborations that
                     define us authentically</p>
-                 
+
                 </div>
 
                 <div class="mega-right">
@@ -215,117 +215,7 @@
             </div>
           </div>
 
-        <!--<div class="dropdown" (mouseenter)="onWisdomDropdownHover(true)" (mouseleave)="onWisdomDropdownHover(false)">
-            <a href="#" (mouseenter)="onHover(true)" (mouseleave)="onHover(false)">Wisdom</a>
-
-            <div class="mega-dropdown" [class.show]="isWisdomDropdownOpen">
-              <div class="mega-content">
-                <div class="mega-left">
-                  <h3>Wisdom</h3>
-                  <p>Unlock strategic insights <br>and innovative thinking <br>that fuel your
-                    transformation.</p>
-                  <a href="#" class="see-all">See all →</a>
-                </div>
-
-                <div class="mega-right">
-                  <div class="menu-item" routerLink="/comingsoon" routerLinkActive="active">
-                    <img src="icon/view-grid.png" class="icon" alt="">
-                    <div>
-                      <h4>Thought Leadership</h4>
-                      <div class="sub-manu">
-                        <h2>Research Papers</h2>
-                        <h2>Whitepapers</h2>
-                        <h2>Industry Trends</h2>
-                        <h2>Innovation Guides</h2>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="menu-item" routerLink="/comingsoon" routerLinkActive="active">
-                    <img src="icon/Industries_we_serve.png" class="icon" alt="">
-                    <div>
-                      <h4>Knowledge Hub</h4>
-                      <div class="sub-manu">
-                        <h2>Case Studies</h2>
-                        <h2>Success Stories</h2>
-                        <h2>Best Practices</h2>
-                        <h2>Playbooks</h2>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="menu-item" routerLink="/comingsoon" routerLinkActive="active">
-                    <img src="icon/diamond_9346758 1.png" class="icon" alt="">
-                    <div>
-                      <h4>Strategic Insights</h4>
-                      <div class="sub-manu">
-                        <h2>Business Frameworks</h2>
-                        <h2>Leadership Lessons</h2>
-                        <h2>Transformation Roadmaps</h2>
-                        <h2>Future Forecasts</h2>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
-        <!--  <div class="dropdown" (mouseenter)="onAcDropdownHover(true)" (mouseleave)="onAcDropdownHover(false)">
-            <a href="#" (mouseenter)="onHover(true)" (mouseleave)="onHover(false)">AC Foundation</a>
-
-            <div class="mega-dropdown" [class.show]="isAcDropdownOpen">
-              <div class="mega-content">
-                <div class="mega-left">
-                  <h3>AC Foundation</h3>
-                  <p>Empowering communities through <br>innovation, education, and <br>sustainable
-                    growth initiatives.</p>
-                  <a href="#" class="see-all">See all →</a>
-                </div>
-
-                <div class="mega-right">
-                  <div class="menu-item" routerLink="/comingsoon" routerLinkActive="active">
-                    <img src="icon/view-grid.png" class="icon" alt="">
-                    <div>
-                      <h4>Our Mission</h4>
-                      <div class="sub-manu">
-                        <h2>Community Development</h2>
-                        <h2>Educational Programs</h2>
-                        <h2>Social Innovation</h2>
-                        <h2>Sustainability Goals</h2>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="menu-item" routerLink="/comingsoon" routerLinkActive="active">
-                    <img src="icon/Industries_we_serve.png" class="icon" alt="">
-                    <div>
-                      <h4>Key Projects</h4>
-                      <div class="sub-manu">
-                        <h2>Women Empowerment</h2>
-                        <h2>Healthcare Initiatives</h2>
-                        <h2>Environmental Actions</h2>
-                        <h2>Youth Leadership</h2>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="menu-item" routerLink="/comingsoon" routerLinkActive="active">
-                    <img src="icon/diamond_9346758 1.png" class="icon" alt="">
-                    <div>
-                      <h4>Impact & Stories</h4>
-                      <div class="sub-manu">
-                        <h2>Impact Reports</h2>
-                        <h2>Success Stories</h2>
-                        <h2>Partner Collaborations</h2>
-                        <h2>Volunteer Programs</h2>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
+       
      <div class="dropdown" >
             <a routerLink="/news" routerLinkActive="active">News</a>
             </div>
@@ -347,7 +237,7 @@
               <!-- Right Section -->
               <div class="mega-right">
                 <div class="menu-item">
-                  <img src="icon/view-grid.png" class="icon" alt="">
+                  <img src="icon/email.png" class="icon" alt="">
                   <div>
                     <h4>Email Us</h4>
                     <div class="sub-menu">
@@ -358,7 +248,7 @@
                 </div>
 
                 <div class="menu-item">
-                  <img src="icon/Industries_we_serve.png" class="icon" alt="">
+                  <img src="icon/telephones.png" class="icon" alt="">
                   <div>
                     <h4>Call Us</h4>
                     <div class="sub-menu">
@@ -369,7 +259,7 @@
                 </div>
 
                 <div class="menu-item">
-                  <img src="icon/diamond_9346758 1.png" class="icon" alt="">
+                  <img src="icon/visit.png" class="icon" alt="">
                   <div>
                     <h4>Visit Us</h4>
                     <div class="sub-menu">
@@ -386,8 +276,9 @@
       </div>
 
       <!-- Mobile Toggle -->
-      <div class="mobile-toggle" (click)="toggleMobileMenu()">☰</div>
-
+     
+      <div class="mobile-toggle" (click)="toggleMobileMenu()" [ngStyle]="{ color: mobileMenuOpen ? 'black' : 'white' }">☰
+      </div>
 
 
       <!-- Mobile Menu -->
@@ -400,7 +291,7 @@
           </div>
           <div class="mobile-submenu" [class.show]="activeMegaIndex === 0">
             <div class="menu-item" routerLink="/services" routerLinkActive="active">
-              <img src="icon/view-grid.png" class="icon" alt="">
+              <img src="icon/view-grid.svg" class="icon" alt="">
               <h4>Services</h4>
               <div class="sub-menu">
                         <h5 routerLinkActive="active"><a routerLink="/services" fragment="Consulting">Consulting</a></h5>
@@ -445,12 +336,12 @@
           </div>
           <div class="mobile-submenu" [class.show]="activeMegaIndex === 1">
          <a routerLink="/ai" fragment="Analytics">  <div class="menu-item" routerLinkActive="active">
-              <img src="icon/view-grid.png" class="icon" alt="">
+              <img src="icon/analytics.svg" class="icon" alt="">
               <h4>Analytics</h4>
               <p>Turning data into foresight</p>
-            </div></a> 
+            </div></a>
             <div class="menu-item" routerLink="/ai" routerLinkActive="active">
-              <img src="icon/Industries_we_serve.png" class="icon" alt="">
+              <img src="icon/Agentic_Suite.svg" class="icon" alt="">
               <h4>Agentic Suite</h4>
               <div class="sub-menu">
                 <h5 routerLinkActive="active"><a routerLink="/ai" fragment="ChurnPredictor">Churn Predictor</a></h5>
@@ -461,10 +352,10 @@
             </div>
            <a routerLink="/ai" fragment="AtmanFusion">
             <div class="menu-item" routerLinkActive="active">
-              <img src="icon/diamond_9346758 1.png" class="icon" alt="">
+              <img src="icon/Atman_Fusion.svg" class="icon" alt="">
               <h4>Atman Fusion</h4>
               <p>Seamless integration, real-time insights, smarter automation</p>
-            </div></a> 
+            </div></a>
           </div>
         </div>
 
@@ -478,7 +369,7 @@
               <img src="IconB1.png" class="icon" alt="">
               <h4 routerLink="/beingatman" routerLinkActive="active">Our Becoming</h4>
               <p>Our story, our spirit, our truth</p>
-            </div> 
+            </div>
              <a routerLink="/beingatman" fragment="northstar">  <div class="menu-item" routerLinkActive="active">
               <img src="IconB2.png" class="icon" alt="">
               <h4>North Star</h4>
@@ -514,7 +405,7 @@
             </div>
           </div>
         </div>
-        
+
         <!-- Wisdom -->
       <!-- <div class="mobile-dropdown">
           <div class="mobile-dropdown-header" (click)="toggleMega(3)">
@@ -595,7 +486,7 @@
         <!--News-->
         <div class="mobile-dropdown">
           <div class="mobile-dropdown-header" (click)="toggleMega(2)">
-            <a routerLink="/news" routerLinkActive="active">News</a> <span [class.rotate]="activeMegaIndex === 2">▸</span>
+            <a style="text-decoration: none !important; color : black !important;" routerLink="/news" routerLinkActive="active">News</a> <span [class.rotate]="activeMegaIndex === 2">▸</span>
           </div>
         <!-- Contact Us -->
         <div class="mobile-dropdown">
@@ -631,7 +522,7 @@
             </div>
           </div>
         </div>
-        
+
 
       </div>
     </div>
@@ -684,7 +575,7 @@
       Every journey is different, but here’s what you can expect:
 We start by listening. We co-design solutions that fit your DNA. We deliver with care, making change seamless. And when it’s live, we stay with you—supporting, refining, and helping you grow.
 You need a partner who can see beyond tools and buzzwords, to the heart of what makes you unique.
-    Atman is built on authenticity, impact, and trust. We don’t sell roadmaps. We co-create them—with you, around you, for you. 
+    Atman is built on authenticity, impact, and trust. We don’t sell roadmaps. We co-create them—with you, around you, for you.
 Because transformation isn’t a one-time project. It’s a shared journey.</p>
 
     <div class="card-container">
@@ -693,7 +584,7 @@ Because transformation isn’t a one-time project. It’s a shared journey.</p>
         <p>We begin by listening deeply. Together, we co-design solutions that align perfectly with your unique culture, values, and DNA.</p>
       </div>
       <div class="card">
-        <img src="Home&Becoming/Card Image2.png" alt="">
+        <img src="Home&Becoming/crm.jpg" alt="">
         <p>We deliver with care, ensuring change feels seamless. Once live, we stay—supporting, refining, and helping your growth continue confidently.</p>
       </div>
       <div class="card">
@@ -717,7 +608,7 @@ Because transformation isn’t a one-time project. It’s a shared journey.</p>
   </p>
 
   <div class="slider-container">
-   
+
 
     <div class="service-cards">
        <img src="Home&Becoming/Button - Previous.png" alt="Previous" class="nav-btn-left" (click)="prevCard()" />
@@ -732,7 +623,7 @@ Because transformation isn’t a one-time project. It’s a shared journey.</p>
       <img src="Home&Becoming/Button-Next.png" alt="Next" class="nav-btn-right" (click)="nextCard()" />
     </div>
 
-    
+
   </div>
    <a routerLinkActive="active"  routerLink="/services"  class="custom-btn">
           Explore Our Services
@@ -748,8 +639,8 @@ Because transformation isn’t a one-time project. It’s a shared journey.</p>
            <div class="industry-left">
        <h2 class="section-title">
           We <span>understand</span>
-            
-        
+
+
           your world
         </h2>
 
@@ -763,7 +654,7 @@ Because transformation isn’t a one-time project. It’s a shared journey.</p>
           age.
         </p>
         <a href="#" class="custom-btn">
-          See How We Serve Your Industry
+          See How We Work With You
           <span class="arrow">→</span>
         </a>
       </div>
@@ -771,7 +662,7 @@ Because transformation isn’t a one-time project. It’s a shared journey.</p>
         <div class="col-md-6">
           <div class="industry-right">
         <div class="industry-card" routerLinkActive="active" routerLink="/industries">
-          <img src="Home&Becoming/IconA1.png" alt="" />
+          <img src="icon/Manufacturers.svg" alt="" />
           <div class="industry-card-text">
             <h3>Manufacturers building smarter supply chains.</h3>
             <p>
@@ -782,7 +673,7 @@ Because transformation isn’t a one-time project. It’s a shared journey.</p>
         </div>
 
         <div class="industry-card" routerLinkActive="active" routerLink="/banking">
-          <img src="Home&Becoming/IconA2.png" alt="" />
+          <img src="icon/Banks.svg" alt="" />
           <div class="industry-card-text">
             <h3>Banks and insurers creating trust in a digital age</h3>
             <p>
@@ -793,7 +684,7 @@ Because transformation isn’t a one-time project. It’s a shared journey.</p>
         </div>
 
         <div class="industry-card" routerLinkActive="active" routerLink="/healthcare">
-          <img src="Home&Becoming/IconA3.png" alt="" />
+          <img src="icon/Hospitals.svg" alt="" />
           <div class="industry-card-text">
             <h3>Hospitals caring with empathy and precision</h3>
             <p>
@@ -804,7 +695,7 @@ Because transformation isn’t a one-time project. It’s a shared journey.</p>
         </div>
 
         <div class="industry-card" routerLinkActive="active" routerLink="/hitech">
-          <img src="Home&Becoming/IconA4.png" alt="" />
+          <img src="icon/Hightech.svg" alt="" />
           <div class="industry-card-text">
             <h3>High-tech innovators staying ahead of tomorrow</h3>
             <p>
@@ -815,7 +706,7 @@ Because transformation isn’t a one-time project. It’s a shared journey.</p>
         </div>
 
         <div class="industry-card" routerLinkActive="active" routerLink="/industries">
-          <img src="Home&Becoming/IconA5.png" alt="" />
+          <img src="icon/LifeSciences.svg" alt="" />
           <div class="industry-card-text">
             <h3>Life sciences pushing boundaries of possibility</h3>
             <p>
@@ -827,23 +718,14 @@ Because transformation isn’t a one-time project. It’s a shared journey.</p>
       </div>
         </div>
        </div>
-     
+
 
       <!-- Right Content -->
-      
+
     </div>
   </section>
 
-<!--  <section class="container-7">
-    <h1>Stay Ahead of <span>the Curve</span></h1>
-    <p>You’re not just looking for answers today—you’re thinking about tomorrow. Through insights and ideas, we share
-      perspectives on what’s next in digital transformation, AI, and authentic growth.</p>
-    <img class="banner-img" src="banner-Container.png" alt="">
-    <a href="#" class="second-btn">
-      Read Our Insights
-      <span class="arrow">→</span>
-    </a>
-  </section>-->
+
 <section class="container-fluid bg-white">
   <div class="container container-8">
     <div class="part-left">
@@ -878,7 +760,7 @@ Because transformation isn’t a one-time project. It’s a shared journey.</p>
     <div class="image-area">
       <img src="Home&Becoming/banner-page1.jpg" alt="Career Banner" class="main-banner" />
       <a routerLink="/contactus" routerLinkActive="active" class="cta-button">
-        Join the Atman Team 
+        Join the Atman Team
         <span class="arrow">→</span>
       </a>
     </div>
@@ -934,7 +816,7 @@ Because transformation isn’t a one-time project. It’s a shared journey.</p>
     </div>
 
     <img src="Home&Becoming/ai.jpg" alt="AI Banner" class="ai-edge-banner" />
-    <a href="#" class="custom-btn">
+    <a routerLinkActive="active" routerLink="/ai"  class="custom-btn">
       Discover AI at Atman
       <span class="arrow">→</span>
     </a>
@@ -946,7 +828,7 @@ Because transformation isn’t a one-time project. It’s a shared journey.</p>
 
   <footer class="footer">
     <div class="footer-container">
-      <a href="#"><img src="Home&Becoming/light-logo.png" alt="Logo" class="footer-logo"></a>
+      <a href="#"><img src="Home&Becoming/footer.logo.png" alt="Logo" class="footer-logo"></a>
       <p style="margin-bottom: 0rem !important; " class="atmanname">© Atman Cloud Consultants Pvt. Ltd. 2025. All rights reserved.</p>
 
       <ul class="social-links">

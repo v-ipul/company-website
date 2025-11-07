@@ -9,7 +9,7 @@ interface Slide {
   subtitle: string;
   description: string;
   buttonText: string;
-  link?: string;        
+  link?: string;
 }
 
 interface ServiceCard {
@@ -51,7 +51,7 @@ export class HomeComponent implements OnInit {
     title: 'Being Atman',
     subtitle: 'Our spirit in action, shaping authentic futures.',
     description: 'Rooted in values, guided by purpose, and driven by collaborations — Atman embodies authenticity, empowering progress with integrity and vision.',
-    buttonText: 'Learn More',
+    buttonText: 'Read More',
     link: 'https://www.atmanconsultants.com/beingatman'
   },
   {

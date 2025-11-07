@@ -109,9 +109,9 @@
                     <div  routerLinkActive="active">
                       <h4>Analytics</h4>
                       <p>Turning data into foresight, <br> powering progress</p>
-                     
+
                     </div>
-                    
+
                   </div> </a>
 
                   <!-- Column 2 -->
@@ -138,7 +138,7 @@
                       </p>
                        </a>
                     </div>
-                   
+
                   </div>
                 </div>
 
@@ -157,7 +157,7 @@
                   <h3>Being Atman</h3>
                   <p>Our spirit in action - <br>origin, values, leaders, <br>and collaborations that
                     define us authentically</p>
-        
+
                 </div>
 
                 <div class="mega-right">
@@ -386,7 +386,8 @@
       </div>
 
       <!-- Mobile Toggle -->
-      <div class="mobile-toggle" (click)="toggleMobileMenu()" [ngStyle]="{ color: mobileMenuOpen ? 'black' : 'white' }">☰
+      <div class="mobile-toggle" (click)="toggleMobileMenu()" [ngStyle]="{ color: mobileMenuOpen ? 'black' : 'white' }">
+        {{ mobileMenuOpen ? '✕' : '☰' }}
       </div>
 
 
@@ -449,7 +450,7 @@
               <img src="icon/view-grid.png" class="icon" alt="">
               <h4>Analytics</h4>
               <p>Turning data into foresight</p>
-            </div></a> 
+            </div></a>
             <div class="menu-item" routerLink="/ai" routerLinkActive="active">
               <img src="icon/Industries_we_serve.png" class="icon" alt="">
               <h4>Agentic Suite</h4>
@@ -465,7 +466,7 @@
               <img src="icon/diamond_9346758 1.png" class="icon" alt="">
               <h4>Atman Fusion</h4>
               <p>Seamless integration, real-time insights, smarter automation</p>
-            </div></a> 
+            </div></a>
           </div>
         </div>
 
@@ -479,7 +480,7 @@
               <img src="Home&Becoming/IconB1.png" class="icon" alt="">
               <h4 routerLink="/beingatman" routerLinkActive="active">Our Becoming</h4>
               <p>Our story, our spirit, our truth</p>
-            </div> 
+            </div>
              <a routerLink="/beingatman" fragment="northstar">  <div class="menu-item" routerLinkActive="active">
               <img src="Home&Becoming/IconB2.png" class="icon" alt="">
               <h4>North Star</h4>
@@ -515,7 +516,7 @@
             </div>
           </div>
         </div>
-        
+
         <!-- Wisdom -->
       <!-- <div class="mobile-dropdown">
           <div class="mobile-dropdown-header" (click)="toggleMega(3)">
@@ -632,7 +633,7 @@
             </div>
           </div>
         </div>
-        
+
 
       </div>
     </div>
@@ -795,18 +796,18 @@
 <div class="text">
 <h3>Salesforce</h3>
 <p>
-  Atman partners with Salesforce to deliver advanced CRM solutions, enabling clients to achieveghag 
+  Atman partners with Salesforce to deliver advanced CRM solutions, enabling clients to achieveghag
   personalized engagement, streamlined sales, and data-driven growth strategies.
 </p>
 </div>
 </div>
- 
+
 <div class="partner-card">
 <img src="Home&Becoming/Mulesoft.png" alt="Mulesoft" class="main-logo">
 <div class="text">
 <h3>Mulesoft</h3>
 <p>Through MuleSoft, Atman offers seamless API integration, helping clients connect
-   systems and accelerate digital transformation for unified, 
+   systems and accelerate digital transformation for unified,
    efficient experiences.</p>
 </div>
 </div>
@@ -822,7 +823,7 @@
 <img src="Home&Becoming/Informatica.jpg" alt="Informatica" class="main-logo">
 <div class="text">
 <h3>Informatica</h3>
-<p>Atman leverages Informatica for secure data management and governance, ensuring clients maintain compliance, integrity, 
+<p>Atman leverages Informatica for secure data management and governance, ensuring clients maintain compliance, integrity,
    and actionable insights for strategic success.</p>
 </div>
 </div>
@@ -830,7 +831,7 @@
 <img src="partners/microsoft-azure-logo.png" alt="Tableau" class="main-logo">
 <div class="text">
 <h3>Microsoft-Azure</h3>
-<p>Atman partners with Microsoft Azure to deliver secure, scalable cloud solutions, enabling clients to innovate faster, 
+<p>Atman partners with Microsoft Azure to deliver secure, scalable cloud solutions, enabling clients to innovate faster,
     optimize costs, and ensure enterprise-grade reliability.</p>
 </div>
 </div>
@@ -838,7 +839,7 @@
 <img src="partners/snowflake.png" alt="snowflake" class="main-logo">
 <div class="text">
 <h3>Snowflake</h3>
-<p>With Snowflake, Atman provides scalable cloud data warehousing, enabling clients to unlock real-time analytics and actionable insights 
+<p>With Snowflake, Atman provides scalable cloud data warehousing, enabling clients to unlock real-time analytics and actionable insights
    for competitive advantage.</p>
 </div>
 </div>
@@ -846,7 +847,7 @@
 <img src="Home&Becoming/Databricks.png" alt="Databricks" class="main-logo">
 <div class="text">
 <h3>Databricks</h3>
-<p>Atman partners with Databricks to accelerate AI and big data innovation, 
+<p>Atman partners with Databricks to accelerate AI and big data innovation,
    offering clients advanced analytics and machine learning capabilities.</p>
 </div>
 </div>
@@ -854,7 +855,7 @@
 <img src="Home&Becoming/skyvia.jpg" alt="Skyvia" class="main-logo" style="width: 100px;">
 <div class="text">
 <h3>Skyvia</h3>
-<p>Through Skyvia, Atman simplifies data integration and migration for clients, ensuring smooth connectivity 
+<p>Through Skyvia, Atman simplifies data integration and migration for clients, ensuring smooth connectivity
    and automated workflows across cloud platforms.</p>
 </div>
 </div>
@@ -1018,14 +1019,14 @@
     <div class="footer-container">
       <a href="#"><img src="light-logo.png" alt="Logo" class="footer-logo"></a>
       <p style="margin-bottom: 0rem !important; " class="atmanname">© Atman Cloud Consultants Pvt. Ltd. 2025. All rights reserved.</p>
-      
+
       <ul class="social-links">
         <a class="tc" routerLink="/termsandcondition" routerLinkActive="active">Terms and Conditions</a>|
          <a class="tc" routerLink="/privacy" routerLinkActive="active">Privacy Policy</a>
         <li><a href="https://www.instagram.com/iamatmanconsultant/reels/"><i class="fab fa-instagram"></i></a></li>
         <li><a href="https://www.linkedin.com/company/atman-consultants/"><i class="fab fa-linkedin-in"></i></a></li>
       </ul>
-      
+
     </div>
-  
+
   </footer>

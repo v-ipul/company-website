@@ -408,8 +408,10 @@
       </div>
 
       <!-- Mobile Toggle -->
-     <div class="mobile-toggle" (click)="toggleMobileMenu()" [ngStyle]="{ color: mobileMenuOpen ? 'black' : 'white' }">☰
+      <div class="mobile-toggle" (click)="toggleMobileMenu()" [ngStyle]="{ color: mobileMenuOpen ? 'black' : 'white' }">
+        {{ mobileMenuOpen ? '✕' : '☰' }}
       </div>
+
 
 
       <!-- Mobile Menu -->
@@ -435,7 +437,7 @@
               <img src="icon/Industries_we_serve.png" class="icon" alt="">
               <h4>Industries We Serve</h4>
               <div class="sub-menu">
-               <h2 routerLinkActive="active"><a routerLink="/industries" fragment="Manufacturing">Manufacturing</a></h2>
+               <h5 routerLinkActive="active"><a routerLink="/industries" fragment="Manufacturing">Manufacturing</a></h5>
                         <h5 routerLinkActive="active"><a routerLink="/industries" fragment="BankingFinance">Banking & Finance</a></h5>
                         <h5 routerLinkActive="active"><a routerLink="/industries" fragment="Healthcare">Healthcare</a></h5>
                         <h5 routerLinkActive="active"><a routerLink="/industries" fragment="Insurance">Insurance</a></h5>

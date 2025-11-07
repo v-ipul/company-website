@@ -61,7 +61,7 @@ h5{
   aspect-ratio: 16/9;
 }
 .fr-photo img{
-  width:80%; height:90%;
+  width:90%; height:90%;
   object-fit:cover; display:block;
   border-radius: 30px;
 }
@@ -175,7 +175,7 @@ h5{
         }
 
         .banner .content p {
-            font-size: 18px;
+            font-size: 0.938vw;
             margin-top: 10px;
             max-width: 600px;
           
@@ -1011,7 +1011,9 @@ header .logo-black {
 }
 
 
+.mxauto{
 
+}
 
 .header-container {
   display: flex;
@@ -1251,3 +1253,24 @@ nav a {
   height: 40px;
   text-align: end;
 }
+@media (max-width: 480px) { 
+  p {
+    font-size: 3.75vw !important;
+  }
+
+  h1 {
+    font-size: 6.417vw !important;
+  }
+  .fr-title {
+    width: 100%;
+  }
+  .fr-kicker {
+    font-size: 6.66vw;
+  }
+  h5 {
+    font-size: 4.583vw !important;
+  }
+  .fr-list li {
+    font-size: 3.75vw;
+  }
+ }

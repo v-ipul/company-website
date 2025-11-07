@@ -429,6 +429,23 @@ nav a {
       object-fit: cover;
       display: block;
     }
+  /* Image cards */
+    .image-card2 {
+      position: relative;
+      border-radius: 14px;
+      overflow: hidden;
+     background:rgb(255, 255, 255);
+      height: 67%;
+    }
+
+    .image-card2 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+
    .image-card1 {
       position: relative;
       border-radius: 14px;
@@ -1648,7 +1665,7 @@ nav:hover ~ header {
     }
 
     .working-process-card p {
-      font-size: 1rem;
+      font-size: 0.938vw;
       color: #333;
     }
 
@@ -1871,6 +1888,9 @@ color: #898989;
  {
     font-size: 1.5rem;
  }
+ #future-ready {
+  padding: 50px 20px;
+ }
  .future-ready{
    padding-left: 20px !important;
    padding-right: 20px !important;
@@ -1922,5 +1942,57 @@ font-size: 0.995vw !important;
   .segmenAgent{
     margin-top: 20px;
   }
+
+}
+@media (max-width: 576px) {  
+.image-overlayy {
+  font-size: 2.75vw !important;
+}
+.image-card{
+  height: 80%;
+}
+.kpi {
+  font-size: 2.75vw !important;
+}
+.kpi1 {
+  font-size: 2.75vw !important;
+}
+ .image-card2 {
+      position: relative;
+      border-radius: 14px;
+      overflow: hidden;
+     background:rgb(255, 255, 255);
+      height: 80%;
+    }
+     #future-ready {
+  padding: 20px 20px;
+ }
+ .security-section {
+ 
+  padding: 20px 20px;
+}
+.security-description {
+  font-size: 2.75vw;
+}
+.feature-text {
+  font-size: 2.75vw;
+}
+.feature-titlee {
+  font-size: 4.5vw;
+}
+.working-process-card {
+  font-size: 2.75vw;
+  height:60%
+}
+.working-process-card p{
+  font-size: 2.75vw;
+}
+.working-process-card1 {
+  font-size: 2.75vw;
+  height:60%
+}
+.working-process-card1 p{
+  font-size: 2.75vw;
+}
 
 }

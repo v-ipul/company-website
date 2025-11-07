@@ -215,7 +215,7 @@
             </div>
           </div>
 
-       
+
      <div class="dropdown" >
             <a routerLink="/news" routerLinkActive="active">News</a>
             </div>
@@ -276,8 +276,9 @@
       </div>
 
       <!-- Mobile Toggle -->
-     
-      <div class="mobile-toggle" (click)="toggleMobileMenu()" [ngStyle]="{ color: mobileMenuOpen ? 'black' : 'white' }">☰
+
+      <div class="mobile-toggle" (click)="toggleMobileMenu()" [ngStyle]="{ color: mobileMenuOpen ? 'black' : 'white' }">
+        {{ mobileMenuOpen ? '✕' : '☰' }}
       </div>
 
 
@@ -366,40 +367,40 @@
           </div>
           <div class="mobile-submenu" [class.show]="activeMegaIndex === 2">
             <div class="menu-item" routerLink="/beingatman" routerLinkActive="active">
-              <img src="IconB1.png" class="icon" alt="">
+              <img src="Home&Becoming/IconB1.png" class="icon" alt="">
               <h4 routerLink="/beingatman" routerLinkActive="active">Our Becoming</h4>
               <p>Our story, our spirit, our truth</p>
             </div>
-             <a routerLink="/beingatman" fragment="northstar">  <div class="menu-item" routerLinkActive="active">
-              <img src="IconB2.png" class="icon" alt="">
+            <a routerLink="/beingatman" fragment="northstar">  <div class="menu-item" routerLinkActive="active">
+              <img src="Home&Becoming/IconB2.png" class="icon" alt="">
               <h4>North Star</h4>
               <p>Purpose that lights our chosen path</p>
             </div></a>
             <a routerLink="/beingatman" fragment="beliefs">
-               <div class="menu-item" routerLinkActive="active">
-              <img src="IconB4.png" class="icon" alt="">
-              <h4>Values / Beliefs</h4>
-              <p>Beliefs shaping culture, conduct, and purpose</p>
-            </div></a>
+              <div class="menu-item" routerLinkActive="active">
+                <img src="Home&Becoming/IconB4.png" class="icon" alt="">
+                <h4>Values / Beliefs</h4>
+                <p>Beliefs shaping culture, conduct, and purpose</p>
+              </div></a>
             <div class="menu-item" routerLink="/comingsoon" routerLinkActive="active">
-              <img src="IconB5.png" class="icon" alt="">
+              <img src="Home&Becoming/IconB5.png" class="icon" alt="">
               <h4>Progressive Minds</h4>
               <p>Minds that inspire, guide, and empower</p>
             </div>
-             <a routerLink="/beingatman" fragment="partners">
-            <div class="menu-item" routerLinkActive="active">
-              <img src="IconB6.png" class="icon" alt="">
-              <h4>Partners in Purpose</h4>
-              <p>Working together for shared meaningful outcomes</p>
-            </div></a>
-             <a routerLink="/beingatman" fragment="walk">
-            <div class="menu-item" routerLinkActive="active">
-              <img src="IconB7.png" class="icon" alt="">
-              <h4>Walk With Us</h4>
-              <p>Join our path, shape the future</p>
-            </div></a>
+            <a routerLink="/beingatman" fragment="partners">
+              <div class="menu-item" routerLinkActive="active">
+                <img src="Home&Becoming/IconB6.png" class="icon" alt="">
+                <h4>Partners in Purpose</h4>
+                <p>Working together for shared meaningful outcomes</p>
+              </div></a>
+            <a routerLink="/beingatman" fragment="walk">
+              <div class="menu-item" routerLinkActive="active">
+                <img src="Home&Becoming/IconB7.png" class="icon" alt="">
+                <h4>Walk With Us</h4>
+                <p>Join our path, shape the future</p>
+              </div></a>
             <div class="menu-item" routerLink="/comingsoon" routerLinkActive="active">
-              <img src="Icon8.png" class="icon" alt="">
+              <img src="Home&Becoming/Icon8.png" class="icon" alt="">
               <h4>Our Rhythm</h4>
               <p>Living our essence through everyday actions</p>
             </div>

@@ -268,7 +268,7 @@ nav a {
 @media (max-width: 576px) {
   .logo {
     max-width: 200px;
-    top: 10px;
+
     left: 10px;
   }
 
@@ -297,7 +297,7 @@ nav a {
 @media (min-width: 377px) and (max-width: 480px) {
   .logo {
     max-width: 150px;
-    top: 20px;
+  
   }
 }
 
@@ -1021,12 +1021,14 @@ nav:hover ~ header {
   }
 
   .menu-item h4 {
-    font-size: 12px;
+    font-size: 3.167vw !important;
   }
 
   .menu-item p,
   .menu-item h5 {
     font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   .menu-item .icon {
@@ -1847,8 +1849,12 @@ color: #898989;
     max-width: 100%;
     height: auto;
   }
+  .mobile-submenu a {
+      margin: 5px 5px;
+  }
   button, a {
-    padding: 15px 20px;
+    padding: 5px 5px;
+    margin: 5px 5px;
     font-size: 14px;
   }
   .feature-title {

@@ -183,7 +183,28 @@ header .logo-black {
   position: relative;
 }
 
+@media (max-width: 700px) {
+  .logo {
+        width: 33vw;
+        height: 8.143vw;
+        top: 2.429vw;
+      }
+}
 
+@media (max-width: 480px) {
+  .logo {
+           width: 30.125vw;
+        height: 8.875vw;
+        top: 1.542vw;
+  }
+   header {
+    height: 70px;
+  }
+.sub-menu h2 a
+ {
+    font-size: 2.833vw !important;
+ }
+}
 
 .header-section {
   position: relative;
@@ -214,7 +235,7 @@ nav a {
 
 }
 .sub-menu h2 a{
-  font-size: 0.833vw !important;
+  font-size: 0.833vw ;
 }
 
 .contact-us {
@@ -257,7 +278,7 @@ nav a {
   .logo {
     max-width: 140px;
     top: 1px;
-    left: 40px;
+    left: -100px;
   }
 }
 .mobile-toggle{
@@ -267,9 +288,10 @@ nav a {
 
 @media (max-width: 576px) {
   .logo {
-    max-width: 200px;
-
-    left: 10px;
+          width: 30.125vw;
+        height: 8.875vw;
+        top: 1.542vw;
+        
   }
 
 
@@ -938,7 +960,7 @@ nav:hover ~ header {
 
 .mobile-submenu a {
 
-  font-size: 14px;
+  font-size: 2.75vw !important;
   font-weight: 400;
   color: #333;
   text-decoration: none;
@@ -1026,9 +1048,9 @@ nav:hover ~ header {
 
   .menu-item p,
   .menu-item h5 {
-    font-size: 12px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    font-size: 2.75vw !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .menu-item .icon {
@@ -1849,12 +1871,9 @@ color: #898989;
     max-width: 100%;
     height: auto;
   }
-  .mobile-submenu a {
-      margin: 5px 5px;
-  }
+ 
   button, a {
-    padding: 5px 5px;
-    margin: 5px 5px;
+    
     font-size: 14px;
   }
   .feature-title {

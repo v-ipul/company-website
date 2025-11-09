@@ -392,7 +392,7 @@ nav a {
     .image-overlay {
        z-index: 2;
       position: absolute;
-      bottom: 20px;
+      top: 20px;
       padding-top: 30px;
       padding-bottom: 40px;
       left: 20px;
@@ -1390,4 +1390,89 @@ color: #00adee !important;
   cursor: pointer;
   height: 40px;
   text-align: end;
+}
+
+@media (max-width: 480px) {
+
+  .social-links {
+    justify-content: center;
+    font-size: 2.083vw;
+    gap: 3.385vw;
+    margin-top: 10px;
+  }
+   .social-links a{
+    padding: 0px;
+  }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+    .tc{
+        font-size: 1.833vw !important;
+    }
+}
+@media (max-width: 480px) {
+
+  .social-links {
+    justify-content: center;
+    font-size: 2.083vw;
+    gap: 3.385vw;
+    margin-top: 10px;
+  }
+   .social-links a{
+    padding: 0px;
+  }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+    .tc{
+        font-size: 1.833vw !important;
+    }
+
+    .banner .content h1 {
+     font-size: 10.417vw;
+    }
+    .banner .content p {
+      font-size: 3.75vw;
+    }
+    .banner .content {
+      padding-top: 60px;
+    }
+    .custom-card h3 {
+      font-size: 5.833vw;
+    }
+    .custom-card p {
+      font-size: 3.75vw;
+    }
+    .image-overlay {
+      top: 30px;
+    }
+    .image-overlay h3 {
+      font-size: 5.833vw;
+    }
+    .at2 {
+  margin-bottom : 300px !important;
+}
+
+.section-subtitle {
+  font-size: 3.75vw !important;
+  margin-bottom: 0px;
+}
+
+}
+.at1 {
+  height: 99% !important;
+   border-radius:25px !important;
+}
+.at2 {
+  margin-bottom : 230px ;
 }

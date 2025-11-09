@@ -13,7 +13,7 @@
   [class.hover-active]="isHovering">
       <!-- Logos -->
 <a routerLink="/" routerLinkActive="active">
-<div class="container" style="padding-right: 100px;z-index:5;">
+<div class="header-container" >
 <img src="light-logo.png" class="logo logo-white"  alt="Logo White" />
             <img src="dark-logo.png" class="logo logo-black"  alt="Logo Black" />
 </div>   
@@ -437,11 +437,11 @@
               <img src="icon/Industries_we_serve.png" class="icon" alt="">
               <h4>Industries We Serve</h4>
               <div class="sub-menu">
-               <h5 routerLinkActive="active"><a routerLink="/industries" fragment="Manufacturing">Manufacturing</a></h5>
-                        <h5 routerLinkActive="active"><a routerLink="/industries" fragment="BankingFinance">Banking & Finance</a></h5>
-                        <h5 routerLinkActive="active"><a routerLink="/industries" fragment="Healthcare">Healthcare</a></h5>
-                        <h5 routerLinkActive="active"><a routerLink="/industries" fragment="Insurance">Insurance</a></h5>
-                        <h5 routerLinkActive="active"><a routerLink="/industries" fragment="HighTech">High Tech</a></h5>
+               <h5 routerLinkActive="active"><a routerLink="/industries" >Manufacturing</a></h5>
+                        <h5 routerLinkActive="active"><a routerLink="/banking" >Banking & Finance</a></h5>
+                        <h5 routerLinkActive="active"><a routerLink="/healthcare" >Healthcare</a></h5>
+                        <h5 routerLinkActive="active"><a routerLink="/insurance" >Insurance</a></h5>
+                        <h5 routerLinkActive="active"><a routerLink="/hitech" >High Tech</a></h5>
                         <h5 routerLinkActive="active"><a routerLink="/industries" fragment="Industrial">Industrial</a></h5>
                         <h5 routerLinkActive="active"><a routerLink="/industries" fragment="LifeSciences">Life Sciences</a></h5>
               </div>
@@ -470,14 +470,14 @@
           <div class="mobile-submenu" [class.show]="activeMegaIndex === 1">
          <a routerLink="/ai" fragment="Analytics">  <div class="menu-item" routerLinkActive="active">
               <img src="icon/view-grid.png" class="icon" alt="">
-              <h4>Analytics</h4>
-              <p>Turning data into foresight</p>
+           <span style="display: block;">    <h4>Analytics</h4>
+              <p>Turning data into foresight</p> </span>
             </div></a> 
-            <div class="menu-item" routerLink="/ai" routerLinkActive="active">
+            <div class="menu-item" routerLink="/ai" routerLinkActive="active" style="gap: 40px;">
               <img src="icon/Industries_we_serve.png" class="icon" alt="">
               <h4>Agentic Suite</h4>
               <div class="sub-menu">
-                <h5 routerLinkActive="active"><a routerLink="/ai" fragment="ChurnPredictor">Churn Predictor</a></h5>
+                <h5 routerLinkActive="active" class="mt-0 pl-3"><a routerLink="/ai" fragment="ChurnPredictor">Churn Predictor</a></h5>
                         <h5 routerLinkActive="active"><a routerLink="/ai" fragment="ForecasterAgent">Forecaster Agent</a></h5>
                         <h5 routerLinkActive="active"><a routerLink="/ai" fragment="SegmentationAgent">Segmentation Agent</a></h5>
                         <h5 routerLinkActive="active"><a routerLink="/ai" fragment="FeedbackAnalyzer">Feedback Analyzer</a></h5>
@@ -486,9 +486,9 @@
            <a routerLink="/ai" fragment="AtmanFusion">
             <div class="menu-item" routerLinkActive="active">
               <img src="icon/diamond_9346758 1.png" class="icon" alt="">
-              <h4>Atman Fusion</h4>
-              <p>Seamless integration, real-time insights, smarter automation</p>
-            </div></a> 
+             <span style="display: block;">  <h4>Atman Fusion</h4>
+              <p>Seamless integration, real-time insights, smarter automation</p> </span>
+            </div></a>
           </div>
         </div>
 
@@ -498,43 +498,44 @@
             Being Atman <span [class.rotate]="activeMegaIndex === 2">▸</span>
           </div>
           <div class="mobile-submenu" [class.show]="activeMegaIndex === 2">
-            <div class="menu-item" routerLink="/beingatman" routerLinkActive="active">
-              <img src="IconB1.png" class="icon" alt="">
-              <h4 routerLink="/beingatman" routerLinkActive="active">Our Becoming</h4>
-              <p>Our story, our spirit, our truth</p>
+            <div class="menu-item pt-5" routerLink="/beingatman" routerLinkActive="active">
+              <img src="Home&Becoming/IconB1.png" class="icon" alt="">
+             <span style="display: block;">  <h4 routerLink="/beingatman" routerLinkActive="active">Our Becoming</h4>
+              <p>Our story, our spirit, our truth</p> </span>
             </div> 
-             <a routerLink="/beingatman" fragment="northstar">  <div class="menu-item" routerLinkActive="active">
-              <img src="IconB2.png" class="icon" alt="">
-              <h4>North Star</h4>
-              <p>Purpose that lights our chosen path</p>
+             <a routerLink="/beingatman" fragment="northstar">  
+              <div class="menu-item" routerLinkActive="active">
+              <img src="Home&Becoming/IconB2.png" class="icon" alt="">
+             <span style="display: block;"> <h4>North Star</h4>
+              <p>Purpose that lights our chosen path</p></span>
             </div></a>
             <a routerLink="/beingatman" fragment="beliefs">
                <div class="menu-item" routerLinkActive="active">
-              <img src="IconB4.png" class="icon" alt="">
-              <h4>Values / Beliefs</h4>
-              <p>Beliefs shaping culture, conduct, and purpose</p>
+              <img src="Home&Becoming/IconB4.png" class="icon" alt="">
+             <span style="display: block;">  <h4>Values / Beliefs</h4>
+              <p>Beliefs shaping culture, conduct, and purpose</p> </span>
             </div></a>
             <div class="menu-item" routerLink="/comingsoon" routerLinkActive="active">
-              <img src="IconB5.png" class="icon" alt="">
-              <h4>Progressive Minds</h4>
-              <p>Minds that inspire, guide, and empower</p>
+              <img src="Home&Becoming/IconB5.png" class="icon" alt="">
+             <span style="display: block;">  <h4>Progressive Minds</h4>
+              <p>Minds that inspire, guide, and empower</p> </span>
             </div>
              <a routerLink="/beingatman" fragment="partners">
             <div class="menu-item" routerLinkActive="active">
-              <img src="IconB6.png" class="icon" alt="">
-              <h4>Partners in Purpose</h4>
-              <p>Working together for shared meaningful outcomes</p>
+              <img src="Home&Becoming/IconB6.png" class="icon" alt="">
+           <span style="display: block;">    <h4>Partners in Purpose</h4>
+              <p>Working together for shared meaningful outcomes</p> </span>
             </div></a>
              <a routerLink="/beingatman" fragment="walk">
             <div class="menu-item" routerLinkActive="active">
-              <img src="IconB7.png" class="icon" alt="">
-              <h4>Walk With Us</h4>
-              <p>Join our path, shape the future</p>
+              <img src="Home&Becoming/IconB7.png" class="icon" alt="">
+            <span style="display: block;">   <h4>Walk With Us</h4>
+              <p>Join our path, shape the future</p> </span>
             </div></a>
             <div class="menu-item" routerLink="/comingsoon" routerLinkActive="active">
-              <img src="Icon8.png" class="icon" alt="">
-              <h4>Our Rhythm</h4>
-              <p>Living our essence through everyday actions</p>
+              <img src="Home&Becoming/Icon8.png" class="icon" alt="">
+          <span style="display: block;">     <h4>Our Rhythm</h4>
+              <p>Living our essence through everyday actions</p> </span>
             </div>
           </div>
         </div>

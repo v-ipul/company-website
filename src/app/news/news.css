@@ -1337,3 +1337,27 @@ nav a {
     margin-top: 10px;
   }
 }
+
+@media (max-width: 480px) {
+
+  .social-links {
+    justify-content: center;
+    font-size: 2.083vw;
+    gap: 3.385vw;
+    margin-top: 10px;
+  }
+   .social-links a{
+    padding: 0px;
+  }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+    .tc{
+        font-size: 1.833vw !important;
+    }
+}

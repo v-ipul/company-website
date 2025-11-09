@@ -199,9 +199,12 @@ nav a {
 
 @media (max-width: 480px) {
   .logo {
-    width: 48.125vw;
-    height: 11.875vw;
-    top: 3.542vw;
+           width: 30.125vw;
+        height: 8.875vw;
+        top: 1.542vw;
+  }
+  header {
+    height: 70px;
   }
 }
 
@@ -299,7 +302,7 @@ nav a {
   /* adjusted higher */
   left: 10%;
   color: #fff;
-  max-width: 45.208vw;
+  max-width: 46.208vw;
   z-index: 900;
   padding-top: 100px;
 }
@@ -463,11 +466,14 @@ nav a {
   .slide-text {
     top: 12%;
     left: 5%;
-    max-width: 300px;
+    max-width: 400px;
+    padding-top: 0px;
   }
-
+.hero-section{
+  height: 80vh;
+}
   .slide-text h4 {
-    font-size: 2.571vw;
+    font-size: 3.571vw;
   }
 
   .slide-text h1 {
@@ -3082,6 +3088,11 @@ header.hover-active .logo-black {
   font-family: "Manrope", sans-serif;
 }
 @media (max-width: 480px) {
+.cta-button.arrow{
+        width: 6.125vw !important;
+        height: 6.125vw !important;
+}
+
   .card-container {
  gap: 20px;
   }
@@ -3110,7 +3121,7 @@ font-size: 8vw;
 font-size: 8vw;
 }
 .cta-button{
-  font-size: 2.5vw;
+  font-size: 3.33vw !important;
 }
 .container-10{
   padding: 20px 20px;
@@ -3131,9 +3142,7 @@ margin-top: 5px;
 .tc {
   font-size: 1.833vw !important;
 }
-.footer{
-  margin-bottom: 10px;
-}
+
 .custom-btn{
   font-size: 2.5vw;
 }
@@ -3143,3 +3152,66 @@ margin-top: 5px;
   padding-top: 20px;
 }
 }
+
+/* Mobile menu — merged & safe (exact same values & specificity you provided) */
+
+/* 1024px */
+@media (max-width: 1024px) {
+  .mobile-menu h4 {
+    font-size: 1.758vw !important;
+    margin-bottom: 0.5vw !important;
+    line-height: 1.3 !important;
+  }
+
+  .mobile-menu h5,
+  .mobile-menu h5 a,
+  .mobile-menu p,
+  .mobile-menu h2,
+  .mobile-menu h2 a {
+    font-size: 1.465vw !important;
+    margin-left: 1.0vw !important;
+    margin-bottom: 0.5vw !important;
+    line-height: 1.4 !important;
+  }
+}
+
+/* 768px */
+@media (max-width: 768px) {
+  .mobile-menu h4 {
+    font-size: 2.344vw !important;
+    margin-bottom: 0.65vw !important;
+    line-height: 1.3 !important;
+  }
+
+  .mobile-menu h5,
+  .mobile-menu h5 a,
+  .mobile-menu p,
+  .mobile-menu h2,
+  .mobile-menu h2 a {
+    font-size: 1.953vw !important;
+    margin-left: 0.65vw !important;
+    margin-bottom: 1.3vw !important;
+    line-height: 1.4 !important;
+  }
+}
+
+/* 480px */
+@media (max-width: 480px) {
+  .mobile-menu h4 {
+    font-size: 3.75vw !important;
+    margin-bottom: 0.9vw !important;
+    line-height: 1.3 !important;
+  }
+
+  .mobile-menu h5,
+  .mobile-menu h5 a,
+  .mobile-menu p,
+  .mobile-menu h2,
+  .mobile-menu h2 a {
+    font-size: 3.125vw !important;
+    margin-left: 0.9vw !important;
+    margin-bottom: 1.8vw !important;
+    line-height: 1.4 !important;
+  }
+}
+

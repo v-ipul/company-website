@@ -9,9 +9,11 @@
   overflow: hidden;
   font-family: 'Manrope', sans-serif;
 }
-
+     #future-ready {
+  padding-top: 40px;
+ }
 .image-overlayy{
-margin-bottom : 300px ; 
+
 font-size: 0.938vw;
 }
 
@@ -233,7 +235,44 @@ nav a {
 }
 
 
+/* ========== Responsive Footer ========== */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  .atmanname {
+    font-size: 2.083vw !important;
+  }
+  .footer-logo {
+    width: 22.917vw;
+    height: 5.599vw;
+    margin-bottom: 10px;
+  }
 
+  .tc {
+    font-size: 2.083vw;
+  }
+
+  .social-links {
+    justify-content: center;
+    font-size: 2.083vw;
+    gap: 3.385vw;
+    margin-top: 10px;
+  }
+
+  .footer p {
+    font-size: 2.083vw;
+    margin-top: 10px;
+  }
+
+  .tc {
+  font-size: 2.083vw;
+  }
+
+}
 
 
 
@@ -1995,4 +2034,72 @@ font-size: 0.995vw !important;
   font-size: 2.75vw;
 }
 
+}
+
+
+@media (max-width: 480px) {
+
+  .social-links {
+    justify-content: center;
+    font-size: 2.083vw;
+    gap: 3.385vw;
+    margin-top: 10px;
+  }
+   .social-links a{
+    padding: 0px;
+  }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+    .tc{
+        font-size: 1.833vw !important;
+    }
+
+    .banner .content h1 {
+     font-size: 10.417vw;
+    }
+    .banner .content p {
+      font-size: 3.75vw;
+    }
+    .banner .content {
+      padding-top: 60px;
+    }
+    .custom-card h3 {
+      font-size: 5.833vw;
+    }
+    .custom-card p {
+      font-size: 3.75vw;
+    }
+    .image-overlay {
+      top: 30px;
+    }
+    .image-overlay h3 {
+      font-size: 5.833vw;
+    }
+    .at2 {
+  margin-bottom : 300px !important;
+}
+
+.section-subtitle {
+  font-size: 3.75vw !important;
+  margin-bottom: 0px;
+}
+.kpi1 {
+  font-size: 6.625vw !important;
+}
+.kpi {
+  font-size: 5.625vw !important;
+}
+}
+.at1 {
+  height: 99% !important;
+   border-radius:25px !important;
+}
+.at2 {
+  margin-bottom : 230px ;
 }

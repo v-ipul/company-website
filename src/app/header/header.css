@@ -954,7 +954,7 @@ nav:hover ~ header {
 }
 
 .mobile-submenu.show {
-  max-height: 500px; /* enough for submenu items */
+  max-height: 100%; /* enough for submenu items */
 
 }
 
@@ -1942,5 +1942,18 @@ font-size: 0.995vw !important;
   .segmenAgent{
     margin-top: 20px;
   }
+  header.hover-active {
+  background-color: #ffffff00 !important;       /* white background */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+header.hover-active .logo-white {
+  display: block !important;
+}
+header.hover-active .logo-black {
+  display: none !important;
+}
+.banner-wrapper {
+  height:60vh !important;
+}
 
 }

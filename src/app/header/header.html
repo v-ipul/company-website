@@ -468,11 +468,13 @@
             AI <span [class.rotate]="activeMegaIndex === 1">▸</span>
           </div>
           <div class="mobile-submenu" [class.show]="activeMegaIndex === 1">
-         <a routerLink="/ai" fragment="Analytics">  <div class="menu-item" routerLinkActive="active">
+         <a routerLink="/ai" fragment="Analytics"> 
+           <div class="menu-item" routerLinkActive="active">
               <img src="icon/view-grid.png" class="icon" alt="">
            <span style="display: block;">    <h4>Analytics</h4>
               <p>Turning data into foresight</p> </span>
             </div></a> 
+            <hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:100%;">
             <div class="menu-item" routerLink="/ai" routerLinkActive="active" style="gap: 40px;">
               <img src="icon/Industries_we_serve.png" class="icon" alt="">
               <h4>Agentic Suite</h4>
@@ -483,6 +485,7 @@
                         <h5 routerLinkActive="active"><a routerLink="/ai" fragment="FeedbackAnalyzer">Feedback Analyzer</a></h5>
               </div>
             </div>
+            <hr style="margin: 4px 0; border: none; border-top: 1px solid #5e5e5e; width:100%;">
            <a routerLink="/ai" fragment="AtmanFusion">
             <div class="menu-item" routerLinkActive="active">
               <img src="icon/diamond_9346758 1.png" class="icon" alt="">
@@ -503,35 +506,41 @@
              <span style="display: block;">  <h4 routerLink="/beingatman" routerLinkActive="active">Our Becoming</h4>
               <p>Our story, our spirit, our truth</p> </span>
             </div> 
+            <hr style="margin: 4px 0; border: none; border-top: 1px solid #5e5e5e; width:100%;">
              <a routerLink="/beingatman" fragment="northstar">  
               <div class="menu-item" routerLinkActive="active">
               <img src="Home&Becoming/IconB2.png" class="icon" alt="">
              <span style="display: block;"> <h4>North Star</h4>
               <p>Purpose that lights our chosen path</p></span>
             </div></a>
+            <hr style="margin: 4px 0; border: none; border-top: 1px solid #5e5e5e; width:100%;">
             <a routerLink="/beingatman" fragment="beliefs">
                <div class="menu-item" routerLinkActive="active">
               <img src="Home&Becoming/IconB4.png" class="icon" alt="">
              <span style="display: block;">  <h4>Values / Beliefs</h4>
               <p>Beliefs shaping culture, conduct, and purpose</p> </span>
             </div></a>
+            <hr style="margin: 4px 0; border: none; border-top: 1px solid #5e5e5e; width:100%;">
             <div class="menu-item" routerLink="/comingsoon" routerLinkActive="active">
               <img src="Home&Becoming/IconB5.png" class="icon" alt="">
              <span style="display: block;">  <h4>Progressive Minds</h4>
               <p>Minds that inspire, guide, and empower</p> </span>
             </div>
+            <hr style="margin: 4px 0; border: none; border-top: 1px solid #5e5e5e; width:100%;">
              <a routerLink="/beingatman" fragment="partners">
             <div class="menu-item" routerLinkActive="active">
               <img src="Home&Becoming/IconB6.png" class="icon" alt="">
            <span style="display: block;">    <h4>Partners in Purpose</h4>
               <p>Working together for shared meaningful outcomes</p> </span>
             </div></a>
+            <hr style="margin: 4px 0; border: none; border-top: 1px solid #5e5e5e; width:100%;">
              <a routerLink="/beingatman" fragment="walk">
             <div class="menu-item" routerLinkActive="active">
               <img src="Home&Becoming/IconB7.png" class="icon" alt="">
             <span style="display: block;">   <h4>Walk With Us</h4>
               <p>Join our path, shape the future</p> </span>
             </div></a>
+            <hr style="margin: 4px 0; border: none; border-top: 1px solid #5e5e5e; width:100%;">
             <div class="menu-item" routerLink="/comingsoon" routerLinkActive="active">
               <img src="Home&Becoming/Icon8.png" class="icon" alt="">
           <span style="display: block;">     <h4>Our Rhythm</h4>
@@ -540,87 +549,11 @@
           </div>
         </div>
         
-        <!-- Wisdom -->
-      <!-- <div class="mobile-dropdown">
-          <div class="mobile-dropdown-header" (click)="toggleMega(3)">
-            Wisdom <span [class.rotate]="activeMegaIndex === 3">▸</span>
-          </div>
-          <div class="mobile-submenu" [class.show]="activeMegaIndex === 3">
-            <div class="menu-item" routerLink="/comingsoon" routerLinkActive="active">
-              <img src="icon/view-grid.png" class="icon" alt="">
-              <h4>Thought Leadership</h4>
-              <div class="sub-manu">
-                <h5>Research Papers</h5>
-                <h5>Whitepapers</h5>
-                <h5>Industry Trends</h5>
-                <h5>Innovation Guides</h5>
-              </div>
-            </div>
-            <div class="menu-item" routerLink="/comingsoon" routerLinkActive="active">
-              <img src="icon/Industries_we_serve.png" class="icon" alt="">
-              <h4>Knowledge Hub</h4>
-              <div class="sub-manu">
-                <h5>Case Studies</h5>
-                <h5>Success Stories</h5>
-                <h5>Best Practices</h5>
-                <h5>Playbooks</h5>
-              </div>
-            </div>
-            <div class="menu-item" routerLink="/comingsoon" routerLinkActive="active">
-              <img src="icon/diamond_9346758 1.png" class="icon" alt="">
-              <h4>Strategic Insights</h4>
-              <div class="sub-manu">
-                <h5>Business Frameworks</h5>
-                <h5>Leadership Lessons</h5>
-                <h5>Transformation Roadmaps</h5>
-                <h5>Future Forecasts</h5>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-        <!-- AC Foundation -->
-       <!-- <div class="mobile-dropdown">
-          <div class="mobile-dropdown-header" (click)="toggleMega(4)">
-            AC Foundation <span [class.rotate]="activeMegaIndex === 4">▸</span>
-          </div>
-          <div class="mobile-submenu" [class.show]="activeMegaIndex === 4">
-            <div class="menu-item" routerLink="/comingsoon" routerLinkActive="active">
-              <img src="icon/view-grid.png" class="icon" alt="">
-              <h4>Our Mission</h4>
-              <div class="sub-manu">
-                <h5>Community Development</h5>
-                <h5>Educational Programs</h5>
-                <h5>Social Innovation</h5>
-                <h5>Sustainability Goals</h5>
-              </div>
-            </div>
-            <div class="menu-item" routerLink="/comingsoon" routerLinkActive="active">
-              <img src="icon/Industries_we_serve.png" class="icon" alt="">
-              <h4>Key Projects</h4>
-              <div class="sub-manu">
-                <h5>Women Empowerment</h5>
-                <h5>Healthcare Initiatives</h5>
-                <h5>Environmental Actions</h5>
-                <h5>Youth Leadership</h5>
-              </div>
-            </div>
-            <div class="menu-item" routerLink="/comingsoon" routerLinkActive="active">
-              <img src="icon/diamond_9346758 1.png" class="icon" alt="">
-              <h4>Impact & Stories</h4>
-              <div class="sub-manu">
-                <h5>Impact Reports</h5>
-                <h5>Success Stories</h5>
-                <h5>Partner Collaborations</h5>
-                <h5>Volunteer Programs</h5>
-              </div>
-            </div>
-          </div>
-        </div> -->
+   
         <!--News-->
         <div class="mobile-dropdown">
-          <div class="mobile-dropdown-header" (click)="toggleMega(2)">
-                       <a style="text-decoration: none !important; color : black !important;" routerLink="/news" routerLinkActive="active">News</a> <span [class.rotate]="activeMegaIndex === 2">▸</span>
+          <div class="mobile-dropdown-header" routerLink="/news" routerLinkActive="active" >
+                       <a style="text-decoration: none !important; color : black !important;" >News</a> <span [class.rotate]="activeMegaIndex === 2">▸</span>
         </div>
                        <!-- Contact Us -->
         <div class="mobile-dropdown">
@@ -637,6 +570,7 @@
 
               </div>
             </div>
+            <hr style="margin: 4px 0; border: none; border-top: 1px solid #5e5e5e; width:100%;">
             <div class="menu-item">
               <img src="icon/Industries_we_serve.png" class="icon" alt="">
               <h4>Call Us</h4>
@@ -645,6 +579,7 @@
                      <h5>+91 98238 37098</h5>
               </div>
             </div>
+            <hr style="margin: 4px 0; border: none; border-top: 1px solid #5e5e5e; width:100%;">
             <div class="menu-item">
               <img src="icon/diamond_9346758 1.png" class="icon" alt="">
               <h4>Visit Us</h4>
@@ -654,6 +589,7 @@
                 <h5>Branch: New York, USA</h5>
               </div>
             </div>
+            <hr style="margin: 4px 0; border: none; border-top: 1px solid #5e5e5e; width:100%;">
           </div>
         </div>
         

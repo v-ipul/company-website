@@ -1361,3 +1361,8 @@ nav a {
         font-size: 1.833vw !important;
     }
 }
+@media (max-width: 480px) { 
+   .content{
+  padding-top: 40px !important;
+}
+}

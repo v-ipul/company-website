@@ -28,7 +28,7 @@
               <div class="mega-content">
                 <div class="mega-left">
                   <h3>Ways We Serve</h3>
-                  <p>Delivering authentic, <br> impactful solutions, <br>carefully crafted around your
+                  <p>Delivering authentic, impactful solutions, <br>carefully crafted around your
                     DNA
                   </p>
                   <a class="see-all"> </a>
@@ -408,7 +408,7 @@
       </div>
 
       <!-- Mobile Toggle -->
-      <div class="mobile-toggle" (click)="toggleMobileMenu()" [ngStyle]="{ color: mobileMenuOpen ? 'black' : 'white' }">
+      <div class="mobile-toggle" (click)="toggleMobileMenu()" [ngStyle]="{ color: mobileMenuOpen ? 'black' : 'black' }">
         {{ mobileMenuOpen ? '✕' : '☰' }}
       </div>
 
@@ -425,38 +425,48 @@
           <div class="mobile-submenu" [class.show]="activeMegaIndex === 0">
             <div class="menu-item" routerLink="/services" routerLinkActive="active">
               <img src="icon/view-grid.png" class="icon" alt="">
-              <h4>Services</h4>
-              <div class="sub-menu">
+              
+              <div class="container">
+                <h4>Services</h4>
+                 <hr style="margin: 10px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
                         <h5 routerLinkActive="active"><a routerLink="/services" fragment="Consulting">Consulting</a></h5>
+                         <hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
                         <h5 routerLinkActive="active"><a routerLink="/services" fragment="Implementation">Implementation</a></h5>
+                         <hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
                         <h5 routerLinkActive="active"><a routerLink="/services" fragment="Integration">Integration</a></h5>
+                         <hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
                         <h5 routerLinkActive="active"><a routerLink="/services" fragment="ManagedServices">Managed Services</a></h5>
-              </div>
+              <hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                      </div>
             </div>
             <div class="menu-item" routerLink="/industries" routerLinkActive="active">
               <img src="icon/Industries_we_serve.png" class="icon" alt="">
-              <h4>Industries We Serve</h4>
+              
               <div class="sub-menu">
-               <h5 routerLinkActive="active"><a routerLink="/industries" >Manufacturing</a></h5>
-                        <h5 routerLinkActive="active"><a routerLink="/banking" >Banking & Finance</a></h5>
-                        <h5 routerLinkActive="active"><a routerLink="/healthcare" >Healthcare</a></h5>
-                        <h5 routerLinkActive="active"><a routerLink="/insurance" >Insurance</a></h5>
-                        <h5 routerLinkActive="active"><a routerLink="/hitech" >High Tech</a></h5>
-                        <h5 routerLinkActive="active"><a routerLink="/industries" fragment="Industrial">Industrial</a></h5>
-                        <h5 routerLinkActive="active"><a routerLink="/industries" fragment="LifeSciences">Life Sciences</a></h5>
+                <h4>Industries We Serve</h4>
+                <hr style="margin: 10px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+               <h5 routerLinkActive="active"><a routerLink="/industries" >Manufacturing</a></h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                        <h5 routerLinkActive="active"><a routerLink="/banking" >Banking & Finance</a></h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                        <h5 routerLinkActive="active"><a routerLink="/healthcare" >Healthcare</a></h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                        <h5 routerLinkActive="active"><a routerLink="/insurance" >Insurance</a></h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                        <h5 routerLinkActive="active"><a routerLink="/hitech" >High Tech</a></h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                        <h5 routerLinkActive="active"><a routerLink="/industries" fragment="Industrial">Industrial</a></h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                        <h5 routerLinkActive="active"><a routerLink="/industries" fragment="LifeSciences">Life Sciences</a></h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
               </div>
             </div>
             <div class="menu-item" routerLink="/comingsoon" routerLinkActive="active">
               <img src="icon/diamond_9346758 1.png" class="icon" alt="">
-              <h4>Jewels</h4>
+              
               <div class="sub-menu">
-                <h5>Loan Origination System</h5>
-                <h5>Sample Management Solution</h5>
-                <h5>Clinic Management Solution</h5>
-                <h5>Dealership Management Solution</h5>
-                <h5>Check In/Check Out Accelerator</h5>
-                <h5>Visit Plan Accelerator</h5>
-                <h5>Expense Management Accelerator</h5>
+                <h4>Jewels</h4>
+                <hr style="margin: 10px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                <h5>Loan Origination System</h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                <h5>Sample Management Solution</h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                <h5>Clinic Management Solution</h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                <h5>Dealership Management Solution</h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                <h5>Check In/Check Out Accelerator</h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                <h5>Visit Plan Accelerator</h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                <h5>Expense Management Accelerator</h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
               </div>
             </div>
           </div>
@@ -477,11 +487,13 @@
             <hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:100%;">
             <div class="menu-item" routerLink="/ai" routerLinkActive="active" style="gap: 40px;">
               <img src="icon/Industries_we_serve.png" class="icon" alt="">
-              <h4>Agentic Suite</h4>
+             
               <div class="sub-menu">
-                <h5 routerLinkActive="active" class="mt-0 pl-3"><a routerLink="/ai" fragment="ChurnPredictor">Churn Predictor</a></h5>
-                        <h5 routerLinkActive="active"><a routerLink="/ai" fragment="ForecasterAgent">Forecaster Agent</a></h5>
-                        <h5 routerLinkActive="active"><a routerLink="/ai" fragment="SegmentationAgent">Segmentation Agent</a></h5>
+                 <h4>Agentic Suite</h4>
+                 <hr style="margin: 10px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                <h5 routerLinkActive="active" class="mt-0 pl-3"><a routerLink="/ai" fragment="ChurnPredictor">Churn Predictor</a></h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                        <h5 routerLinkActive="active"><a routerLink="/ai" fragment="ForecasterAgent">Forecaster Agent</a></h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                        <h5 routerLinkActive="active"><a routerLink="/ai" fragment="SegmentationAgent">Segmentation Agent</a></h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
                         <h5 routerLinkActive="active"><a routerLink="/ai" fragment="FeedbackAnalyzer">Feedback Analyzer</a></h5>
               </div>
             </div>
@@ -555,7 +567,7 @@
           <div class="mobile-dropdown-header" routerLink="/news" routerLinkActive="active" >
                        <a style="text-decoration: none !important; color : black !important;" >News</a> <span [class.rotate]="activeMegaIndex === 2">▸</span>
         </div>
-                       <!-- Contact Us -->
+           <hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">            <!-- Contact Us -->
         <div class="mobile-dropdown">
           <div class="mobile-dropdown-header" (click)="toggleMega(5)">
             Contact Us <span [class.rotate]="activeMegaIndex === 5">▸</span>
@@ -563,18 +575,21 @@
           <div class="mobile-submenu" [class.show]="activeMegaIndex === 5">
             <div class="menu-item">
               <img src="icon/view-grid.png" class="icon" alt="">
-              <h4>Email Us</h4>
+           
               <div class="sub-menu">
+                   <h4>Email Us</h4>
                <h2><a href="mailto:info@atmanconsultants.com">info@atmanconsultants.com</a></h2>
 <h2><a href="mailto:sales@atmanconsultants.com">sales@atmanconsultants.com</a></h2>
 
               </div>
+              
             </div>
             <hr style="margin: 4px 0; border: none; border-top: 1px solid #5e5e5e; width:100%;">
             <div class="menu-item">
               <img src="icon/Industries_we_serve.png" class="icon" alt="">
-              <h4>Call Us</h4>
+           
               <div class="sub-menu">
+                   <h4>Call Us</h4>
                  <h5>+91 985041 7098</h5>
                      <h5>+91 98238 37098</h5>
               </div>
@@ -582,14 +597,15 @@
             <hr style="margin: 4px 0; border: none; border-top: 1px solid #5e5e5e; width:100%;">
             <div class="menu-item">
               <img src="icon/diamond_9346758 1.png" class="icon" alt="">
-              <h4>Visit Us</h4>
+            
               <div class="sub-menu">
+                  <h4>Visit Us</h4>
                 <h5>Head Office: Pune, India</h5>
                 <h5>Branch: Bengaluru, India</h5>
                 <h5>Branch: New York, USA</h5>
               </div>
             </div>
-            <hr style="margin: 4px 0; border: none; border-top: 1px solid #5e5e5e; width:100%;">
+          
           </div>
         </div>
         

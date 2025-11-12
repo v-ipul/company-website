@@ -265,7 +265,6 @@ header.hover-active .contact-us {
 
 .text-block p {
   font-size: 0.938vw;
-  line-height: 20px;
   margin-bottom: 0.3rem;
   color: #4d4d4d;
   text-align: start;
@@ -1390,7 +1389,7 @@ header.hover-active .contact-us {
 .tab-card {
   background-color: transparent;
   border: none;
-  flex: 1 1 250px;
+  flex: 1 1 150px;
   display: flex;
   padding: 20px;
   cursor: pointer;
@@ -1841,10 +1840,6 @@ header.hover-active .contact-us {
     margin: 0 auto;
   }
 
-  .social-links {
-    flex-direction: column;
-    gap: 10px;
-  }
 
   .social-links li:not(:last-child)::after {
     display: none;
@@ -2020,27 +2015,12 @@ header.hover-active .contact-us {
     {
       font-size: 3.7vw;
     }
-  .belief-style strong
-  {
-    font-size: 5.257vw;
-  }
-  .belief-style p
-  {
-    font-size: 1.8vw;
-  }
   .text-block ul li
   {
     font-size: 2.1vw;
   }
-  .belif-section-p
-  {
-    font-size: 2.1vw;
-  }
 
 
-  .north-star {
-    padding: 50px 15px;
-  }
 
   .north-star h1 {
     font-size: 30px;
@@ -2504,7 +2484,6 @@ color: #00adee !important;
 }
 
 .partners-header p {
-  font-size: 0.938vw;
   color: #4d4d4d;
   line-height: 1.6;
 }
@@ -2636,7 +2615,7 @@ color: #00adee !important;
   .partners-grid .partner-card:hover .main-logo
   {
   width: 70px;
-  transform: translate(-140px, -40px);
+  transform: translate(-110px, -70px);
   }
 
 
@@ -2667,7 +2646,7 @@ color: #00adee !important;
 
   .partner-card {
     max-width: 100%;
-    height: 150px;
+    height: 250px;
     padding: 20px;
   }
 
@@ -2695,11 +2674,6 @@ color: #00adee !important;
 .partners-section h2.title {
     font-size: 48px;
     font-weight: 500;
-}
-
-.partners-section p.description {
-    font-size: 12px;
-    margin-top: 20px;
 }
 
 .partners-section .card {
@@ -2768,7 +2742,6 @@ partners-section {
 
 .partners-section h2.title {
     font-size: 2.8vw;
-    line-height: 3px;
     font-weight: 500;
 }
 
@@ -2845,3 +2818,528 @@ partners-section {
    font-size: 30px;
 }
  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 🌐 Default (Desktop > 1024px) */
+.north-star h1,
+.beliefs-section h1,
+.partners-section .title,
+.partners-section .description,
+.walk-with-us-section .section-title {
+  font-size: 2.5vw !important;
+}
+
+.north-star p,
+.north-star ul,
+.north-star li,
+.belif-section-p,
+.partners-section .right-side-text-area p,
+.walk-with-us-section .panel-text p {
+  font-size: 0.938vw !important;
+}
+
+.partner-card h3 {
+  font-size: 1.042vw !important;
+}
+
+.partner-card p {
+  font-size: 0.833vw !important;
+}
+
+.walk-with-us-section .section-subtitle {
+  font-size: 1.042vw !important;
+}
+
+.walk-with-us-section .tab-number {
+  font-size: 2.604vw !important;
+}
+
+.walk-with-us-section .tab-content h3 {
+  font-size: 1.094vw !important;
+}
+
+.walk-with-us-section .tab-content p {
+  font-size: 0.625vw !important;
+}
+
+.walk-with-us-section .panel-text h2 {
+  font-size: 1.667vw !important;
+}
+
+/* 💻 1024px breakpoint */
+@media (max-width: 1024px) {
+  .slide-text h1 {
+    font-size: 4.883vw !important;
+  }
+
+  .Becoming-section h2,
+  .north-star h1,
+  .beliefs-section h1,
+  .partners-section .title,
+  .partners-section .description,
+  .walk-with-us-section .section-title {
+    font-size: 4.688vw !important;
+  }
+
+  .slide-text p,
+  .partner-card h3 {
+    font-size: 1.953vw !important;
+  }
+
+  .partner-card p {
+    font-size: 1.563vw !important;
+  }
+
+  .Becoming-section p,
+  .north-star p,
+  .north-star ul,
+  .north-star li,
+  .belif-section-p,
+  .partners-section .right-side-text-area p,
+  .walk-with-us-section .panel-text p {
+    font-size: 1.758vw !important;
+  }
+
+  .walk-with-us-section .section-subtitle {
+    font-size: 1.953vw !important;
+  }
+
+  .walk-with-us-section .tab-number {
+    font-size: 4.883vw !important;
+  }
+
+  .walk-with-us-section .tab-content h3 {
+    font-size: 2.051vw !important;
+  }
+
+  .walk-with-us-section .tab-content p {
+    font-size: 1.172vw !important;
+  }
+
+  .walk-with-us-section .panel-text h2 {
+    font-size: 3.125vw !important;
+  }
+}
+
+/* 💻 768px breakpoint */
+@media (max-width: 768px) {
+  .slide-text h1 {
+    font-size: 6.51vw !important;
+  }
+
+  .Becoming-section h2,
+  .north-star h1,
+  .beliefs-section h1,
+  .partners-section .title,
+  .partners-section .description,
+  .walk-with-us-section .section-title {
+    font-size: 6.25vw !important;
+  }
+
+  .slide-text p,
+  .partner-card h3 {
+    font-size: 2.604vw !important;
+  }
+
+  .partner-card p {
+    font-size: 2.083vw !important;
+  }
+
+  .Becoming-section p,
+  .north-star p,
+  .north-star ul,
+  .north-star li,
+  .belif-section-p,
+  .partners-section .right-side-text-area p,
+  .walk-with-us-section .panel-text p {
+    font-size: 2.344vw !important;
+  }
+
+  .walk-with-us-section .section-subtitle {
+    font-size: 2.604vw !important;
+  }
+
+  .walk-with-us-section .tab-number {
+    font-size: 6.51vw !important;
+  }
+
+  .walk-with-us-section .tab-content h3 {
+    font-size: 2.734vw !important;
+  }
+
+  .walk-with-us-section .tab-content p {
+    font-size: 1.563vw !important;
+  }
+
+  .walk-with-us-section .panel-text h2 {
+    font-size: 4.167vw !important;
+  }
+}
+
+/* 📱 480px breakpoint */
+@media (max-width: 480px) {
+  .slide-text h1 {
+    font-size: 10.417vw !important;
+  }
+
+  .Becoming-section h2,
+  .north-star h1,
+  .beliefs-section h1,
+  .partners-section .title,
+  .partners-section .description,
+  .walk-with-us-section .section-title {
+    font-size: 10vw !important;
+  }
+
+  .slide-text p,
+  .partner-card h3 {
+    font-size: 4.167vw !important;
+  }
+
+  .partner-card p {
+    font-size: 3.333vw !important;
+  }
+
+  .Becoming-section p,
+  .north-star p,
+  .north-star ul,
+  .north-star li,
+  .belif-section-p,
+  .partners-section .right-side-text-area p,
+  .walk-with-us-section .panel-text p {
+    font-size: 3.75vw !important;
+  }
+
+  .walk-with-us-section .section-subtitle {
+    font-size: 4.167vw !important;
+  }
+
+  .walk-with-us-section .tab-number {
+    font-size: 10.417vw !important;
+  }
+
+  .walk-with-us-section .tab-content h3 {
+    font-size: 4.375vw !important;
+  }
+
+  .walk-with-us-section .tab-content p {
+    font-size: 2.5vw !important;
+  }
+
+  .walk-with-us-section .panel-text h2 {
+    font-size: 6.667vw !important;
+  }
+}
+
+/* 📱 400px breakpoint */
+@media (max-width: 400px) {
+  .slide-text h1 {
+    font-size: 12.5vw !important;
+  }
+
+  .Becoming-section h2,
+  .north-star h1,
+  .beliefs-section h1,
+  .partners-section .title,
+  .partners-section .description,
+  .walk-with-us-section .section-title {
+    font-size: 12vw !important;
+  }
+
+  .slide-text p,
+  .partner-card h3 {
+    font-size: 5vw !important;
+  }
+
+  .partner-card p {
+    font-size: 4vw !important;
+  }
+
+  .Becoming-section p,
+  .north-star p,
+  .north-star ul,
+  .north-star li,
+  .belif-section-p,
+  .partners-section .right-side-text-area p,
+  .walk-with-us-section .panel-text p {
+    font-size: 4.5vw !important;
+  }
+
+  .walk-with-us-section .section-subtitle {
+    font-size: 5vw !important;
+  }
+
+  .walk-with-us-section .tab-number {
+    font-size: 12.5vw !important;
+  }
+
+  .walk-with-us-section .tab-content h3 {
+    font-size: 5.25vw !important;
+  }
+
+  .walk-with-us-section .tab-content p {
+    font-size: 3vw !important;
+  }
+
+  .walk-with-us-section .panel-text h2 {
+    font-size: 8vw !important;
+  }
+}
+/* 🌐 Default (Desktop > 1024px) */
+.our-rhythm .rhythm-title {
+  font-size: 2.5vw !important; /* Same as "Walk With Us" title */
+}
+
+.our-rhythm .rhythm-subtitle {
+  font-size: 1.25vw !important; /* From your subtitle chart */
+}
+
+.our-rhythm .rhythm-card h3 {
+  font-size: 1.042vw !important; /* From chart for "Authenticity" titles */
+}
+
+.our-rhythm .rhythm-card p {
+  font-size: 0.938vw !important; /* From chart for last paragraph */
+}
+
+/* 💻 1024px breakpoint */
+@media (max-width: 1024px) {
+  .our-rhythm .rhythm-title {
+    font-size: 4.688vw !important;
+  }
+
+  .our-rhythm .rhythm-subtitle {
+    font-size: 2.344vw !important;
+  }
+
+  .our-rhythm .rhythm-card h3 {
+    font-size: 1.953vw !important;
+  }
+
+  .our-rhythm .rhythm-card p {
+    font-size: 1.758vw !important;
+  }
+}
+
+/* 💻 768px breakpoint */
+@media (max-width: 768px) {
+  .our-rhythm .rhythm-title {
+    font-size: 6.25vw !important;
+  }
+
+  .our-rhythm .rhythm-subtitle {
+    font-size: 2.604vw !important;
+  }
+
+  .our-rhythm .rhythm-card h3 {
+    font-size: 2.604vw !important;
+  }
+
+  .our-rhythm .rhythm-card p {
+    font-size: 2.344vw !important;
+  }
+}
+
+/* 📱 480px breakpoint */
+@media (max-width: 480px) {
+  .our-rhythm .rhythm-title {
+    font-size: 10vw !important;
+  }
+
+  .our-rhythm .rhythm-subtitle {
+    font-size: 4.167vw !important;
+  }
+
+  .our-rhythm .rhythm-card h3 {
+    font-size: 4.167vw !important;
+  }
+
+  .our-rhythm .rhythm-card p {
+    font-size: 3.75vw !important;
+  }
+}
+
+/* 📱 400px breakpoint */
+@media (max-width: 400px) {
+  .our-rhythm .rhythm-title {
+    font-size: 12vw !important;
+  }
+
+  .our-rhythm .rhythm-subtitle {
+    font-size: 5vw !important;
+  }
+
+  .our-rhythm .rhythm-card h3 {
+    font-size: 5vw !important;
+  }
+
+  .our-rhythm .rhythm-card p {
+    font-size: 4.5vw !important;
+  }
+}
+/* ========== Footer (Default: Desktop > 768px) ========== */
+.footer {
+  background: #111;
+  color: #ddd;
+  padding: 20px 15px;
+}
+
+.footer-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Footer Text Styles (Terms, Company Name) */
+.tc,
+.atmanname {
+  font-size: 0.833vw;
+}
+
+.tc {
+  margin-bottom: -10px; /* Specific margin for terms/copyright */
+}
+
+/* Footer Logo */
+.footer-logo {
+  width: 9.167vw;
+}
+
+/* Footer Links (General and Social) */
+.footer a {
+  color: rgb(230, 229, 229);
+  margin: 0;
+  text-decoration: none;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.social-links a {
+  color: #ddd;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #1f4e79;
+}
+
+/* ========== Responsive Footer (max-width: 768px) ========== */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+
+  /* Logo Size */
+  .footer-logo {
+    width: 22.917vw;
+    height: 5.599vw;
+    margin-bottom: 10px;
+  }
+
+  /* Text Sizes (Company Name, Terms, Footer Paragraphs) */
+  .atmanname,
+  .tc,
+  .footer p {
+    font-size: 2.083vw !important; 
+  }
+
+  /* Social Links */
+  .social-links {
+    justify-content: center;
+    font-size: 2.083vw;
+    gap: 3.385vw;
+    margin-top: 10px;
+  }
+
+  .footer p {
+    margin-top: 10px;
+  }
+}
+
+/* ========== Responsive Footer (max-width: 480px) - Text Adjustment ========== */
+@media (max-width: 480px) {
+  .tc {
+    /* Slightly smaller size for the terms/copyright in the smallest view */
+    font-size: 1.833vw !important;
+  }
+}

@@ -1271,9 +1271,9 @@ nav a {
 }
 
 .industry-card img {
-  width: 40px;
+  width: 60px;
   /* smaller for scroll */
-  height: 40px;
+  height: 60px;
   margin-right: 20px;
   object-fit: cover;
 }

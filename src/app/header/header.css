@@ -109,7 +109,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: transparent;  /* starts transparent */
+  background-color: rgba(255, 255, 255, 0);  /* starts transparent */
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   z-index: 1050;
 }
@@ -126,7 +126,7 @@ header.hover-active nav a {
 }
 
 header.hover-active .logo-black {
-  display: block !important;
+  display: block ;
 }
 
 header.hover-active .logo-white {
@@ -135,7 +135,7 @@ header.hover-active .logo-white {
 
 /* === Default (before hover) === */
 header .logo-white {
-  display: block !important;
+  display: block ;
 }
 
 header .logo-black {
@@ -198,7 +198,7 @@ header .logo-black {
         top: 1.542vw;
   }
    header {
-    height: 70px;
+    height: 60px;
   }
 .sub-menu h2 a
  {
@@ -849,7 +849,7 @@ nav:hover ~ header {
   cursor: pointer;
   position: absolute;
   right: 20px;
-  top: 18px;
+  top: 10px;
   z-index: 1001;
   color: white;
   background: transparent;
@@ -1943,17 +1943,43 @@ font-size: 0.995vw !important;
     margin-top: 20px;
   }
   header.hover-active {
-  background-color: #ffffff00 !important;       /* white background */
+  background-color: #ffffff !important;       /* white background */
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 header.hover-active .logo-white {
-  display: block !important;
+  display: none !important;
 }
 header.hover-active .logo-black {
-  display: none !important;
+  display: block !important;
 }
 .banner-wrapper {
   height:60vh !important;
 }
+header .logo-white {
+    display: none !important;
+}
+header {
 
+  background-color: white;  /* starts transparent */
+
+}
+nav a {
+
+  color: #020202;
+
+
+}
+.contact-us {
+
+  color: #020202 !important;
+
+}
+header.logo-black {
+    display: block !important;
+}
+}
+@media (max-width: 480px) { 
+  header.logo-black {
+    display: block !important;
+}
 }

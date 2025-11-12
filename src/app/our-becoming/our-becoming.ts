@@ -1,4 +1,7 @@
 import { CommonModule } from '@angular/common';
+
+import { RouterLink } from '@angular/router';
+import { Header } from '../header/header';
 import { Component, ElementRef, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 import {
   trigger,
@@ -15,7 +18,7 @@ interface ValueItem {
   image: string;
 }
 
-import { RouterLink } from '@angular/router';
+
 
 interface Column {
   letter: string;
@@ -46,8 +49,8 @@ interface RhythmSlide {
 
 @Component({
   selector: 'app-our-becoming',
-  standalone: true,
-  imports: [CommonModule, RouterLink],
+  
+  imports: [CommonModule, RouterLink, Header],
   templateUrl: './our-becoming.html',
   styleUrls: ['./our-becoming.css'],
   animations: [

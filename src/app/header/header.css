@@ -1979,7 +1979,8 @@ header.logo-black {
 }
 }
 @media (max-width: 480px) { 
-  header.logo-black {
-    display: block !important;
+header .logo-black {
+  display: block ;
 }
+
 }

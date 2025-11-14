@@ -8,40 +8,44 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
- <section class="hero-section ">
-  <header [class.hover-active]="isHovering">
-    <div class="header-container">
+<section class="hero-section ">
+
+<header (mouseenter)="onHover(true)" 
+  (mouseleave)="onHover(false)" 
+  [class.hover-active]="isHovering">
       <!-- Logos -->
-       <div routerLink="/" routerLinkActive="active">
-          <img src="logo-white.png" class="logo logo-white" routerLink="/" routerLinkActive="active" alt="Logo White" />
-      <img src="logo-black.png" class="logo logo-black" routerLink="/" routerLinkActive="active" alt="Logo Black" />
-</div>
-      <div class="header-section">
+<a routerLink="/" routerLinkActive="active">
+<div class="header-container" >
+<img src="light-logo.png" class="logo logo-white"  alt="Logo White" />
+            <img src="dark-logo.png" class="logo logo-black"  alt="Logo Black" />
+</div>   
+</a>
+      <div class="header-section" >
         <nav>
           <!-- Ways We Serve Dropdown -->
           <div class="dropdown" (mouseenter)="onWaysDropdownHover(true)" (mouseleave)="onWaysDropdownHover(false)">
-            <a href="#" (mouseenter)="onHover(true)" (mouseleave)="onHover(false)">Ways We Serve</a>
+            <a  >Ways We Serve</a>
 
             <div class="mega-dropdown" [class.show]="isWaysDropdownOpen">
               <div class="mega-content">
                 <div class="mega-left">
                   <h3>Ways We Serve</h3>
-                  <p>Delivering authentic, <br> impactful solutions, <br>carefully crafted around your
+                  <p>Delivering authentic, impactful solutions, <br>carefully crafted around your
                     DNA
                   </p>
-                  <a href="#" class="see-all"> </a>
+                  <a class="see-all"> </a>
                 </div>
 
                 <div class="mega-right">
                   <div class="menu-item" routerLink="/services" routerLinkActive="active">
-                    <img src="icon/view-grid.png" class="icon" alt="">
+                    <img src="icon/services.svg" class="icon" alt="">
                     <div>
                       <h4>Services</h4>
                       <div class="sub-menu">
-                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/services" fragment="Consulting">Consulting</a></h2>
-                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/services" fragment="Implementation">Implementation</a></h2>
-                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/services" fragment="Integration">Integration</a></h2>
-                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/services" fragment="ManagedServices">Managed Services</a></h2>
+                        <h2  routerLinkActive="active"><a class="menu-txt" routerLink="/services" fragment="Consulting">Consulting</a></h2>
+                        <h2  routerLinkActive="active"><a class="menu-txt" routerLink="/services" fragment="Implementation">Implementation</a></h2>
+                        <h2  routerLinkActive="active"><a class="menu-txt" routerLink="/services" fragment="Integration">Integration</a></h2>
+                        <h2  routerLinkActive="active"><a class="menu-txt" routerLink="/services" fragment="ManagedServices">Managed Services</a></h2>
                       </div>
                     </div>
                   </div>
@@ -51,13 +55,13 @@
                     <div>
                       <h4>Industries We Serve</h4>
                       <div class="sub-menu">
-                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/industries" fragment="Manufacturing">Manufacturing</a></h2>
-                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/industries" fragment="BankingFinance">Banking & Finance</a></h2>
-                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/industries" fragment="Healthcare">Healthcare</a></h2>
-                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/industries" fragment="Insurance">Insurance</a></h2>
-                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/industries" fragment="HighTech">High Tech</a></h2>
-                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/industries" fragment="Industrial">Industrial</a></h2>
-                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/industries" fragment="LifeSciences">Life Sciences</a></h2>
+                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/industries" >Manufacturing</a></h2>
+                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/banking" >Banking & Finance</a></h2>
+                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/healthcare" >Healthcare</a></h2>
+                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/insurance" >Insurance</a></h2>
+                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/hitech" >High Tech</a></h2>
+                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/industries" >Industrial</a></h2>
+                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/industries">Life Sciences</a></h2>
                       </div>
                     </div>
                   </div>
@@ -87,14 +91,14 @@
           <!-- AI Link -->
           <!-- AI Dropdown -->
           <div class="dropdown" (mouseenter)="onDropdownHover(true)" (mouseleave)="onDropdownHover(false)">
-            <a href="#" (mouseenter)="onHover(true)" (mouseleave)="onHover(false)">AI</a>
+            <a routerLink="/ai" routerLinkActive="active" >AI</a>
 
             <!-- Mega Dropdown -->
             <div class="mega-dropdown" [class.show]="isDropdownOpen">
               <div class="mega-content">
 
                 <!-- Left Section -->
-                <div class="mega-left">
+                <div class="mega-left ">
                   <h3>Artificial Intelligence</h3>
                   <p>
                     Atman harnesses AI to unlock potential, inspire progress, and
@@ -107,19 +111,23 @@
                 <!-- Right Section -->
                 <div class="mega-right">
                   <!-- Column 1 -->
-                 <a routerLink="/ai" fragment="Analytics"><div class="menu-item menu-txt" >
-                    <img src="icon/view-grid.png" class="icon" alt="">
-                    <div  routerLinkActive="active">
+                   <div class="menu-item " routerLinkActive="active">
+                
+                    <img src="icon/analytics.svg" class="icon" alt="">
+                   <a routerLink="/ai" fragment="Analytics">
+                    
+                    <div class="menu-txt" >
                       <h4>Analytics</h4>
                       <p>Turning data into foresight, <br> powering progress</p>
                      
+                   
                     </div>
-                    
-                  </div> </a>
+                    </a>
+                  </div> 
 
                   <!-- Column 2 -->
-                  <div class="menu-item " routerLink="/ai" routerLinkActive="active">
-                    <img src="icon/Industries_we_serve.png" class="icon" alt="">
+                  <div class="menu-item"  routerLinkActive="active">
+                    <img src="icon/Agentic_Suite.svg" class="icon" alt="">
                     <div>
                       <h4>Agentic Suite</h4>
                       <div class="sub-menu">
@@ -133,15 +141,15 @@
                   </div>
 
                   <!-- Column 3 -->
-                  <div class="menu-item menu-txt">
-                    <img src="icon/diamond_9346758 1.png" class="icon" alt="">
-                    <div routerLinkActive="active"><a routerLink="/ai" fragment="AtmanFusion">
+                  <div class="menu-item " routerLinkActive="active">
+                    <img src="icon/Atman_Fusion.svg" class="icon" alt="">
+                   <a routerLink="/ai" fragment="AtmanFusion"><div class="menu-txt"  >
                       <h4>Atman Fusion</h4>
                       <p>Seamless integration, <br> real-time insights, <br> smarter automation
                       </p>
-                       </a>
+                      
                     </div>
-                   
+                    </a>
                   </div>
                 </div>
 
@@ -152,7 +160,7 @@
 
           <!-- Being Atman Dropdown -->
           <div class="dropdown" (mouseenter)="onAtmanDropdownHover(true)" (mouseleave)="onAtmanDropdownHover(false)">
-            <a href="#" (mouseenter)="onHover(true)" (mouseleave)="onHover(false)">Being Atman</a>
+            <a href="#" >Being Atman</a>
 
             <div class="mega-dropdown" [class.show]="isAtmanDropdownOpen">
               <div class="mega-content">
@@ -160,59 +168,72 @@
                   <h3>Being Atman</h3>
                   <p>Our spirit in action - <br>origin, values, leaders, <br>and collaborations that
                     define us authentically</p>
-                  <a href="#" class="see-all">See all →</a>
+                 
                 </div>
 
                 <div class="mega-right">
-                  <div class="menu-item menu-txt" routerLink="/beingatman" routerLinkActive="active">
-                    <img src="IconB1.png" class="icon" alt="">
-                    <div>
+                  <div class="menu-item " routerLink="/beingatman" routerLinkActive="active">
+                    <img src="Home&Becoming/IconB1.png" class="icon" alt="">
+                    <div class="menu-txt">
                       <h4>Our <strong>Becoming</strong></h4>
                       <p>Our story, our spirit, our truth</p>
                     </div>
                   </div>
-                  <div class="menu-item menu-txt" routerLink="/comingsoon" routerLinkActive="active">
-                    <img src="IconB2.png" class="icon" alt="">
-                    <div>
+                  <div class="menu-item "  routerLink="/beingatman"  routerLinkActive="active">
+                    <img src="Home&Becoming/IconB2.png" class="icon" alt="">
+                
+                    <div class="menu-txt">
                       <h4>Progressive Minds</h4>
                       <p>Mind that inspire, guide and empower </p>
                     </div>
                   </div>
-                  <div class="menu-item menu-txt" routerLink="/comingsoon" routerLinkActive="active">
-                    <img src="IconB4.png" class="icon" alt="">
-                    <div>
+                  <div class="menu-item "   routerLink="/comingsoon" routerLinkActive="active">
+                    <img src="Home&Becoming/IconB4.png" class="icon" alt="">
+                    <div class="menu-txt">
                       <h4>Our Rythem</h4>
                       <p>Living our essence through everyday actions</p>
                     </div>
                   </div>
-                <a routerLink="/beingatman" fragment="northstar"><div class="menu-item menu-txt"  routerLinkActive="active">
-                    <img src="IconB5.png" class="icon" alt="">
-                    <div>
+                
+               <div class="menu-item "  routerLinkActive="active">
+                    <img src="Home&Becoming/IconB5.png" class="icon" alt="">
+                     <a routerLink="/beingatman" fragment="northstar">
+                    <div class="menu-txt">
+                        
                       <h4>North Star</h4>
                       <p>Purpose that lights our chosen path</p>
+                  
                     </div>
-                  </div></a>
-                 <a routerLink="/beingatman" fragment="partners"> <div class="menu-item menu-txt" routerLinkActive="active">
-                    <img src="IconB6.png" class="icon" alt="">
-                    <div>
+                    </a>
+                  </div>
+                  <div class="menu-item "   routerLinkActive="active">
+                
+                    <img src="Home&Becoming/IconB6.png" class="icon" alt="">
+                     <a routerLink="/beingatman" fragment="partners"> 
+                    <div class="menu-txt">
                       <h4>Partners in purpose</h4>
                       <p>Working together for shared meaningful outcomes</p>
                     </div>
-                  </div></a>
-                  <a routerLink="/beingatman" fragment="beliefs"><div class="menu-item menu-txt" routerLinkActive="active">
-                    <img src="IconB7.png" class="icon" alt="">
-                    <div>
+                  </a></div>
+                  <div class="menu-item "   routerLinkActive="active">
+             
+                    
+                    <img src="Home&Becoming/IconB7.png" class="icon" alt="">
+                     <a routerLink="/beingatman" fragment="beliefs"> 
+                    <div class="menu-txt">
                       <h4>Values\Beliefs</h4>
                       <p>Beliefs shaping culture, conduct and purpose</p>
                     </div>
-                  </div></a>
-                <a routerLink="/beingatman" fragment="walk"><div class="menu-item menu-txt" routerLinkActive="active">
-                    <img src="Icon8.png" class="icon" alt="">
-                    <div>
+               </a></div>
+                  <div class="menu-item "  routerLinkActive="active">
+               
+                    <img src="Home&Becoming/Icon8.png" class="icon" alt="">
+                     <a routerLink="/beingatman" fragment="walk">
+                    <div class="menu-txt">
                       <h4>Walk with us</h4>
                       <p>Join our path, Shape the future</p>
                     </div>
-                  </div></a>
+                  </a></div>
                 </div>
               </div>
             </div>
@@ -334,7 +355,7 @@
             </div>
         </nav>
         <div class="dropdown" (mouseenter)="onContactDropdownHover(true)" (mouseleave)="onContactDropdownHover(false)">
-          <a href="#" class="contact-us" (mouseenter)="onHover(true)" (mouseleave)="onHover(false)">Contact
+          <a  class="contact-us" >Contact
             Us</a>
 
           <div class="mega-dropdown" [class.show]="isContactDropdownOpen">
@@ -350,7 +371,7 @@
               <!-- Right Section -->
               <div class="mega-right">
                 <div class="menu-item">
-                  <img src="icon/view-grid.png" class="icon" alt="">
+                  <img src="icon/email.png" class="icon" alt="">
                   <div>
                     <h4>Email Us</h4>
                     <div class="sub-menu">
@@ -361,7 +382,7 @@
                 </div>
 
                 <div class="menu-item">
-                  <img src="icon/Industries_we_serve.png" class="icon" alt="">
+                  <img src="icon/telephones.png" class="icon" alt="">
                   <div>
                     <h4>Call Us</h4>
                     <div class="sub-menu">
@@ -372,7 +393,7 @@
                 </div>
 
                 <div class="menu-item">
-                  <img src="icon/diamond_9346758 1.png" class="icon" alt="">
+                  <img src="icon/visit.png" class="icon" alt="">
                   <div>
                     <h4>Visit Us</h4>
                     <div class="sub-menu">
@@ -389,7 +410,9 @@
       </div>
 
       <!-- Mobile Toggle -->
-      <div class="mobile-toggle" (click)="toggleMobileMenu()">☰</div>
+      <div class="mobile-toggle" (click)="toggleMobileMenu()" [ngStyle]="{ color: mobileMenuOpen ? 'black' : 'black' }">
+        {{ mobileMenuOpen ? '✕' : '☰' }}
+      </div>
 
 
 
@@ -404,38 +427,48 @@
           <div class="mobile-submenu" [class.show]="activeMegaIndex === 0">
             <div class="menu-item" routerLink="/services" routerLinkActive="active">
               <img src="icon/view-grid.png" class="icon" alt="">
-              <h4>Services</h4>
-              <div class="sub-menu">
+              
+              <div class="container">
+                <h4>Services</h4>
+                 <hr style="margin: 10px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
                         <h5 routerLinkActive="active"><a routerLink="/services" fragment="Consulting">Consulting</a></h5>
+                         <hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
                         <h5 routerLinkActive="active"><a routerLink="/services" fragment="Implementation">Implementation</a></h5>
+                         <hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
                         <h5 routerLinkActive="active"><a routerLink="/services" fragment="Integration">Integration</a></h5>
+                         <hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
                         <h5 routerLinkActive="active"><a routerLink="/services" fragment="ManagedServices">Managed Services</a></h5>
-              </div>
+              <hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                      </div>
             </div>
             <div class="menu-item" routerLink="/industries" routerLinkActive="active">
               <img src="icon/Industries_we_serve.png" class="icon" alt="">
-              <h4>Industries We Serve</h4>
+              
               <div class="sub-menu">
-               <h2 routerLinkActive="active"><a routerLink="/industries" fragment="Manufacturing">Manufacturing</a></h2>
-                        <h5 routerLinkActive="active"><a routerLink="/industries" fragment="BankingFinance">Banking & Finance</a></h5>
-                        <h5 routerLinkActive="active"><a routerLink="/industries" fragment="Healthcare">Healthcare</a></h5>
-                        <h5 routerLinkActive="active"><a routerLink="/industries" fragment="Insurance">Insurance</a></h5>
-                        <h5 routerLinkActive="active"><a routerLink="/industries" fragment="HighTech">High Tech</a></h5>
-                        <h5 routerLinkActive="active"><a routerLink="/industries" fragment="Industrial">Industrial</a></h5>
-                        <h5 routerLinkActive="active"><a routerLink="/industries" fragment="LifeSciences">Life Sciences</a></h5>
+                <h4>Industries We Serve</h4>
+                <hr style="margin: 10px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+               <h5 routerLinkActive="active"><a routerLink="/industries" >Manufacturing</a></h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                        <h5 routerLinkActive="active"><a routerLink="/banking" >Banking & Finance</a></h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                        <h5 routerLinkActive="active"><a routerLink="/healthcare" >Healthcare</a></h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                        <h5 routerLinkActive="active"><a routerLink="/insurance" >Insurance</a></h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                        <h5 routerLinkActive="active"><a routerLink="/hitech" >High Tech</a></h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                        <h5 routerLinkActive="active"><a routerLink="/industries" fragment="Industrial">Industrial</a></h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                        <h5 routerLinkActive="active"><a routerLink="/industries" fragment="LifeSciences">Life Sciences</a></h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
               </div>
             </div>
             <div class="menu-item" routerLink="/comingsoon" routerLinkActive="active">
               <img src="icon/diamond_9346758 1.png" class="icon" alt="">
-              <h4>Jewels</h4>
+              
               <div class="sub-menu">
-                <h5>Loan Origination System</h5>
-                <h5>Sample Management Solution</h5>
-                <h5>Clinic Management Solution</h5>
-                <h5>Dealership Management Solution</h5>
-                <h5>Check In/Check Out Accelerator</h5>
-                <h5>Visit Plan Accelerator</h5>
-                <h5>Expense Management Accelerator</h5>
+                <h4>Jewels</h4>
+                <hr style="margin: 10px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                <h5>Loan Origination System</h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                <h5>Sample Management Solution</h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                <h5>Clinic Management Solution</h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                <h5>Dealership Management Solution</h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                <h5>Check In/Check Out Accelerator</h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                <h5>Visit Plan Accelerator</h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                <h5>Expense Management Accelerator</h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
               </div>
             </div>
           </div>
@@ -447,27 +480,32 @@
             AI <span [class.rotate]="activeMegaIndex === 1">▸</span>
           </div>
           <div class="mobile-submenu" [class.show]="activeMegaIndex === 1">
-         <a routerLink="/ai" fragment="Analytics">  <div class="menu-item" routerLinkActive="active">
+         <a routerLink="/ai" fragment="Analytics"> 
+           <div class="menu-item" routerLinkActive="active">
               <img src="icon/view-grid.png" class="icon" alt="">
-              <h4>Analytics</h4>
-              <p>Turning data into foresight</p>
+           <span style="display: block;">    <h4>Analytics</h4>
+              <p>Turning data into foresight</p> </span>
             </div></a> 
-            <div class="menu-item" routerLink="/ai" routerLinkActive="active">
+            <hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:100%;">
+            <div class="menu-item" routerLink="/ai" routerLinkActive="active" style="gap: 40px;">
               <img src="icon/Industries_we_serve.png" class="icon" alt="">
-              <h4>Agentic Suite</h4>
+             
               <div class="sub-menu">
-                <h5 routerLinkActive="active"><a routerLink="/ai" fragment="ChurnPredictor">Churn Predictor</a></h5>
-                        <h5 routerLinkActive="active"><a routerLink="/ai" fragment="ForecasterAgent">Forecaster Agent</a></h5>
-                        <h5 routerLinkActive="active"><a routerLink="/ai" fragment="SegmentationAgent">Segmentation Agent</a></h5>
+                 <h4>Agentic Suite</h4>
+                 <hr style="margin: 10px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                <h5 routerLinkActive="active" class="mt-0 pl-3"><a routerLink="/ai" fragment="ChurnPredictor">Churn Predictor</a></h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                        <h5 routerLinkActive="active"><a routerLink="/ai" fragment="ForecasterAgent">Forecaster Agent</a></h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                        <h5 routerLinkActive="active"><a routerLink="/ai" fragment="SegmentationAgent">Segmentation Agent</a></h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
                         <h5 routerLinkActive="active"><a routerLink="/ai" fragment="FeedbackAnalyzer">Feedback Analyzer</a></h5>
               </div>
             </div>
+            <hr style="margin: 4px 0; border: none; border-top: 1px solid #5e5e5e; width:100%;">
            <a routerLink="/ai" fragment="AtmanFusion">
             <div class="menu-item" routerLinkActive="active">
               <img src="icon/diamond_9346758 1.png" class="icon" alt="">
-              <h4>Atman Fusion</h4>
-              <p>Seamless integration, real-time insights, smarter automation</p>
-            </div></a> 
+             <span style="display: block;">  <h4>Atman Fusion</h4>
+              <p>Seamless integration, real-time insights, smarter automation</p> </span>
+            </div></a>
           </div>
         </div>
 
@@ -477,130 +515,61 @@
             Being Atman <span [class.rotate]="activeMegaIndex === 2">▸</span>
           </div>
           <div class="mobile-submenu" [class.show]="activeMegaIndex === 2">
-            <div class="menu-item" routerLink="/beingatman" routerLinkActive="active">
-              <img src="IconB1.png" class="icon" alt="">
-              <h4 routerLink="/beingatman" routerLinkActive="active">Our Becoming</h4>
-              <p>Our story, our spirit, our truth</p>
+            <div class="menu-item pt-5" routerLink="/beingatman" routerLinkActive="active">
+              <img src="Home&Becoming/IconB1.png" class="icon" alt="">
+             <span style="display: block;">  <h4 routerLink="/beingatman" routerLinkActive="active">Our Becoming</h4>
+              <p>Our story, our spirit, our truth</p> </span>
             </div> 
-             <a routerLink="/beingatman" fragment="northstar">  <div class="menu-item" routerLinkActive="active">
-              <img src="IconB2.png" class="icon" alt="">
-              <h4>North Star</h4>
-              <p>Purpose that lights our chosen path</p>
+            <hr style="margin: 4px 0; border: none; border-top: 1px solid #5e5e5e; width:100%;">
+             <a routerLink="/beingatman" fragment="northstar">  
+              <div class="menu-item" routerLinkActive="active">
+              <img src="Home&Becoming/IconB2.png" class="icon" alt="">
+             <span style="display: block;"> <h4>North Star</h4>
+              <p>Purpose that lights our chosen path</p></span>
             </div></a>
+            <hr style="margin: 4px 0; border: none; border-top: 1px solid #5e5e5e; width:100%;">
             <a routerLink="/beingatman" fragment="beliefs">
                <div class="menu-item" routerLinkActive="active">
-              <img src="IconB4.png" class="icon" alt="">
-              <h4>Values / Beliefs</h4>
-              <p>Beliefs shaping culture, conduct, and purpose</p>
+              <img src="Home&Becoming/IconB4.png" class="icon" alt="">
+             <span style="display: block;">  <h4>Values / Beliefs</h4>
+              <p>Beliefs shaping culture, conduct, and purpose</p> </span>
             </div></a>
+            <hr style="margin: 4px 0; border: none; border-top: 1px solid #5e5e5e; width:100%;">
             <div class="menu-item" routerLink="/comingsoon" routerLinkActive="active">
-              <img src="IconB5.png" class="icon" alt="">
-              <h4>Progressive Minds</h4>
-              <p>Minds that inspire, guide, and empower</p>
+              <img src="Home&Becoming/IconB5.png" class="icon" alt="">
+             <span style="display: block;">  <h4>Progressive Minds</h4>
+              <p>Minds that inspire, guide, and empower</p> </span>
             </div>
+            <hr style="margin: 4px 0; border: none; border-top: 1px solid #5e5e5e; width:100%;">
              <a routerLink="/beingatman" fragment="partners">
             <div class="menu-item" routerLinkActive="active">
-              <img src="IconB6.png" class="icon" alt="">
-              <h4>Partners in Purpose</h4>
-              <p>Working together for shared meaningful outcomes</p>
+              <img src="Home&Becoming/IconB6.png" class="icon" alt="">
+           <span style="display: block;">    <h4>Partners in Purpose</h4>
+              <p>Working together for shared meaningful outcomes</p> </span>
             </div></a>
+            <hr style="margin: 4px 0; border: none; border-top: 1px solid #5e5e5e; width:100%;">
              <a routerLink="/beingatman" fragment="walk">
             <div class="menu-item" routerLinkActive="active">
-              <img src="IconB7.png" class="icon" alt="">
-              <h4>Walk With Us</h4>
-              <p>Join our path, shape the future</p>
+              <img src="Home&Becoming/IconB7.png" class="icon" alt="">
+            <span style="display: block;">   <h4>Walk With Us</h4>
+              <p>Join our path, shape the future</p> </span>
             </div></a>
+            <hr style="margin: 4px 0; border: none; border-top: 1px solid #5e5e5e; width:100%;">
             <div class="menu-item" routerLink="/comingsoon" routerLinkActive="active">
-              <img src="Icon8.png" class="icon" alt="">
-              <h4>Our Rhythm</h4>
-              <p>Living our essence through everyday actions</p>
+              <img src="Home&Becoming/Icon8.png" class="icon" alt="">
+          <span style="display: block;">     <h4>Our Rhythm</h4>
+              <p>Living our essence through everyday actions</p> </span>
             </div>
           </div>
         </div>
         
-        <!-- Wisdom -->
-      <!-- <div class="mobile-dropdown">
-          <div class="mobile-dropdown-header" (click)="toggleMega(3)">
-            Wisdom <span [class.rotate]="activeMegaIndex === 3">▸</span>
-          </div>
-          <div class="mobile-submenu" [class.show]="activeMegaIndex === 3">
-            <div class="menu-item" routerLink="/comingsoon" routerLinkActive="active">
-              <img src="icon/view-grid.png" class="icon" alt="">
-              <h4>Thought Leadership</h4>
-              <div class="sub-manu">
-                <h5>Research Papers</h5>
-                <h5>Whitepapers</h5>
-                <h5>Industry Trends</h5>
-                <h5>Innovation Guides</h5>
-              </div>
-            </div>
-            <div class="menu-item" routerLink="/comingsoon" routerLinkActive="active">
-              <img src="icon/Industries_we_serve.png" class="icon" alt="">
-              <h4>Knowledge Hub</h4>
-              <div class="sub-manu">
-                <h5>Case Studies</h5>
-                <h5>Success Stories</h5>
-                <h5>Best Practices</h5>
-                <h5>Playbooks</h5>
-              </div>
-            </div>
-            <div class="menu-item" routerLink="/comingsoon" routerLinkActive="active">
-              <img src="icon/diamond_9346758 1.png" class="icon" alt="">
-              <h4>Strategic Insights</h4>
-              <div class="sub-manu">
-                <h5>Business Frameworks</h5>
-                <h5>Leadership Lessons</h5>
-                <h5>Transformation Roadmaps</h5>
-                <h5>Future Forecasts</h5>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-        <!-- AC Foundation -->
-       <!-- <div class="mobile-dropdown">
-          <div class="mobile-dropdown-header" (click)="toggleMega(4)">
-            AC Foundation <span [class.rotate]="activeMegaIndex === 4">▸</span>
-          </div>
-          <div class="mobile-submenu" [class.show]="activeMegaIndex === 4">
-            <div class="menu-item" routerLink="/comingsoon" routerLinkActive="active">
-              <img src="icon/view-grid.png" class="icon" alt="">
-              <h4>Our Mission</h4>
-              <div class="sub-manu">
-                <h5>Community Development</h5>
-                <h5>Educational Programs</h5>
-                <h5>Social Innovation</h5>
-                <h5>Sustainability Goals</h5>
-              </div>
-            </div>
-            <div class="menu-item" routerLink="/comingsoon" routerLinkActive="active">
-              <img src="icon/Industries_we_serve.png" class="icon" alt="">
-              <h4>Key Projects</h4>
-              <div class="sub-manu">
-                <h5>Women Empowerment</h5>
-                <h5>Healthcare Initiatives</h5>
-                <h5>Environmental Actions</h5>
-                <h5>Youth Leadership</h5>
-              </div>
-            </div>
-            <div class="menu-item" routerLink="/comingsoon" routerLinkActive="active">
-              <img src="icon/diamond_9346758 1.png" class="icon" alt="">
-              <h4>Impact & Stories</h4>
-              <div class="sub-manu">
-                <h5>Impact Reports</h5>
-                <h5>Success Stories</h5>
-                <h5>Partner Collaborations</h5>
-                <h5>Volunteer Programs</h5>
-              </div>
-            </div>
-          </div>
-        </div> -->
+   
         <!--News-->
         <div class="mobile-dropdown">
-          <div class="mobile-dropdown-header" (click)="toggleMega(2)">
-            <a routerLink="/news" routerLinkActive="active">News</a> <span [class.rotate]="activeMegaIndex === 2">▸</span>
-          </div>
-        <!-- Contact Us -->
+          <div class="mobile-dropdown-header" routerLink="/news" routerLinkActive="active" >
+                       <a style="text-decoration: none !important; color : black !important;" >News</a> <span [class.rotate]="activeMegaIndex === 2">▸</span>
+        </div>
+           <hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">            <!-- Contact Us -->
         <div class="mobile-dropdown">
           <div class="mobile-dropdown-header" (click)="toggleMega(5)">
             Contact Us <span [class.rotate]="activeMegaIndex === 5">▸</span>
@@ -608,40 +577,45 @@
           <div class="mobile-submenu" [class.show]="activeMegaIndex === 5">
             <div class="menu-item">
               <img src="icon/view-grid.png" class="icon" alt="">
-              <h4>Email Us</h4>
+           
               <div class="sub-menu">
+                   <h4>Email Us</h4>
                <h2><a href="mailto:info@atmanconsultants.com">info@atmanconsultants.com</a></h2>
 <h2><a href="mailto:sales@atmanconsultants.com">sales@atmanconsultants.com</a></h2>
 
               </div>
+              
             </div>
+            <hr style="margin: 4px 0; border: none; border-top: 1px solid #5e5e5e; width:100%;">
             <div class="menu-item">
               <img src="icon/Industries_we_serve.png" class="icon" alt="">
-              <h4>Call Us</h4>
+           
               <div class="sub-menu">
+                   <h4>Call Us</h4>
                  <h5>+91 985041 7098</h5>
                      <h5>+91 98238 37098</h5>
               </div>
             </div>
+            <hr style="margin: 4px 0; border: none; border-top: 1px solid #5e5e5e; width:100%;">
             <div class="menu-item">
               <img src="icon/diamond_9346758 1.png" class="icon" alt="">
-              <h4>Visit Us</h4>
+            
               <div class="sub-menu">
+                  <h4>Visit Us</h4>
                 <h5>Head Office: Pune, India</h5>
                 <h5>Branch: Bengaluru, India</h5>
                 <h5>Branch: New York, USA</h5>
               </div>
             </div>
+          
           </div>
         </div>
         
 
       </div>
     </div>
-    </div>
+  
   </header>
-
-
 </section>
 <section>
   <div class="container" style=" height: 90vh; padding-top:80px;">

@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component, HostBinding, OnInit } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Component, HostBinding, OnInit, AfterViewInit } from '@angular/core';
+import { RouterLink, Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 import { Header } from '../header/header';
 
 interface ServiceCard {
@@ -12,8 +12,9 @@ interface ServiceCard {
   selector: 'app-insurance',
   imports: [CommonModule, RouterLink, Header],
   templateUrl: './insurance.html',
-  styleUrl: './insurance.css'
+  styleUrls: ['./insurance.css']
 })
+
 export class Insurance {
 
   cards: ServiceCard[] = [

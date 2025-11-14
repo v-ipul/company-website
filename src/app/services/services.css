@@ -150,7 +150,7 @@ h5{
 }
    .banner {
             position: relative;
-            height: 350px;
+            height: 400px;
            background: url('/services/service-banner.png') no-repeat center center; /* Use local image path here */
             background-size: cover;
           color: white;

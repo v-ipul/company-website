@@ -746,7 +746,7 @@ header.hover-active .contact-us {
 }
 
 .rhythm-container {
-  max-width: 1300px;
+  max-width: 83.333vw;
   margin: 0 auto;
 }
 
@@ -1751,7 +1751,7 @@ header.hover-active .contact-us {
 }
 
 .footer-container {
-  max-width: 1200px;
+  max-width: 83.333vw;
   margin: 0 auto;
   padding: 0 20px;
 
@@ -2453,7 +2453,12 @@ color: #00adee !important;
   font-family: 'Manrope', sans-serif;
   color: #333;
   padding: 60px 30px;
-  margin: auto;
+}
+
+.container-custom {
+  max-width: 83.333vw;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .partners-section p.description
@@ -2549,7 +2554,7 @@ color: #00adee !important;
 .partners-grid .partner-card:hover .main-logo {
   width: 70px;
   padding-bottom: 10px;
-  transform: translate(-80px, -60px);
+  transform: translate(-70px, -60px);
 }
 
 
@@ -2620,7 +2625,7 @@ color: #00adee !important;
   .partners-grid .partner-card:hover .main-logo
   {
   width: 70px;
-  transform: translate(-110px, -70px);
+  transform: translate(-90px, -70px);
   }
 
 
@@ -2912,6 +2917,13 @@ partners-section {
  font-size: 2.5vw !important;
  line-height: 2.813vw;
 }
+
+.container {
+  max-width: 83.333vw;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 
 .north-star p,
 .north-star ul,
@@ -3211,4 +3223,68 @@ partners-section {
   .beliefs-text p {
     font-size: 4.5vw !important;
   }
+}
+@media (max-width: 480px) {
+
+  .social-links {
+    justify-content: center;
+    font-size: 2.083vw;
+    gap: 3.385vw;
+    margin-top: 10px;
+  }
+   .social-links a{
+    padding: 0px;
+  }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+    .tc{
+        font-size: 1.833vw !important;
+    }
+
+    .banner .content h1 {
+     font-size: 10.417vw;
+    }
+    .banner .content p {
+      font-size: 3.75vw;
+    }
+    .banner .content {
+      padding-top: 60px;
+    }
+    .custom-card h3 {
+      font-size: 5.833vw;
+    }
+    .custom-card p {
+      font-size: 3.75vw;
+    }
+    .image-overlay {
+      top: 30px;
+    }
+    .image-overlay h3 {
+      font-size: 5.833vw;
+    }
+    .at2 {
+  margin-bottom : 280px !important;
+}
+
+.section-subtitle {
+  font-size: 3.75vw !important;
+  margin-bottom: 0px;
+}
+
+}
+.at1 {
+  height: 99% !important;
+   border-radius:25px !important;
+}
+.at2 {
+  margin-bottom : 320px ;
+}
+.at4 {
+  padding-top: 30px;
 }

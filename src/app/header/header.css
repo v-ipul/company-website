@@ -174,9 +174,9 @@ header .logo-black {
 .logo {
   flex-shrink: 0;
   max-width: 155px;
-  width: 100%;
-  left: 88px;
-  height: auto;
+      width: 9.031vw;
+    left: 8.438vw;
+    height: 2.3vw;
   cursor: pointer;
   transition: all 0.3s ease;
 

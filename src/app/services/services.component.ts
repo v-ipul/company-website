@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { Component, HostBinding, OnInit, AfterViewInit } from '@angular/core';
 import { RouterLink, Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 import { Header } from '../header/header';
+import { FooterComponent } from '../footer/footer';
 
 
 interface ServiceCard {
@@ -14,7 +15,7 @@ interface ServiceCard {
 
 @Component({
   selector: 'app-services',
-    imports: [CommonModule, RouterLink, Header],
+    imports: [CommonModule, RouterLink, Header,FooterComponent],
   templateUrl: './services.html',
   styleUrl: './services.css'
 })

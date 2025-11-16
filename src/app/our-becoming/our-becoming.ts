@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-
+import { FooterComponent } from '../footer/footer';
 import { RouterLink } from '@angular/router';
 
 import { Component, ElementRef, OnInit, ViewChild, AfterViewInit } from '@angular/core';
@@ -50,7 +50,7 @@ interface RhythmSlide {
 @Component({
   selector: 'app-our-becoming',
   
-  imports: [CommonModule, RouterLink],
+  imports: [CommonModule, RouterLink, FooterComponent],
   templateUrl: './our-becoming.html',
   styleUrls: ['./our-becoming.css'],
   animations: [
@@ -145,7 +145,7 @@ export class OurBecomingComponent implements OnInit, AfterViewInit {
   activeTab: string = 'collaborative_culture';
   panels: Panel[] = [
     { id: 'collaborative_culture', title: 'Collaborative Culture', desc: 'At Atman, we believe every journey is unique—and together, we’re building a path where ambition meets opportunity. If you’re passionate about making an impact, eager to learn, and ready to help shape the future of technology and services, you’ll find your place here.', img: 'office.jpg' },
-    { id: 'growth_learning', title: 'Growth Learning', desc: 'At Atman, we believe every journey is unique—and together, we’re building a path where ambition meets opportunity. If you’re passionate about making an impact, eager to learn, and ready to help shape the future of technology and services, you’ll find your place here.', img: 'growth2.jpg' },
+    { id: 'growth_learning', title: 'Growth & Learning', desc: 'At Atman, we believe every journey is unique—and together, we’re building a path where ambition meets opportunity. If you’re passionate about making an impact, eager to learn, and ready to help shape the future of technology and services, you’ll find your place here.', img: 'growth2.jpg' },
     { id: 'purposeful_work', title: 'Purposeful Work', desc: 'At Atman, we believe every journey is unique—and together, we’re building a path where ambition meets opportunity. If you’re passionate about making an impact, eager to learn, and ready to help shape the future of technology and services, you’ll find your place here.', img: 'purposefull work.jpg' },
     { id: 'diversity_inclusion', title: 'Diversity & Inclusion', desc: 'At Atman, we believe every journey is unique—and together, we’re building a path where ambition meets opportunity. If you’re passionate about making an impact, eager to learn, and ready to help shape the future of technology and services, you’ll find your place here.', img: 'Diversity.jpg' }
   ];

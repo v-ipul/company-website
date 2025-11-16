@@ -14,9 +14,12 @@ body{
   color:var(--fr-text);
   background:#fff;
 }
-
+.banner-subtitle {
+  font-size: 1.042vw !important;
+}
 p{
   font-size: 0.938vw !important;
+  line-height: 1.406vw ;
 }
 h5{
   font-size: 1.146vw !important;
@@ -43,7 +46,7 @@ h5{
 
 .fr-lead{
   font-size:0.938vw;
-  line-height:28px; /* slightly looser for long copy */
+  line-height:1.875vw ; /* slightly looser for long copy */
   color:var(--fr-muted);
  padding-top: 20px;
 }
@@ -94,7 +97,7 @@ h5{
 
 /* Small responsive refinements */
 @media (max-width: 991.98px){
-  .fr-lead{font-size:16px; line-height:26px}
+  .fr-lead{font-size:3.75vw; line-height:7.5vw}
 }
 @media (max-width: 575.98px){
   .info-card{padding:18px}
@@ -163,8 +166,7 @@ h5{
         }
 
         .banner .content {
-          padding: 10px;
-          padding-bottom: 20px;
+          
             text-align: left;
             z-index: 2;
         }
@@ -509,7 +511,9 @@ nav:hover ~ header {
     max-width: 100%;
     padding: 15px 10px;
   }
-
+ .banner-subtitle {
+  font-size: 4.167vw !important;
+}
   .mobile-dropdown-header {
     font-size: 15px;
   }
@@ -1068,7 +1072,7 @@ nav a {
 
 }
 .nav-item a{
-  font-size: 16px;
+  font-size: 0.938vw;
   font-weight: 500;
   color:  white !important;
 }
@@ -1103,8 +1107,14 @@ nav a {
   .contact-us {
     display: none;
   }
-
-
+ .navbar {
+  display: block;
+ }
+.nav-item a{
+  font-size: 2.333vw;
+  font-weight: 500;
+  color:  white !important;
+}
   .mobile-toggle {
     display: block;
     color: #fff;
@@ -1256,6 +1266,7 @@ nav a {
 @media (max-width: 480px) { 
   p {
     font-size: 3.75vw !important;
+     line-height:7.5vw
   }
 
   h1 {

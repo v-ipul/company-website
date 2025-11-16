@@ -15,6 +15,7 @@ import { News } from './news/news';
 import { Comingsoon } from './comingsoon/comingsoon';
 import { MyContactForm } from './my-contact-form/my-contact-form';
 import { Header } from './header/header';
+import {FooterComponent } from './footer/footer';
 
 
 
@@ -27,6 +28,7 @@ export const routes: Routes = [
      { path: 'healthcare', component: Healthcare }, 
        { path: 'hitech', component: Hitech }, 
          { path: 'header', component: Header }, 
+          { path: 'footer', component: FooterComponent }, 
        { path: 'insurance', component: Insurance }, 
    { path: 'services', component: ServicesComponent },
    { path: 'beingatman', component: OurBecomingComponent },  

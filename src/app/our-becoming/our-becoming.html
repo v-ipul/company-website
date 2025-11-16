@@ -5,14 +5,14 @@
   <!-- Bootstrap 5 + Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-<section class="hero-section">
+  <section class="hero-section">
       <header [class.hover-active]="isHovering">
     <div class="header-container">
       <!-- Logos -->
        <div routerLink="/" routerLinkActive="active">
         <img src="light-logo.png" class="logo logo-white" routerLink="/" routerLinkActive="active" alt="Logo White" />
             <img src="dark-logo.png" class="logo logo-black" routerLink="/" routerLinkActive="active" alt="Logo Black" />
-</div>
+       </div>
       <div class="header-section">
         <nav>
           <!-- Ways We Serve Dropdown -->
@@ -443,20 +443,20 @@
             <hr style="margin: 4px 0; border: none; border-top: 1px solid #5e5e5e; width:100%;">
              <a routerLink="/beingatman" fragment="northstar">  
               <div class="menu-item" routerLinkActive="active">
-              <img src="Home&Becoming/IconB2.png" class="icon" alt="">
+              <img src="Home&Becoming/IconB5.png" class="icon" alt="">
              <span style="display: block;"> <h4>North Star</h4>
               <p>Purpose that lights our chosen path</p></span>
             </div></a>
             <hr style="margin: 4px 0; border: none; border-top: 1px solid #5e5e5e; width:100%;">
             <a routerLink="/beingatman" fragment="beliefs">
                <div class="menu-item" routerLinkActive="active">
-              <img src="Home&Becoming/IconB4.png" class="icon" alt="">
+              <img src="Home&Becoming/IconB7.png" class="icon" alt="">
              <span style="display: block;">  <h4>Values / Beliefs</h4>
               <p>Beliefs shaping culture, conduct, and purpose</p> </span>
             </div></a>
             <hr style="margin: 4px 0; border: none; border-top: 1px solid #5e5e5e; width:100%;">
             <div class="menu-item" routerLink="/comingsoon" routerLinkActive="active">
-              <img src="Home&Becoming/IconB5.png" class="icon" alt="">
+              <img src="Home&Becoming/IconB2.png" class="icon" alt="">
              <span style="display: block;">  <h4>Progressive Minds</h4>
               <p>Minds that inspire, guide, and empower</p> </span>
             </div>
@@ -470,33 +470,35 @@
             <hr style="margin: 4px 0; border: none; border-top: 1px solid #5e5e5e; width:100%;">
              <a routerLink="/beingatman" fragment="walk">
             <div class="menu-item" routerLinkActive="active">
-              <img src="Home&Becoming/IconB7.png" class="icon" alt="">
+              <img src="Home&Becoming/Icon8.png" class="icon" alt="">
             <span style="display: block;">   <h4>Walk With Us</h4>
               <p>Join our path, shape the future</p> </span>
             </div></a>
             <hr style="margin: 4px 0; border: none; border-top: 1px solid #5e5e5e; width:100%;">
             <div class="menu-item" routerLink="/comingsoon" routerLinkActive="active">
-              <img src="Home&Becoming/Icon8.png" class="icon" alt="">
-          <span style="display: block;">     <h4>Our Rhythm</h4>
+              <img src="Home&Becoming/IconB4.png" class="icon" alt="">
+           <span style="display: block;">     
+            <h4>Our Rhythm</h4>
               <p>Living our essence through everyday actions</p> </span>
             </div>
           </div>
         </div>
         
-   
+  
         <!--News-->
         <div class="mobile-dropdown">
           <div class="mobile-dropdown-header" routerLink="/news" routerLinkActive="active" >
                        <a style="text-decoration: none !important; color : black !important;" >News</a> <span [class.rotate]="activeMegaIndex === 2">▸</span>
         </div>
-           <hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">            <!-- Contact Us -->
+           <hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">           
+            <!-- Contact Us -->
         <div class="mobile-dropdown">
           <div class="mobile-dropdown-header" (click)="toggleMega(5)">
             Contact Us <span [class.rotate]="activeMegaIndex === 5">▸</span>
           </div>
           <div class="mobile-submenu" [class.show]="activeMegaIndex === 5">
             <div class="menu-item">
-              <img src="icon/view-grid.png" class="icon" alt="">
+              <img src="Home&Becoming/email.png" class="icon" alt="">
            
               <div class="sub-menu">
                    <h4>Email Us</h4>
@@ -508,7 +510,7 @@
             </div>
             <hr style="margin: 4px 0; border: none; border-top: 1px solid #5e5e5e; width:100%;">
             <div class="menu-item">
-              <img src="icon/Industries_we_serve.png" class="icon" alt="">
+              <img src="Home&Becoming/telephones.png" class="icon" alt="">
            
               <div class="sub-menu">
                    <h4>Call Us</h4>
@@ -518,7 +520,7 @@
             </div>
             <hr style="margin: 4px 0; border: none; border-top: 1px solid #5e5e5e; width:100%;">
             <div class="menu-item">
-              <img src="icon/diamond_9346758 1.png" class="icon" alt="">
+              <img src="Home&Becoming/visit.png" class="icon" alt="">
             
               <div class="sub-menu">
                   <h4>Visit Us</h4>
@@ -909,21 +911,4 @@
 </section>
 
 
-
-
-
- <footer class="footer">
-    <div class="footer-container">
-      <a href="#"><img src="light-logo.png" alt="Logo" class="footer-logo"></a>
-      <p style="margin-bottom: 0rem !important; " class="atmanname">© Atman Cloud Consultants Pvt. Ltd. 2025. All rights reserved.</p>
-
-      <ul class="social-links">
-        <a class="tc" routerLink="/termsandcondition" routerLinkActive="active">Terms and Conditions</a>|
-         <a class="tc" routerLink="/privacy" routerLinkActive="active">Privacy Policy</a>
-        <li><a href="https://www.instagram.com/iamatmanconsultant/reels/"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="https://www.linkedin.com/company/atman-consultants/"><i class="fab fa-linkedin-in"></i></a></li>
-      </ul>
-
-    </div>
-
-  </footer>
+ <app-footer></app-footer>

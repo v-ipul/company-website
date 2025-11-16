@@ -220,7 +220,7 @@ header.hover-active .contact-us {
 
 .Becoming-section img {
   width: 100%;
-  max-width: 1500px;
+ /* max-width: 1500px; */
   display: block;
   margin: 30px auto 0;
   border-radius: 10px;
@@ -2403,16 +2403,16 @@ min-height: 50px;
   .beliefs-text h6 {
     font-size: 16px;
   }
-    .beliefs-expanded {
+  .beliefs-expanded {
     flex-direction: column;
     align-items: flex-start;
-    width: 300px;
+    width: 100%;
   }
   .beliefs-text p {
     font-size: 13px;
   }
   .beliefs-image img {
-    max-width: 300px;
+    max-width: 100%;
   }
    .beliefs-column.active
   {
@@ -2826,86 +2826,10 @@ partners-section {
 
 .partners-section h2.title
 {
+
    font-size: 30px;
    line-height: normal;
 }
- }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* 🌐 Default (Desktop > 1024px) */
@@ -2970,7 +2894,7 @@ partners-section {
 .beliefs-text p {
   font-size: 0.938vw !important;
 }
-
+}
 /* 💻 1024px breakpoint */
 @media (max-width: 1024px) {
   .slide-text h1 {
@@ -3101,6 +3025,10 @@ partners-section {
 
 /* 📱 480px breakpoint */
 @media (max-width: 480px) {
+ .beliefs-image img {
+    max-width: 100%;
+  }
+
   .slide-text h1 {
     font-size: 10.417vw !important;
   }
@@ -3160,6 +3088,12 @@ partners-section {
   .beliefs-text p {
     font-size: 3.75vw !important;
   }
+ .partners-grid .partner-card:hover .main-logo {
+  width: 70px;
+  /*padding-bottom: 10px;*/
+  transform: translate(-100px, -70px);
+}
+
 }
 
 /* 📱 400px breakpoint */
@@ -3224,7 +3158,8 @@ partners-section {
     font-size: 4.5vw !important;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 480px) 
+{
 
   .social-links {
     justify-content: center;
@@ -3275,6 +3210,42 @@ partners-section {
 .section-subtitle {
   font-size: 3.75vw !important;
   margin-bottom: 0px;
+}
+
+@media (max-width: 390px) {
+  .partners-grid .partner-card:hover .main-logo {
+    width: 60px !important;
+    transform: translate(-90px, -70px) !important;
+  }
+
+  .partner-card:hover .text {
+  opacity: 1;
+  transform: translate(-60%, -50%) translateY(0) !important;
+}
+
+
+.partner-card .text h3 {
+  font-size: 3.2vw !important; 
+  font-weight: 700;
+  color: #000;
+  text-align: start;
+}
+
+.partner-card .text p {
+  font-size: 2.933vw !important;
+  color: #555;
+  text-align: start;
+}
+
+.beliefs-image img {
+  width: 100% !important;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.beliefs-image img
+{
+  width: 100% !important;
+}
 }
 
 }

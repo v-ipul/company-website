@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, HostBinding, OnInit,AfterViewInit, ViewEncapsulation, HostListener } from '@angular/core';
 import { RouterLink, Router,  ActivatedRoute } from '@angular/router';
 import { Header } from '../header/header';
+import { FooterComponent } from '../footer/footer';
 
 
 
@@ -15,7 +16,7 @@ interface ServiceCard {
 @Component({
   selector: 'app-ai',
   
-  imports: [CommonModule, RouterLink, Header],
+  imports: [CommonModule, RouterLink, Header, FooterComponent],
   templateUrl: './ai.html',
   styleUrls: ['./ai.css']
 })

@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, HostBinding, OnInit, AfterViewInit } from '@angular/core';
 import { RouterLink, Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 import { Header } from '../header/header';
+import { FooterComponent } from '../footer/footer';
 
 interface ServiceCard {
   image: string;
@@ -10,7 +11,7 @@ interface ServiceCard {
 }
 @Component({
   selector: 'app-insurance',
-  imports: [CommonModule, RouterLink, Header],
+  imports: [CommonModule, RouterLink, Header, FooterComponent],
   templateUrl: './insurance.html',
   styleUrls: ['./insurance.css']
 })

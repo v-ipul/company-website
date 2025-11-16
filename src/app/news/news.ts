@@ -2,6 +2,8 @@ import { CommonModule } from '@angular/common';
 import { Component, HostBinding, OnInit,AfterViewInit, ViewEncapsulation, HostListener } from '@angular/core';
 import { RouterLink, Router,  ActivatedRoute } from '@angular/router';
 import { Header } from '../header/header';
+import { FooterComponent } from '../footer/footer';
+
 interface ServiceCard {
   image: string;
   title: string;
@@ -12,7 +14,7 @@ interface ServiceCard {
 @Component({
   selector: 'app-news',
    standalone: true,
-  imports: [CommonModule, RouterLink, Header],
+  imports: [CommonModule, RouterLink, Header, FooterComponent],
   templateUrl: './news.html',
   styleUrls: ['./news.css']
 })

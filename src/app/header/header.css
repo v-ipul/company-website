@@ -912,7 +912,10 @@ nav:hover ~ header {
 }
 
 /* Mobile dropdown container */
-
+.mobile-dropdown {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
 
 /* Dropdown header */
 .mobile-dropdown-header {

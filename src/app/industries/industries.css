@@ -1394,6 +1394,10 @@ color: #00adee !important;
 
 @media (max-width: 480px) {
 
+  .casestudy {
+  font-size: 5.833vw !important;
+}
+
   .social-links {
     justify-content: center;
     font-size: 2.083vw;

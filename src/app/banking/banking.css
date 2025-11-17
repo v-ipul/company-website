@@ -253,7 +253,7 @@ nav a {
   }
 }
 
-@media (min-width: 377px) and (max-width: 480px) {
+@media  (max-width: 480px) {
   .logo {
     max-width: 150px;
     top: 20px;
@@ -956,7 +956,9 @@ color: #00adee !important;
     max-width: 100%;
     padding: 15px 10px;
   }
-
+.casestudy {
+  font-size: 5.833vw !important;
+}
   .mobile-dropdown-header {
     font-size: 15px;
   }

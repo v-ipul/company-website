@@ -185,9 +185,6 @@ nav a {
   }
 
 }
-  .mobile-toggle {
-  display: none;
-}
 
 @media (max-width: 700px) {
   .logo {
@@ -205,15 +202,25 @@ nav a {
   }
   header {
     height: 70px;
+    background-color: white;
+    
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 480px) {
   .logo {
-    width: 54.353vw;
-    height: 13.412vw;
-    top: 4vw;
+    width:  150px;
+   
   }
+ header .logo-black
+ {
+    display: block;
+}
+ header .logo-white
+ {
+    display: none;
+}
+
 }
 
 
@@ -2840,7 +2847,7 @@ header.hover-active .logo-black {
 }
 
 .mobile-submenu.show {
-  max-height: 500px; /* enough for submenu items */
+  max-height: 100%; /* enough for submenu items */
 }
 
 .mobile-submenu a {

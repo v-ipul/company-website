@@ -49,7 +49,7 @@ interface RhythmSlide {
 
 @Component({
   selector: 'app-our-becoming',
-  
+
   imports: [CommonModule, RouterLink, FooterComponent],
   templateUrl: './our-becoming.html',
   styleUrls: ['./our-becoming.css'],
@@ -141,7 +141,7 @@ export class OurBecomingComponent implements OnInit, AfterViewInit {
   // Columns (Values)
 
 
-  // Panels (Walk With Us / Tabs)
+  // Panels (Walk With Us / Tabs) 
   activeTab: string = 'collaborative_culture';
   panels: Panel[] = [
     { id: 'collaborative_culture', title: 'Collaborative Culture', desc: 'At Atman, we believe every journey is unique—and together, we’re building a path where ambition meets opportunity. If you’re passionate about making an impact, eager to learn, and ready to help shape the future of technology and services, you’ll find your place here.', img: 'office.jpg' },

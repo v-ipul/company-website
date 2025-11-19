@@ -231,21 +231,23 @@ header.hover-active .contact-us {
 .north-star {
   padding: 40px;
   padding-left: 100px;
-  padding-right: 100px;
+  padding-right: 100px; 
   background: #fff;
   font-family: 'Manrope', sans-serif;
   color: #333;
 }
 
 .container-custom {
-  max-width: 1300px;
+  max-width: 83.333vw;
+
 }
 
 .north-star h1 {
   font-size: 2.5vw;
   font-weight: 700;
   margin-bottom: 2.5rem;
-  line-height: 1.2;
+  line-height: 1.2; 
+  margin-left: -40px;
 }
 
 .north-star h1 span {
@@ -278,7 +280,7 @@ header.hover-active .contact-us {
 }
 
 .text-block ul li {
-  font-size: 12px;
+  /*font-size: 0.938vw;*/
   margin-bottom: 1rem;
   color: #4d4d4d;
 }
@@ -296,9 +298,6 @@ header.hover-active .contact-us {
   transform: scaleX(-1);
   height: 300px;
 }
-
-
-
 /* === Responsive Media Queries === */
 
 /* Tablet */
@@ -1358,7 +1357,7 @@ header.hover-active .contact-us {
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 83.333vw !important;
   margin: 0 auto;
 }
 
@@ -2032,6 +2031,7 @@ header.hover-active .contact-us {
     line-height: 1.4;
     margin-bottom: 30px;
     text-align: center;
+    margin-left: 0px;
   }
 
   .grid-2 {
@@ -2554,7 +2554,7 @@ color: #00adee !important;
 .partners-grid .partner-card:hover .main-logo {
   width: 70px;
   padding-bottom: 10px;
-  transform: translate(-70px, -60px);
+  transform: translate(-100px, -60px);
 }
 
 

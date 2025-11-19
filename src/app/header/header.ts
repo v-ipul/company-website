@@ -129,7 +129,15 @@ export class Header {
 nextCard() {
   this.currentIndex = (this.currentIndex + 1) % this.cards.length;
 }
-
+@HostListener('window:resize')
+onWindowResize(): void {
+  // Close the mobile menu when the screen is wide enough
+  const isDesktop = window.innerWidth >= 992;
+  if (isDesktop && this.mobileMenuOpen) {
+    this.mobileMenuOpen = false;
+    this.activeMegaIndex = null;          // optional – hide any open mega-submenu
+  }
+}
 
 
 // Get card style for circular positioning

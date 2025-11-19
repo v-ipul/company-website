@@ -17,6 +17,7 @@
 }
 .tc {
   font-size: 0.833vw;
+  cursor: pointer;
   margin-bottom: -10px;
 }
 .footer-logo {

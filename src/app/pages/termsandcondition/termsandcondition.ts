@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component, HostBinding, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { Header } from '../../header/header';
+import { FooterComponent } from '../../footer/footer';
 
 
 interface ServiceCard {
@@ -12,7 +14,7 @@ interface ServiceCard {
 
 @Component({
   selector: 'app-termsandcondition',
-   imports: [CommonModule, RouterLink],
+   imports: [CommonModule, RouterLink, Header, FooterComponent],
   templateUrl: './termsandcondition.html',
   styleUrl: './termsandcondition.css'
 })

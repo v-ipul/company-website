@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, HostBinding, OnInit } from '@angular/core';
+import { Component, HostBinding, OnInit, HostListener } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { Header } from '../header/header';
 
@@ -136,6 +136,15 @@ onAcDropdownHover(state: boolean) {
   this.isAcDropdownOpen = state;
 }
 
+@HostListener('window:resize')
+onWindowResize(): void {
+  // Close the mobile menu when the screen is wide enough
+  const isDesktop = window.innerWidth >= 992;
+  if (isDesktop && this.mobileMenuOpen) {
+    this.mobileMenuOpen = false;
+    this.activeMegaIndex = null;          // optional – hide any open mega-submenu
+  }
+}
 
 
   toggleMobileSubmenu(): void {

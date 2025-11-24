@@ -5,12 +5,14 @@ import { Banking } from './banking/banking';
 import { Healthcare } from './healthcare/healthcare';
 import { Hitech } from './hitech/hitech';
 import { Insurance } from './insurance/insurance';
+import { Acfoundation } from './acfoundation/acfoundation';
 import { ServicesComponent } from './services/services.component';
 import { OurBecomingComponent } from './our-becoming/our-becoming';
 import { PrivacyPolicy } from './pages/privacy-policy/privacy-policy';
 import { Termsandcondition } from './pages/termsandcondition/termsandcondition';
 import { CookieConsentComponent } from './shared/cookie-consent/cookie-consent';
 import { Ai } from './ai/ai';
+import { Jewels } from './jewels/jewels';
 import { News } from './news/news';
 import { Comingsoon } from './comingsoon/comingsoon';
 import { MyContactForm } from './my-contact-form/my-contact-form';
@@ -23,6 +25,8 @@ import {FooterComponent } from './footer/footer';
 export const routes: Routes = [
    { path: '', redirectTo: '/home', pathMatch: 'full' },
    { path: 'home', component: HomeComponent },
+      { path: 'jewels', component: Jewels },
+        { path: 'acfoundation', component: Acfoundation },
    { path: 'industries', component: IndustriesComponent },  
     { path: 'banking', component: Banking },  
      { path: 'healthcare', component: Healthcare }, 

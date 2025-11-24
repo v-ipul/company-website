@@ -4,7 +4,12 @@
   overflow: hidden;
   font-family: "Manrope", sans-serif;
 }
-
+    .vapi-btn {
+      /*left: 95% !important;*/
+      top:75% !important;
+      z-index: 10 !important;
+      position: fixed !important;
+    }
 .hero-bg-scroll {
   position: relative;
   /* ✅ fixed for parallax */

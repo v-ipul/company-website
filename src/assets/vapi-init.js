@@ -1,23 +1,4 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Atman Cloud Consultants</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="favicon.webp" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
- <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JK5WJ2MLH5"></script>
-<script
-  src="https://unpkg.com/@vapi-ai/client-sdk-react/dist/embed/widget.umd.js"
-  async
-  type="text/javascript"
-></script>
-
-
- <script>
-      var vapiInstance = null;
+     var vapiInstance = null;
       const assistant = "71bfd870-839f-49ce-afc4-b4af62ce4e6e";
       const apiKey = "fe0ca0ed-1b37-4465-af11-e4e01bd2b3f9";
       const buttonConfig = {
@@ -66,20 +47,3 @@
           });
         };
       })(document, "script");
-    </script>
-    <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-JK5WJ2MLH5');
-</script>
-  <!-- Bootstrap 5 + Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JK5WJ2MLH5"></script>
-</head>
-<body>
-  <app-root></app-root>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JK5WJ2MLH5"></script>
-</body>
-</html>

@@ -64,14 +64,14 @@
                     <div>
                       <h4>Jewels</h4>
                       <div class="sub-menu">
-                        <h2>Loan Origination System</h2>
-                        <h2>Sample Management Solution</h2>
-                        <h2>Clinic Management Solution</h2>
-                        <h2>Dealership Management Solution</h2>
-                        <h2>Check In/ Check Out component Accelerator</h2>
-                        <h2>Visit Plan Component Accelerator</h2>
-                        <h2>Expense Management Accelerator</h2>
-
+                         <h2 routerLinkActive="active"><a class="menu-txt" routerLink="/jewels" fragment="LOS" >Loan Origination System </a></h2>
+                         <h2 routerLinkActive="active"><a class="menu-txt" routerLink="/jewels" fragment="SMS" >Sample Management Solution</a></h2>
+                         <h2 routerLinkActive="active"><a class="menu-txt" routerLink="/jewels" fragment="CMS" >Clinic Management Solution</a></h2>
+                         <h2 routerLinkActive="active"><a class="menu-txt" routerLink="/jewels" fragment="DMS" >Dealership Management Solution</a></h2>
+                         <h2 routerLinkActive="active"><a class="menu-txt" routerLink="/jewels" fragment="Check" >Check In/ Check Out component Accelerator</a></h2>
+                         <h2 routerLinkActive="active"><a class="menu-txt" routerLink="/jewels" fragment="Visit" >Visit Plan Component Accelerator</a></h2>
+                         <h2 routerLinkActive="active"><a class="menu-txt" routerLink="/jewels" fragment="Expense" >Expense Management Accelerator</a></h2>
+                         <h2 routerLinkActive="active"><a class="menu-txt" routerLink="/jewels" fragment="PSOM" >Post-Sales Order Management</a></h2>
                       </div>
 
                     </div>
@@ -175,13 +175,14 @@
                       <p>Mind that inspire, guide and empower </p>
                     </div>
                   </div>
-                  <div class="menu-item menu-txt" routerLink="/comingsoon" routerLinkActive="active">
+                  <a routerLink="/beingatman" fragment="rhytm"> 
+                    <div class="menu-item menu-txt"  routerLinkActive="active">
                     <img src="Home&Becoming/IconB4.png" class="icon" alt="">
                     <div>
-                      <h4>Our Rythem</h4>
+                      <h4>Our Rhythm</h4>
                       <p>Living our essence through everyday actions</p>
                     </div>
-                  </div>
+                  </div></a>
                 <a routerLink="/beingatman" fragment="northstar"><div class="menu-item menu-txt"  routerLinkActive="active">
                     <img src="Home&Becoming/IconB5.png" class="icon" alt="">
                     <div>
@@ -219,57 +220,7 @@
      
           
 
-            <div class="mega-dropdown" [class.show]="isAcDropdownOpen">
-              <div class="mega-content">
-                <div class="mega-left">
-                  <h3>AC Foundation</h3>
-                  <p>Empowering communities through <br>innovation, education, and <br>sustainable
-                    growth initiatives.</p>
-                  <a href="#" class="see-all">See all →</a>
-                </div>
-
-                <div class="mega-right">
-                  <div class="menu-item" routerLink="/comingsoon" routerLinkActive="active">
-                    <img src="icon/view-grid.png" class="icon" alt="">
-                    <div>
-                      <h4>Our Mission</h4>
-                      <div class="sub-manu">
-                        <h2>Community Development</h2>
-                        <h2>Educational Programs</h2>
-                        <h2>Social Innovation</h2>
-                        <h2>Sustainability Goals</h2>
-                      </div>
-                    </div>s
-                  </div>
-
-                  <div class="menu-item" routerLink="/comingsoon" routerLinkActive="active">
-                    <img src="icon/Industries_we_serve.png" class="icon" alt="">
-                    <div>
-                      <h4>Key Projects</h4>
-                      <div class="sub-manu">
-                        <h2>Women Empowerment</h2>
-                        <h2>Healthcare Initiatives</h2>
-                        <h2>Environmental Actions</h2>
-                        <h2>Youth Leadership</h2>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="menu-item" routerLink="/comingsoon" routerLinkActive="active">
-                    <img src="icon/diamond_9346758 1.png" class="icon" alt="">
-                    <div>
-                      <h4>Impact & Stories</h4>
-                      <div class="sub-manu">
-                        <h2>Impact Reports</h2>
-                        <h2>Success Stories</h2>
-                        <h2>Partner Collaborations</h2>
-                        <h2>Volunteer Programs</h2>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          
         
      <div class="dropdown" >
             <a routerLink="/news" routerLinkActive="active">News</a>
@@ -382,14 +333,15 @@
               
               <div class="sub-menu">
                 <h4>Jewels</h4>
-                <hr style="margin: 10px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
-                <h5>Loan Origination System</h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
-                <h5>Sample Management Solution</h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
-                <h5>Clinic Management Solution</h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
-                <h5>Dealership Management Solution</h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
-                <h5>Check In/Check Out Accelerator</h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
-                <h5>Visit Plan Accelerator</h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
-                <h5>Expense Management Accelerator</h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                  <h5 routerLinkActive="active"><a class="menu-txt" routerLink="/jewels" fragment="LOS" >Loan Origination System </a></h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                         <h5 routerLinkActive="active"><a class="menu-txt" routerLink="/jewels" fragment="SMS" >Sample Management Solution</a></h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                         <h5 routerLinkActive="active"><a class="menu-txt" routerLink="/jewels" fragment="CMS" >Clinic Management Solution</a></h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                         <h5 routerLinkActive="active"><a class="menu-txt" routerLink="/jewels" fragment="DMS" >Dealership Management Solution</a></h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                         <h5 routerLinkActive="active"><a class="menu-txt" routerLink="/jewels" fragment="Check" >Check In/ Check Out component Accelerator</a></h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                         <h5 routerLinkActive="active"><a class="menu-txt" routerLink="/jewels" fragment="Visit" >Visit Plan Component Accelerator</a></h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                         <h5 routerLinkActive="active"><a class="menu-txt" routerLink="/jewels" fragment="Expense" >Expense Management Accelerator</a></h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                         <h5 routerLinkActive="active"><a class="menu-txt" routerLink="/jewels" fragment="PSOM" >Post-Sales Order Management</a></h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+             
               </div>
             </div>
           </div>

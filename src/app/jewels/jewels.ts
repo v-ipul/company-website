@@ -20,54 +20,18 @@ interface ContactForm {
   message: string;
 }
 
-type OfficeKey = 'pune' | 'mumbai' | 'lakeworth' | 'ambajogai';
 
-interface OfficeLocation {
-  key: OfficeKey;
-  label: string;
-  address: string;
-}
+
 
 @Component({
-  selector: 'app-my-contact-form',
-  standalone: true, // Since this is a standalone component
+  selector: 'app-jewels',
+   standalone: true, // Since this is a standalone component
   imports: [CommonModule, RouterLink, FormsModule, Header, FooterComponent],
-  templateUrl: './my-contact-form.html',
-  styleUrls: ['./my-contact-form.css']
+  templateUrl: './jewels.html',
+  styleUrl: './jewels.css'
 })
-export class MyContactForm {
-
-  //  Map-related properties
-  selectedOffice: OfficeKey = 'pune';
-
-  offices: OfficeLocation[] = [
-    {
-      key: 'pune',
-      label: 'Head Office: Pune, India',
-      address: 'Atman Cloud Consultants, Pune, Maharashtra, India'
-    },
-    {
-      key: 'mumbai',
-      label: 'Branch: Mumbai, India',
-      address: 'Mumbai, Maharashtra, India'
-    },
-    {
-      key: 'lakeworth',
-      label: 'Branch: Lake Worth, USA',
-      address: 'Lake Worth, Florida, USA'
-    },
-    {
-      key: 'ambajogai',
-      label: 'Branch: Ambajogai, India',
-      address: 'Ambajogai, Maharashtra, India'
-    }
-  ];
-
-  setOffice(key: OfficeKey) {
-    this.selectedOffice = key;
-  }
-
- 
+export class Jewels {
+  
   form: ContactForm = {
     name: '',
     email: '',
@@ -226,8 +190,5 @@ export class MyContactForm {
     return style;
   }
 
-  get currentOffice(): OfficeLocation | undefined {
-  return this.offices.find(o => o.key === this.selectedOffice);
-}
 
 }

@@ -184,7 +184,10 @@ body{
    .banner {
             position: relative;
             height: 400px;
-           background: url('/acfoundation/acfoundationbanner.jpg') no-repeat center center; /* Use local image path here */
+           background:
+ linear-gradient(to left, rgba(1, 1, 65, 0.40) 0%, rgba(1, 1, 65, 0) 10%), /* Light purple gradient on the left */
+        linear-gradient(to right, rgba(1, 1, 65, 0.40) 0%, rgba(1, 1, 65, 0) 10%), /* Light purple gradient on the right */           
+           url('/acfoundation/acfoundationbanner.jpg') no-repeat center center; /* Use local image path here */
             background-size: cover;
           color: white;
           background-color : #0A164080;

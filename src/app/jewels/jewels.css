@@ -1380,6 +1380,7 @@ nav a {
 .section-title {
   font-size: 7.5vw !important ;
   margin-bottom: 0px;
+  padding-top: 0px !important;
 }
     .feature-list li {
         font-size: 3.75vw !important;
@@ -1406,6 +1407,7 @@ nav a {
 .section-title {
   font-size: 2.474vw ;
   margin-bottom: 0px;
+   padding-top: 50px;
 }
 .at1 {
   height: 99% !important;
@@ -1483,4 +1485,10 @@ nav a {
       position: relative; 
       max-width: 100%;
 }
+.atsmall {
+  padding-left: 0px !important;
+}
+}
+.atsmall {
+  padding-left: 50px;
 }

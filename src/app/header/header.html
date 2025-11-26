@@ -59,7 +59,7 @@
                         <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/insurance" >Insurance</a></h2>
                         <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/hitech" >High Tech</a></h2>
                         <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/industries" >Industrial</a></h2>
-                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/industries">Life Sciences</a></h2>
+                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/lifescience">Life Sciences</a></h2>
                       </div>
                     </div>
                   </div>
@@ -353,6 +353,9 @@
      <div class="dropdown" >
             <a routerLink="/news" routerLinkActive="active">News</a>
             </div>
+            <div class="dropdown" >
+            <a routerLink="/acfoundation" routerLinkActive="active">AC Foundation</a>
+            </div>
         </nav>
         <div class="dropdown" (mouseenter)="onContactDropdownHover(true)" (mouseleave)="onContactDropdownHover(false)">
           <a  class="contact-us" >Contact
@@ -453,7 +456,7 @@
                         <h5 routerLinkActive="active"><a routerLink="/insurance" >Insurance</a></h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
                         <h5 routerLinkActive="active"><a routerLink="/hitech" >High Tech</a></h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
                         <h5 routerLinkActive="active"><a routerLink="/industries" fragment="Industrial">Industrial</a></h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
-                        <h5 routerLinkActive="active"><a routerLink="/industries" fragment="LifeSciences">Life Sciences</a></h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
+                        <h5 routerLinkActive="active"><a routerLink="/lifescience" >Life Sciences</a></h5><hr style="margin: 4px 0; border: none; border-top: 1px solid  #5e5e5e; width:400px;">
               </div>
             </div>
             <div class="menu-item">
@@ -572,6 +575,13 @@
                        <a style="text-decoration: none !important; color : black !important;" >News</a> <span [class.rotate]="activeMegaIndex === 2">▸</span>
         </div>
          </div>
+         <!--AC-->
+       
+         <div class="mobile-dropdown">
+          <div class="mobile-dropdown-header" routerLink="/acfoundation" routerLinkActive="active" >
+            <a style="text-decoration: none !important; color : black !important;" >AC Foundation</a> <span [class.rotate]="activeMegaIndex === 2">▸</span>
+          </div>
+        </div>
                      <!-- Contact Us -->
         <div class="mobile-dropdown">
           <div class="mobile-dropdown-header" (click)="toggleMega(5)">

@@ -14,6 +14,7 @@ import { CookieConsentComponent } from './shared/cookie-consent/cookie-consent';
 import { Ai } from './ai/ai';
 import { Jewels } from './jewels/jewels';
 import { News } from './news/news';
+import { Lifescience } from './lifescience/lifescience';
 import { Comingsoon } from './comingsoon/comingsoon';
 import { MyContactForm } from './my-contact-form/my-contact-form';
 import { Header } from './header/header';
@@ -26,6 +27,7 @@ export const routes: Routes = [
    { path: '', redirectTo: '/home', pathMatch: 'full' },
    { path: 'home', component: HomeComponent },
       { path: 'jewels', component: Jewels },
+          { path: 'lifescience', component: Lifescience },
         { path: 'acfoundation', component: Acfoundation },
    { path: 'industries', component: IndustriesComponent },  
     { path: 'banking', component: Banking },  

@@ -55,7 +55,7 @@
                         <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/insurance" >Insurance</a></h2>
                         <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/hitech" >Hi-Tech</a></h2>
                         <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/industries" >Industrial</a></h2>
-                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/industries" >Life Sciences</a></h2>
+                        <h2 class="menu-txt" routerLinkActive="active"><a routerLink="/lifescience" >Life Sciences</a></h2>
                       </div>
                     </div>
                   </div>
@@ -220,6 +220,9 @@
      <div class="dropdown" >
             <a routerLink="/news" routerLinkActive="active">News</a>
             </div>
+              <div class="dropdown" >
+            <a routerLink="/acfoundation" routerLinkActive="active">AC Foundation</a>
+            </div>
         </nav>
         <div class="dropdown" (mouseenter)="onContactDropdownHover(true)" (mouseleave)="onContactDropdownHover(false)">
           <a href="#" class="contact-us" (mouseenter)="onHover(true)" (mouseleave)="onHover(false)">Contact
@@ -312,7 +315,7 @@
                         <h5 routerLinkActive="active"><a routerLink="/insurance">Insurance</a></h5>
                         <h5 routerLinkActive="active"><a routerLink="/hitech" >Hi-Tech</a></h5>
                         <h5 routerLinkActive="active"><a routerLink="/industries" >Industrial</a></h5>
-                        <h5 routerLinkActive="active"><a routerLink="/industries" >Life Sciences</a></h5>
+                        <h5 routerLinkActive="active"><a routerLink="/lifescience" >Life Sciences</a></h5>
               </div>
             </div>
             <div class="menu-item" routerLink="/comingsoon" routerLinkActive="active">
@@ -414,6 +417,12 @@
         <div class="mobile-dropdown">
           <div class="mobile-dropdown-header" routerLink="/news" routerLinkActive="active" >
             <a style="text-decoration: none !important; color : black !important;" >News</a> <span [class.rotate]="activeMegaIndex === 2">▸</span>
+          </div>
+        </div>
+        <!--AC-->
+         <div class="mobile-dropdown">
+          <div class="mobile-dropdown-header" routerLink="/acfoundation" routerLinkActive="active" >
+            <a style="text-decoration: none !important; color : black !important;" >AC Foundation</a> <span [class.rotate]="activeMegaIndex === 2">▸</span>
           </div>
         </div>
         <!-- Contact Us -->
@@ -769,7 +778,3 @@ Because transformation isn’t a one-time project. It’s a shared journey.</p>
     </div>
 
   </footer>
-<vapi-widget 
-  assistant-id="71bfd870-839f-49ce-afc4-b4af62ce4e6e"
-  public-key="fe0ca0ed-1b37-4465-af11-e4e01bd2b3f9">
-</vapi-widget>
